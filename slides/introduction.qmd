@@ -1,0 +1,110 @@
+---
+title: "Introduction to bibliometrics"
+author: "Philippe Mongeon"
+format: revealjs
+editor: visual
+---
+
+## Agenda
+
+-   What is scholarly communication?
+-   What are bibliometrics?
+-   Overview of the course and assignments
+
+## What are scholarly communications?
+
+"The system through which research and other scholarly writings are created, evaluated for quality, disseminated to the scholarly community, and preserved for future use" (Association of College & Research Libraries, 2003).
+
+Source: <https://www.ala.org/acrl/publications/whitepapers/principlesstrategies>
+
+## The scholarly publishing cycle
+
+![](images/scholcommcycle.jpg){fig-align="center"}
+
+Source: <https://acrl.libguides.com/scholcomm/toolkit/>
+
+## What are bibliometrics?
+
+-   "The measurement of all aspects related to the publication and reading of books and documents." (Otlet, 1934)
+
+-   "the application of mathematics and statistical methods to books and other media of communication." (Pritchard, 1969)
+
+In principle, bibliometrics could be applied to any type of documents, but in practice they are applied to scholarly outputs to **measure knowledge production, dissemination, and use**
+
+## What's in a name?
+
+Bibliometrics is a widely used term to refer to the field, but it is not the only (and probably not the best) one. Other (quasi-)synonyms include:
+
+-   Bibliometrics, Scientometrics, info(r)metrics, altmetrics, Quantitative Science Studies
+
+-   Science of science, research on research
+
+Science and technology studies (STS) shares an object but uses mainly qualitative methods.
+
+## Two underlying assumptions of bibliometrics
+
+-   Peer-reviewed scholarly work are contributions to the advancement of knowledge (or units of knowledge production)
+
+-   Because researchers cite their sources, citations can measure of the use (or impact? Quality? Importance?) of a contribution to knowledge.
+
+## Applications of bibliometrics
+
+-   Sociology of science
+
+-   History of science
+
+-   Science policy
+
+-   Library and Information Science
+
+-   Research evaluation
+
+-   Etc.
+
+## Bibliometrics in LIS
+
+![](images/sociotopic.jpg){fig-align="center"}
+
+## Bibliometrics in LIS
+
+![](images/multidisc.jpg){fig-align="center"}
+
+~[Larivière (2012)](https://doi.org/10.1002/bult.2012.1720380605).~
+
+## The course in three parts
+
+-   Understanding the research system
+
+    -   Theoretical with lectures and in-class discussions
+
+-   Analyzing and evaluating research
+
+    -   Practical, with a focus on hands-on work with data
+
+-   Improving the research system
+
+    -   Critical, with a focus on some of the main contemporary issues in academia
+
+## Assignments
+
+1.  Article review (15% - Sep 30)
+2.  Outline of a research project (5% - Oct 28)
+3.  Descriptive analysis of a research network (10% - Nov 18)
+4.  Research assessment report (30% - Dec 2)
+5.  Research project (30% - Dec 16)
+
+## How to use your time (week 1-3)
+
+-   explore literature in the bibliometrics field and complete assignment 1.
+
+-   Get a sense of what the field is about, the types of questions we ask and methods we use.
+
+-   Start thinking about what interests you most and about topics for the research project.
+
+## References
+
+Larivière, V. (2012). The decade of metrics? Examining the evolution of metrics within and outside LIS. Bulletin of the American Society for Information Science and Technology, 38(6), 12--17.
+
+Otlet, P. (1934). Traité de documentation: Le livre sur le livre, théorie et pratique. Editiones Mundaneum: Mons, Belgium
+
+Pritchard, A. (1969). Statistical Bibliography or Bibliometrics. Journal of Documentation, 25(4), 348--349.
