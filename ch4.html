@@ -95,7 +95,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./ch1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,7 +158,30 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"> <span class="header-section-number">4.1</span> Introduction</a></li>
+  <li><a href="#web-of-science" id="toc-web-of-science" class="nav-link" data-scroll-target="#web-of-science"> <span class="header-section-number">4.2</span> Web of Science</a></li>
+  <li><a href="#elseviers-suite-scopus-scival-and-the-icsr-lab." id="toc-elseviers-suite-scopus-scival-and-the-icsr-lab." class="nav-link" data-scroll-target="#elseviers-suite-scopus-scival-and-the-icsr-lab."> <span class="header-section-number">4.3</span> Elsevier’s suite: Scopus, SciVal, and the ICSR lab.</a>
+  <ul class="collapse">
+  <li><a href="#scopus" id="toc-scopus" class="nav-link" data-scroll-target="#scopus"> <span class="header-section-number">4.3.1</span> Scopus</a></li>
+  <li><a href="#scival" id="toc-scival" class="nav-link" data-scroll-target="#scival"> <span class="header-section-number">4.3.2</span> SciVal</a></li>
+  <li><a href="#international-center-for-the-study-of-research-icsr-lab" id="toc-international-center-for-the-study-of-research-icsr-lab" class="nav-link" data-scroll-target="#international-center-for-the-study-of-research-icsr-lab"> <span class="header-section-number">4.3.3</span> International Center for the Study of Research (ICSR) Lab</a></li>
+  </ul></li>
+  <li><a href="#dimensions" id="toc-dimensions" class="nav-link" data-scroll-target="#dimensions"> <span class="header-section-number">4.4</span> Dimensions</a></li>
+  <li><a href="#crossref" id="toc-crossref" class="nav-link" data-scroll-target="#crossref"> <span class="header-section-number">4.5</span> <strong>Crossref</strong></a></li>
+  <li><a href="#openalex" id="toc-openalex" class="nav-link" data-scroll-target="#openalex"> <span class="header-section-number">4.6</span> OpenAlex</a></li>
+  <li><a href="#google-scholar" id="toc-google-scholar" class="nav-link" data-scroll-target="#google-scholar"> <span class="header-section-number">4.7</span> Google Scholar</a>
+  <ul class="collapse">
+  <li><a href="#google-scholar-profiles" id="toc-google-scholar-profiles" class="nav-link" data-scroll-target="#google-scholar-profiles"> <span class="header-section-number">4.7.1</span> Google Scholar profiles</a></li>
+  </ul></li>
+  <li><a href="#how-to-choose-a-data-source" id="toc-how-to-choose-a-data-source" class="nav-link" data-scroll-target="#how-to-choose-a-data-source"> <span class="header-section-number">4.8</span> How to choose a data source?</a></li>
+  <li><a href="#what-skills-do-i-need-to-do-this" id="toc-what-skills-do-i-need-to-do-this" class="nav-link" data-scroll-target="#what-skills-do-i-need-to-do-this"> <span class="header-section-number">4.9</span> What skills do I need to do this?</a></li>
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings"> <span class="header-section-number">4.10</span> Further readings</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -179,9 +202,170 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>Coming soon…</p>
+<section id="introduction" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> Introduction</h2>
+<p>Bibliometric analyses are mainly based on the metadata of scholarly outputs. If we take the article below, the metadata would include the title, authors, author affiliations, abstract, acknowledgements, author contributions, and references. The other elements are part of the full text of the article and are not generally included in bibliometric databases and analyses. While there are researchers, databases, websites and service providers that do use the full-text of articles, they will not be the focus of the course, except for one (scite.ai) that we will discuss in chapter 7.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/article.jpg" class="img-fluid figure-img" width="663"></p>
+<p></p><figcaption class="figure-caption">Source: <a href="https://askabiologist.asu.edu/explore/anatomy-of-an-article" class="uri">https://askabiologist.asu.edu/explore/anatomy-of-an-article</a></figcaption><p></p>
+</figure>
+</div>
+<p>The vast majority of bibliographic databases that you will typically access through the university library, such as LISA (Library and Information Science Abstract) or PsycInfo, are mainly used for information retrieval. While they are technically able to support some level of bibliometric analyses, the possibilities are very limited.</p>
+<p>The main advantages of most of the databases that we use for bibliometrics are:</p>
+<ul>
+<li><p>They index more metadata elements from the paper</p></li>
+<li><p>They enrich the metadata by adding things like disciplinary classifications, unique identifiers for authors and other entities, etc.</p></li>
+<li><p><strong>They index</strong> <strong>citations:</strong> this is why these databases are often called <a href="https://en.wikipedia.org/wiki/Citation_index">citation indexes</a>. (or scientific knowledge graph (SKG), which may be a better name since these databases generally include more than citations).</p></li>
+</ul>
+<p>The indexing of citations, pioneered by Eugene Garfield in the 1960s, is the key innovation that led to the emergence and growth of bibliometrics as its own field of research over the last half-century. This chapter presents some of the main citation indexes that are available today and that support research evaluation and bibliometric research across the globe.</p>
+</section>
+<section id="web-of-science" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="web-of-science"><span class="header-section-number">4.2</span> Web of Science</h2>
+<p>The Web of Science is the oldest bibliometric database. It was created in 1963 by Eugene Garfield and his company, the Institute for Scientific Information (ISI). It took 33 years before a competitor emerged (Scopus). In fact, the Web of Science is a collection of citation indexes. The main ones generally used in bibliometric research are the Science Citation Index Expanded (SCIE), the Social Sciences Citation Index (SSCI), and the Arts &amp; Humanities Citation Index (AHCI).</p>
+<p>Because it’s been around so long, the Web of Science (and because Elsevier was not making its database available for large-scale research until very recently) the Web of Science has long been the main database used for large scale bibliometric studies.</p>
+<p>Its main advantages are its long coverage period (although the competitors are catching up), the consistency of its metadata, and the clear criteria for the inclusion of sources in the database. (you can read about the editorial selection process <a href="https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/web-of-science/core-collection/editorial-selection-process/">here</a>). However, the Web of Science’s focus on quality and consistency makes it one of the databases with the lowest coverage among its competitors.</p>
+<p>If you’re interested in what a citation index looked like before the internet, I recommend the three videos below, produced by the ISI in 1967.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YwPRI9ug6BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Pi_iURf2f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h1ij-t5RbnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Web of Science is not available at Dalhousie
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Unfortunately, the Dalhousie Libraries do not have a subscription to the Web of Science, so you will not be able to use it as a data source for the course.</p>
+</div>
+</div>
+</section>
+<section id="elseviers-suite-scopus-scival-and-the-icsr-lab." class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="elseviers-suite-scopus-scival-and-the-icsr-lab."><span class="header-section-number">4.3</span> Elsevier’s suite: Scopus, SciVal, and the ICSR lab.</h2>
+<section id="scopus" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="scopus"><span class="header-section-number">4.3.1</span> Scopus</h3>
+<p>Elsevier launched Scopus in 1996 as the first competitor for the Web of Science for <strong>information retrieval</strong> purposes. Unlike the Web of Science, which made its raw data available for research (although not for free) for decades, Scopus data was for a long time only available through a subscription to its web platform (which only allows you to download 2000 records at a time and makes large scale bibliometric analyses difficult if not impossible).</p>
+<p>There is no free access to Scopus, but you can access Scopus through the <a href="https://dal.ca.libguides.com/az.php?q=Scopus">Dalhousie libraries</a>.</p>
+</section>
+<section id="scival" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="scival"><span class="header-section-number">4.3.2</span> SciVal</h3>
+<p>Scival uses the same data as Scopus, but it is designed for <strong>research evaluation</strong> purposes. You can also access SciVal through the <a href="https://dal.ca.libguides.com/az.php?q=SciVal">Dalhousie Libraries</a> (Note: you will need to create an account and log in to use SciVal).</p>
+<p>The good thing about SciVal is that it provides an interface that you can use to calculate a variety of indicators, produce rankings, visualize trends, etc. However, the interface can be a little confusing and clunky. It can also lead you to use whatever indicator or visualization the platform provides rather than other indicators and visualizations that may fit your needs better.</p>
+</section>
+<section id="international-center-for-the-study-of-research-icsr-lab" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="international-center-for-the-study-of-research-icsr-lab"><span class="header-section-number">4.3.3</span> International Center for the Study of Research (ICSR) Lab</h3>
+<p>Possibly in an attempt to compete with the Web of Science, and especially with Dimensions (see below), which are offering access to their full database to <strong>research</strong>, Elsevier recently launched the International Center for the Study of Research (ICSR) Lab. The lab allows researchers to submit research proposals and get access to their data infrastructure. (details here: <a href="https://www.elsevier.com/icsr/icsrlab/features" class="uri">https://www.elsevier.com/icsr/icsrlab/features</a>).</p>
+</section>
+</section>
+<section id="dimensions" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="dimensions"><span class="header-section-number">4.4</span> Dimensions</h2>
+<p>Dimensions is a relatively new player. It is a database like Web of Science and Scopus developed by a company called Digital Science, which happens to be owned by another large publishing company: Springer-Nature. Unlike Web of Science and Scopus, which are accessible via subscription only (and they are not cheap!), Dimensions has a <a href="https://app.dimensions.ai/discover/publication">free online search interface</a> that provides access to its publication data (which is great because that is what you’ll need 95% of the time).</p>
+<p>Again, this search engine is mostly useful for <strong>information retrieval</strong>. However, Like Scopus and Web of Science, it is possible for researchers to submit research proposals and get access to the full data infrastructure for <strong>research</strong>.</p>
+</section>
+<section id="crossref" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="crossref"><span class="header-section-number">4.5</span> <strong>Crossref</strong></h2>
+<p><a href="https://www.crossref.org/">Crossref</a> is a non-profit organization run by the Publishers International Linking Association (PILA). It is also a major <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">Digital Object Identifier (DOI)</a> registration agency. Crossref’s main focus is on creating an <strong>open and free</strong> database of linking research objects (articles, books, datasets, etc.). However, its <a href="https://search.crossref.org/">search engine</a> is not very good, and Crossref is usually not the best choice for searching the literature.</p>
+<p>That said, Crossref provides free access to its entire database through its application programming interface (API) and the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH). Crossref also makes the entire Crossref database available for download (don’t do it. It’s huge). Details <a href="https://www.crossref.org/blog/2022-public-data-file-of-more-than-134-million-metadata-records-now-available/">here</a>.</p>
+</section>
+<section id="openalex" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="openalex"><span class="header-section-number">4.6</span> OpenAlex</h2>
+<p><a href="http://openalex.org/">OpenAlex</a> is a new and entirely open platform managed by a non-profit organization called <a href="https://ourresearch.org/">OurResearch</a>. At the core of OpenAlex is the Microsoft Academic Graph (MAG), an open database that Microsoft stopped supporting in 2021, as well as Crossref, but OpenAlex also includes data from a variety of other <a href="https://docs.openalex.org/about-the-data-1">sources</a> in an attempt to provide the most comprehensive, fully open database of scholarly entities and outputs. Here is the OpenAlex database schema:</p>
+<p><img src="images/openalex-schema.png" class="img-fluid"></p>
+<p>OpenAlex does not (yet) have a website that can be used to search and retrieve data. However, it has a free API, and the entire database can also be downloaded for free (don’t do it, it’s huge).</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Special access for INFO6850 students
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <a href="https://www.mists-imsts.ca/">Maritime Institute for Science, Technology, and Society (MISTS)</a> provides direct access to the OpenAlex database through its PostgreSQL server.</p>
+<p>Your connection information should have been sent to you by email, and a demo will be performed in class to show you how to connect and query the database. If you are having problems accessing the database, contact the course instructor or TA.</p>
+<p>I recommend using <a href="https://dbeaver.io/">DBeaver</a> to connect and query the MISTS database, but any PostgreSQL client will do.</p>
+<p><strong>Please:</strong> be careful when running SQL queries on the server. The MISTS servers do not run large resources, so poorly constructed queries might use up all the resources and slow the server down for everyone. Some of the OpenAlex tables are very large, and if your query uses a non-indexed column, it might take days to execute. As a rule of thumb, if your query has been executing for more than 30 minutes, cancel it and check with your instructor or TA to see if something can be done to make the query execute faster.</p>
+</div>
+</div>
+</section>
+<section id="google-scholar" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="google-scholar"><span class="header-section-number">4.7</span> Google Scholar</h2>
+<p>Google Scholar (<a href="https://scholar.google.ca/" class="uri">https://scholar.google.ca/</a>) has the best coverage of all databases. Unlike databases like Scopus and Web of Science which index specific journals that meet some criteria, Google Scholar crawls the web and collects everything that Google robots consider to be a scholarly output. This may be good for coverage, but at the expense of some data quality issues. Google Scholar has many shortcomings, some as direct results of its lack of selection criteria:</p>
+<ul>
+<li><p>The Google Scholar process is a black box. We do not have a list of included sources or know how the robots are doing the indexing.</p></li>
+<li><p>Data is not easy to access and download for analysis.</p></li>
+<li><p>The metadata is much more limited than in other databases.</p></li>
+<li><p>Limited data extraction capabilities.</p></li>
+</ul>
+<section id="google-scholar-profiles" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="google-scholar-profiles"><span class="header-section-number">4.7.1</span> Google Scholar profiles</h3>
+<p>Researchers’ profiles on Google Scholar is one of the most powerful and useful feature of the site. One of the reasons is that most researchers take ownership of their Google Scholar profile, verify it, and curate it. Thus, verified Google Scholar profiles are one of the best way to avoid the challenge of <a href="https://en.wikipedia.org/wiki/Author_name_disambiguation#:~:text=Author%20name%20disambiguation%20is%20a,the%20name%20%22John%20Smith%22.">author name disambiguation</a>, which we will discuss in more detail in Chapter 6.</p>
+<p>This is a screenshot of a Google Scholar profile (and this is the URL: <a href="https://scholar.google.ca/citations?user=wvX4S8sAAAAJ" class="uri">https://scholar.google.ca/citations?user=wvX4S8sAAAAJ</a>)</p>
+<p><img src="images/gs_profile_example.jpg" class="img-fluid"></p>
+<p>This is all nice, but we’re still not able to easily collect the data for some analysis. There is free software for this called <a href="https://harzing.com/resources/publish-or-perish">Publish or Perish</a> that can help, but its capacities are also quite limited. In chapter 6, a short demo will be provided to show how to make effective use of publish or perish to collect publications and citation data for individual researchers.</p>
+</section>
+</section>
+<section id="how-to-choose-a-data-source" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="how-to-choose-a-data-source"><span class="header-section-number">4.8</span> How to choose a data source?</h2>
+<p>You should always, always start with some idea of what your goal is and what data you need to achieve that goal. So the first question is:</p>
+<ul>
+<li><strong>What is the goal of my analysis? What do I want to know?</strong></li>
+</ul>
+<p>Once you know what you want to know, then you are ready to ask the second most important question:</p>
+<ul>
+<li><strong>What data do I need to know what I want to know?</strong></li>
+</ul>
+<p>The point is that some databases may be more generous than others in terms of metadata elements and the possibilities they offer, but that will not help you if you don’t need those extra features. In other words, you don’t want the best database. You want the best database for your needs. So start by identifying what those needs are.</p>
+<p>Then you can start exploring the databases and ask the questions below to help you guide your decision.</p>
+<ul>
+<li><p>What metadata does the database provide?</p>
+<ul>
+<li><p>Does it include author identifiers to help with disambiguation?</p></li>
+<li><p>Does it include all the author’s institutional addresses?</p></li>
+<li><p>Does it include all cited sources?</p></li>
+<li><p>Does it include the abstract?</p></li>
+<li><p>Does it include the authors’ keywords?</p></li>
+<li><p>Does it include funding acknowledgements?</p></li>
+<li><p>Does it include some disciplinary classification?</p></li>
+<li><p>Etc.</p></li>
+</ul></li>
+<li><p>How easily accessible is the data?</p>
+<ul>
+<li><p>Can I easily download all the data I will need for my analysis?</p></li>
+<li><p>What interface/methods are available to retrieve data?</p></li>
+<li><p>Can I retrieve that data in a format that I know how to use?</p></li>
+</ul></li>
+<li><p>How structured is the data?</p>
+<ul>
+<li><p>Will I have to do a lot of data processing?</p></li>
+<li><p>Do I have the skills to do that data processing?</p></li>
+</ul></li>
+<li><p>Does the database adequately cover the field/countries/languages I want to analyze?</p>
+<ul>
+<li>Some databases cover non-English research and certain disciplines like Arts &amp; Humanities better than others.</li>
+</ul></li>
+</ul>
+<p>If you’re working on a small scale (trying to build a comprehensive database of a person or a small unit’s research output, you might want to combine multiple databases to achieve the best results.</p>
+</section>
+<section id="what-skills-do-i-need-to-do-this" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="what-skills-do-i-need-to-do-this"><span class="header-section-number">4.9</span> What skills do I need to do this?</h2>
+<p>No, <strong>you do not need to know any programming languages</strong> like SQL, R or Python to do bibliometrics. There are plenty of free tools that can help you, and most data processing and analyses can be done in Excel too. That said, programming skills definitely can help you perform more complex tasks, use a broader range of databases, or just save time with data collection, cleaning, processing and analysis.</p>
+<p>In this course, you are free to choose whatever tool you wish to use. Your instructor and TA will be there to help no matter what choices you make, so don’t be afraid to challenge yourself.</p>
+</section>
+<section id="further-readings" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="further-readings"><span class="header-section-number">4.10</span> Further readings</h2>
+<p>If you are curious, you can check out this recent study that compared some of the databases mentioned in this chapter:</p>
+<p>Visser, M., van Eck, N. J., &amp; Waltman, L. (2021). Large-scale comparison of bibliographic data sources: Scopus, Web of Science, Dimensions, Crossref, and Microsoft Academic. <em>Quantitative Science Studies</em>, <em>2</em>(1), 20–41. <a href="https://doi.org/10.1162/qss_a_00112" class="uri">https://doi.org/10.1162/qss_a_00112</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

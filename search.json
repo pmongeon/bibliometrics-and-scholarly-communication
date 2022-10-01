@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Bibliometrics and Scholarly Communication",
     "section": "",
-    "text": "This book is a work-in-progress intended to support the course INFO6850 - Bibliometrics and Scholarly Communication offered at the School of Information Management, Dalhousie University.\nThe course introduces students to the scholarly communication system and the use of bibliometrics to measure the production, dissemination and use of knowledge. Topics covered will include the reward system of science, peer-review, scholarly publishing and open access, research funding, research evaluation, bibliometric and altmetric data sources and indicators, and networks.\n\n\nUpon completion of the course you will be able to:\n\nExplain the scholarly communication process.\nSelect appropriate data sources to conduct a bibliometric study.\nCalculate and interpret bibliometric indicators.\nVisualize and analyze bibliometric networks.\nUse bibliometrics to support research evaluation processes.\nExplain the advantages and limitations of bibliometrics.\nUnderstand the social and organizational context of research evaluation\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nSection\nTopic\n\n\n\n\n1\nUnderstanding the research system\nIntroduction: bibliometrics and scholarly communications\n\n\n2\nUnderstanding the research system\nFunction, social structure, norms, and the research reward system.\n\n\n3\nUnderstanding the research system\nJournals, peer-review, and the organization and evaluation of research\n\n\n4\nAnalyzing and evaluating research\nBibliometric data sources\n\n\n5\nAnalyzing and evaluating research\nDelineating fields, disciplines, and topics\n\n\n6\nAnalyzing and evaluating research\nMeasuring research outputs (authorship)\n\n\n7\nAnalyzing and evaluating research\nMeasuring research impact (citations)\n\n\n8\nAnalyzing and evaluating research\nMeasuring media and policy attention to research (altmetrics)\n\n\n9\nAnalyzing and evaluating research\nVisualizing research networks\n\n\n10\nImproving the research system\nOpen Research\n\n\n11\nImproving the research system\nBias, errors, fraud, misconduct, and questionable research practices\n\n\n12\nImproving the research system\nEquity, diversity, and inclusion in research\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#\nAssignment\nValue\nDue date\n\n\n\n\n1\nArticle review\n15%\nSept 30\n\n\n2\nOutline of a bibliometric research project\n5%\nOct 28\n\n\n3\nDescriptive analysis of a research network\n10%\nNov 18\n\n\n4\nResearch assessment report\n30%\nDec 2\n\n\n5\nResearch project\n30%\nDec 16\n\n\nN/A\nEngagement (preparation, attendance, participation)\n10%\nN/A\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nUse the course Brightspace to:\n- Access the detailed instruction for the assignments.\n- Submit your assignments.\n\n\n\n\n\n\nUse APA style for your references in all assignments.\nUse Zotero (or another reference manager of your choice) to store your references and to cite them in your work. (not mandatory, but highly recommended).\nYou can use this Word template to write your assignments (not mandatory). Whether you use this template or not, use Word styles to format and structure your document.\nHave fun."
+    "text": "This book is a work-in-progress intended to support the course INFO6850 - Bibliometrics and Scholarly Communication offered at the School of Information Management, Dalhousie University.\nThe course introduces students to the scholarly communication system and the use of bibliometrics to measure the production, dissemination and use of knowledge. Topics covered will include the reward system of science, peer-review, scholarly publishing and open access, research funding, research evaluation, bibliometric and altmetric data sources and indicators, and networks.\n\n\nUpon completion of the course you will be able to:\n\nExplain the scholarly communication process.\nSelect appropriate data sources to conduct a bibliometric study.\nCalculate and interpret bibliometric indicators.\nVisualize and analyze bibliometric networks.\nUse bibliometrics to support research evaluation processes.\nExplain the advantages and limitations of bibliometrics.\nUnderstand the social and organizational context of research evaluation\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nSection\nTopic\n\n\n\n\n1\nUnderstanding the research system\nIntroduction: bibliometrics and scholarly communications\n\n\n2\nUnderstanding the research system\nFunction, social structure, norms, and the research reward system.\n\n\n3\nUnderstanding the research system\nJournals, peer-review, and the organization and evaluation of research\n\n\n4\nAnalyzing and evaluating research\nBibliometric data sources\n\n\n5\nAnalyzing and evaluating research\nDelineating fields, disciplines, and topics\n\n\n6\nAnalyzing and evaluating research\nMeasuring research outputs (authorship)\n\n\n7\nAnalyzing and evaluating research\nMeasuring research impact (citations)\n\n\n8\nAnalyzing and evaluating research\nMeasuring media and policy attention to research (altmetrics)\n\n\n9\nAnalyzing and evaluating research\nVisualizing research networks\n\n\n10\nImproving the research system\nOpen Research\n\n\n11\nImproving the research system\nBias, errors, fraud, misconduct, and questionable research practices\n\n\n12\nImproving the research system\nEquity, diversity, and inclusion in research\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#\nAssignment\nValue\nDue date\n\n\n\n\n1\nArticle review\n15%\nOct 3\n\n\n2\nOutline of a bibliometric research project\n5%\nOct 28\n\n\n3\nDescriptive analysis of a research network\n10%\nNov 18\n\n\n4\nResearch assessment report\n30%\nDec 2\n\n\n5\nResearch project\n30%\nDec 16\n\n\nN/A\nEngagement (preparation, attendance, participation)\n10%\nN/A\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nUse the course Brightspace to:\n- Access the detailed instruction for the assignments.\n- Submit your assignments.\n\n\n\n\n\n\nUse APA style for your references in all assignments.\nUse Zotero (or another reference manager of your choice) to store your references and to cite them in your work. (not mandatory, but highly recommended).\nYou can use this Word template to write your assignments (not mandatory). Whether you use this template or not, use Word styles to format and structure your document.\nHave fun."
   },
   {
     "objectID": "ch2.html",
@@ -25,7 +25,7 @@
     "href": "ch4.html",
     "title": "4  Bibliometric data sources",
     "section": "",
-    "text": "Coming soon…"
+    "text": "Bibliometric analyses are mainly based on the metadata of scholarly outputs. If we take the article below, the metadata would include the title, authors, author affiliations, abstract, acknowledgements, author contributions, and references. The other elements are part of the full text of the article and are not generally included in bibliometric databases and analyses. While there are researchers, databases, websites and service providers that do use the full-text of articles, they will not be the focus of the course, except for one (scite.ai) that we will discuss in chapter 7.\n\n\n\nSource: https://askabiologist.asu.edu/explore/anatomy-of-an-article\n\n\nThe vast majority of bibliographic databases that you will typically access through the university library, such as LISA (Library and Information Science Abstract) or PsycInfo, are mainly used for information retrieval. While they are technically able to support some level of bibliometric analyses, the possibilities are very limited.\nThe main advantages of most of the databases that we use for bibliometrics are:\n\nThey index more metadata elements from the paper\nThey enrich the metadata by adding things like disciplinary classifications, unique identifiers for authors and other entities, etc.\nThey index citations: this is why these databases are often called citation indexes. (or scientific knowledge graph (SKG), which may be a better name since these databases generally include more than citations).\n\nThe indexing of citations, pioneered by Eugene Garfield in the 1960s, is the key innovation that led to the emergence and growth of bibliometrics as its own field of research over the last half-century. This chapter presents some of the main citation indexes that are available today and that support research evaluation and bibliometric research across the globe."
   },
   {
     "objectID": "ch8.html",
@@ -145,5 +145,124 @@
     "title": "3  Journals, peer-review, and the organization and evaluation of research",
     "section": "3.4 References",
     "text": "3.4 References\n\n\n\n\nFjällbrant, Nancy. 1997. “Scholarly Communication - Historical Development and New Possibilities.” In.\n\n\nLarivière, Vincent, Stefanie Haustein, and Philippe Mongeon. 2015. “The Oligopoly of Academic Publishers in the Digital Era.” Edited by Wolfgang Glanzel. PLOS ONE 10 (6): e0127502. https://doi.org/10.1371/journal.pone.0127502."
+  },
+  {
+    "objectID": "ch5.html",
+    "href": "ch5.html",
+    "title": "5  Research fields, disciplines, and topics",
+    "section": "",
+    "text": "Coming soon…"
+  },
+  {
+    "objectID": "ch6.html",
+    "href": "ch6.html",
+    "title": "6  Measuring research output",
+    "section": "",
+    "text": "Coming soon…"
+  },
+  {
+    "objectID": "ch4.html#web-of-science",
+    "href": "ch4.html#web-of-science",
+    "title": "4  Bibliometric data sources",
+    "section": "4.2 Web of Science",
+    "text": "4.2 Web of Science\nThe Web of Science is the oldest bibliometric database. It was created in 1963 by Eugene Garfield and his company, the Institute for Scientific Information (ISI). It took 33 years before a competitor emerged (Scopus). In fact, the Web of Science is a collection of citation indexes. The main ones generally used in bibliometric research are the Science Citation Index Expanded (SCIE), the Social Sciences Citation Index (SSCI), and the Arts & Humanities Citation Index (AHCI).\nBecause it’s been around so long, the Web of Science (and because Elsevier was not making its database available for large-scale research until very recently) the Web of Science has long been the main database used for large scale bibliometric studies.\nIts main advantages are its long coverage period (although the competitors are catching up), the consistency of its metadata, and the clear criteria for the inclusion of sources in the database. (you can read about the editorial selection process here). However, the Web of Science’s focus on quality and consistency makes it one of the databases with the lowest coverage among its competitors.\nIf you’re interested in what a citation index looked like before the internet, I recommend the three videos below, produced by the ISI in 1967.\n\n\n\n\n\n\n\n\n\n\n\n\nWeb of Science is not available at Dalhousie\n\n\n\nUnfortunately, the Dalhousie Libraries do not have a subscription to the Web of Science, so you will not be able to use it as a data source for the course."
+  },
+  {
+    "objectID": "ch4.html#scopus-and-scival",
+    "href": "ch4.html#scopus-and-scival",
+    "title": "4  Bibliometric data sources and indicators",
+    "section": "4.3 Scopus and SciVal",
+    "text": "4.3 Scopus and SciVal\nScopus was created in 1996 by Elsevier."
+  },
+  {
+    "objectID": "ch4.html#dimensions",
+    "href": "ch4.html#dimensions",
+    "title": "4  Bibliometric data sources",
+    "section": "4.4 Dimensions",
+    "text": "4.4 Dimensions\nDimensions is a relatively new player. It is a database like Web of Science and Scopus developed by a company called Digital Science, which happens to be owned by another large publishing company: Springer-Nature. Unlike Web of Science and Scopus, which are accessible via subscription only (and they are not cheap!), Dimensions has a free online search interface that provides access to its publication data (which is great because that is what you’ll need 95% of the time).\nAgain, this search engine is mostly useful for information retrieval. However, Like Scopus and Web of Science, it is possible for researchers to submit research proposals and get access to the full data infrastructure for research."
+  },
+  {
+    "objectID": "ch4.html#openalex",
+    "href": "ch4.html#openalex",
+    "title": "4  Bibliometric data sources",
+    "section": "4.6 OpenAlex",
+    "text": "4.6 OpenAlex\nOpenAlex is a new and entirely open platform managed by a non-profit organization called OurResearch. At the core of OpenAlex is the Microsoft Academic Graph (MAG), an open database that Microsoft stopped supporting in 2021, as well as Crossref, but OpenAlex also includes data from a variety of other sources in an attempt to provide the most comprehensive, fully open database of scholarly entities and outputs. Here is the OpenAlex database schema:\n\nOpenAlex does not (yet) have a website that can be used to search and retrieve data. However, it has a free API, and the entire database can also be downloaded for free (don’t do it, it’s huge).\n\n\n\n\n\n\nSpecial access for INFO6850 students\n\n\n\nThe Maritime Institute for Science, Technology, and Society (MISTS) provides direct access to the OpenAlex database through its PostgreSQL server.\nYour connection information should have been sent to you by email, and a demo will be performed in class to show you how to connect and query the database. If you are having problems accessing the database, contact the course instructor or TA.\nI recommend using DBeaver to connect and query the MISTS database, but any PostgreSQL client will do.\nPlease: be careful when running SQL queries on the server. The MISTS servers do not run large resources, so poorly constructed queries might use up all the resources and slow the server down for everyone. Some of the OpenAlex tables are very large, and if your query uses a non-indexed column, it might take days to execute. As a rule of thumb, if your query has been executing for more than 30 minutes, cancel it and check with your instructor or TA to see if something can be done to make the query execute faster."
+  },
+  {
+    "objectID": "ch4.html#google-scholar",
+    "href": "ch4.html#google-scholar",
+    "title": "4  Bibliometric data sources",
+    "section": "4.7 Google Scholar",
+    "text": "4.7 Google Scholar\nGoogle Scholar (https://scholar.google.ca/) has the best coverage of all databases. Unlike databases like Scopus and Web of Science which index specific journals that meet some criteria, Google Scholar crawls the web and collects everything that Google robots consider to be a scholarly output. This may be good for coverage, but at the expense of some data quality issues. Google Scholar has many shortcomings, some as direct results of its lack of selection criteria:\n\nThe Google Scholar process is a black box. We do not have a list of included sources or know how the robots are doing the indexing.\nData is not easy to access and download for analysis.\nThe metadata is much more limited than in other databases.\nLimited data extraction capabilities.\n\n\n4.7.1 Google Scholar profiles\nResearchers’ profiles on Google Scholar is one of the most powerful and useful feature of the site. One of the reasons is that most researchers take ownership of their Google Scholar profile, verify it, and curate it. Thus, verified Google Scholar profiles are one of the best way to avoid the challenge of author name disambiguation, which we will discuss in more detail in Chapter 6.\nThis is a screenshot of a Google Scholar profile (and this is the URL: https://scholar.google.ca/citations?user=wvX4S8sAAAAJ)\n\nThis is all nice, but we’re still not able to easily collect the data for some analysis. There is free software for this called Publish or Perish that can help, but its capacities are also quite limited. In chapter 6, a short demo will be provided to show how to make effective use of publish or perish to collect publications and citation data for individual researchers."
+  },
+  {
+    "objectID": "ch4.html#section",
+    "href": "ch4.html#section",
+    "title": "4  Bibliometric data sources and indicators",
+    "section": "4.7 ",
+    "text": "4.7"
+  },
+  {
+    "objectID": "ch4.html#elseviers-suite-scopus-scival-and-the-icsr-lab.",
+    "href": "ch4.html#elseviers-suite-scopus-scival-and-the-icsr-lab.",
+    "title": "4  Bibliometric data sources",
+    "section": "4.3 Elsevier’s suite: Scopus, SciVal, and the ICSR lab.",
+    "text": "4.3 Elsevier’s suite: Scopus, SciVal, and the ICSR lab.\n\n4.3.1 Scopus\nElsevier launched Scopus in 1996 as the first competitor for the Web of Science for information retrieval purposes. Unlike the Web of Science, which made its raw data available for research (although not for free) for decades, Scopus data was for a long time only available through a subscription to its web platform (which only allows you to download 2000 records at a time and makes large scale bibliometric analyses difficult if not impossible).\nThere is no free access to Scopus, but you can access Scopus through the Dalhousie libraries.\n\n\n4.3.2 SciVal\nScival uses the same data as Scopus, but it is designed for research evaluation purposes. You can also access SciVal through the Dalhousie Libraries (Note: you will need to create an account and log in to use SciVal).\nThe good thing about SciVal is that it provides an interface that you can use to calculate a variety of indicators, produce rankings, visualize trends, etc. However, the interface can be a little confusing and clunky. It can also lead you to use whatever indicator or visualization the platform provides rather than other indicators and visualizations that may fit your needs better.\n\n\n4.3.3 International Center for the Study of Research (ICSR) Lab\nPossibly in an attempt to compete with the Web of Science, and especially with Dimensions (see below), which are offering access to their full database to research, Elsevier recently launched the International Center for the Study of Research (ICSR) Lab. The lab allows researchers to submit research proposals and get access to their data infrastructure. (details here: https://www.elsevier.com/icsr/icsrlab/features)."
+  },
+  {
+    "objectID": "ch4.html#crossref",
+    "href": "ch4.html#crossref",
+    "title": "4  Bibliometric data sources",
+    "section": "4.5 Crossref",
+    "text": "4.5 Crossref\nCrossref is a non-profit organization run by the Publishers International Linking Association (PILA). It is also a major Digital Object Identifier (DOI) registration agency. Crossref’s main focus is on creating an open and free database of linking research objects (articles, books, datasets, etc.). However, its search engine is not very good, and Crossref is usually not the best choice for searching the literature.\nThat said, Crossref provides free access to its entire database through its application programming interface (API) and the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH). Crossref also makes the entire Crossref database available for download (don’t do it. It’s huge). Details here."
+  },
+  {
+    "objectID": "ch4.html#appendix-a---scopus-metadata-export",
+    "href": "ch4.html#appendix-a---scopus-metadata-export",
+    "title": "4  Bibliometric data sources",
+    "section": "4.8 Appendix A - Scopus metadata export",
+    "text": "4.8 Appendix A - Scopus metadata export"
+  },
+  {
+    "objectID": "ch4.html#appendix-b---dimensions-metadata-export",
+    "href": "ch4.html#appendix-b---dimensions-metadata-export",
+    "title": "4  Bibliometric data sources",
+    "section": "4.9 Appendix B - Dimensions metadata export",
+    "text": "4.9 Appendix B - Dimensions metadata export"
+  },
+  {
+    "objectID": "ch4.html#appendix-c---google-scholar-export",
+    "href": "ch4.html#appendix-c---google-scholar-export",
+    "title": "4  Bibliometric data sources",
+    "section": "4.10 Appendix C - Google Scholar export",
+    "text": "4.10 Appendix C - Google Scholar export"
+  },
+  {
+    "objectID": "ch4.html#how-to-choose-a-data-source",
+    "href": "ch4.html#how-to-choose-a-data-source",
+    "title": "4  Bibliometric data sources",
+    "section": "4.8 How to choose a data source?",
+    "text": "4.8 How to choose a data source?\nYou should always, always start with some idea of what your goal is and what data you need to achieve that goal. So the first question is:\n\nWhat is the goal of my analysis? What do I want to know?\n\nOnce you know what you want to know, then you are ready to ask the second most important question:\n\nWhat data do I need to know what I want to know?\n\nThe point is that some databases may be more generous than others in terms of metadata elements and the possibilities they offer, but that will not help you if you don’t need those extra features. In other words, you don’t want the best database. You want the best database for your needs. So start by identifying what those needs are.\nThen you can start exploring the databases and ask the questions below to help you guide your decision.\n\nWhat metadata does the database provide?\n\nDoes it include author identifiers to help with disambiguation?\nDoes it include all the author’s institutional addresses?\nDoes it include all cited sources?\nDoes it include the abstract?\nDoes it include the authors’ keywords?\nDoes it include funding acknowledgements?\nDoes it include some disciplinary classification?\nEtc.\n\nHow easily accessible is the data?\n\nCan I easily download all the data I will need for my analysis?\nWhat interface/methods are available to retrieve data?\nCan I retrieve that data in a format that I know how to use?\n\nHow structured is the data?\n\nWill I have to do a lot of data processing?\nDo I have the skills to do that data processing?\n\nDoes the database adequately cover the field/countries/languages I want to analyze?\n\nSome databases cover non-English research and certain disciplines like Arts & Humanities better than others.\n\n\nIf you’re working on a small scale (trying to build a comprehensive database of a person or a small unit’s research output, you might want to combine multiple databases to achieve the best results."
+  },
+  {
+    "objectID": "ch4.html#what-skills-do-i-need-to-do-bibliometrics",
+    "href": "ch4.html#what-skills-do-i-need-to-do-bibliometrics",
+    "title": "4  Bibliometric data sources",
+    "section": "4.9 What skills do I need to do bibliometrics?",
+    "text": "4.9 What skills do I need to do bibliometrics?\nNo, you do not need to know any programming languages like SQL, R or Python to do bibliometrics. There are plenty of free tools that can help you, and most data processing and analyses can be done in Excel too. That said, programming skills definitely can help you perform more complex tasks, use a broader range of databases, or just save time with data collection, cleaning, processing and analysis.\nIn this course, you are free to chose whatever tool you wish to use. Your instructor and TA will be there to help no matter what choices you make, so don’t be afraid to challenge yourself."
+  },
+  {
+    "objectID": "ch4.html#further-readings",
+    "href": "ch4.html#further-readings",
+    "title": "4  Bibliometric data sources",
+    "section": "4.10 Further readings",
+    "text": "4.10 Further readings\nIf you are curious, you can check out this recent study that compared some of the databases mentioned in this chapter:\nVisser, M., van Eck, N. J., & Waltman, L. (2021). Large-scale comparison of bibliographic data sources: Scopus, Web of Science, Dimensions, Crossref, and Microsoft Academic. Quantitative Science Studies, 2(1), 20–41. https://doi.org/10.1162/qss_a_00112"
+  },
+  {
+    "objectID": "ch4.html#what-skills-do-i-need-to-do-this",
+    "href": "ch4.html#what-skills-do-i-need-to-do-this",
+    "title": "4  Bibliometric data sources",
+    "section": "4.9 What skills do I need to do this?",
+    "text": "4.9 What skills do I need to do this?\nNo, you do not need to know any programming languages like SQL, R or Python to do bibliometrics. There are plenty of free tools that can help you, and most data processing and analyses can be done in Excel too. That said, programming skills definitely can help you perform more complex tasks, use a broader range of databases, or just save time with data collection, cleaning, processing and analysis.\nIn this course, you are free to choose whatever tool you wish to use. Your instructor and TA will be there to help no matter what choices you make, so don’t be afraid to challenge yourself."
   }
 ]
