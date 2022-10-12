@@ -309,17 +309,18 @@ Note
 <section id="disciplines-as-networks" class="level3" data-number="5.4.2">
 <h3 data-number="5.4.2" class="anchored" data-anchor-id="disciplines-as-networks"><span class="header-section-number">5.4.2</span> Disciplines as networks</h3>
 <p>The structure of a discipline can be represented as a network of agents and research objects that are connected with one another to some degree. Different kinds of networks are typically used in bibliometrics:</p>
-<section id="co-occurrence-undirected-networks" class="level4" data-number="5.4.2.1">
-<h4 data-number="5.4.2.1" class="anchored" data-anchor-id="co-occurrence-undirected-networks"><span class="header-section-number">5.4.2.1</span> <strong>Co-occurrence (undirected) networks</strong></h4>
-<p>Co-occurrence networks are undirected networks in which the edges are determined by the appearance of two entities in a set. Typical types of undirected networks include:</p>
+<section id="co-occurrence-networks" class="level4" data-number="5.4.2.1">
+<h4 data-number="5.4.2.1" class="anchored" data-anchor-id="co-occurrence-networks"><span class="header-section-number">5.4.2.1</span> <strong>Co-occurrence networks</strong></h4>
+<p>Co-occurrence networks are undirected networks in which the edges are determined by the appearance of two entities in a set. Typical types of co-occurence networks include:</p>
 <ul>
 <li><p><strong>Term co-occurrence networks</strong> are constructed by considering in how many articles two terms appear together (co-occur). For example, if an article’s title, abstract or keywords contains the terms “COVID-19” and “vaccine”, then the terms “COVID-19” and “Vaccines” are linked.</p></li>
 <li><p><strong>Bibliographic coupling networks</strong>. Bibliographic coupling occurs when two articles contain a reference to the same article. For example, if article B and C both cite article A, then B and C are linked.</p></li>
 <li><p><strong>Co-citation networks</strong>. A co-citation between two articles occurs when they are both cited together in another article. For example, if article B and C are cited by articles A, then B and C are related. One of the issues with co-citations is that they take time to accumulate, so networks of recent articles are less accurate since the citations have yet form links between the articles.</p></li>
 </ul>
 </section>
-<section id="directed-networks" class="level4" data-number="5.4.2.2">
-<h4 data-number="5.4.2.2" class="anchored" data-anchor-id="directed-networks"><span class="header-section-number">5.4.2.2</span> Directed networks</h4>
+<section id="direct-citation-network" class="level4" data-number="5.4.2.2">
+<h4 data-number="5.4.2.2" class="anchored" data-anchor-id="direct-citation-network"><span class="header-section-number">5.4.2.2</span> Direct citation network</h4>
+<p>Direct citation networks are the most common for of <strong>directed</strong> networks that one will come across in bibliometrics. In a directed network, the relationship between two nodes has a direction: So when article A cites article B, a direct citation link from article A to article B is created. This is not the same as a direct citation link between article B and article A. In fact, it is extremely unlikely for A to cite B AND for B to cite A. Indeed, articles usually cite other articles that have already been published, which means that the cited articles can not cite the citing articles back.</p>
 </section>
 </section>
 <section id="networks-in-practice" class="level3" data-number="5.4.3">
