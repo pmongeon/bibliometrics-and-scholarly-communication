@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.36">
+<meta name="generator" content="quarto-1.1.189">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
@@ -177,21 +182,21 @@ div.csl-indent {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"> <span class="header-section-number">10.1</span> Introduction</a></li>
-  <li><a href="#what-is-open-access" id="toc-what-is-open-access" class="nav-link" data-scroll-target="#what-is-open-access"> <span class="header-section-number">10.2</span> What is Open Access?</a></li>
-  <li><a href="#types-of-oa" id="toc-types-of-oa" class="nav-link" data-scroll-target="#types-of-oa"> <span class="header-section-number">10.3</span> Types of OA</a></li>
-  <li><a href="#predatory-publishing" id="toc-predatory-publishing" class="nav-link" data-scroll-target="#predatory-publishing"> <span class="header-section-number">10.4</span> Predatory publishing</a></li>
-  <li><a href="#data-sources-for-oa" id="toc-data-sources-for-oa" class="nav-link" data-scroll-target="#data-sources-for-oa"> <span class="header-section-number">10.5</span> Data sources for OA</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">10.1</span>  Introduction</a></li>
+  <li><a href="#what-is-open-access" id="toc-what-is-open-access" class="nav-link" data-scroll-target="#what-is-open-access"><span class="toc-section-number">10.2</span>  What is Open Access?</a></li>
+  <li><a href="#types-of-oa" id="toc-types-of-oa" class="nav-link" data-scroll-target="#types-of-oa"><span class="toc-section-number">10.3</span>  Types of OA</a></li>
+  <li><a href="#predatory-publishing" id="toc-predatory-publishing" class="nav-link" data-scroll-target="#predatory-publishing"><span class="toc-section-number">10.4</span>  Predatory publishing</a></li>
+  <li><a href="#data-sources-for-oa" id="toc-data-sources-for-oa" class="nav-link" data-scroll-target="#data-sources-for-oa"><span class="toc-section-number">10.5</span>  Data sources for OA</a>
   <ul class="collapse">
-  <li><a href="#unpaywall" id="toc-unpaywall" class="nav-link" data-scroll-target="#unpaywall"> <span class="header-section-number">10.5.1</span> Unpaywall</a></li>
-  <li><a href="#directory-of-open-access-journals-doaj" id="toc-directory-of-open-access-journals-doaj" class="nav-link" data-scroll-target="#directory-of-open-access-journals-doaj"> <span class="header-section-number">10.5.2</span> Directory of Open Access Journals (DOAJ)</a></li>
-  <li><a href="#sherpa-romeo" id="toc-sherpa-romeo" class="nav-link" data-scroll-target="#sherpa-romeo"> <span class="header-section-number">10.5.3</span> Sherpa Romeo</a></li>
+  <li><a href="#unpaywall" id="toc-unpaywall" class="nav-link" data-scroll-target="#unpaywall"><span class="toc-section-number">10.5.1</span>  Unpaywall</a></li>
+  <li><a href="#directory-of-open-access-journals-doaj" id="toc-directory-of-open-access-journals-doaj" class="nav-link" data-scroll-target="#directory-of-open-access-journals-doaj"><span class="toc-section-number">10.5.2</span>  Directory of Open Access Journals (DOAJ)</a></li>
+  <li><a href="#sherpa-romeo" id="toc-sherpa-romeo" class="nav-link" data-scroll-target="#sherpa-romeo"><span class="toc-section-number">10.5.3</span>  Sherpa Romeo</a></li>
   </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"> <span class="header-section-number">10.6</span> References</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">10.6</span>  References</a></li>
   </ul>
 </nav>
     </div>
@@ -232,11 +237,11 @@ div.csl-indent {
 <li><p><strong>Gold</strong>: Articles are free to read on the journal website, under a creative commons or similar license. Article Processing Charges (APCs) are paid by the author or another organization (library, university, government) through some agreement. This is a free-to-read, pay-to-publish type of OA.</p></li>
 <li><p><strong>Hybrid</strong>: Articles published in a non-OA journal, but for which APCs have been paid to make the article OA. This is a widely criticized form of OA since access to the article has already been paid for by the journal subscribers. This means that the publisher gets paid twice for the same article (double dipping). The issue is exacerbated by the high APCs (typically multiple thousands of US dollars) that publishers charge for Hybrid OA.</p></li>
 <li><p><strong>Diamond/Platinum:</strong> Articles are free to read on the journal website, under a creative commons or similar license, but no APCs are paid by authors. This is a free-to-read, free-to-publish type of OA.</p></li>
-<li><p><strong>Bronze</strong>: Articlesthat are free to read online but without a creative common or similar licence.</p></li>
+<li><p><strong>Bronze</strong>: Articles that are free to read online but without a creative commons or similar licence.</p></li>
 </ul>
-<p>All the above types of OA have in common that they make the published version of the articles free to read directly on the journal’s website. This is the main distinctive characteristics of the last type of OA.</p>
+<p>All that the above types of OA have in common is that they make the published version of the articles free to read directly on the journal’s website. This is the main distinctive characteristic of the last type of OA.</p>
 <ul>
-<li><strong>Green</strong> – refers to self-archiving generally of the pre or post-print of articles in repositories. A pre-print is the version of the article before it as been reviewed, and a post-print is the version that was accepted by the journal for publication, but without the journal’s formatting. The version that is formatted and appears on the publisher’s website is called the publisher’s version.</li>
+<li><strong>Green</strong> – refers to self-archiving generally of the pre- or post-print of articles in repositories. A pre-print is the version of the article before it has been reviewed, and a post-print is the version that was accepted by the journal for publication, but without the journal’s formatting. The version that is formatted and appears on the publisher’s website is called the publisher’s version.</li>
 </ul>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -255,7 +260,7 @@ Suggested readings
 </section>
 <section id="predatory-publishing" class="level2" data-number="10.4">
 <h2 data-number="10.4" class="anchored" data-anchor-id="predatory-publishing"><span class="header-section-number">10.4</span> Predatory publishing</h2>
-<p>The pay-to-publish (gold) OA as a business model as led to the proliferation of predatory publishers and journals, that have been defined as “entities that prioritize self-interest at the expense of scholarship and are characterized by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and/or the use of aggressive and indiscriminate solicitation practices." <span class="citation" data-cites="grudniewicz2019">(<a href="#ref-grudniewicz2019" role="doc-biblioref">Grudniewicz et al. 2019</a>)</span>. While the definition may seem clear enough, dividing publishers in two categories (predatory or not predatory) can be challenging and it may be better to think of publishers and journals have exhibiting degrees of”predatoriness” <span class="citation" data-cites="siler2020">(<a href="#ref-siler2020" role="doc-biblioref">Siler 2020</a>)</span>.</p>
+<p>The pay-to-publish (gold) OA as a business model has led to the proliferation of predatory publishers and journals, that have been defined as “entities that prioritize self-interest at the expense of scholarship and are characterized by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and/or the use of aggressive and indiscriminate solicitation practices.” <span class="citation" data-cites="grudniewicz2019">(<a href="#ref-grudniewicz2019" role="doc-biblioref">Grudniewicz et al. 2019</a>)</span>. While the definition may seem clear enough, dividing publishers in two categories (predatory or not predatory) can be challenging and it may be better to think of publishers and journals as exhibiting degrees of predatoriness <span class="citation" data-cites="siler2020">(<a href="#ref-siler2020" role="doc-biblioref">Siler 2020</a>)</span>.</p>
 </section>
 <section id="data-sources-for-oa" class="level2" data-number="10.5">
 <h2 data-number="10.5" class="anchored" data-anchor-id="data-sources-for-oa"><span class="header-section-number">10.5</span> Data sources for OA</h2>
@@ -285,11 +290,11 @@ Suggested readings
 </section>
 <section id="directory-of-open-access-journals-doaj" class="level3" data-number="10.5.2">
 <h3 data-number="10.5.2" class="anchored" data-anchor-id="directory-of-open-access-journals-doaj"><span class="header-section-number">10.5.2</span> Directory of Open Access Journals (DOAJ)</h3>
-<p>The <a href="https://doaj.org/">directory of Open Access journals (DOAJ)</a> is a database of OA journals that meet certain <a href="https://doaj.org/apply/guide/#basic-criteria-for-inclusion">inclusion criteria</a> as well as the papers published in those journals. Data from the DOAJ can be accessed through the website’s search engine, by using the <a href="https://doaj.org/api/docs">API</a>, or by downloading the <a href="https://doaj.org/docs/public-data-dump/">public data dump</a>.</p>
+<p>The <a href="https://doaj.org/">Directory of Open Access journals (DOAJ)</a> is a database of OA journals that meet certain <a href="https://doaj.org/apply/guide/#basic-criteria-for-inclusion">inclusion criteria</a> as well as the papers published in those journals. Data from the DOAJ can be accessed through the website’s search engine, by using the <a href="https://doaj.org/api/docs">API</a>, or by downloading the <a href="https://doaj.org/docs/public-data-dump/">public data dump</a>.</p>
 </section>
 <section id="sherpa-romeo" class="level3" data-number="10.5.3">
 <h3 data-number="10.5.3" class="anchored" data-anchor-id="sherpa-romeo"><span class="header-section-number">10.5.3</span> Sherpa Romeo</h3>
-<p><a href="https://v2.sherpa.ac.uk/romeo/">Sherpa Romeo</a> is another useful resource developed by the <a href="https://www.jisc.ac.uk/">Jisc</a>, a non-profit organization in the UK formally called the Joint Information Systems Committee (JISC). It is a directory of journal and publishers OA policies. It provides useful information on the OA pathways that are permitted by the journals, and the associated fees, embargo period, the version of the manuscript to which it applies, and so on. Again, the data can be accessed through the website’s search engine, or with the Sherpa Romeo <a href="https://v2.sherpa.ac.uk/api/">API</a>.</p>
+<p><a href="https://v2.sherpa.ac.uk/romeo/">Sherpa Romeo</a> is another useful resource developed by the <a href="https://www.jisc.ac.uk/">Jisc</a>, a non-profit organization in the UK formally called the Joint Information Systems Committee (JISC). It is a directory of journals’ and publishers’ OA policies. It provides useful information on the OA pathways that are permitted by the journals, and the associated fees, embargo period, the version of the manuscript to which it applies, and so on. Again, the data can be accessed through the website’s search engine, or with the Sherpa Romeo <a href="https://v2.sherpa.ac.uk/api/">API</a>.</p>
 </section>
 </section>
 <section id="references" class="level2" data-number="10.6">
@@ -376,7 +381,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
