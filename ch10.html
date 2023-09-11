@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -87,11 +87,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch10.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -99,104 +104,118 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Bibliometrics and Scholarly Communication</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Course overview</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></a>
+  <a href="./ch1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The social structure of science</span></a>
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></a>
+  <a href="./ch3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The social structure of science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></a>
+  <a href="./ch4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></a>
+  <a href="./ch5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></a>
+  <a href="./ch6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></a>
+  <a href="./ch7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></a>
+  <a href="./ch8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch9.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></a>
+  <a href="./ch9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch10.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></a>
+  <a href="./ch10.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch11.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></a>
+  <a href="./ch11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch12.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></a>
+  <a href="./ch12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">10.1</span>  Introduction</a></li>
-  <li><a href="#what-is-open-access" id="toc-what-is-open-access" class="nav-link" data-scroll-target="#what-is-open-access"><span class="toc-section-number">10.2</span>  What is Open Access?</a></li>
-  <li><a href="#types-of-oa" id="toc-types-of-oa" class="nav-link" data-scroll-target="#types-of-oa"><span class="toc-section-number">10.3</span>  Types of OA</a></li>
-  <li><a href="#predatory-publishing" id="toc-predatory-publishing" class="nav-link" data-scroll-target="#predatory-publishing"><span class="toc-section-number">10.4</span>  Predatory publishing</a></li>
-  <li><a href="#data-sources-for-oa" id="toc-data-sources-for-oa" class="nav-link" data-scroll-target="#data-sources-for-oa"><span class="toc-section-number">10.5</span>  Data sources for OA</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">10.1</span> Introduction</a></li>
+  <li><a href="#what-is-open-access" id="toc-what-is-open-access" class="nav-link" data-scroll-target="#what-is-open-access"><span class="header-section-number">10.2</span> What is Open Access?</a></li>
+  <li><a href="#types-of-oa" id="toc-types-of-oa" class="nav-link" data-scroll-target="#types-of-oa"><span class="header-section-number">10.3</span> Types of OA</a></li>
+  <li><a href="#predatory-publishing" id="toc-predatory-publishing" class="nav-link" data-scroll-target="#predatory-publishing"><span class="header-section-number">10.4</span> Predatory publishing</a></li>
+  <li><a href="#data-sources-for-oa" id="toc-data-sources-for-oa" class="nav-link" data-scroll-target="#data-sources-for-oa"><span class="header-section-number">10.5</span> Data sources for OA</a>
   <ul class="collapse">
-  <li><a href="#unpaywall" id="toc-unpaywall" class="nav-link" data-scroll-target="#unpaywall"><span class="toc-section-number">10.5.1</span>  Unpaywall</a></li>
-  <li><a href="#directory-of-open-access-journals-doaj" id="toc-directory-of-open-access-journals-doaj" class="nav-link" data-scroll-target="#directory-of-open-access-journals-doaj"><span class="toc-section-number">10.5.2</span>  Directory of Open Access Journals (DOAJ)</a></li>
-  <li><a href="#sherpa-romeo" id="toc-sherpa-romeo" class="nav-link" data-scroll-target="#sherpa-romeo"><span class="toc-section-number">10.5.3</span>  Sherpa Romeo</a></li>
+  <li><a href="#unpaywall" id="toc-unpaywall" class="nav-link" data-scroll-target="#unpaywall"><span class="header-section-number">10.5.1</span> Unpaywall</a></li>
+  <li><a href="#directory-of-open-access-journals-doaj" id="toc-directory-of-open-access-journals-doaj" class="nav-link" data-scroll-target="#directory-of-open-access-journals-doaj"><span class="header-section-number">10.5.2</span> Directory of Open Access Journals (DOAJ)</a></li>
+  <li><a href="#sherpa-romeo" id="toc-sherpa-romeo" class="nav-link" data-scroll-target="#sherpa-romeo"><span class="header-section-number">10.5.3</span> Sherpa Romeo</a></li>
   </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">10.6</span>  References</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">10.6</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -205,7 +224,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></h1>
 </div>
 
 
@@ -213,6 +232,7 @@ div.csl-indent {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -221,7 +241,7 @@ div.csl-indent {
 
 <section id="introduction" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">10.1</span> Introduction</h2>
-<p>This chapter introduces the concept of Open Access (OA) as well as data sources that can be used to search for OA literature or get data on the OA status of research publications. The content of the chapter will be complemented by an in-class presentation on scholarly publishing and open access.</p>
+<p>This chapter introduces the concept of Open Access (OA) and data sources that can be used to search for OA literature or get data on the OA status of research publications. An in-class presentation on scholarly publishing and open access will complement the chapter’s content.</p>
 </section>
 <section id="what-is-open-access" class="level2" data-number="10.2">
 <h2 data-number="10.2" class="anchored" data-anchor-id="what-is-open-access"><span class="header-section-number">10.2</span> What is Open Access?</h2>
@@ -234,53 +254,53 @@ div.csl-indent {
 <h2 data-number="10.3" class="anchored" data-anchor-id="types-of-oa"><span class="header-section-number">10.3</span> Types of OA</h2>
 <p>Open Access comes in many shapes and forms. In general, we differentiate between five types of OA:</p>
 <ul>
-<li><p><strong>Gold</strong>: Articles are free to read on the journal website, under a creative commons or similar license. Article Processing Charges (APCs) are paid by the author or another organization (library, university, government) through some agreement. This is a free-to-read, pay-to-publish type of OA.</p></li>
-<li><p><strong>Hybrid</strong>: Articles published in a non-OA journal, but for which APCs have been paid to make the article OA. This is a widely criticized form of OA since access to the article has already been paid for by the journal subscribers. This means that the publisher gets paid twice for the same article (double dipping). The issue is exacerbated by the high APCs (typically multiple thousands of US dollars) that publishers charge for Hybrid OA.</p></li>
-<li><p><strong>Diamond/Platinum:</strong> Articles are free to read on the journal website, under a creative commons or similar license, but no APCs are paid by authors. This is a free-to-read, free-to-publish type of OA.</p></li>
-<li><p><strong>Bronze</strong>: Articles that are free to read online but without a creative commons or similar licence.</p></li>
+<li><p><strong>Gold</strong>: Articles are free to read on the journal website under a Creative Commons or similar license. Article Processing Charges (APCs) are paid by the author or another organization (library, university, government) through some agreement. This is a free-to-read, pay-to-publish type of OA.</p></li>
+<li><p><strong>Hybrid</strong>: Articles published in a non-OA journal but for which APCs have been paid to make the article OA. This is a widely criticized form of OA since access to the article has already been paid for by the journal subscribers. This means the publisher gets paid twice for the same article (double dipping). The issue is exacerbated by the high APCs (typically multiple thousands of US dollars) publishers charge for Hybrid OA.</p></li>
+<li><p><strong>Diamond/Platinum:</strong> Articles are free to read on the journal website under a Creative Commons or similar license, but authors pay no APCs. This is a free-to-read, free-to-publish type of OA.</p></li>
+<li><p><strong>Bronze</strong>: Articles that are free to read online without a Creative Commons or similar licence.</p></li>
 </ul>
-<p>All that the above types of OA have in common is that they make the published version of the articles free to read directly on the journal’s website. This is the main distinctive characteristic of the last type of OA.</p>
+<p>All the above types of OA have in common that they make the published version of the articles free to read directly on the journal’s website. This is the main distinctive characteristic of the last type of OA.</p>
 <ul>
-<li><strong>Green</strong> – refers to self-archiving generally of the pre- or post-print of articles in repositories. A pre-print is the version of the article before it has been reviewed, and a post-print is the version that was accepted by the journal for publication, but without the journal’s formatting. The version that is formatted and appears on the publisher’s website is called the publisher’s version.</li>
+<li><strong>Green</strong> – refers to self-archiving generally of the pre- or post-print of articles in repositories. A pre-print is the version of the article before it has been reviewed, and a post-print is the version accepted by the journal for publication but without the journal’s formatting. The version that is formatted and appears on the publisher’s website is called the publisher’s version.</li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Suggested readings
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The following preprint (green OA!) provides insights on global costs of OA by estimating the amount of APCs paid to large commercial publishers.</p>
+<p>The following preprint (green OA!) provides insights into the global costs of OA by estimating the amount of APCs paid to large commercial publishers.</p>
 <p>Butler, Leigh-Ann, Matthias, Lisa, Simard, Marc-André, Mongeon, Philippe, &amp; Haustein, Stefanie. (2022). The Oligopoly’s Shift to Open Access. How For-Profit Publishers Benefit from Article Processing Charges (Version v1). Zenodo. <a href="https://doi.org/10.5281/zenodo.7057144" class="uri">https://doi.org/10.5281/zenodo.7057144</a></p>
 </div>
 </div>
 </section>
 <section id="predatory-publishing" class="level2" data-number="10.4">
 <h2 data-number="10.4" class="anchored" data-anchor-id="predatory-publishing"><span class="header-section-number">10.4</span> Predatory publishing</h2>
-<p>The pay-to-publish (gold) OA as a business model has led to the proliferation of predatory publishers and journals, that have been defined as “entities that prioritize self-interest at the expense of scholarship and are characterized by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and/or the use of aggressive and indiscriminate solicitation practices.” <span class="citation" data-cites="grudniewicz2019">(<a href="#ref-grudniewicz2019" role="doc-biblioref">Grudniewicz et al. 2019</a>)</span>. While the definition may seem clear enough, dividing publishers in two categories (predatory or not predatory) can be challenging and it may be better to think of publishers and journals as exhibiting degrees of predatoriness <span class="citation" data-cites="siler2020">(<a href="#ref-siler2020" role="doc-biblioref">Siler 2020</a>)</span>.</p>
+<p>The pay-to-publish (gold) OA as a business model has led to the proliferation of predatory publishers and journals that have been defined as “entities that prioritize self-interest at the expense of scholarship and are characterized by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and the use of aggressive and indiscriminate solicitation practices.” <span class="citation" data-cites="grudniewicz2019">(<a href="#ref-grudniewicz2019" role="doc-biblioref">Grudniewicz et al. 2019</a>)</span>. While the definition may seem straightforward enough, dividing publishers into two categories (predatory or not predatory) can be challenging. It may be better to think of publishers and journals exhibiting degrees of predatoriness <span class="citation" data-cites="siler2020">(<a href="#ref-siler2020" role="doc-biblioref">Siler 2020</a>)</span>.</p>
 </section>
 <section id="data-sources-for-oa" class="level2" data-number="10.5">
 <h2 data-number="10.5" class="anchored" data-anchor-id="data-sources-for-oa"><span class="header-section-number">10.5</span> Data sources for OA</h2>
 <section id="unpaywall" class="level3" data-number="10.5.1">
 <h3 data-number="10.5.1" class="anchored" data-anchor-id="unpaywall"><span class="header-section-number">10.5.1</span> Unpaywall</h3>
-<p><a href="https://unpaywall.org/">Unpaywall</a> is a database of OA publications which you can access in multiple ways to obtain the OA status as well as every OA location of documents that have a DOI:</p>
+<p><a href="https://unpaywall.org/">Unpaywall</a> is a database of OA publications that you can access in multiple ways to obtain the OA status as well as every OA location of documents that have a DOI:</p>
 <ul>
 <li><p>The Unpaywall <a href="https://unpaywall.org/products/api">REST API</a></p></li>
 <li><p>The <a href="https://docs.ropensci.org/roadoi/">roadoi R package</a> that makes it easier to query the REST API.</p></li>
-<li><p>The <a href="https://unpaywall.org/products/simple-query-tool">Simple Query Tool</a> that allows you to simply past a list of DOI and get the data by email.</p></li>
-<li><p>If you find the 100,000 DOIs limit for API calls, and the 1,000 DOIs limit for the Simple Query Tool, you can also download the entire Unpaywall <a href="https://unpaywall.org/products/snapshot">database snapshot</a>.</p></li>
+<li><p>The <a href="https://unpaywall.org/products/simple-query-tool">Simple Query Tool</a> allows you to paste a list of DOI and get the data by email.</p></li>
+<li><p>If you find the 100,000 DOI limit for API calls and the 1,000 DOI limit for the Simple Query Tool, you can also download the entire Unpaywall <a href="https://unpaywall.org/products/snapshot">database snapshot</a>.</p></li>
 </ul>
-<p>Unpaywall also offers an <a href="https://unpaywall.org/products/extension">extension</a> for your web browser that automatically shows you when an article you are viewing on the Web has an available OA version, which you can access in a click.</p>
-<p>Unpaywall data is also integrated in OpenAlex. used to provide the OA status of articles in <a href="https://docs.openalex.org/about-the-data/work#the-openaccess-object">OpenAlex</a>, which provides the following metadata:</p>
+<p>Unpaywall also offers an <a href="https://unpaywall.org/products/extension">extension</a> for your web browser that automatically shows you when an article you are viewing on the Web has an available OA version, which you can access with a click.</p>
+<p>Unpaywall data is also integrated into OpenAlex and provides the following metadata:</p>
 <ul>
 <li><p><strong>is_oa</strong>: TRUE or FALSE</p></li>
 <li><p><strong>oa_status</strong>: One of the following OA statuses:</p>
 <ul>
-<li><p><strong>Gold</strong>: Published in an OA journal that is indexed by the DOAJ.</p></li>
-<li><p><strong>Green:</strong> Toll-access on the publisher landing page, but there is a free copy in an <a href="https://en.wikipedia.org/wiki/Open-access_repository">OA repository</a>.</p></li>
+<li><p><strong>Gold</strong>: Published in an OA journal, the DOAJ indexes.</p></li>
+<li><p><strong>Green:</strong> Toll access on the publisher landing page, but there is a free copy in an <a href="https://en.wikipedia.org/wiki/Open-access_repository">OA repository</a>.</p></li>
 <li><p><strong>Hybrid</strong>: Free under an <a href="https://support.unpaywall.org/support/solutions/articles/44002063718-what-is-an-oa-license-">open license</a> in a toll-access journal.</p></li>
 <li><p><strong>Bronze</strong>: Free to read on the publisher landing page, but without any identifiable license</p></li>
 <li><p><strong>Closed</strong> All other articles.</p></li>
@@ -290,22 +310,22 @@ Suggested readings
 </section>
 <section id="directory-of-open-access-journals-doaj" class="level3" data-number="10.5.2">
 <h3 data-number="10.5.2" class="anchored" data-anchor-id="directory-of-open-access-journals-doaj"><span class="header-section-number">10.5.2</span> Directory of Open Access Journals (DOAJ)</h3>
-<p>The <a href="https://doaj.org/">Directory of Open Access journals (DOAJ)</a> is a database of OA journals that meet certain <a href="https://doaj.org/apply/guide/#basic-criteria-for-inclusion">inclusion criteria</a> as well as the papers published in those journals. Data from the DOAJ can be accessed through the website’s search engine, by using the <a href="https://doaj.org/api/docs">API</a>, or by downloading the <a href="https://doaj.org/docs/public-data-dump/">public data dump</a>.</p>
+<p>The <a href="https://doaj.org/">Directory of Open Access Journals (DOAJ)</a> is a database of OA journals that meet specific <a href="https://doaj.org/apply/guide/#basic-criteria-for-inclusion">inclusion criteria</a> and the papers published in those journals. Data from the DOAJ can be accessed through the website’s search engine, by using the <a href="https://doaj.org/api/docs">API</a>, or by downloading the <a href="https://doaj.org/docs/public-data-dump/">public data dump</a>.</p>
 </section>
 <section id="sherpa-romeo" class="level3" data-number="10.5.3">
 <h3 data-number="10.5.3" class="anchored" data-anchor-id="sherpa-romeo"><span class="header-section-number">10.5.3</span> Sherpa Romeo</h3>
-<p><a href="https://v2.sherpa.ac.uk/romeo/">Sherpa Romeo</a> is another useful resource developed by the <a href="https://www.jisc.ac.uk/">Jisc</a>, a non-profit organization in the UK formally called the Joint Information Systems Committee (JISC). It is a directory of journals’ and publishers’ OA policies. It provides useful information on the OA pathways that are permitted by the journals, and the associated fees, embargo period, the version of the manuscript to which it applies, and so on. Again, the data can be accessed through the website’s search engine, or with the Sherpa Romeo <a href="https://v2.sherpa.ac.uk/api/">API</a>.</p>
+<p><a href="https://v2.sherpa.ac.uk/romeo/">Sherpa Romeo</a> is another helpful resource developed by the <a href="https://www.jisc.ac.uk/">Jisc</a>, a non-profit organization in the UK formally called the Joint Information Systems Committee (JISC). It is a directory of journals’ and publishers’ OA policies. It provides useful information on the OA pathways permitted by the journals, the associated fees, the embargo period, the version of the manuscript it applies, and so on. Again, the data can be accessed through the website’s search engine or with the Sherpa Romeo <a href="https://v2.sherpa.ac.uk/api/">API</a>.</p>
 </section>
 </section>
 <section id="references" class="level2" data-number="10.6">
 <h2 data-number="10.6" class="anchored" data-anchor-id="references"><span class="header-section-number">10.6</span> References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-grudniewicz2019" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-grudniewicz2019" class="csl-entry" role="listitem">
 Grudniewicz, Agnes, David Moher, Kelly D. Cobey, Gregory L. Bryson, Samantha Cukier, Kristiann Allen, Clare Ardern, et al. 2019. <span>“Predatory Journals: No Definition, No Defence.”</span> <em>Nature</em> 576 (7786): 210–12. <a href="https://doi.org/10.1038/d41586-019-03759-y">https://doi.org/10.1038/d41586-019-03759-y</a>.
 </div>
-<div id="ref-siler2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-siler2020" class="csl-entry" role="listitem">
 Siler, Kyle. 2020. <span>“There Is No Black and White Definition of Predatory Publishing.”</span> <a href="https://blogs.lse.ac.uk/impactofsocialsciences/2020/05/13/there-is-no-black-and-white-definition-of-predatory-publishing/">https://blogs.lse.ac.uk/impactofsocialsciences/2020/05/13/there-is-no-black-and-white-definition-of-predatory-publishing/</a>.
 </div>
 </div>
@@ -339,9 +359,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -353,7 +387,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -389,24 +440,128 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

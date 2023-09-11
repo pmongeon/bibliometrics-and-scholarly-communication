@@ -1,0 +1,111 @@
+---
+title: "QSS Lab meeting - Oct 2022"
+author: "Philippe Mongeon"
+format: revealjs
+editor: visual
+---
+
+# Agenda
+
+-   News and updates
+-   Project updates
+-   Any other business
+
+# News
+
+## Visiting researcher (Oct 14 - Nov 16)
+
+![](images/paste-BD633368.png)
+
+## Recent and upcoming presentations
+
+-   [Atlantic School of Business Conference](https://www.asbconference.ca/) (last weekend)
+
+    -   Williams, K., Mongeon, P., & Falconer, C. Understanding research identity within a faculty of management: A case study.
+
+-   [Metrics 2022 Workshop](https://www.asist.org/2022/06/14/metrics-2022-asist-virtual-workshop-on-informetrics-and-scientometrics-research/) (next weekend)
+
+    -   Williams, K., Mongeon, P., & Falconer, C. Understanding research identity within a faculty of management: A case study.
+
+    -   Riddle, P. N., Simard, M.-A., Gone, K. P., Li, V., & Mongeon, P. The use of institutional repositories for green open access in Canadian universities.
+
+## Recent and upcoming presentations
+
+-   [Metrics 2022 Workshop](https://www.asist.org/2022/06/14/metrics-2022-asist-virtual-workshop-on-informetrics-and-scientometrics-research/) (next weekend)
+
+    -   Rosati, D., & Mongeon, P. The impact of in-text citations on journal rankings.
+
+    -   Hare, M., & Mongeon, P. The Impact of Mentorship on the Research Performance of LIS PhDs.
+
+    -   Krause, G., Rosati, D., Bowman, T., Mongeon, P., & Smit, M. Who re-uses data? A bibliometric analysis of data citations and the relationship between authors and data creators.
+
+    -   Mongeon, P., Bowman, T., & Costas, R. Creating an open dataset of scholars on Twitter: a tutorial.
+
+## Recent and upcoming presentations
+
+-   QSS Talks
+
+    -   Vinson Li - Mapping the Health Science Librarianship Research Field in 2012 -- 2022 (Sep 15)
+    -   **Geoff Krause - Who re-uses data? A bibliometric analysis of data citations and the relationship between authors and data creators (Oct 27)**
+
+# Other news?
+
+# Project updates
+
+## Green OA
+
+-   Pretty much done, submitting tomorrow.
+
+## Shark paper
+
+-   End of October ETA
+
+-   Discussion at the EIUI meeting early November
+
+## Do you cite what you tweet
+
+-   Starting next week
+
+-   Team: Keith, Mercy
+
+## Gender homophily in citations
+
+-   Starting tomorrow, ETA end of November
+
+-   Team: Hailey
+
+## Maddie's projects
+
+## Mapping Canadian LIS
+
+-   Ongoing, end of October ETA.
+
+-   Team: Cat, Marc-André, Maddie, Poppy
+
+# Next priorities
+
+## PhD Scholarships
+
+-   Deadline is Today.
+
+## CGS-D
+
+-   Deadline is December 1st (I think).
+
+-   If you want to submit a CGS-D application, let me know.
+
+## Breaking the silos database
+
+-   Need to have a completed and published database by the end of October.
+
+-   Data collection and cleaning Blitz starting Oct 17th. Exact schedule TBD. Everyone welcome to help.
+
+## Forestry paper
+
+-   Team: Blake, Naomi and Cat
+
+-   Target submission: November 30th.
+
+# AOB
+
+## 

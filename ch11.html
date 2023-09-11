@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -87,11 +87,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch11.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -99,104 +104,118 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Bibliometrics and Scholarly Communication</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Course overview</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></a>
+  <a href="./ch1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The social structure of science</span></a>
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></a>
+  <a href="./ch3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The social structure of science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></a>
+  <a href="./ch4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></a>
+  <a href="./ch5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></a>
+  <a href="./ch6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></a>
+  <a href="./ch7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></a>
+  <a href="./ch8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch9.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></a>
+  <a href="./ch9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch10.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></a>
+  <a href="./ch10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch11.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></a>
+  <a href="./ch11.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch12.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></a>
+  <a href="./ch12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-research-fraud" id="toc-what-is-research-fraud" class="nav-link active" data-scroll-target="#what-is-research-fraud"><span class="toc-section-number">11.1</span>  What is research fraud?</a>
+  <li><a href="#what-is-research-fraud" id="toc-what-is-research-fraud" class="nav-link active" data-scroll-target="#what-is-research-fraud"><span class="header-section-number">11.1</span> What is research fraud?</a>
   <ul class="collapse">
-  <li><a href="#fabrication" id="toc-fabrication" class="nav-link" data-scroll-target="#fabrication"><span class="toc-section-number">11.1.1</span>  Fabrication</a></li>
-  <li><a href="#falsification" id="toc-falsification" class="nav-link" data-scroll-target="#falsification"><span class="toc-section-number">11.1.2</span>  Falsification</a></li>
-  <li><a href="#plagiarism" id="toc-plagiarism" class="nav-link" data-scroll-target="#plagiarism"><span class="toc-section-number">11.1.3</span>  Plagiarism</a></li>
+  <li><a href="#fabrication" id="toc-fabrication" class="nav-link" data-scroll-target="#fabrication"><span class="header-section-number">11.1.1</span> Fabrication</a></li>
+  <li><a href="#falsification" id="toc-falsification" class="nav-link" data-scroll-target="#falsification"><span class="header-section-number">11.1.2</span> Falsification</a></li>
+  <li><a href="#plagiarism" id="toc-plagiarism" class="nav-link" data-scroll-target="#plagiarism"><span class="header-section-number">11.1.3</span> Plagiarism</a></li>
   </ul></li>
-  <li><a href="#consequences-of-research-fraud" id="toc-consequences-of-research-fraud" class="nav-link" data-scroll-target="#consequences-of-research-fraud"><span class="toc-section-number">11.2</span>  Consequences of research fraud</a></li>
-  <li><a href="#detecting-research-fraud" id="toc-detecting-research-fraud" class="nav-link" data-scroll-target="#detecting-research-fraud"><span class="toc-section-number">11.3</span>  Detecting research fraud?</a></li>
-  <li><a href="#prevalence-of-research-fraud" id="toc-prevalence-of-research-fraud" class="nav-link" data-scroll-target="#prevalence-of-research-fraud"><span class="toc-section-number">11.4</span>  Prevalence of research fraud</a></li>
-  <li><a href="#questionable-research-practices" id="toc-questionable-research-practices" class="nav-link" data-scroll-target="#questionable-research-practices"><span class="toc-section-number">11.5</span>  Questionable research practices</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">11.6</span>  References</a></li>
+  <li><a href="#consequences-of-research-fraud" id="toc-consequences-of-research-fraud" class="nav-link" data-scroll-target="#consequences-of-research-fraud"><span class="header-section-number">11.2</span> Consequences of research fraud</a></li>
+  <li><a href="#detecting-research-fraud" id="toc-detecting-research-fraud" class="nav-link" data-scroll-target="#detecting-research-fraud"><span class="header-section-number">11.3</span> Detecting research fraud</a></li>
+  <li><a href="#prevalence-of-research-fraud" id="toc-prevalence-of-research-fraud" class="nav-link" data-scroll-target="#prevalence-of-research-fraud"><span class="header-section-number">11.4</span> Prevalence of research fraud</a></li>
+  <li><a href="#questionable-research-practices" id="toc-questionable-research-practices" class="nav-link" data-scroll-target="#questionable-research-practices"><span class="header-section-number">11.5</span> Questionable research practices</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">11.6</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -205,7 +224,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></h1>
 </div>
 
 
@@ -213,30 +232,31 @@ div.csl-indent {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
 
 </header>
 
-<p>Diederick Stapel, Eric Poehlman, Jan Hendrik Schön, Woo-Suk Hwang, Marc Hauser, Yoshitaka Fujii, Joachim Boldt, John Darsee… These names are associated with some of the most important scientific frauds of the last forty years. Their frauds made the headlines of major daily newspapers and caused shock waves within the scientific community. These individuals built their careers misleading their colleagues and the scientific community by publishing falsified or fabricated data. They wasted public funds, misled other researchers, and undermined public trust in science. These are just a few consequences of scientific fraud. In the medical field, however, these consequences can be much more serious, even fatal: the choice of treatments and drugs given to patients is based on scientific research, and fabricated findings can thus have very serious health consequences. Given the magnitude of the potential consequences that scientific fraud can have for researchers, their science, the public, and society at large, it is hardly surprising that this topic has generated heated discussion both within and outside the outside the scientific community.</p>
+<p>Diederick Stapel, Eric Poehlman, Jan Hendrik Schön, Woo-Suk Hwang, Marc Hauser, Yoshitaka Fujii, Joachim Boldt, John Darsee… These names are associated with some of the most critical scientific frauds of the last forty years. Their frauds made the headlines of major daily newspapers and caused shock waves within the scientific community. These individuals built their careers misleading their colleagues and the scientific community by publishing falsified or fabricated data. They wasted public funds, misled other researchers, and undermined public trust in science. These are just a few consequences of scientific fraud. In the medical field, however, these consequences can be much more severe, even fatal: the choice of treatments and drugs given to patients is based on scientific research, and fabricated findings can thus have grave health consequences. Given the magnitude of the potential consequences that scientific fraud can have for researchers, their science, the public, and society, it is hardly surprising that this topic has generated heated discussion both within and outside the scientific community.</p>
 <section id="what-is-research-fraud" class="level2" data-number="11.1">
 <h2 data-number="11.1" class="anchored" data-anchor-id="what-is-research-fraud"><span class="header-section-number">11.1</span> What is research fraud?</h2>
 <p>There are various means by which an ill-intentioned researcher can mislead the scientific community. <span class="citation" data-cites="babbage1830">Babbage (<a href="#ref-babbage1830" role="doc-biblioref">1830</a>)</span> described four types of fraud: forging, cooking, trimming and hoaxing. Today, these phenomena tend to be grouped under two concepts, data falsification and data fabrication, to which plagiarism has been added as a third type of fraud. Following the rise of cases of research fraud in the 1980s, the US Public Health Service proposed the following definition of scientific fraud:</p>
 <blockquote class="blockquote">
-<p>[The] fabrication, falsification, plagiarism or other practices that seriously deviate from those that are commonly accepted within the scientific community for proposing, conducting, or reporting research. It does not include honest error or honest differences in interpretation or judgments of data <span class="citation" data-cites="uspublichealthservice1989">(<a href="#ref-uspublichealthservice1989" role="doc-biblioref">US Public Health Service 1989</a>)</span>.</p>
+<p>[The] fabrication, falsification, plagiarism or other practices deviate from those commonly accepted within the scientific community for proposing, conducting, or reporting research. It does not include honest error or honest differences in interpretation or judgments of data <span class="citation" data-cites="uspublichealthservice1989">(<a href="#ref-uspublichealthservice1989" role="doc-biblioref">US Public Health Service 1989</a>)</span>.</p>
 </blockquote>
-<p>The clause “or other practices that seriously deviate from those that are commonly accepted within the scientific community for proposing, conducting or reporting research” was heavily criticized for its vagueness and its inability to reduce discrepancies between opinions on what does or does not constitute fraud, so this clause was later dropped <span class="citation" data-cites="judson2004">(<a href="#ref-judson2004" role="doc-biblioref">Judson 2004</a>)</span>. Today scientific fraud is generally recognized as any intentional act of data <strong>fabrication</strong>, data <strong>falsification</strong> or <strong>plagiarism</strong> <strong>(FFP)</strong>, and other practices that seriously deviate from those that are commonly accepted within the scientific community for proposing, conducting, or reporting research tend to now be labelled as <strong>questionable research practices (QRP)</strong>.</p>
+<p>The clause “or other practices that seriously deviate from those that are commonly accepted within the scientific community for proposing, conducting or reporting research” was heavily criticized for its vagueness and its inability to reduce discrepancies between opinions on what does or does not constitute fraud, so this clause was later dropped <span class="citation" data-cites="judson2004">(<a href="#ref-judson2004" role="doc-biblioref">Judson 2004</a>)</span>. Today, scientific fraud is generally recognized as any intentional act of data <strong>fabrication</strong>, data <strong>falsification</strong> or <strong>plagiarism</strong> <strong>(FFP)</strong>, and other practices that seriously deviate from those that are commonly accepted within the scientific community for proposing, conducting, or reporting research tend to be now labelled as <strong>questionable research practices (QRP)</strong>.</p>
 <section id="fabrication" class="level3" data-number="11.1.1">
 <h3 data-number="11.1.1" class="anchored" data-anchor-id="fabrication"><span class="header-section-number">11.1.1</span> Fabrication</h3>
-<p>Data fabrication is probably the most serious type of scientific fraud and occurs when researchers makes up all or some of their data from scratch without having carried out the alleged experiments. Data fabrication can take many forms.</p>
-<p>A widely publicized example of fabrication is that of Diederik Stapel, a former Dutch social psychology researcher. Before being found guilty of scientific fraud, Stapel was a star researcher in his field, having, among other things, founded the Tilburg Institute for Behavioral Economics Research in 2007, obtained the Career Trajectory Award from the Society of Experimental Social Psychology in 2009, and being appointed rector of his faculty in 2010. However, in 2011, after some of the students under his supervision expressed concern about the validity of some of his data, an investigation revealed that for more than a decade Stapel had invented the data for most of his research. More than 50 articles signed by Stapel and published in the most important journals in the field have been identified as fraudulent and subsequently retracted from the scientific literature.</p>
-<p>Another well-known case, this time in physics, is that of Hendrik Schön, who fabricated data for more than four years (1997-2002) while he was a postdoctoral fellow at Bell Laboratories. He was able to fool the scientific community with his discovery of a method to manufacture plastic superconductors that would revolutionize the world of nanotechnology. Schön’s articles were published in major journals like Science and Nature. Some researchers began to question Schön’s results when several attempts to replicate Schön’s findings were unsuccessful. However, it was Schön’s use of the same fabricated figure in two different papers that ultimately uncovered the fraud <span class="citation" data-cites="reich2009">(<a href="#ref-reich2009" role="doc-biblioref">Reich 2009</a>)</span>.</p>
+<p>Data fabrication is probably the most severe type of scientific fraud. It occurs when researchers make up all or some of their data from scratch without having carried out the alleged experiments. Data fabrication can take many forms.</p>
+<p>A widely publicized example of fabrication is that of Diederik Stapel, a former Dutch social psychology researcher. Before being found guilty of scientific fraud, Stapel was a star researcher in his field, having, among other things, founded the Tilburg Institute for Behavioral Economics Research in 2007, obtained the Career Trajectory Award from the Society of Experimental Social Psychology in 2009, and being appointed rector of his faculty in 2010. However, in 2011, after some of the students under his supervision expressed concern about the validity of some of his data, an investigation revealed that Stapel had invented the data for most of his research for more than a decade. More than 50 articles signed by Stapel and published in the most critical journals in the field have been identified as fraudulent and subsequently retracted from the scientific literature.</p>
+<p>Another well-known case, this time in physics, is that of Hendrik Schön, who fabricated data for more than four years (1997-2002) while he was a postdoctoral fellow at Bell Laboratories. He was able to fool the scientific community by discovering a method to manufacture plastic superconductors that would revolutionize the world of nanotechnology. Schön’s articles were published in major journals like Science and Nature. Some researchers began to question Schön’s results when several attempts to replicate Schön’s findings were unsuccessful. However, Schön’s use of the same fabricated figure in two papers ultimately uncovered the fraud <span class="citation" data-cites="reich2009">(<a href="#ref-reich2009" role="doc-biblioref">Reich 2009</a>)</span>.</p>
 </section>
 <section id="falsification" class="level3" data-number="11.1.2">
 <h3 data-number="11.1.2" class="anchored" data-anchor-id="falsification"><span class="header-section-number">11.1.2</span> Falsification</h3>
-<p><span class="citation" data-cites="babbage1830">Babbage (<a href="#ref-babbage1830" role="doc-biblioref">1830</a>)</span> described two types of falsification. The first one, cooking, consists in the cherry-picking of data in order to achieve a desired finding. The second, which Babbage called trimming, consists in eliminating data points that deviate from the average and artificially increase the precision and homogeneity of the data. <span class="citation" data-cites="larivée1993">Larivée and Baruffaldi (<a href="#ref-larivée1993" role="doc-biblioref">1993</a>)</span> argue that falsification is not only about cooking and trimming data but can also include the misuse of statistical tests or the altering of equipment or data collection processes. The main difference between falsification and fabrication is that falsification involves real data, whereas fabrication involves data artificially created.</p>
-<p>Isaac Newton, one of the most important figures in the history of science, apparently falsified some of the data described in his masterpiece <em>Philosophiæ Naturalis Principia Mathematica</em>. He improved the precision of some measurements, namely his calculations on the acceleration of gravity, the velocity of sound, and axial precession <span class="citation" data-cites="westfall1973">(<a href="#ref-westfall1973" role="doc-biblioref">Westfall 1973</a>)</span>, to make his theory more convincing and accepted by the scientific community at the time <span class="citation" data-cites="broad1983">Broad (<a href="#ref-broad1983" role="doc-biblioref">1983</a>)</span>.</p>
+<p><span class="citation" data-cites="babbage1830">Babbage (<a href="#ref-babbage1830" role="doc-biblioref">1830</a>)</span> described two types of falsification. The first one, cooking, consists of cherry-picking data to achieve a desired finding. The second, which Babbage called trimming, occurs when eliminating data points that deviate from the average and artificially increase the precision and homogeneity of the data. <span class="citation" data-cites="larivée1993">Larivée and Baruffaldi (<a href="#ref-larivée1993" role="doc-biblioref">1993</a>)</span> argues that falsification is not only about cooking and trimming data but can also include the misuse of statistical tests or altering equipment or data collection processes. The main difference between falsification and fabrication is that falsification involves actual data, whereas fabrication involves data artificially created.</p>
+<p>Isaac Newton, one of the most influential figures in the history of science, apparently falsified some of the data described in his masterpiece <em>Philosophiæ Naturalis Principia Mathematica</em>. He improved the precision of some measurements, namely his calculations on the acceleration of gravity, the velocity of sound, and axial precession <span class="citation" data-cites="westfall1973">(<a href="#ref-westfall1973" role="doc-biblioref">Westfall 1973</a>)</span>, to make his theory more convincing and accepted by the scientific community at the time <span class="citation" data-cites="broad1983">Broad (<a href="#ref-broad1983" role="doc-biblioref">1983</a>)</span>.</p>
 </section>
 <section id="plagiarism" class="level3" data-number="11.1.3">
 <h3 data-number="11.1.3" class="anchored" data-anchor-id="plagiarism"><span class="header-section-number">11.1.3</span> Plagiarism</h3>
@@ -244,134 +264,131 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p>[T]he appropriation of another person’s ideas, processes, results, or words without giving appropriate credit, including those obtained through confidential review of others’ research proposals and manuscripts <span class="citation" data-cites="uspublichealthservice1989">(<a href="#ref-uspublichealthservice1989" role="doc-biblioref">US Public Health Service 1989</a>)</span>.</p>
 </blockquote>
-<p>This can take the form of excessive paraphrasing or intentional, unconscious, or self-plagiarism. Intentional plagiarism is the use of someone else’s text in part or in whole without citing the source. Paraphrasing is a perfectly acceptable practice, but it becomes abusive and akin to intentional plagiarism when the words have been changed in order to give the illusion that it is a new text, and when the sources are not cited <span class="citation" data-cites="kochen1987">(<a href="#ref-kochen1987" role="doc-biblioref">Kochen 1987</a>)</span>. Self-plagiarism consists of the reuse of one’s own published text. It can be challenging to determine whether or not an instance of self-plagiarism is fraudulent, because the reuse of certain parts of texts may sometimes be acceptable or even preferable (e.g., the description of a very technical and complex methodology) provided that the source is duly cited <span class="citation" data-cites="bird2008">(<a href="#ref-bird2008" role="doc-biblioref">S. B. Bird and Sivilotti 2008</a>)</span>. The concept of self-plagiarism itself is debated, some arguing that it is impossible to steal one’s own ideas or text, and that the publishing the same results in different articles aimed at different communities is not only acceptable, but desirable from an knowledge dissemination standpoint <span class="citation" data-cites="bird2002">(<a href="#ref-bird2002" role="doc-biblioref">S. J. Bird 2002</a>)</span>.</p>
-<p>A famous case of plagiarism in medicine is that of Elias Alsabti. In addition to falsely pretending that he came from a Jordanian royal family and that he held a doctorate, he managed to plagiarize several hundred articles. He found these articles in obscure journals, replaced the author’s name with his own (and sometimes that of fictitious co-authors), then submitted this copied article to another, equally obscure, journal. Building up an impressive publication record, he obtained research positions in several universities and hospitals in the United States. Although Alsabti’s fraud was known to many in the institutions where he worked during his career, it took three years before it was made public <span class="citation" data-cites="broad1983 judson2004">(<a href="#ref-broad1983" role="doc-biblioref">Broad 1983</a>; <a href="#ref-judson2004" role="doc-biblioref">Judson 2004</a>)</span>.</p>
+<p>This can take the form of excessive paraphrasing or intentional, unconscious, or self-plagiarism. Intentional plagiarism is using someone else’s text in part or whole without citing the source. Paraphrasing is a perfectly acceptable practice. However, it becomes abusive and akin to intentional plagiarism when the words have been changed to give the illusion that it is a new text and when the sources are not cited <span class="citation" data-cites="kochen1987">(<a href="#ref-kochen1987" role="doc-biblioref">Kochen 1987</a>)</span>. Self-plagiarism consists of the reuse of one’s own published text. It can be challenging to determine whether or not an instance of self-plagiarism is fraudulent because the reuse of certain parts of texts may sometimes be acceptable or even preferable (e.g., the description of a very technical and complex methodology) provided that the source is duly cited <span class="citation" data-cites="bird2008">(<a href="#ref-bird2008" role="doc-biblioref">S. B. Bird and Sivilotti 2008</a>)</span>. The concept of self-plagiarism itself is debated, some arguing that it is impossible to steal one’s own ideas or text and that publishing the same results in different articles aimed at different communities is not only acceptable but desirable from a knowledge dissemination standpoint <span class="citation" data-cites="bird2002">(<a href="#ref-bird2002" role="doc-biblioref">S. J. Bird 2002</a>)</span>.</p>
+<p>A famous case of plagiarism in medicine is that of Elias Alsabti. In addition to falsely pretending that he came from a Jordanian royal family and held a doctorate, he plagiarized several hundred articles. He found these articles in obscure journals, replaced the author’s name with his own (and sometimes that of fictitious co-authors), and then submitted this copied article to another equally obscure journal. Building up an impressive publication record, he obtained research positions in several universities and hospitals in the United States. Although Alsabti’s fraud was known to many in the institutions where he worked during his career, it took three years before it was made public <span class="citation" data-cites="broad1983 judson2004">(<a href="#ref-broad1983" role="doc-biblioref">Broad 1983</a>; <a href="#ref-judson2004" role="doc-biblioref">Judson 2004</a>)</span>.</p>
 </section>
 </section>
 <section id="consequences-of-research-fraud" class="level2" data-number="11.2">
 <h2 data-number="11.2" class="anchored" data-anchor-id="consequences-of-research-fraud"><span class="header-section-number">11.2</span> Consequences of research fraud</h2>
-<p>For the guilty researchers, fraud has informal consequences in the form of a loss of reputation <span class="citation" data-cites="larivée1993">(<a href="#ref-larivée1993" role="doc-biblioref">Larivée and Baruffaldi 1993</a>)</span> and the questioning of all their work by the scientific community <span class="citation" data-cites="culliton1974">(<a href="#ref-culliton1974" role="doc-biblioref">Culliton 1974</a>)</span>. There are also formal consequences that vary from case to case. These can include a ban on obtaining funding for a certain number of years, suspension, dismissal, house arrest, community service, fine and imprisonment <span class="citation" data-cites="couzin2006 karcz2011 tilden2010">(<a href="#ref-couzin2006" role="doc-biblioref">Couzin 2006</a>; <a href="#ref-karcz2011" role="doc-biblioref">Karcz and Papadakos 2011</a>; <a href="#ref-tilden2010" role="doc-biblioref">Tilden 2010</a>)</span>. <span class="citation" data-cites="mongeon2015">Mongeon (<a href="#ref-mongeon2015" role="doc-biblioref">2015</a>)</span> found that most researchers found guilty of fraud in the biomedical field did not publish in the 5 years following the retraction of their fraudulent papers. That same study found that fraud can also significantly affect the careers of innocent co-authors, especially junior researchers who, in most cases, stopped publishing and appear to have abandoned their research careers (see the figure below).</p>
+<p>For the guilty researchers, fraud has informal consequences in the form of a loss of reputation <span class="citation" data-cites="larivée1993">(<a href="#ref-larivée1993" role="doc-biblioref">Larivée and Baruffaldi 1993</a>)</span> and the questioning of all their work by the scientific community <span class="citation" data-cites="culliton1974">(<a href="#ref-culliton1974" role="doc-biblioref">Culliton 1974</a>)</span>. There are also formal consequences that vary from case to case. These can include a ban on obtaining funding for a certain number of years, suspension, dismissal, house arrest, community service, fine and imprisonment <span class="citation" data-cites="couzin2006 karcz2011 tilden2010">(<a href="#ref-couzin2006" role="doc-biblioref">Couzin 2006</a>; <a href="#ref-karcz2011" role="doc-biblioref">Karcz and Papadakos 2011</a>; <a href="#ref-tilden2010" role="doc-biblioref">Tilden 2010</a>)</span>. <span class="citation" data-cites="mongeon2015">Mongeon (<a href="#ref-mongeon2015" role="doc-biblioref">2015</a>)</span> found that most researchers found guilty of fraud in the biomedical field did not publish in the five years following the retraction of their fraudulent papers. That same study found that fraud can also significantly affect the careers of innocent co-authors, especially junior researchers who, in most cases, stopped publishing and appear to have abandoned their research careers (see the figure below).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/costly_collaboration.jpg" class="img-fluid figure-img" width="600"></p>
-<p></p><figcaption class="figure-caption">Share of research output by innocent collaborators published in the five years before and after a retracted publication in the biomedical field. <span class="citation" data-cites="mongeon2015">(<a href="#ref-mongeon2015" role="doc-biblioref">Mongeon 2015</a>)</span></figcaption><p></p>
+<figcaption class="figure-caption">Share of research output by innocent collaborators published five years before and after a retracted publication in the biomedical field. <span class="citation" data-cites="mongeon2015">(<a href="#ref-mongeon2015" role="doc-biblioref">Mongeon 2015</a>)</span></figcaption>
 </figure>
 </div>
-<p>It is perhaps worth noting that, according to these findings, retracting a publication because of an honest error also appears to significantly affect the careers of junior researchers (who are typically listed as first authors in biomedical research).</p>
-<p>Because researchers build on existing research to advance knowledge, the publication of false results can lead to considerable waste of time, money and effort for a large number of researchers, not to mention the waste resulting from the fraudulent research itself. Fraud can reduce mutual trust between researchers, potentially hindering the advancement of knowledge by reducing the sharing and use of information, or pushing researchers to systematically reproduce the experiments <span class="citation" data-cites="chubin1985 weinstein1981">(<a href="#ref-chubin1985" role="doc-biblioref">Chubin 1985</a>; <a href="#ref-weinstein1981" role="doc-biblioref">Weinstein 1981</a>)</span>.</p>
-<p>Cases of fraud can also negatively affect the discipline in which they occur. According to <span class="citation" data-cites="azoulay2015">Azoulay et al. (<a href="#ref-azoulay2015" role="doc-biblioref">2015</a>)</span>, there would be a decrease in both the research funds granted to researchers in a discipline where a fraud has been discovered, new researchers entering it, and citations received by articles dealing with subjects similar to those of fraudulent articles.</p>
-<p>Funding for research comes largely from public funds, and it important that science be seen as trustworthy by governments, funding agencies and the public. Research fraud, and especially the cases that generate a lot of media coverage, can harm the credibility and legitimacy of science.</p>
+<p>It is perhaps worth noting that, according to these findings, retracting a publication because of an honest error also appears to significantly affect junior researchers’ careers (typically listed as first authors in biomedical research).</p>
+<p>Because researchers build on existing research to advance knowledge, publishing false results can lead to a considerable waste of time, money and effort for many researchers, not to mention the waste resulting from the fraudulent research itself. Fraud can reduce mutual trust between researchers, potentially hindering the advancement of knowledge by reducing the sharing and use of information or pushing researchers to systematically reproduce the experiments <span class="citation" data-cites="chubin1985 weinstein1981">(<a href="#ref-chubin1985" role="doc-biblioref">Chubin 1985</a>; <a href="#ref-weinstein1981" role="doc-biblioref">Weinstein 1981</a>)</span>.</p>
+<p>Cases of fraud can also negatively affect the discipline in which they occur. According to <span class="citation" data-cites="azoulay2015">Azoulay et al. (<a href="#ref-azoulay2015" role="doc-biblioref">2015</a>)</span>, there would be a decrease in the research funds granted to researchers in a discipline where fraud has been discovered, new researchers entering it, and citations received by articles dealing with subjects similar to those of fraudulent articles.</p>
+<p>Funding for research comes mainly from public funds, and it is crucial that science be seen as trustworthy by governments, funding agencies and the public. Research fraud, especially cases that generate a lot of media coverage, can harm the credibility and legitimacy of science.</p>
 </section>
 <section id="detecting-research-fraud" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="detecting-research-fraud"><span class="header-section-number">11.3</span> Detecting research fraud?</h2>
-<p>Given the significant consequences that research fraud can have, it is important for the scientific community be able to detect it. It is sometimes taken for granted that science is self-correcting and has mechanisms that will ensure that sooner or later errors (and frauds) will be discovered. However, the surge of research fraud observed over the last decades raises questions as to the effectiveness of these mechanisms.</p>
-<p>One of these mechanisms is the evaluation of research manuscripts by several experts before they get published, also known as <strong>peer-review</strong>. In theory, peer-review ensures that only relevant, reliable, and rigorous research will make it into the scientific literature. However, peer review is often not effective in detecting errors and fraud. Researchers who are part of the elite will not be judged as harshly as other less prominent researchers <span class="citation" data-cites="merton1968">(<a href="#ref-merton1968" role="doc-biblioref">Merton 1968</a>)</span>. A researcher who is prominent or affiliated to a prestigious organization may manage to publish fabricated or falsified data since the reviewers may not dare question their work. The case of John Long is a good example. From 1970 until the early 1980s, he published the results of his work on tumor cells from Hodgkin’s disease that he supposedly managed to grow in a test tube. Since he worked at the prestigious Massachusetts General Hospital under the supervision of Paul Zamecnik, a well-known researcher and member of the National Academy of Sciences, the peer review system took certain aspects of his work for granted <span class="citation" data-cites="broad1983">(<a href="#ref-broad1983" role="doc-biblioref">Broad 1983</a>)</span>.</p>
-<p>The peer review system is also quite ineffective in detecting plagiarism, and even more so in the pre-digital era. This allowed fraudsters like Alsabti to take advantage of this flaw. While it is now much easier to detect cases of plagiarism by using, for instance, plagiarism detection software, plagiarism remains relatively frequent <span class="citation" data-cites="grieneisen2012">(<a href="#ref-grieneisen2012" role="doc-biblioref">Grieneisen and Zhang 2012</a>)</span>.</p>
-<p><strong>Replication</strong> of experiments by other researchers is the most effective mechanism for validating findings and detecting errors and fraud. The replication of (or the possibility to replicate) findings is made possible by the fact that research publications include a detailed description of the research data and process (a.k.a., the methods). In practice, the reproduction of experiments is relatively rare. One of the reasons for this is inaccurate or incomplete description of the methods, or inaccessibility of the required data or equipment. Even when replication would in theory be possible, there is a lack of resources and incentives for replication studies which are difficult to get funded and published due to the emphasis on originality in the reward system of science. Rather, the research will be validated indirectly by other researchers who replicate or build on results to improve them (not to verify them).</p>
+<h2 data-number="11.3" class="anchored" data-anchor-id="detecting-research-fraud"><span class="header-section-number">11.3</span> Detecting research fraud</h2>
+<p>Given the significant consequences that research fraud can have, the scientific community needs to be able to detect it. It is sometimes taken for granted that science is self-correcting and has mechanisms to ensure that errors (and frauds) will be discovered sooner or later. However, the surge of research fraud observed over the last decades raises questions as to the effectiveness of these mechanisms.</p>
+<p>One of these mechanisms is the evaluation of research manuscripts by several experts before they get published, also known as <strong>peer review</strong>. In theory, peer review ensures that only relevant, reliable, and rigorous research will make it into the scientific literature. However, peer review is often not effective in detecting errors and fraud. Researchers who are part of the elite will not be judged as harshly as other less prominent researchers <span class="citation" data-cites="merton1968">(<a href="#ref-merton1968" role="doc-biblioref">Merton 1968</a>)</span>. A prominent researcher affiliated with a prestigious organization may manage to publish fabricated or falsified data since the reviewers may not dare question their work. The case of John Long is a good example. From 1970 until the early 1980s, he published the results of his work on tumour cells from Hodgkin’s disease that he supposedly managed to grow in a test tube. Since he worked at the prestigious Massachusetts General Hospital under the supervision of Paul Zamecnik, a well-known researcher and National Academy of Sciences member, the peer review system took certain aspects of his work for granted <span class="citation" data-cites="broad1983">(<a href="#ref-broad1983" role="doc-biblioref">Broad 1983</a>)</span>.</p>
+<p>The peer review system is also relatively ineffective in detecting plagiarism, even more so in the pre-digital era. This allowed fraudsters like Alsabti to take advantage of this flaw. While it is now much easier to detect cases of plagiarism by using, for instance, plagiarism detection software, plagiarism remains relatively frequent <span class="citation" data-cites="grieneisen2012">(<a href="#ref-grieneisen2012" role="doc-biblioref">Grieneisen and Zhang 2012</a>)</span>.</p>
+<p><strong>Replication</strong> of experiments by other researchers is the most effective mechanism for validating findings and detecting errors and fraud. The replication of (or the possibility to replicate) findings is made possible because research publications include a detailed description of the research data and process (a.k.a., the methods). In practice, the reproduction of experiments is relatively rare. One of the reasons for this is an inaccurate or incomplete description of the methods or inaccessibility of the required data or equipment. Even when replication would, in theory, be possible, there is a lack of resources and incentives for replication studies which are difficult to get funded and published due to the emphasis on originality in the reward system of science. Rather, the research will be validated indirectly by other researchers who replicate or build on results to improve them (not to verify them).</p>
 <p><strong>Whistle-blowing</strong> is often involved in the process of uncovering research fraud. For instance, Diederik Stapel’s case was uncovered by some of his students who grew suspicious when they asked to see the raw data for an experiment they were involved in and Stapel said he didn’t have it anymore. One of the whistleblowers thought Stapel’s results were too good to be true, and their suspicions were validated when they found two rows of data that appeared to have been copy-pasted.</p>
 </section>
 <section id="prevalence-of-research-fraud" class="level2" data-number="11.4">
 <h2 data-number="11.4" class="anchored" data-anchor-id="prevalence-of-research-fraud"><span class="header-section-number">11.4</span> Prevalence of research fraud</h2>
-<p>Just how much fabricated, falsified, or plagiarized research is there? Given that fraud is by nature something that its author seeks to hide and hope that it will never be discovered, and given that research fraud is not easy to detect, it is plausible that the cases that are discovered are really just the tip of the iceberg. Some attempted to estimate the prevalence of fraud using surveys. This approach is expected to underestimate the prevalence of research fraud since researchers are probably not very inclined to admit their fraud. Nevertheless, in a meta-analysis of these surveys <span class="citation" data-cites="fanelli2009">Fanelli (<a href="#ref-fanelli2009" role="doc-biblioref">2009</a>)</span>, reported that 2% of researchers admit to having distorted data themselves, while 14% claim to know at least one colleague who has done so.</p>
+<p>Just how much fabricated, falsified, or plagiarized research is there? Given that fraud is by nature something that its author seeks to hide and hopes will never be discovered, and given that fraud is not easy to detect, it is plausible that the cases that are discovered are just the tip of the iceberg. Some attempted to estimate the prevalence of fraud using surveys. This approach is expected to underestimate the prevalence of research fraud since researchers are probably not inclined to admit it. Nevertheless, in a meta-analysis of these surveys, <span class="citation" data-cites="fanelli2009">Fanelli (<a href="#ref-fanelli2009" role="doc-biblioref">2009</a>)</span> reported that 2% of researchers admit to having distorted data themselves, while 14% claim to know at least one colleague who has done so.</p>
 <p><strong>Retractions</strong> are one of the ways by which the scholarly community treats fraud when it is discovered. Retractions, in principle, clean up the scientific record by flagging invalid or untrustworthy research. The census of retracted articles thus makes it possible to estimate the prevalence of cases of fraud, but only on condition that the cases in question meet four conditions:</p>
 <ol type="1">
 <li>The fraudulent research has been published.</li>
 <li>The fraud was detected after publication.</li>
-<li>The fraudulent article was retracted by the journal.</li>
-<li>A notice of retraction has been circulated and is easily identifiable, and ideally the article itself has been identified as retracted in the databases.</li>
+<li>The journal retracted the fraudulent article.</li>
+<li>A notice of retraction has been circulated and is easily identifiable, and ideally, the article itself has been identified as retracted in the databases.</li>
 </ol>
-<p>Thus, retractions also only provide an underestimate of the prevalence of scientific fraud since obviously not all cases of scientific fraud or error will meet these four conditions.</p>
-<p>According to the <a href="https://retractionwatch.com/">Retraction Watch blog</a> and its searchable <a href="http://retractiondatabase.org/RetractionSearch.aspx?">database</a>, more than 40,000 articles have been retracted as of November 13<sup>th</sup>, 2022. However, not all of these retractions are due to fraud. There are many reasons why articles get retracted, including honest errors and a range of issues that undermine the trustworthiness of the studies. Also, it is important to keep in mind that there are millions of studies published every year, so despite the increased number of retractions in recent decades, retractions remain extremely rare. Less rare are questionable research practices, which we discuss in the next section.</p>
+<p>Thus, retractions only underestimate the prevalence of scientific fraud since not all cases of scientific fraud or error will meet these four conditions.</p>
+<p>According to the <a href="https://retractionwatch.com/">Retraction Watch blog</a> and its searchable <a href="http://retractiondatabase.org/RetractionSearch.aspx?">database</a>, more than 40,000 articles have been retracted as of November 13, 2022. However, not all of these retractions are due to fraud. There are many reasons why articles get retracted, including honest errors and a range of issues that undermine the trustworthiness of the studies. Also, it is important to keep in mind that millions of studies are published yearly, so despite the increased number of retractions in recent decades, retractions remain extremely rare. Less rare are questionable research practices, which we discuss in the next section.</p>
 </section>
 <section id="questionable-research-practices" class="level2" data-number="11.5">
 <h2 data-number="11.5" class="anchored" data-anchor-id="questionable-research-practices"><span class="header-section-number">11.5</span> Questionable research practices</h2>
-<p>Questionable research practices (QRPs) exists in the grey zone between the responsible conduct of research (RCR) and fabrication, falsification, and plagiarism (FFP).</p>
+<p>Questionable research practices (QRPs) exist in the grey zone between the responsible conduct of research (RCR) and fabrication, falsification, and plagiarism (FFP).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/steneck_2006.jpg" class="img-fluid figure-img" alt="Research behaviours continuum" width="400"></p>
-<p></p><figcaption class="figure-caption">Research behaviours continuum <span class="citation" data-cites="steneck2006">(<a href="#ref-steneck2006" role="doc-biblioref">Steneck 2006</a>)</span>.</figcaption><p></p>
+<p><img src="images/steneck_2006.jpg" class="img-fluid figure-img" width="400"></p>
+<figcaption class="figure-caption">Research behaviours continuum</figcaption>
 </figure>
 </div>
-<p>QRPs encompass a whole range of behaviours and practices that drift away from the ideal of the responsible conduct of research. They can occur at different stages of the research process and they are sometimes considered to not only apply to the individuals performing the research but also to other actors such as editors and reviewers. They also vary in their perceived prevalence and severity and these perceptions also vary between fields. Here are examples of QRPs:</p>
+<p>QRPs encompass a range of behaviours and practices that drift away from the ideal of the responsible conduct of research. They can occur at different stages of the research process and are sometimes considered to apply to the individuals performing the research and other actors such as editors and reviewers. They also vary in their perceived prevalence and severity, and these perceptions vary between fields. Here are examples of QRPs:</p>
 <ul>
-<li><p><strong>Improper referencing</strong>: Attributing an idea or concept to the wrong source, failing to cite sources, or abusive self-citations. This include citing only studies that are in agreement with one’s findings.</p></li>
-<li><p><strong>Selective reporting</strong>: Reporting only some of the data and results of a study (typically only the positive results). Failing to provide adequate level of details in the different parts of the manuscript. Publishing only positive results (publication bias).</p></li>
+<li><p><strong>Improper referencing</strong>: Attributing an idea or concept to the wrong source, failing to cite sources or abusive self-citations. This includes citing only studies that are in agreement with one’s findings.</p></li>
+<li><p><strong>Selective reporting</strong>: Reporting only some of the data and results of a study (typically only the positive results), failing to provide adequate detail in the different parts of the manuscript, and publishing only positive results (publication bias).</p></li>
 <li><p><strong>Salami slicing</strong>: Splitting what could and should have been a single work into multiple smaller publications, sometimes called “smallest publishable units”.</p></li>
-<li><p><strong>Not sharing data</strong>: While sharing data is not always possible for ethical or legal reason. Sharing data is increasingly expect by journals and other researchers and not doing so is often considered a QRP.</p></li>
-<li><p><strong>P-hacking</strong>: Performing all kinds of test and retaining those that produce significant results.</p></li>
+<li><p><strong>Not sharing data</strong>: While it is not always possible for ethical or legal reasons, journals and other researchers increasingly expect it. Not doing so is often considered a QRP.</p></li>
+<li><p><strong>P-hacking</strong>: Performing tests and retaining those that produce significant results.</p></li>
 <li><p><strong>Harking</strong>: Coming up with the hypothesis after looking at the results and presenting it as an a priori hypothesis.</p></li>
-<li><p><strong>Authorship misattribution</strong>: failing to give credit where credit is due by excluding significant contributors from the byline, or giving credit where it is not due by including co-authors that did not significantly contribute to the work. Not ordering authors in a way that reflects their respective contribution to the work.</p></li>
+<li><p><strong>Authorship misattribution</strong>: failing to give credit where credit is due by excluding significant contributors from the byline or giving credit where it is not due by including co-authors who did not significantly contribute to the work. Not ordering authors in a way that reflects their respective contributions to the work.</p></li>
 </ul>
 </section>
 <section id="references" class="level2" data-number="11.6">
 <h2 data-number="11.6" class="anchored" data-anchor-id="references"><span class="header-section-number">11.6</span> References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-azoulay2015" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-azoulay2015" class="csl-entry" role="listitem">
 Azoulay, Pierre, Jeffrey L Furman, Krieger, and Fiona Murray. 2015. <span>“Retractions.”</span> <em>Review of Economics and Statistics</em> 97 (5): 1118–36. <a href="https://doi.org/10.1162/REST_a_00469">https://doi.org/10.1162/REST_a_00469</a>.
 </div>
-<div id="ref-babbage1830" class="csl-entry" role="doc-biblioentry">
+<div id="ref-babbage1830" class="csl-entry" role="listitem">
 Babbage, Charles. 1830. <em>Reflections on the Decline of Science in England, and Some of Its Causes.</em> London.
 </div>
-<div id="ref-bird2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bird2002" class="csl-entry" role="listitem">
 Bird, Stephanie J. 2002. <span>“Self-Plagiarism and Dual and Redundant Publications: What Is the Problem? Commentary on ’Seven Ways to Plagiarize: Handling Real Allegations of Research Misconduct’.”</span> <em>Science and Engineering Ethics</em> 8 (4): 543–44.
 </div>
-<div id="ref-bird2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bird2008" class="csl-entry" role="listitem">
 Bird, Steven B., and Marco L. A. Sivilotti. 2008. <span>“Self-Plagiarism, Recycling Fraud, and the Intent to Mislead.”</span> <em>Journal of Medical Toxicology</em> 4 (2): 69–70. <a href="https://doi.org/10.1007/BF03160957">https://doi.org/10.1007/BF03160957</a>.
 </div>
-<div id="ref-broad1983" class="csl-entry" role="doc-biblioentry">
+<div id="ref-broad1983" class="csl-entry" role="listitem">
 Broad, William J. 1983. <span>“Notorious Darsee Case Shakes Assumptions about Science.”</span> <em>New York Times</em>.
 </div>
-<div id="ref-chubin1985" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chubin1985" class="csl-entry" role="listitem">
 Chubin, Daryl E. 1985. <span>“Miconduct in Research : An Issue of Science Policy and Practice.”</span> <em>Minerva</em> 23 (2): 175–202.
 </div>
-<div id="ref-couzin2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-couzin2006" class="csl-entry" role="listitem">
 Couzin, Jennifer. 2006. <span>“Scientific Fraud.”</span> <em>Science</em> 314 (5807): 1853–53. <a href="https://doi.org/10.1126/science.314.5807.1853">https://doi.org/10.1126/science.314.5807.1853</a>.
 </div>
-<div id="ref-culliton1974" class="csl-entry" role="doc-biblioentry">
+<div id="ref-culliton1974" class="csl-entry" role="listitem">
 Culliton, Barbara J. 1974. <span>“The Sloan-Kettering Affair: A Story Without a Hero.”</span> <em>Science</em> 184 (4137): 644–50. <a href="https://doi.org/10.1126/science.184.4137.644">https://doi.org/10.1126/science.184.4137.644</a>.
 </div>
-<div id="ref-fanelli2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fanelli2009" class="csl-entry" role="listitem">
 Fanelli, Daniele. 2009. <span>“How Many Scientists Fabricate and Falsify Research? A Systematic Review and Meta-Analysis of Survey Data.”</span> <em>PLOS ONE</em> 4 (5): e5738. <a href="https://doi.org/10.1371/journal.pone.0005738">https://doi.org/10.1371/journal.pone.0005738</a>.
 </div>
-<div id="ref-grieneisen2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-grieneisen2012" class="csl-entry" role="listitem">
 Grieneisen, Michael L, and Minghua Zhang. 2012. <span>“A Comprehensive Survey of Retracted Articles from the Scholarly Literature.”</span> <em>PLoS ONE</em> 7 (10): e44118–18.
 </div>
-<div id="ref-judson2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-judson2004" class="csl-entry" role="listitem">
 Judson, Horace Freeland. 2004. <em>The Great Betrayal : Fraud in Science</em>. Orlando: Harcourt.
 </div>
-<div id="ref-karcz2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-karcz2011" class="csl-entry" role="listitem">
 Karcz, Marcin, and Peter J Papadakos. 2011. <span>“The Consequences of Fraud and Deceit in Medical Research.”</span> <em>Canadian Journal of Respiratory Therapy</em> 47 (1): 18–27.
 </div>
-<div id="ref-kochen1987" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kochen1987" class="csl-entry" role="listitem">
 Kochen, Manfred. 1987. <span>“How Well Do We Acknowledge Intellectual Debts?”</span> <em>Journal of Documentation</em> 43 (1): 54–64.
 </div>
-<div id="ref-larivée1993" class="csl-entry" role="doc-biblioentry">
+<div id="ref-larivée1993" class="csl-entry" role="listitem">
 Larivée, Serge, and Maria G. Baruffaldi. 1993. <em>La science au-dessus de tout soupçon : enquête sur les fraudes scientifiques</em>. Laval, Québec: Méridien.
 </div>
-<div id="ref-merton1968" class="csl-entry" role="doc-biblioentry">
-Merton, Robert K. 1968. <span>“The Matthew Effect in Science.”</span> <em>Science</em>, New series, 159 (3810): 56–63. <a href="https://doi.org/10.2307/1723414">https://doi.org/10.2307/1723414</a>.
+<div id="ref-merton1968" class="csl-entry" role="listitem">
+Merton, Robert K. 1968. <em>Social Theory and Social Structure</em>. New York: Free Press.
 </div>
-<div id="ref-mongeon2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mongeon2015" class="csl-entry" role="listitem">
 Mongeon, Philippe. 2015. <span>“Costly Collaborations.”</span> <em>JASIST</em> 15 (2): 125–45.
 </div>
-<div id="ref-reich2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-reich2009" class="csl-entry" role="listitem">
 Reich, Eugenie Samuel. 2009. <em>Plastic Fantastic : How the Biggest Fraud in Physics Shook the Scientific World</em>. New York: Palgrave Macmillan.
 </div>
-<div id="ref-steneck2006" class="csl-entry" role="doc-biblioentry">
-Steneck, Nicholas. 2006. <span>“Fostering Integrity in Research: Definitions, Current Knowledge, and Future Directions.”</span> <em>Science and Engineering Ethics</em> 12 (1): 53–74.
-</div>
-<div id="ref-tilden2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tilden2010" class="csl-entry" role="listitem">
 Tilden, Samuel J. 2010. <span>“Incarceration, Restitution, and Lifetime Debarment: Legal Consequences of Scientific Misconduct in the Eric Poehlman Case: Commentary on Scientific Forensics: How the Office of Research Integrity Can Assist Institutional Investigations of Research Miscond.”</span> <em>Science and Engineering Ethics</em> 16 (4): 737–41. <a href="https://doi.org/10.1007/s11948-010-9228-0">https://doi.org/10.1007/s11948-010-9228-0</a>.
 </div>
-<div id="ref-uspublichealthservice1989" class="csl-entry" role="doc-biblioentry">
+<div id="ref-uspublichealthservice1989" class="csl-entry" role="listitem">
 US Public Health Service. 1989. <span>“Responsibilities of awardee and applicant institutions for dealing with and reporting possible misconduct in science; final rule.”</span> <em>Federal register</em> 54 (151): 32446–51.
 </div>
-<div id="ref-weinstein1981" class="csl-entry" role="doc-biblioentry">
+<div id="ref-weinstein1981" class="csl-entry" role="listitem">
 Weinstein, Deena. 1981. <span>“Scientific Fraud and Scientific Ethics.”</span> <em>Connecticut Medicine</em> 45 (10): 655–58.
 </div>
-<div id="ref-westfall1973" class="csl-entry" role="doc-biblioentry">
+<div id="ref-westfall1973" class="csl-entry" role="listitem">
 Westfall, Richard S. 1973. <span>“Newton and the Fudge Factor.”</span> <em>Science</em>, New series, 179 (4075). <a href="https://doi.org/10.2307/1735787">https://doi.org/10.2307/1735787</a>.
 </div>
 </div>
@@ -405,9 +422,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -419,7 +450,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -455,24 +503,128 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.36">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
 
 
@@ -63,11 +68,16 @@ ul.task-list{list-style: none;}
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -75,111 +85,125 @@ ul.task-list{list-style: none;}
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Bibliometrics and Scholarly Communication</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Course overview</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></a>
+  <a href="./ch1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The social structure of science</span></a>
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></a>
+  <a href="./ch3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The social structure of science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch4.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></a>
+  <a href="./ch4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></a>
+  <a href="./ch5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></a>
+  <a href="./ch6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></a>
+  <a href="./ch7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></a>
+  <a href="./ch8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch9.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></a>
+  <a href="./ch9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch10.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></a>
+  <a href="./ch10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch11.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></a>
+  <a href="./ch11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch12.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></a>
+  <a href="./ch12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"> <span class="header-section-number">4.1</span> Introduction</a></li>
-  <li><a href="#web-of-science" id="toc-web-of-science" class="nav-link" data-scroll-target="#web-of-science"> <span class="header-section-number">4.2</span> Web of Science</a></li>
-  <li><a href="#elseviers-suite-scopus-scival-and-the-icsr-lab." id="toc-elseviers-suite-scopus-scival-and-the-icsr-lab." class="nav-link" data-scroll-target="#elseviers-suite-scopus-scival-and-the-icsr-lab."> <span class="header-section-number">4.3</span> Elsevier’s suite: Scopus, SciVal, and the ICSR lab.</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> Introduction</a></li>
+  <li><a href="#web-of-science" id="toc-web-of-science" class="nav-link" data-scroll-target="#web-of-science"><span class="header-section-number">4.2</span> Web of Science</a></li>
+  <li><a href="#elseviers-suite-scopus-scival-and-the-icsr-lab." id="toc-elseviers-suite-scopus-scival-and-the-icsr-lab." class="nav-link" data-scroll-target="#elseviers-suite-scopus-scival-and-the-icsr-lab."><span class="header-section-number">4.3</span> Elsevier’s suite: Scopus, SciVal, and the ICSR lab.</a>
   <ul class="collapse">
-  <li><a href="#scopus" id="toc-scopus" class="nav-link" data-scroll-target="#scopus"> <span class="header-section-number">4.3.1</span> Scopus</a></li>
-  <li><a href="#scival" id="toc-scival" class="nav-link" data-scroll-target="#scival"> <span class="header-section-number">4.3.2</span> SciVal</a></li>
-  <li><a href="#international-center-for-the-study-of-research-icsr-lab" id="toc-international-center-for-the-study-of-research-icsr-lab" class="nav-link" data-scroll-target="#international-center-for-the-study-of-research-icsr-lab"> <span class="header-section-number">4.3.3</span> International Center for the Study of Research (ICSR) Lab</a></li>
+  <li><a href="#scopus" id="toc-scopus" class="nav-link" data-scroll-target="#scopus"><span class="header-section-number">4.3.1</span> Scopus</a></li>
+  <li><a href="#scival" id="toc-scival" class="nav-link" data-scroll-target="#scival"><span class="header-section-number">4.3.2</span> SciVal</a></li>
+  <li><a href="#international-center-for-the-study-of-research-icsr-lab" id="toc-international-center-for-the-study-of-research-icsr-lab" class="nav-link" data-scroll-target="#international-center-for-the-study-of-research-icsr-lab"><span class="header-section-number">4.3.3</span> International Center for the Study of Research (ICSR) Lab</a></li>
   </ul></li>
-  <li><a href="#dimensions" id="toc-dimensions" class="nav-link" data-scroll-target="#dimensions"> <span class="header-section-number">4.4</span> Dimensions</a></li>
-  <li><a href="#crossref" id="toc-crossref" class="nav-link" data-scroll-target="#crossref"> <span class="header-section-number">4.5</span> <strong>Crossref</strong></a></li>
-  <li><a href="#openalex" id="toc-openalex" class="nav-link" data-scroll-target="#openalex"> <span class="header-section-number">4.6</span> OpenAlex</a></li>
-  <li><a href="#google-scholar" id="toc-google-scholar" class="nav-link" data-scroll-target="#google-scholar"> <span class="header-section-number">4.7</span> Google Scholar</a>
+  <li><a href="#dimensions" id="toc-dimensions" class="nav-link" data-scroll-target="#dimensions"><span class="header-section-number">4.4</span> Dimensions</a></li>
+  <li><a href="#crossref" id="toc-crossref" class="nav-link" data-scroll-target="#crossref"><span class="header-section-number">4.5</span> <strong>Crossref</strong></a></li>
+  <li><a href="#openalex" id="toc-openalex" class="nav-link" data-scroll-target="#openalex"><span class="header-section-number">4.6</span> OpenAlex</a></li>
+  <li><a href="#google-scholar" id="toc-google-scholar" class="nav-link" data-scroll-target="#google-scholar"><span class="header-section-number">4.7</span> Google Scholar</a>
   <ul class="collapse">
-  <li><a href="#google-scholar-profiles" id="toc-google-scholar-profiles" class="nav-link" data-scroll-target="#google-scholar-profiles"> <span class="header-section-number">4.7.1</span> Google Scholar profiles</a></li>
+  <li><a href="#google-scholar-profiles" id="toc-google-scholar-profiles" class="nav-link" data-scroll-target="#google-scholar-profiles"><span class="header-section-number">4.7.1</span> Google Scholar profiles</a></li>
   </ul></li>
-  <li><a href="#how-to-choose-a-data-source" id="toc-how-to-choose-a-data-source" class="nav-link" data-scroll-target="#how-to-choose-a-data-source"> <span class="header-section-number">4.8</span> How to choose a data source?</a></li>
-  <li><a href="#what-skills-do-i-need-to-do-this" id="toc-what-skills-do-i-need-to-do-this" class="nav-link" data-scroll-target="#what-skills-do-i-need-to-do-this"> <span class="header-section-number">4.9</span> What skills do I need to do this?</a></li>
-  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings"> <span class="header-section-number">4.10</span> Further readings</a></li>
+  <li><a href="#how-to-choose-a-data-source" id="toc-how-to-choose-a-data-source" class="nav-link" data-scroll-target="#how-to-choose-a-data-source"><span class="header-section-number">4.8</span> How to choose a data source</a></li>
+  <li><a href="#what-skills-do-i-need-to-do-this" id="toc-what-skills-do-i-need-to-do-this" class="nav-link" data-scroll-target="#what-skills-do-i-need-to-do-this"><span class="header-section-number">4.9</span> What skills do I need to do this?</a></li>
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings"><span class="header-section-number">4.10</span> Further readings</a></li>
   </ul>
 </nav>
     </div>
@@ -188,7 +212,7 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></h1>
 </div>
 
 
@@ -196,6 +220,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -204,27 +229,26 @@ ul.task-list{list-style: none;}
 
 <section id="introduction" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> Introduction</h2>
-<p>Bibliometric analyses are mainly based on the metadata of scholarly outputs. If we take the article below, the metadata would include the title, authors, author affiliations, abstract, acknowledgements, author contributions, and references. The other elements are part of the full text of the article and are not generally included in bibliometric databases and analyses. While there are researchers, databases, websites and service providers that do use the full-text of articles, they will not be the focus of the course, except for one (scite.ai) that we will discuss in chapter 7.</p>
+<p>Bibliometric analyses are mainly based on the metadata of scholarly outputs. If we take the article below, the metadata would include the title, authors, author affiliations, abstract, acknowledgements, author contributions, and references. The other elements are part of the full text of the article and are not generally included in bibliometric databases and analyses. While there are researchers, databases, websites and service providers that do use the full-text of articles, they will not be the focus of the course, except for one (scite.ai) that we will discuss in Chapter 7.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/article.jpg" class="img-fluid figure-img" width="663"></p>
-<p></p><figcaption class="figure-caption">Source: <a href="https://askabiologist.asu.edu/explore/anatomy-of-an-article" class="uri">https://askabiologist.asu.edu/explore/anatomy-of-an-article</a></figcaption><p></p>
+<figcaption class="figure-caption">Source: <a href="https://askabiologist.asu.edu/explore/anatomy-of-an-article" class="uri">https://askabiologist.asu.edu/explore/anatomy-of-an-article</a></figcaption>
 </figure>
 </div>
-<p>The vast majority of bibliographic databases that you will typically access through the university library, such as LISA (Library and Information Science Abstract) or PsycInfo, are mainly used for information retrieval. While they are technically able to support some level of bibliometric analyses, the possibilities are very limited.</p>
-<p>The main advantages of most of the databases that we use for bibliometrics are:</p>
+<p>Most bibliographic databases you will typically access through the university library, such as LISA (Library and Information Science Abstract) or PsycInfo, are mainly used for information retrieval. While they can technically support some bibliometric analyses, the possibilities are limited. So bibliometric literature stems from a few core databases with particular features:</p>
 <ul>
-<li><p>They index more metadata elements from the paper</p></li>
-<li><p>They enrich the metadata by adding things like disciplinary classifications, unique identifiers for authors and other entities, etc.</p></li>
-<li><p><strong>They index</strong> <strong>citations:</strong> this is why these databases are often called <a href="https://en.wikipedia.org/wiki/Citation_index">citation indexes</a>. (or scientific knowledge graph (SKG), which may be a better name since these databases generally include more than citations).</p></li>
+<li>They index more metadata elements from the paper.</li>
+<li>They enrich the metadata by adding disciplinary classifications, unique identifiers for authors and other entities, etc.</li>
+<li><strong>They index</strong> <strong>citations:</strong> this is why these databases are often called <a href="https://en.wikipedia.org/wiki/Citation_index">citation indexes</a>. (or scientific knowledge graph (SKG), which may be a better name since these databases generally include more than citations).</li>
 </ul>
-<p>The indexing of citations, pioneered by Eugene Garfield in the 1960s, is the key innovation that led to the emergence and growth of bibliometrics as its own field of research over the last half-century. This chapter presents some of the main citation indexes that are available today and that support research evaluation and bibliometric research across the globe.</p>
+<p>The indexing of citations, pioneered by <a href="https://en.wikipedia.org/wiki/Eugene_Garfield">Eugene Garfield</a> in the 1960s, is the key innovation that led to the emergence and growth of bibliometrics as a field of research over the last half-century. This chapter presents some of the main citation indexes available today that support research evaluation and bibliometric research across the globe.</p>
 </section>
 <section id="web-of-science" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="web-of-science"><span class="header-section-number">4.2</span> Web of Science</h2>
-<p>The Web of Science is the oldest bibliometric database. It was created in 1963 by Eugene Garfield and his company, the Institute for Scientific Information (ISI). It took 33 years before a competitor emerged (Scopus). In fact, the Web of Science is a collection of citation indexes. The main ones generally used in bibliometric research are the Science Citation Index Expanded (SCIE), the Social Sciences Citation Index (SSCI), and the Arts &amp; Humanities Citation Index (AHCI).</p>
-<p>Because it’s been around so long, the Web of Science (and because Elsevier was not making its database available for large-scale research until very recently) the Web of Science has long been the main database used for large scale bibliometric studies.</p>
-<p>Its main advantages are its long coverage period (although the competitors are catching up), the consistency of its metadata, and the clear criteria for the inclusion of sources in the database. (you can read about the editorial selection process <a href="https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/web-of-science/core-collection/editorial-selection-process/">here</a>). However, the Web of Science’s focus on quality and consistency makes it one of the databases with the lowest coverage among its competitors.</p>
+<p>The Web of Science (WoS) is the oldest bibliometric database. It was created in 1963 by Garfield and his company: the Institute for Scientific Information (ISI). It took 33 years before a competitor emerged (Scopus). The Web of Science is a collection of citation indexes. The main ones generally used in bibliometric research are the Science Citation Index Expanded (SCIE), the Social Sciences Citation Index (SSCI), and the Arts &amp; Humanities Citation Index (AHCI).</p>
+<p>Because it’s been around so long, the Web of Science (and because Elsevier was not making its database available for large-scale research until very recently) WoS has long been the central database used for large-scale bibliometric studies.</p>
+<p>Its main advantages are its long coverage period (although the competitors are catching up), the consistency of its metadata, and the explicit criteria for including sources in the database. (You can read about the editorial selection process <a href="https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/web-of-science/core-collection/editorial-selection-process/">here</a>). However, the Web of Science’s focus on quality and consistency makes it one of the databases with the lowest coverage among its competitors.</p>
 <p>If you’re interested in what a citation index looked like before the internet, I recommend the three videos below, produced by the ISI in 1967.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YwPRI9ug6BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
@@ -232,17 +256,17 @@ ul.task-list{list-style: none;}
 </iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h1ij-t5RbnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Web of Science is not available at Dalhousie
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Unfortunately, the Dalhousie Libraries do not have a subscription to the Web of Science, so you will not be able to use it as a data source for the course.</p>
+<p>Unfortunately, the Dalhousie Libraries do not have a subscription to the Web of Science, so you cannot use it as a data source for the course.</p>
 </div>
 </div>
 </section>
@@ -255,65 +279,50 @@ Web of Science is not available at Dalhousie
 </section>
 <section id="scival" class="level3" data-number="4.3.2">
 <h3 data-number="4.3.2" class="anchored" data-anchor-id="scival"><span class="header-section-number">4.3.2</span> SciVal</h3>
-<p>Scival uses the same data as Scopus, but it is designed for <strong>research evaluation</strong> purposes. You can also access SciVal through the <a href="https://dal.ca.libguides.com/az.php?q=SciVal">Dalhousie Libraries</a> (Note: you will need to create an account and log in to use SciVal).</p>
-<p>The good thing about SciVal is that it provides an interface that you can use to calculate a variety of indicators, produce rankings, visualize trends, etc. However, the interface can be a little confusing and clunky. It can also lead you to use whatever indicator or visualization the platform provides rather than other indicators and visualizations that may fit your needs better.</p>
+<p>Scival uses the same data as Scopus but is designed for <strong>research evaluation</strong> purposes. You can also access SciVal through the <a href="https://dal.ca.libguides.com/az.php?q=SciVal">Dalhousie Libraries</a> (Note: you must create an account and log in to use SciVal).</p>
+<p>The good thing about SciVal is that it provides an interface that you can use to calculate various indicators, produce rankings, visualize trends, etc. However, the interface can be a little confusing and clunky. It can also lead you to use whatever indicator or visualization the platform provides rather than other indicators and visualizations that may better fit your needs.</p>
 </section>
 <section id="international-center-for-the-study-of-research-icsr-lab" class="level3" data-number="4.3.3">
 <h3 data-number="4.3.3" class="anchored" data-anchor-id="international-center-for-the-study-of-research-icsr-lab"><span class="header-section-number">4.3.3</span> International Center for the Study of Research (ICSR) Lab</h3>
-<p>Possibly in an attempt to compete with the Web of Science, and especially with Dimensions (see below), which are offering access to their full database to <strong>research</strong>, Elsevier recently launched the International Center for the Study of Research (ICSR) Lab. The lab allows researchers to submit research proposals and get access to their data infrastructure. (details here: <a href="https://www.elsevier.com/icsr/icsrlab/features" class="uri">https://www.elsevier.com/icsr/icsrlab/features</a>).</p>
+<p>Possibly in an attempt to compete with the Web of Science, and especially with Dimensions (see below), which offer access to their entire database for research, Elsevier recently launched the International Center for the Study of Research (ICSR) Lab. The lab allows researchers to submit research proposals and get access to their data infrastructure. (details here: <a href="https://www.elsevier.com/icsr/icsrlab/features" class="uri">https://www.elsevier.com/icsr/icsrlab/features</a>).</p>
 </section>
 </section>
 <section id="dimensions" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="dimensions"><span class="header-section-number">4.4</span> Dimensions</h2>
 <p>Dimensions is a relatively new player. It is a database like Web of Science and Scopus developed by a company called Digital Science, which happens to be owned by another large publishing company: Springer-Nature. Unlike Web of Science and Scopus, which are accessible via subscription only (and they are not cheap!), Dimensions has a <a href="https://app.dimensions.ai/discover/publication">free online search interface</a> that provides access to its publication data (which is great because that is what you’ll need 95% of the time).</p>
-<p>Again, this search engine is mostly useful for <strong>information retrieval</strong>. However, Like Scopus and Web of Science, it is possible for researchers to submit research proposals and get access to the full data infrastructure for <strong>research</strong>.</p>
+<p>Again, this search engine is helpful mainly for <strong>information retrieval</strong>. However, Like Scopus and Web of Science, researchers can submit research proposals and get access to the entire data infrastructure for <strong>research</strong>.</p>
 </section>
 <section id="crossref" class="level2" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="crossref"><span class="header-section-number">4.5</span> <strong>Crossref</strong></h2>
-<p><a href="https://www.crossref.org/">Crossref</a> is a non-profit organization run by the Publishers International Linking Association (PILA). It is also a major <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">Digital Object Identifier (DOI)</a> registration agency. Crossref’s main focus is on creating an <strong>open and free</strong> database of linking research objects (articles, books, datasets, etc.). However, its <a href="https://search.crossref.org/">search engine</a> is not very good, and Crossref is usually not the best choice for searching the literature.</p>
+<p><a href="https://www.crossref.org/">Crossref</a> is a non-profit organization run by the Publishers International Linking Association (PILA). It is also a major <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">Digital Object Identifier (DOI)</a> registration agency. Crossref’s primary focus is on creating an <strong>open and free</strong> database of linking research objects (articles, books, datasets, etc.). However, its <a href="https://search.crossref.org/">search engine</a> is not very good, and Crossref is usually not the best choice for searching the literature.</p>
 <p>That said, Crossref provides free access to its entire database through its application programming interface (API) and the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH). Crossref also makes the entire Crossref database available for download (don’t do it. It’s huge). Details <a href="https://www.crossref.org/blog/2022-public-data-file-of-more-than-134-million-metadata-records-now-available/">here</a>.</p>
 </section>
 <section id="openalex" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="openalex"><span class="header-section-number">4.6</span> OpenAlex</h2>
-<p><a href="http://openalex.org/">OpenAlex</a> is a new and entirely open platform managed by a non-profit organization called <a href="https://ourresearch.org/">OurResearch</a>. At the core of OpenAlex is the Microsoft Academic Graph (MAG), an open database that Microsoft stopped supporting in 2021, as well as Crossref, but OpenAlex also includes data from a variety of other <a href="https://docs.openalex.org/about-the-data-1">sources</a> in an attempt to provide the most comprehensive, fully open database of scholarly entities and outputs. Here is the OpenAlex database schema:</p>
+<p><a href="http://openalex.org/">OpenAlex</a> is a new and open platform managed by a non-profit organization called <a href="https://ourresearch.org/">OurResearch</a>. At the core of OpenAlex is the Microsoft Academic Graph (MAG), an open database that Microsoft stopped supporting in 2021, as well as Crossref, but OpenAlex also includes data from a variety of other <a href="https://docs.openalex.org/about-the-data-1">sources</a> in an attempt to provide the most comprehensive, fully open database of scholarly entities and outputs. Here is the OpenAlex database schema:</p>
 <p><img src="images/openalex-schema.png" class="img-fluid"></p>
-<p>OpenAlex does not (yet) have a website that can be used to search and retrieve data. However, it has a free API, and the entire database can also be downloaded for free (don’t do it, it’s huge).</p>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Special access for INFO6850 students
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <a href="https://www.mists-imsts.ca/">Maritime Institute for Science, Technology, and Society (MISTS)</a> provides direct access to the OpenAlex database through its PostgreSQL server. If you would like to make use of this access, <strong>please contact your instructor or TA,</strong> and you will be provided with a username, password, and log in instructions.</p>
-<p>Once you have your connection information, I recommend using <a href="https://dbeaver.io/">DBeaver</a> to connect and query the MISTS database, but any PostgreSQL client will do.</p>
-<p><strong>Please:</strong> be careful when running SQL queries on the server. The MISTS servers do not run large resources, so poorly constructed queries might use up all the resources and slow the server down for everyone. Some of the OpenAlex tables are very large, and if your query uses a non-indexed column, it might take days to execute. As a rule of thumb, if your query has been executing for more than 30 minutes, cancel it and check with your instructor or TA to see if something can be done to make the query execute faster.</p>
-</div>
-</div>
+<p>OpenAlex does not (yet) have a website that can be used to search and retrieve data. However, it has a free API, and the entire database can also be downloaded for free (don’t do it; it’s enormous).</p>
 </section>
 <section id="google-scholar" class="level2" data-number="4.7">
 <h2 data-number="4.7" class="anchored" data-anchor-id="google-scholar"><span class="header-section-number">4.7</span> Google Scholar</h2>
-<p>Google Scholar (<a href="https://scholar.google.ca/" class="uri">https://scholar.google.ca/</a>) has the best coverage of all databases. Unlike databases like Scopus and Web of Science which index specific journals that meet some criteria, Google Scholar crawls the web and collects everything that Google robots consider to be a scholarly output. This may be good for coverage, but at the expense of some data quality issues. Google Scholar has many shortcomings, some as direct results of its lack of selection criteria:</p>
+<p>Google Scholar (<a href="https://scholar.google.ca/" class="uri">https://scholar.google.ca/</a>) has the best coverage of all databases. Unlike databases like Scopus and Web of Science, which index specific journals that meet some criteria, Google Scholar crawls the web and collects everything that Google robots consider a scholarly output. This may be good for coverage but at the expense of some data quality issues. Google Scholar has many shortcomings, some as direct results of its lack of selection criteria:</p>
 <ul>
-<li><p>The Google Scholar process is a black box. We do not have a list of included sources or know how the robots are doing the indexing.</p></li>
-<li><p>Data is not easy to access and download for analysis.</p></li>
-<li><p>The metadata is much more limited than in other databases.</p></li>
-<li><p>Limited data extraction capabilities.</p></li>
+<li>The Google Scholar process is a black box. We do not have a list of included sources or know how the robots are doing the indexing.</li>
+<li>Data is not easy to access and download for analysis.</li>
+<li>The metadata is much more limited than in other databases.</li>
+<li>We have limited data extraction capabilities.</li>
 </ul>
 <section id="google-scholar-profiles" class="level3" data-number="4.7.1">
 <h3 data-number="4.7.1" class="anchored" data-anchor-id="google-scholar-profiles"><span class="header-section-number">4.7.1</span> Google Scholar profiles</h3>
-<p>Researchers’ profiles on Google Scholar is one of the most powerful and useful feature of the site. One of the reasons is that most researchers take ownership of their Google Scholar profile, verify it, and curate it. Thus, verified Google Scholar profiles are one of the best way to avoid the challenge of <a href="https://en.wikipedia.org/wiki/Author_name_disambiguation#:~:text=Author%20name%20disambiguation%20is%20a,the%20name%20%22John%20Smith%22.">author name disambiguation</a>, which we will discuss in more detail in Chapter 6.</p>
+<p>Researchers’ profiles on Google Scholar are one of the most valuable features of the site. One of the reasons is that most researchers take ownership of their Google Scholar profile, verify it, and curate it. Thus, verified Google Scholar profiles are one of the best ways to avoid the challenge of <a href="https://en.wikipedia.org/wiki/Author_name_disambiguation#:~:text=Author%20name%20disambiguation%20is%20a,the%20name%20%22John%20Smith%22.">author name disambiguation</a>, which we will discuss in more detail in Chapter 6.</p>
 <p>This is a screenshot of a Google Scholar profile (and this is the URL: <a href="https://scholar.google.ca/citations?user=wvX4S8sAAAAJ" class="uri">https://scholar.google.ca/citations?user=wvX4S8sAAAAJ</a>)</p>
 <p><img src="images/gs_profile_example.jpg" class="img-fluid"></p>
-<p>This is all nice, but we’re still not able to easily collect the data for some analysis. There is free software for this called <a href="https://harzing.com/resources/publish-or-perish">Publish or Perish</a> that can help, but its capacities are also quite limited. In chapter 6, a short demo will be provided to show how to make effective use of publish or perish to collect publications and citation data for individual researchers.</p>
+<p>This is all nice, but we’re still unable to collect the data for some analysis easily. There is free software for this called <a href="https://harzing.com/resources/publish-or-perish">Publish or Perish</a> that can help, but its capacities are also quite limited. In Chapter 6, a short demo will be provided to show how to effectively use publish or perish to collect publications and citation data for individual researchers.</p>
 </section>
 </section>
 <section id="how-to-choose-a-data-source" class="level2" data-number="4.8">
-<h2 data-number="4.8" class="anchored" data-anchor-id="how-to-choose-a-data-source"><span class="header-section-number">4.8</span> How to choose a data source?</h2>
-<p>You should always, always start with some idea of what your goal is and what data you need to achieve that goal. So the first question is:</p>
+<h2 data-number="4.8" class="anchored" data-anchor-id="how-to-choose-a-data-source"><span class="header-section-number">4.8</span> How to choose a data source</h2>
+<p>You should always start with some idea of your goal and what data you need to achieve that goal. So the first question is:</p>
 <ul>
 <li><strong>What is the goal of my analysis? What do I want to know?</strong></li>
 </ul>
@@ -321,8 +330,8 @@ Special access for INFO6850 students
 <ul>
 <li><strong>What data do I need to know what I want to know?</strong></li>
 </ul>
-<p>The point is that some databases may be more generous than others in terms of metadata elements and the possibilities they offer, but that will not help you if you don’t need those extra features. In other words, you don’t want the best database. You want the best database for your needs. So start by identifying what those needs are.</p>
-<p>Then you can start exploring the databases and ask the questions below to help you guide your decision.</p>
+<p>The point is that some databases may be more generous than others regarding metadata elements and the possibilities they offer, but that will not help you if you don’t need those extra features. In other words, you don’t want the best database. You want the best database for your needs. So start by identifying what those needs are.</p>
+<p>Then, you can start exploring the databases and ask the questions below to help you guide your decision.</p>
 <ul>
 <li><p>What metadata does the database provide?</p>
 <ul>
@@ -339,24 +348,24 @@ Special access for INFO6850 students
 <ul>
 <li><p>Can I easily download all the data I will need for my analysis?</p></li>
 <li><p>What interface/methods are available to retrieve data?</p></li>
-<li><p>Can I retrieve that data in a format that I know how to use?</p></li>
+<li><p>Can I retrieve that data in a format I know how to use?</p></li>
 </ul></li>
 <li><p>How structured is the data?</p>
 <ul>
 <li><p>Will I have to do a lot of data processing?</p></li>
 <li><p>Do I have the skills to do that data processing?</p></li>
 </ul></li>
-<li><p>Does the database adequately cover the field/countries/languages I want to analyze?</p>
+<li><p>Does the database cover the field/countries/languages I want to analyze?</p>
 <ul>
-<li>Some databases cover non-English research and certain disciplines like Arts &amp; Humanities better than others.</li>
+<li>Some databases better cover non-English research and specific disciplines like Arts and Humanities.</li>
 </ul></li>
 </ul>
 <p>If you’re working on a small scale (trying to build a comprehensive database of a person or a small unit’s research output, you might want to combine multiple databases to achieve the best results.</p>
 </section>
 <section id="what-skills-do-i-need-to-do-this" class="level2" data-number="4.9">
 <h2 data-number="4.9" class="anchored" data-anchor-id="what-skills-do-i-need-to-do-this"><span class="header-section-number">4.9</span> What skills do I need to do this?</h2>
-<p>No, <strong>you do not need to know any programming languages</strong> like SQL, R or Python to do bibliometrics. There are plenty of free tools that can help you, and most data processing and analyses can be done in Excel too. That said, programming skills definitely can help you perform more complex tasks, use a broader range of databases, or just save time with data collection, cleaning, processing and analysis.</p>
-<p>In this course, you are free to choose whatever tool you wish to use. Your instructor and TA will be there to help no matter what choices you make, so don’t be afraid to challenge yourself.</p>
+<p>No, <strong>you need not know any programming languages</strong> like SQL, R or Python to do bibliometrics. Plenty of free tools can help you, and most data processing and analyses can be done in Excel. That said, programming skills can help you perform more complex tasks, use a broader range of databases, or save time with data collection, cleaning, processing and analysis.</p>
+<p>In this course, you can choose whatever tool you wish to use. Your instructor and TA will be there to help no matter what choices you make, so don’t be afraid to challenge yourself.</p>
 </section>
 <section id="further-readings" class="level2" data-number="4.10">
 <h2 data-number="4.10" class="anchored" data-anchor-id="further-readings"><span class="header-section-number">4.10</span> Further readings</h2>
@@ -394,9 +403,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -408,7 +431,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -436,38 +476,143 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./ch3.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The social structure of science</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

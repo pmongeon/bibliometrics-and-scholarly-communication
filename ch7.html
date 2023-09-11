@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.36">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,15 +11,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -33,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -75,6 +80,7 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
@@ -83,11 +89,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -95,109 +106,123 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Bibliometrics and Scholarly Communication</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Course overview</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></a>
+  <a href="./ch1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The social structure of science</span></a>
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></a>
+  <a href="./ch3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The social structure of science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></a>
+  <a href="./ch4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bibliometric data sources</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></a>
+  <a href="./ch5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></a>
+  <a href="./ch6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch7.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></a>
+  <a href="./ch7.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></a>
+  <a href="./ch8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch9.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></a>
+  <a href="./ch9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch10.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></a>
+  <a href="./ch10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch11.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></a>
+  <a href="./ch11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch12.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></a>
+  <a href="./ch12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"> <span class="header-section-number">7.1</span> Learning objectives</a></li>
-  <li><a href="#what-is-research-impact" id="toc-what-is-research-impact" class="nav-link" data-scroll-target="#what-is-research-impact"> <span class="header-section-number">7.2</span> What is research impact</a></li>
-  <li><a href="#citation-based-impact-measures" id="toc-citation-based-impact-measures" class="nav-link" data-scroll-target="#citation-based-impact-measures"> <span class="header-section-number">7.3</span> Citation-based impact measures</a>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">7.1</span> Learning objectives</a></li>
+  <li><a href="#what-is-research-impact" id="toc-what-is-research-impact" class="nav-link" data-scroll-target="#what-is-research-impact"><span class="header-section-number">7.2</span> What is research impact?</a></li>
+  <li><a href="#citation-based-impact-measures" id="toc-citation-based-impact-measures" class="nav-link" data-scroll-target="#citation-based-impact-measures"><span class="header-section-number">7.3</span> Citation-based impact measures</a>
   <ul class="collapse">
-  <li><a href="#citation-count" id="toc-citation-count" class="nav-link" data-scroll-target="#citation-count"> <span class="header-section-number">7.3.1</span> Citation count</a></li>
-  <li><a href="#normalized-citation-count" id="toc-normalized-citation-count" class="nav-link" data-scroll-target="#normalized-citation-count"> <span class="header-section-number">7.3.2</span> Normalized citation count</a></li>
-  <li><a href="#highly-cited-publications-hcp" id="toc-highly-cited-publications-hcp" class="nav-link" data-scroll-target="#highly-cited-publications-hcp"> <span class="header-section-number">7.3.3</span> Highly cited publications (HCP)</a></li>
-  <li><a href="#h-index" id="toc-h-index" class="nav-link" data-scroll-target="#h-index"> <span class="header-section-number">7.3.4</span> H-index</a></li>
-  <li><a href="#the-journal-impact-factor" id="toc-the-journal-impact-factor" class="nav-link" data-scroll-target="#the-journal-impact-factor"> <span class="header-section-number">7.3.5</span> The journal impact factor</a></li>
+  <li><a href="#citation-count" id="toc-citation-count" class="nav-link" data-scroll-target="#citation-count"><span class="header-section-number">7.3.1</span> Citation count</a></li>
+  <li><a href="#normalized-citation-count" id="toc-normalized-citation-count" class="nav-link" data-scroll-target="#normalized-citation-count"><span class="header-section-number">7.3.2</span> Normalized citation count</a></li>
+  <li><a href="#highly-cited-publications-hcp" id="toc-highly-cited-publications-hcp" class="nav-link" data-scroll-target="#highly-cited-publications-hcp"><span class="header-section-number">7.3.3</span> Highly cited publications (HCP)</a></li>
+  <li><a href="#h-index" id="toc-h-index" class="nav-link" data-scroll-target="#h-index"><span class="header-section-number">7.3.4</span> H-index</a></li>
+  <li><a href="#the-journal-impact-factor" id="toc-the-journal-impact-factor" class="nav-link" data-scroll-target="#the-journal-impact-factor"><span class="header-section-number">7.3.5</span> The journal impact factor</a></li>
   </ul></li>
-  <li><a href="#limits-of-citation-based-indicators" id="toc-limits-of-citation-based-indicators" class="nav-link" data-scroll-target="#limits-of-citation-based-indicators"> <span class="header-section-number">7.4</span> Limits of citation-based indicators</a>
+  <li><a href="#limits-of-citation-based-indicators" id="toc-limits-of-citation-based-indicators" class="nav-link" data-scroll-target="#limits-of-citation-based-indicators"><span class="header-section-number">7.4</span> Limits of citation-based indicators</a>
   <ul class="collapse">
-  <li><a href="#diversity-in-citation-practices" id="toc-diversity-in-citation-practices" class="nav-link" data-scroll-target="#diversity-in-citation-practices"> <span class="header-section-number">7.4.1</span> Diversity in citation practices</a></li>
+  <li><a href="#diversity-in-citation-practices" id="toc-diversity-in-citation-practices" class="nav-link" data-scroll-target="#diversity-in-citation-practices"><span class="header-section-number">7.4.1</span> Diversity in citation practices</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"> <span class="header-section-number">7.5</span> Conclusion</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"> <span class="header-section-number">7.6</span> References</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7.5</span> Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.6</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -206,7 +231,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></h1>
 </div>
 
 
@@ -214,6 +239,7 @@ div.csl-indent {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -229,8 +255,8 @@ div.csl-indent {
 </ul>
 </section>
 <section id="what-is-research-impact" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="what-is-research-impact"><span class="header-section-number">7.2</span> What is research impact</h2>
-<p>In the previous chapter, we focused on the scholarly publication as a measure of the output or productivity of an individual or group. The research article can then be considered as a knowledge unit, to which the authors of that unit have attached their name. However, for a multitude of reasons, not all publications are created equal. Some may be highly original and significant advances to knowledge in a field or across fields (a single publication may even revolutionize fields) while other may make a smaller contribution. So, while research output may be thought of as the number of units produced, research impact can be thought of as the difference that these units have made, their influence. So how can we measure that?</p>
+<h2 data-number="7.2" class="anchored" data-anchor-id="what-is-research-impact"><span class="header-section-number">7.2</span> What is research impact?</h2>
+<p>In the previous chapter, we focused on scholarly publications as a measure of the output or productivity of an individual or group. The research article can then be considered a knowledge unit to which the authors have attached their names. However, for many reasons, not all publications are created equal. Some may be highly original and significant advances to knowledge in a field or across fields (a single publication may even revolutionize fields). In contrast, others may make a more minor contribution. So, while research output may be considered the number of units produced, research impact can be thought of as the difference these units have made and their influence. So, how can we measure that?</p>
 <p>We have seen in Chapter 2 that being cited by peers is the most basic form of recognition that researchers receive within the reward system of science <span class="citation" data-cites="cole1973">(<a href="#ref-cole1973" role="doc-biblioref">Cole and Cole 1973</a>)</span>. Citations have been shown to strongly correlate with prestigious awards and other institutionalized forms of recognition and can thus reflect the amount of scientific capital <span class="citation" data-cites="bourdieu1975">(<a href="#ref-bourdieu1975" role="doc-biblioref">Bourdieu 1975</a>)</span> that one possesses. As <span class="citation" data-cites="merton1968">Merton (<a href="#ref-merton1968" role="doc-biblioref">1968</a>)</span> put it:</p>
 <blockquote class="blockquote">
 <p>“The reference serves both instrumental and symbolic functions in the transmission and enlargement of knowledge. Instrumentally, it tells us of work we may not have known before, some of which may hold further interest for us; symbolically, it registers in the enduring archives the intellectual property of the acknowledged source by providing a pellet of peer recognition of the knowledge claim, accepted or expressly rejected, that was made in that source” (p.&nbsp;622)</p>
@@ -241,29 +267,29 @@ div.csl-indent {
 <h2 data-number="7.3" class="anchored" data-anchor-id="citation-based-impact-measures"><span class="header-section-number">7.3</span> Citation-based impact measures</h2>
 <section id="citation-count" class="level3" data-number="7.3.1">
 <h3 data-number="7.3.1" class="anchored" data-anchor-id="citation-count"><span class="header-section-number">7.3.1</span> Citation count</h3>
-<p>The citation count is the most basic (and perhaps most used) indicator of academic impact. It is obtained by counting the number of times that the paper appears in the reference lists of other papers. Its premise is simple the more a publication is cited, the more it has been influential. While the citation count cannot reveal what the <em>nature</em> of this influence might have been, it is considered to indicate, to some degree, the <em>amount</em> of that influence.</p>
-<p>Once we obtain the citation count of every article in a set representing a research unit (e.g., a researcher, a journal, an institution), we can then compute the total citations for the set. For example, my Google Scholar profile shows the total number of citations of all my publications combined.</p>
+<p>The citation count is the most basic (and perhaps most used) indicator of academic impact. It is obtained by counting the number of times the paper appears in the reference lists of other papers. Its premise is simple: the more a publication is cited, the more it has been influential. While the citation count cannot reveal the nature of this influence, it indicates, to some degree, the <em>amount</em> of that influence.</p>
+<p>Once we obtain the citation count of every article in a set representing a research unit (e.g., a researcher, a journal, an institution), we can compute the total citations for the set. For example, my Google Scholar profile shows the total number of citations of all my publications combined.</p>
 </section>
 <section id="normalized-citation-count" class="level3" data-number="7.3.2">
 <h3 data-number="7.3.2" class="anchored" data-anchor-id="normalized-citation-count"><span class="header-section-number">7.3.2</span> Normalized citation count</h3>
-<p>Is 37 a high number of citations for a publication? It depends on several factors, mainly the <strong>research field</strong>, the <strong>date of publication</strong>, and the <strong>type of document</strong>.</p>
-<p>Different fields or area of research have different epistemic cultures <span class="citation" data-cites="knorrcetina1991">(<a href="#ref-knorrcetina1991" role="doc-biblioref">Knorr Cetina 1991</a>)</span> and scholarly communication practices that can determine the potential number of citations that a publication can receive. This can limit the validity of an assessment based on citation counts alone, especially when this assessment is performed by someone with little knowledge of the field and what might be an excellent, or above-average citation count. Field-normalized indicators take into account field differences in citation rates by comparing the number of citations a paper has received to the citation counts of other papers in the same field.</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<p>Is 37 a high number of citations for a publication? It depends on several factors, mainly the <strong>research field</strong>, publication date, and document type.</p>
+<p>Different fields or research areas have different epistemic cultures [@knorrcetina1991] and scholarly communication practices that can determine the potential number of citations a publication can receive. This can limit the validity of an assessment based on citation counts alone, especially when this assessment is performed by someone with little knowledge of the field and what might be an excellent or above-average citation count. Field-normalized indicators consider field differences in citation rates by comparing the number of citations a paper has received to the citation counts of other papers in the same field.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Pause and reflect
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In Chapter 5, we discussed the classification of research and research outputs and showed that there exists many different classification schemes, and that it can be challenging to determine which field (or fields) a paper belongs to. Consider the implications of that for research evaluation using field-normalized indicators.</p>
+<p>In Chapter 5, we discussed the classification of research and research outputs. We showed that many different classification schemes exist and that it can be challenging to determine which field (or fields) a paper belongs to. Consider the implications of that for research evaluation using field-normalized indicators.</p>
 </div>
 </div>
-<p>Time is an important factor as well since the potential citation count of an article published in 2022 is obviously much lower than the potential citation count of an article published in the same field in 2005.</p>
-<p>Editorials, or letters to the editors tend to receive fewer citations than research articles, which tend to receive fewer citations than review articles. Conference proceedings are also often less cited than journal publications. Therefore, it is generally good practice to take into account the document type when normalizing indicators.</p>
-<p>Normalized citation counts are usually calculated by simply dividing the citation count of a publication by the average citation count of all publication of the same type, in the same field, and published in the same year.</p>
+<p>Time is also important since the potential citation count of an article published in 2022 is obviously much lower than that of an article published in the same field in 2005.</p>
+<p>Editorials, or letters to the editors, tend to receive fewer citations than research articles, which tend to receive fewer citations than review articles. Conference proceedings are also often less cited than journal publications. Therefore, it is generally good practice to consider the document type when normalizing indicators.</p>
+<p>Normalized citation counts are usually calculated by simply dividing the citation count of a publication by the average citation count of all publications of the same type, in the same field, and published in the same year.</p>
 <table class="table">
 <colgroup>
 <col style="width: 7%">
@@ -335,26 +361,26 @@ Pause and reflect
 </table>
 <section id="challenges-with-normalization" class="level4" data-number="7.3.2.1">
 <h4 data-number="7.3.2.1" class="anchored" data-anchor-id="challenges-with-normalization"><span class="header-section-number">7.3.2.1</span> Challenges with normalization</h4>
-<p>Normalizing indicators is not so easy. It implies that we have an adequate classification of research outputs that does not systematically disadvantage subgroups of publications. For example, classifying information science publications with computer science publications may be problematic because these are different fields with different scholarly communication practices. It also implies that we have consistent metadata on the document type, which is not always the case. Finally, and perhaps most importantly, the calculation of the denominator in the normalization formula requires that we have access to the citation counts of all articles published in the same year, field, and document type (essentially, the entire database is required to calculate the denominators). This is problematic in two ways: 1) access to the entire databases is costly (and thus rare), and 2) the normalized citation scores will depend on the database used (Web of Science, Scopus, Dimensions, OpenAlex, PubMed, etc.).</p>
+<p>Normalizing indicators is not so easy. It implies that we have an adequate classification of research outputs that does not systematically disadvantage subgroups of publications. For example, classifying information science publications with computer science publications may be problematic because these are different fields with different scholarly communication practices. It also implies that we have consistent metadata on the document type, which is not always the case. Finally, and perhaps most importantly, calculating the denominator in the normalization formula requires access to the citation counts of all articles published in the same year, field, and document type (essentially, the entire database is required to calculate the denominators). This is problematic in two ways: 1) access to the entire database is costly (and thus rare), and 2) the normalized citation scores will depend on the database used (Web of Science, Scopus, Dimensions, OpenAlex, PubMed, etc.).</p>
 </section>
 </section>
 <section id="highly-cited-publications-hcp" class="level3" data-number="7.3.3">
 <h3 data-number="7.3.3" class="anchored" data-anchor-id="highly-cited-publications-hcp"><span class="header-section-number">7.3.3</span> Highly cited publications (HCP)</h3>
-<p>Another popular indicator is highly cited publications (HCP). This is a rank-based indicator that is obtained by ranking a set of publications from the same field and year (again, normalization is important), and then setting a threshold to distinguish HCPs from the rest. The 1st, 5th and 10th percentiles are often used as thresholds, but these choices are always arbitrary. Using this approach, we get a dichotomous variable (0 or 1) indicating whether each paper in a set belongs to the HCP group or not, which allows us to calculate the share of publications within the set that are highly cited as a size-independent indicator of impact.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<p>Another popular indicator is highly cited publications (HCP). This is a rank-based indicator obtained by ranking a set of publications from the same field and year (again, normalization is essential) and then setting a threshold to distinguish HCPs from the rest. The 1st, 5th and 10th percentiles are often used as thresholds, but these choices are always arbitrary. Using this approach, we get a dichotomous variable (0 or 1) indicating whether each paper in a set belongs to the HCP group. This allows us to calculate the share of publications within the set that are highly cited as a size-independent impact indicator.</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Just like the normalized citations, the identification of HCPs should also take into account the field, publication year and document type. The process thus suffers from the same challenges as citation normalization.</p>
+<p>Just like the normalized citations, the identification of HCPs should also consider the field, publication year and document type. The process thus suffers from the same challenges as citation normalization.</p>
 </div>
 </div>
-<p>The table below provides an example of what the data could look like. We can see that article A and B are published in the same year and field, but only one is above the HCP threshold and thus considered an HCP. We also see that because the HCP threshold is higher in Computer Science, the 95 citations received by article C are not sufficient to make that paper an HCP. We also see that the threshold varies by year, so paper D and E both have 50 citations but only paper E is an HCP.</p>
+<p>The table below provides an example of what the data could look like. We can see that articles A and B are published in the same year and field, but only one is above the HCP threshold and thus is considered an HCP. We also see that because the HCP threshold is higher in Computer Science, the 95 citations received by article C are not sufficient to make that paper an HCP. We also see that the threshold varies by year, so papers D and E have 50 citations, but only paper E is an HCP.</p>
 <table class="table">
 <colgroup>
 <col style="width: 12%">
@@ -422,19 +448,19 @@ Important note
 <section id="h-index" class="level3" data-number="7.3.4">
 <h3 data-number="7.3.4" class="anchored" data-anchor-id="h-index"><span class="header-section-number">7.3.4</span> H-index</h3>
 <p>In 2005, a physicist named Jorge Hirsch introduced a composite indicator that combines the output and impact dimensions of research performance into a single number: the h-index.</p>
-<p>The h-index is equal to the number of publications with a citation number greater than or equal to h For instance, a researcher (or another unit) has an h-index of 10 if they published at least 10 articles cited at least 10 times.</p>
+<p>The h-index equals the number of publications with citations greater than or equal to h. For instance, a researcher (or another unit) has an h-index of 10 if they published at least ten articles cited at least ten times.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/h-index.jpg" class="img-fluid figure-img" width="379"></p>
-<p></p><figcaption class="figure-caption">Visual representation of the calculation of the h-index</figcaption><p></p>
+<figcaption class="figure-caption">Visual representation of the calculation of the h-index</figcaption>
 </figure>
 </div>
 <p>As we can see in the conclusion of Hirsch’s paper, he was arguing for the use of his indicator as an <strong>unbiased measure of scientific achievement that can be used to compare researchers competing for resources.</strong></p>
 <blockquote class="blockquote">
-<p>In summary, I have proposed an easily computable index, h, which gives an estimate of the importance, significance, and broad impact of a scientist’s cumulative research contributions. I suggest that this index may provide a useful yardstick with which to compare, in an unbiased way, different individuals competing for the same resource when an important evaluation criterion is scientific achievement. <span class="citation" data-cites="hirsch2005">(<a href="#ref-hirsch2005" role="doc-biblioref">Hirsch 2005</a>)</span></p>
+<p>In summary, I have proposed an easily computable index, h, which estimates the importance, significance, and broad impact of a scientist’s cumulative research contributions. I suggest that this index may provide a useful yardstick with which to compare, in an unbiased way, different individuals competing for the same resource when an important evaluation criterion is scientific achievement. <span class="citation" data-cites="hirsch2005">(<a href="#ref-hirsch2005" role="doc-biblioref">Hirsch 2005</a>)</span></p>
 </blockquote>
-<p>The h-Index (along with its many variations) has been widely criticized (this <a href="https://phys.org/news/2020-07-albert-einstein-mediocre-h-index-bogus.html">blog post</a> covers some of those criticisms) for not accounting for author position in the byline and for field differences. It also undervalues highly influential work since it is bounded by the number of publications, and it is correlated with academic age and with the much simpler total number of citations. Even <a href="https://www.nature.com/nature-index/news-blog/whats-wrong-with-the-h-index-according-to-its-inventor">Hirsch himself</a> recognized the limits of his indicator and the potential adverse effects of its popularity.</p>
-<p>Ludo Waltman and Nees Jan van Eck <span class="citation" data-cites="waltman2011">(<a href="#ref-waltman2011" role="doc-biblioref">Waltman and Eck 2011</a>)</span> argued that the h-index can create inconsistencies between single authors considered individually or as a group. For instance, five authors who co-authored the same five papers each cited five teams will have an h-index of 5 when considered individually or as a research unit. However, 5 authors who separately published two papers with 10 citations each will have individual h-indices of 2 and a collective h-index of 10. Waltman and van Eck <span class="citation" data-cites="waltman2011">Waltman and Eck (<a href="#ref-waltman2011" role="doc-biblioref">2011</a>)</span> argue that the share of HCPs is a better indicator since it doesn’t suffer from this limitation: researchers who perform better individually than others will maintain this advantage once aggregated into a unit.</p>
+<p>The h-Index (along with its many variations) has been widely criticized (this <a href="https://phys.org/news/2020-07-albert-einstein-mediocre-h-index-bogus.html">blog post</a> covers some of those criticisms) for not accounting for the author’s position in the byline and field differences. It also undervalues highly influential work since it is bounded by the number of publications, and it is correlated with academic age and with the much simpler total number of citations. Even <a href="https://www.nature.com/nature-index/news-blog/whats-wrong-with-the-h-index-according-to-its-inventor">Hirsch himself</a> recognized the limits of his indicator and the potential adverse effects of its popularity.</p>
+<p>Ludo Waltman and Nees Jan van Eck <span class="citation" data-cites="waltman2011">Waltman and Eck (<a href="#ref-waltman2011" role="doc-biblioref">2011</a>)</span> argued that the h-index could create inconsistencies between single authors considered individually or as a group. For instance, five authors who co-authored the same five papers each cited five teams will have an h-index of 5 when considered individually or as a research unit. However, five authors who separately published two papers with ten citations each will have individual h-indices of 2 and a collective h-index of 10. Waltman and van Eck <span class="citation" data-cites="waltman2011">Waltman and Eck (<a href="#ref-waltman2011" role="doc-biblioref">2011</a>)</span> argue that the share of HCPs is a better indicator since it doesn’t suffer from this limitation: researchers who perform better individually than others will maintain this advantage once aggregated into a unit.</p>
 </section>
 <section id="the-journal-impact-factor" class="level3" data-number="7.3.5">
 <h3 data-number="7.3.5" class="anchored" data-anchor-id="the-journal-impact-factor"><span class="header-section-number">7.3.5</span> The journal impact factor</h3>
@@ -442,68 +468,65 @@ Important note
 <p><span class="math display">\[                                                                                                       
                                                                                                      JIF_y = \dfrac{Citations_y}{Publications_{y-1} + Publications_{y-2}}                                 
                                                                                                                                                \]</span></p>
-<p>So the 2017 JIF for the journal X would be calculated by counting all citations received in 2017 by the articles published in the journal in 2015 and 2016 and dividing this citation count by the number of articles published in the journal for 2015 and 2016. Because citations take llonger to accumulate in the social sciences and humanities, a variant of the JIF that uses a five-year citation window rather than a two-year one was eventually introduced.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<p>So, the 2017 JIF for journal X would be calculated by counting all citations received in 2017 by the articles published in the journal in 2015 and 2016 and dividing this citation count by the number of articles published in the journal in 2015 and 2016. Because citations take longer to accumulate in the social sciences and humanities, a variant of the JIF that uses a five-year citation window rather than a two-year one was eventually introduced.</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 One of many
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The term Journal Impact Factor is a trademark of Clarivate Analytics (the company that owns the Web of Science). Other similar indicators have been proposed such as the CiteScore, and the Source Normalized Impact per Paper (SNIP) and the Scimago Journal Ranking (SJR) used by Elsevier.</p>
+<p>The term “Journal Impact Factor” is a trademark of Clarivate Analytics (the company that owns the Web of Science). Similar indicators have been proposed, such as the CiteScore, the Source Normalized Impact per Paper (SNIP) and the Scimago Journal Ranking (SJR) used by Elsevier.</p>
 </div>
 </div>
-<p>As we know, accumulating citations take time, which means that it is difficult to determine early on whether a piece of research is a “significant contribution” to science or not. Partly because they are immediately available, the JIF or other journal indicators or rankings are commonly used in the evaluation process. Such practices have, however, been widely criticized and using the journal as a proxy for the importance of a single publication is often considered a <strong>misuse</strong> of these journal indicators (some of these criticisms can be found in <span class="citation" data-cites="larivière2019">Larivière and Sugimoto (<a href="#ref-larivière2019" role="doc-biblioref">2019</a>)</span>).</p>
+<p>As we know, accumulating citations takes time, so it is difficult to determine early on whether a piece of research is a “significant contribution” to science. Partly because they are immediately available, the JIF or other journal indicators or rankings are commonly used in the evaluation process. However, Such practices have been widely criticized. Using the journal as a proxy for the importance of a single publication is often considered a <strong>misuse</strong> of these journal indicators (some of these criticisms can be found in <span class="citation" data-cites="larivière2019">Larivière and Sugimoto (<a href="#ref-larivière2019" role="doc-biblioref">2019</a>)</span>).</p>
 </section>
 </section>
 <section id="limits-of-citation-based-indicators" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="limits-of-citation-based-indicators"><span class="header-section-number">7.4</span> Limits of citation-based indicators</h2>
 <section id="diversity-in-citation-practices" class="level3" data-number="7.4.1">
 <h3 data-number="7.4.1" class="anchored" data-anchor-id="diversity-in-citation-practices"><span class="header-section-number">7.4.1</span> Diversity in citation practices</h3>
-<p>An important factor that is not always at the forefront of discussions around citation-based indicators and research evaluation is the fact that a paper doesn’t just get cited by virtue of existing or based on its intrinsic characteristics; it is cited because another researcher referred to it in their own work. We might then ask: why do researchers cite other works?</p>
-<p>There are two dominant theories of citation behaviour: the <strong>normative</strong> and the <strong>socio-constructivist</strong> theories. The normative view suggests that researchers mainly cite in order to acknowledge the work of their peers and predecessors and <em>give credit where credit is due</em>. It is the Mertonian view that was mentioned at the beginning of this chapter which supports the use of citations for evaluative purposes. The socio-constructivist view focuses on citations as a rhetorical device that is not meant to acknowledge, but rather to convince. It emphasizes the strategic and biased nature of citation choices. For instance, one might omit to cite sources that don’t align with their findings or arguments, or cite work of little relevance by prestigious scholars at the expense of more relevant work by less known scholars.</p>
-<p><span class="citation" data-cites="bornmann2008">Bornmann and Daniel (<a href="#ref-bornmann2008" role="doc-biblioref">2008</a>)</span> performed a review of studies that sought to empirically test those two theories. Their review suggests that reasons for citing are mixed and partly support both views, although support for the normative theory is stronger. They do however suggest that this is mostly true at higher level of aggregation (e.g., researchers with substantial publication records, research units, institutions).</p>
-<p>This leads us to a second main limit of citation-based impact indicators: their <strong>limited</strong> <strong>reliability</strong> when working with small datasets (e.g., individual papers or researchers). This is partly due to the ambiguities surrounding the concept of impact and what citations are actually supposed to measure, and by the general concept of statistical power according to which small sample sizes increase the likelihood of failing to reject a null hypothesis.</p>
-<p>Finally, one of the most important limits of citation-based indicators is that they fail to account for other forms of impact. Indeed, citations are often seen to measure relatively accurately the <strong>academic impact</strong> of a publication or research unit, that is the contribution of theoretical or methodological advances to the field. However, the impact of academic research is not limited to the scientific realm. Research can also lead to economic development (economic impact), fuel technological innovation (technological impact), and have impact on policy, on public health, on the environment and on culture and society at large. In the next chapter, we will discuss “Altmetrics” (alternative metrics), which are a range of bibliometric indicators that seek to measure the impact of a publication outside of scholarly communication system. Could those new metrics succeed in measuring the social impact of research? We shall see.</p>
+<p>An important factor that is not always at the forefront of discussions around citation-based indicators and research evaluation is that a paper doesn’t just get cited by virtue of existing or based on its intrinsic characteristics; it is cited because another researcher referred to it in their own work. We might then ask: Why do researchers cite other works?</p>
+<p>There are two dominant theories of citation behaviour: the <strong>normative</strong> and the <strong>socio-constructivist</strong> theories. The normative view suggests that researchers mainly cite to acknowledge the work of their peers and predecessors and <em>give credit where credit is due</em>. It is the Mertonian view that was mentioned at the beginning of this chapter, which supports the use of citations for evaluative purposes. The socio-constructivist view focuses on citations as a rhetorical device that is not meant to acknowledge but rather to convince. It emphasizes the strategic and biased nature of citation choices. For instance, one might omit to cite sources that don’t align with their findings or arguments or cite work of little relevance by prestigious scholars at the expense of more relevant work by less known scholars.</p>
+<p><span class="citation" data-cites="bornmann2008">Bornmann and Daniel (<a href="#ref-bornmann2008" role="doc-biblioref">2008</a>)</span> reviewed studies that sought to test those two theories empirically. Their review suggests that reasons for citing are mixed and partly support both views, although support for the normative theory is stronger. However, they suggest that this is primarily true at higher levels of aggregation (e.g., researchers with substantial publication records, research units, and institutions).</p>
+<p>This leads us to a second main limit of citation-based impact indicators: their <strong>limited</strong> <strong>reliability</strong> when working with small datasets (e.g., individual papers or researchers). This is partly due to the ambiguities surrounding the concept of impact and what citations are supposed to measure, and by the general concept of statistical power, according to which small sample sizes increase the likelihood of failing to reject a null hypothesis.</p>
+<p>Finally, one of the most critical limits of citation-based indicators is that they fail to account for other forms of impact. Indeed, citations are often seen to measure relatively accurately the <strong>academic impact</strong> of a publication or research unit, that is, the contribution of theoretical or methodological advances to the field. However, the impact of academic research is not limited to the scientific realm. Research can also lead to economic development (economic impact), fuel technological innovation (technological impact), and impact policy, public health, the environment, culture, and society. In the next chapter, we will discuss “Altmetrics” (alternative metrics), a range of bibliometric indicators that seek to measure the impact of a publication outside the scholarly communication system. Could those new metrics succeed in measuring the social impact of research? We shall see.</p>
 </section>
 </section>
 <section id="conclusion" class="level2" data-number="7.5">
 <h2 data-number="7.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7.5</span> Conclusion</h2>
-<p>In this chapter, we introduced some of the most commonly used citation-based indicators of research impact and their calculation. While a large number of empirical studies have demonstrated a correlation between citations and the not always clearly defined concept that they claim to measure, caution remains necessary when using citations for evaluation purposes. Over the years, the research community published several declarations and manifestos that emphasize the challenges of quantitative research evaluation processes and propose best practices; the <a href="http://www.leidenmanifesto.org/">Leiden Manifesto</a> and the <a href="https://sfdora.org/read/">San Francisco Declaration on Research Assessment (DORA)</a> are good examples.</p>
+<p>In this chapter, we introduced some of the most commonly used citation-based indicators of research impact and their calculation. While many empirical studies have demonstrated a correlation between citations and the not-always-clearly defined concept they claim to measure, caution remains necessary when using citations for evaluation purposes. Over the years, the research community published several declarations and manifestos emphasizing the challenges of quantitative research evaluation processes and proposing best practices; the <a href="http://www.leidenmanifesto.org/">Leiden Manifesto</a> and the <a href="https://sfdora.org/read/">San Francisco Declaration on Research Assessment (DORA)</a> are good examples.</p>
 </section>
 <section id="references" class="level2" data-number="7.6">
 <h2 data-number="7.6" class="anchored" data-anchor-id="references"><span class="header-section-number">7.6</span> References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-bornmann2008" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bornmann2008" class="csl-entry" role="listitem">
 Bornmann, Lutz, and Hans-Dieter Daniel. 2008. <span>“What Do Citation Counts Measure? A Review of Studies on Citing Behavior.”</span> <em>Journal of Documentation</em> 64 (1): 45–80. <a href="https://doi.org/10.1108/00220410810844150">https://doi.org/10.1108/00220410810844150</a>.
 </div>
-<div id="ref-bourdieu1975" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bourdieu1975" class="csl-entry" role="listitem">
 Bourdieu, Pierre. 1975. <span>“The Specificity of the Scientific Field and the Social Conditions of the Progress of Reason.”</span> <em>Social Science Information</em> 14 (6): 19–47. <a href="https://doi.org/10.1177/053901847501400602">https://doi.org/10.1177/053901847501400602</a>.
 </div>
-<div id="ref-cole1973" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cole1973" class="csl-entry" role="listitem">
 Cole, Jonathan R, and Stephen Cole. 1973. <em>Social Stratification in Science</em>. Chicago, IL: University of Chicago Press.
 </div>
-<div id="ref-hirsch2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hirsch2005" class="csl-entry" role="listitem">
 Hirsch, J E. 2005. <span>“An Index to Quantify an Individual’s Scientific Research Output.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 102 (46): 16569–72. <a href="https://doi.org/10.1073/pnas.0507655102">https://doi.org/10.1073/pnas.0507655102</a>.
 </div>
-<div id="ref-knorrcetina1991" class="csl-entry" role="doc-biblioentry">
-Knorr Cetina, Karin. 1991. <span>“Epistemic Cultures: Forms of Reason in Science.”</span> <em>History of Political Economy</em> 23 (1): 105–22. <a href="https://doi.org/10.1215/00182702-23-1-105">https://doi.org/10.1215/00182702-23-1-105</a>.
-</div>
-<div id="ref-larivière2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-larivière2019" class="csl-entry" role="listitem">
 Larivière, Vincent, and Cassidy R. Sugimoto. 2019. <span>“The Journal Impact Factor: A Brief History, Critique, and Discussion of Adverse Effects.”</span> In, 3–24. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-02511-3_1">https://doi.org/10.1007/978-3-030-02511-3_1</a>.
 </div>
-<div id="ref-merton1968" class="csl-entry" role="doc-biblioentry">
-Merton, Robert K. 1968. <span>“The Matthew Effect in Science.”</span> <em>Science</em>, New series, 159 (3810): 56–63. <a href="https://doi.org/10.2307/1723414">https://doi.org/10.2307/1723414</a>.
+<div id="ref-merton1968" class="csl-entry" role="listitem">
+Merton, Robert K. 1968. <em>Social Theory and Social Structure</em>. New York: Free Press.
 </div>
-<div id="ref-narin1976" class="csl-entry" role="doc-biblioentry">
+<div id="ref-narin1976" class="csl-entry" role="listitem">
 Narin, Francis. 1976. <em>Evaluative Bibliometrics: The Use of Publication and Citation Analysis in the Evaluation of Scientific Activity</em>. Computer Horizons Washington, D. C.
 </div>
-<div id="ref-waltman2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-waltman2011" class="csl-entry" role="listitem">
 Waltman, Ludo, and Nees Jan van Eck. 2011. <span>“The Inconsistency of the h-Index.”</span> <em>Journal of the American Society for Information Science and Technology</em> 63 (2): 406–15. <a href="https://doi.org/10.1002/asi.21678">https://doi.org/10.1002/asi.21678</a>.
 </div>
 </div>
@@ -537,9 +560,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -551,7 +588,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -579,31 +633,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
