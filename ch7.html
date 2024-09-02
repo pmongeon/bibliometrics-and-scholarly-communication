@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bibliometrics and Scholarly Communication - 7&nbsp; Measuring research impact</title>
+<title>Bibliometrics and Scholarly Communication - 7&nbsp; Measuring research output</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -66,7 +67,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,13 +82,42 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -91,13 +127,13 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research output</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -106,7 +142,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Bibliometrics and Scholarly Communication</a> 
@@ -128,13 +164,13 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to bibliometrics and scholarly communications</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bibliometrics and scholarly communication: An introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Journals, peer-review, and the organization and evaluation of research</span></span></a>
+  <a href="./ch2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The organization and evaluation of research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -152,31 +188,31 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Research fields, disciplines, and topics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Classifying research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch7.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research output</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Measuring research impact</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Altmetrics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -188,41 +224,53 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Perverse and unintended effects of bibliometrics and research evaluation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Scientific fraud and questionable research practices</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Equity, diversity, and inclusion in research</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">7.1</span> Learning objectives</a></li>
-  <li><a href="#what-is-research-impact" id="toc-what-is-research-impact" class="nav-link" data-scroll-target="#what-is-research-impact"><span class="header-section-number">7.2</span> What is research impact?</a></li>
-  <li><a href="#citation-based-impact-measures" id="toc-citation-based-impact-measures" class="nav-link" data-scroll-target="#citation-based-impact-measures"><span class="header-section-number">7.3</span> Citation-based impact measures</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">7.1</span> Introduction</a></li>
+  <li><a href="#the-functions-of-scientific-authorship" id="toc-the-functions-of-scientific-authorship" class="nav-link" data-scroll-target="#the-functions-of-scientific-authorship"><span class="header-section-number">7.2</span> The functions of scientific authorship</a>
   <ul class="collapse">
-  <li><a href="#citation-count" id="toc-citation-count" class="nav-link" data-scroll-target="#citation-count"><span class="header-section-number">7.3.1</span> Citation count</a></li>
-  <li><a href="#normalized-citation-count" id="toc-normalized-citation-count" class="nav-link" data-scroll-target="#normalized-citation-count"><span class="header-section-number">7.3.2</span> Normalized citation count</a></li>
-  <li><a href="#highly-cited-publications-hcp" id="toc-highly-cited-publications-hcp" class="nav-link" data-scroll-target="#highly-cited-publications-hcp"><span class="header-section-number">7.3.3</span> Highly cited publications (HCP)</a></li>
-  <li><a href="#h-index" id="toc-h-index" class="nav-link" data-scroll-target="#h-index"><span class="header-section-number">7.3.4</span> H-index</a></li>
-  <li><a href="#the-journal-impact-factor" id="toc-the-journal-impact-factor" class="nav-link" data-scroll-target="#the-journal-impact-factor"><span class="header-section-number">7.3.5</span> The journal impact factor</a></li>
+  <li><a href="#credit" id="toc-credit" class="nav-link" data-scroll-target="#credit"><span class="header-section-number">7.2.1</span> Credit</a></li>
+  <li><a href="#ownership-and-responsibility" id="toc-ownership-and-responsibility" class="nav-link" data-scroll-target="#ownership-and-responsibility"><span class="header-section-number">7.2.2</span> Ownership and responsibility</a></li>
+  <li><a href="#reputation-economy" id="toc-reputation-economy" class="nav-link" data-scroll-target="#reputation-economy"><span class="header-section-number">7.2.3</span> Reputation economy</a></li>
   </ul></li>
-  <li><a href="#limits-of-citation-based-indicators" id="toc-limits-of-citation-based-indicators" class="nav-link" data-scroll-target="#limits-of-citation-based-indicators"><span class="header-section-number">7.4</span> Limits of citation-based indicators</a>
+  <li><a href="#authorship-practices-an-norms" id="toc-authorship-practices-an-norms" class="nav-link" data-scroll-target="#authorship-practices-an-norms"><span class="header-section-number">7.3</span> Authorship practices an norms</a>
   <ul class="collapse">
-  <li><a href="#diversity-in-citation-practices" id="toc-diversity-in-citation-practices" class="nav-link" data-scroll-target="#diversity-in-citation-practices"><span class="header-section-number">7.4.1</span> Diversity in citation practices</a></li>
+  <li><a href="#collaboration-and-division-of-labour" id="toc-collaboration-and-division-of-labour" class="nav-link" data-scroll-target="#collaboration-and-division-of-labour"><span class="header-section-number">7.3.1</span> Collaboration and division of labour</a></li>
+  <li><a href="#naming-authors" id="toc-naming-authors" class="nav-link" data-scroll-target="#naming-authors"><span class="header-section-number">7.3.2</span> Naming authors</a></li>
+  <li><a href="#ordering-authors" id="toc-ordering-authors" class="nav-link" data-scroll-target="#ordering-authors"><span class="header-section-number">7.3.3</span> Ordering authors</a></li>
+  <li><a href="#categorizing-authors" id="toc-categorizing-authors" class="nav-link" data-scroll-target="#categorizing-authors"><span class="header-section-number">7.3.4</span> Categorizing authors</a></li>
+  <li><a href="#authorship-guidelines" id="toc-authorship-guidelines" class="nav-link" data-scroll-target="#authorship-guidelines"><span class="header-section-number">7.3.5</span> Authorship guidelines</a></li>
+  <li><a href="#contribution-statements" id="toc-contribution-statements" class="nav-link" data-scroll-target="#contribution-statements"><span class="header-section-number">7.3.6</span> Contribution statements</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7.5</span> Conclusion</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.6</span> References</a></li>
+  <li><a href="#bibliometric-indicators" id="toc-bibliometric-indicators" class="nav-link" data-scroll-target="#bibliometric-indicators"><span class="header-section-number">7.4</span> Bibliometric indicators</a>
+  <ul class="collapse">
+  <li><a href="#research-output" id="toc-research-output" class="nav-link" data-scroll-target="#research-output"><span class="header-section-number">7.4.1</span> Research output</a></li>
+  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration"><span class="header-section-number">7.4.2</span> Collaboration</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.5</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -231,7 +279,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research impact</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Measuring research output</span></h1>
 </div>
 
 
@@ -244,290 +292,366 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<section id="learning-objectives" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">7.1</span> Learning objectives</h2>
+
+<section id="introduction" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">7.1</span> Introduction</h2>
+<p>Measuring the research output of any entity (e.g., an individual, an organization, a country, or a field) requires that 1) such an output exists (e.g.&nbsp;an article), and 2) that the link between the output and the entity be established through authorship. This chapter discusses the role of authorship in science and the practices, norms, and guidelines that influence the naming and ordering of authors.</p>
+</section>
+<section id="the-functions-of-scientific-authorship" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="the-functions-of-scientific-authorship"><span class="header-section-number">7.2</span> The functions of scientific authorship</h2>
+<p>According to <span class="citation" data-cites="birnholtz2006">Birnholtz (<a href="#ref-birnholtz2006" role="doc-biblioref">2006</a>)</span>, the functions of authorship in science are to assign credit, ownership, and responsibility for discoveries, as well as to enable the existence of a reputation economy.</p>
+<section id="credit" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="credit"><span class="header-section-number">7.2.1</span> Credit</h3>
+<p>Peer recognition is the main reward obtained by researchers; this symbolic capital then allows them to obtain other rewards with symbolic but also economic value. It is therefore important for researchers to obtain this credit for their contributions and the codes of ethics of disciplinary associations (and, to a lesser extent, the editorial policies of journals) emphasize the importance of giving all contributors the credit due to them. It is thanks to authorship that the system of recognition of science can function, by granting an institutionalized form of credit (awards and positions, for instance) to researchers who have made important contributions to the advancement of knowledge.</p>
+</section>
+<section id="ownership-and-responsibility" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="ownership-and-responsibility"><span class="header-section-number">7.2.2</span> Ownership and responsibility</h3>
+<p>The link between authorship and ownership applies less to science than to other domains (e.g.&nbsp;the literary domain), because of the Mertonian norm of disinterestedness. According to <span class="citation" data-cites="biagioli2003">Biagioli et al. (<a href="#ref-biagioli2003" role="doc-biblioref">2003</a>)</span>, only the original expression of scientific discoveries, generally under textual form, is the property of the authors, which grants them protection against plagiarism. Responsibility, which can be considered the other side of the ownership coin, has more relevance in science. The proper functioning of the scientific reward system relies on its ability to reward those who contribute to the goal and follow the norms, and its ability to punish (or at least not reward) those who act against the goals and norms of the system. Scientific fraud (e.g.&nbsp;fabrication, falsification, or plagiarism) is an example of non-compliance with the standards of science having a negative impact on the career of the researchers involved <span class="citation" data-cites="mongeon2015">(<a href="#ref-mongeon2015" role="doc-biblioref">Mongeon 2015</a>)</span>, and even on their institutions and their disciplines <span class="citation" data-cites="azoulay2015">(<a href="#ref-azoulay2015" role="doc-biblioref">Azoulay et al. 2015</a>)</span>. Although they remain relatively rare, the increase in cases of scientific fraud has contributed to the development of authorship guidelines which, as we will see later, emphasize the responsibility of researchers for the validity of the articles’ content.</p>
+</section>
+<section id="reputation-economy" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="reputation-economy"><span class="header-section-number">7.2.3</span> Reputation economy</h3>
+<p>Authorship, among other things, provides scientific capital to the researcher. Once known and recognized by the other researchers in the field, this scientific capital is converted into symbolic capital <span class="citation" data-cites="bourdieu1987">(<a href="#ref-bourdieu1987" role="doc-biblioref">Bourdieu 1987</a>)</span>. Authorship is the basis of the social stratification of scientific fields, and all the layers of the hierarchy of rewards, from the simple citation to the Nobel Prize <span class="citation" data-cites="cole1973">(<a href="#ref-cole1973" role="doc-biblioref">Cole and Cole 1973</a>)</span>. There is no social structure of science without authorship.</p>
+</section>
+</section>
+<section id="authorship-practices-an-norms" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="authorship-practices-an-norms"><span class="header-section-number">7.3</span> Authorship practices an norms</h2>
+<p>The byline of an article ultimately depends on two elements:</p>
+<ol type="1">
+<li>The nature and extent of the contribution of those involved in the works (who did what?)</li>
+<li>The decisions made about naming and ordering authors (who will be an author, and in what order will the names be listed?)</li>
+</ol>
+<p>These questions can be difficult to answer in a context where science is increasingly complex and collaborative <span class="citation" data-cites="wuchty2007">(<a href="#ref-wuchty2007" role="doc-biblioref">Wuchty, Jones, and Uzzi 2007</a>)</span>.</p>
+<section id="collaboration-and-division-of-labour" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="collaboration-and-division-of-labour"><span class="header-section-number">7.3.1</span> Collaboration and division of labour</h3>
+<p><span class="citation" data-cites="laudel2002">Laudel (<a href="#ref-laudel2002" role="doc-biblioref">2002</a>)</span> identified six types of collaboration related to the types of contributions that individuals can make to a given research project:</p>
 <ul>
-<li>What is research impact?</li>
-<li>What are the most commonly used citation-based impact indicators?</li>
-<li>What are the limitations of citation-based impact indicators?</li>
+<li><p><strong>Collaboration involving a division of intellectual labour.</strong> Collaborators with a shared goal who make substantial intellectual contribution towards that goal. They are to some degree co-leading the research.</p></li>
+<li><p><strong>Service collaboration.</strong> Researchers who are called upon to produce routine work that require a specific expertise.</p></li>
+<li><p><strong>Provision of access to research equipment.</strong> The collaborator does not perform any tasks related to the project but provides material, equipment, data, etc. used for the research.</p></li>
+<li><p><strong>Transmission of know-how</strong>. The non-creative transmission of information stored in memory that is useful for the research.</p></li>
+<li><p><strong>Mutual stimulation</strong>: The stimulation and engagement through informal interactions that helps researchers develop their ideas.</p></li>
+<li><p><strong>Trusted assessorship</strong>: Providing feedback on the work.</p></li>
+</ul>
+<p>Not all these forms of collaboration lead to authorship. <span class="citation" data-cites="laudel2002">Laudel (<a href="#ref-laudel2002" role="doc-biblioref">2002</a>)</span> found that authorship is usually attributed to collaborators of the first two types only.</p>
+<p><span class="citation" data-cites="subramanyam1983">Subramanyam (<a href="#ref-subramanyam1983" role="doc-biblioref">1983</a>)</span> proposed four types of collaboration related to the hierarchical status of the involved individuals:</p>
+<ul>
+<li><p><strong>Same-status collaborations.</strong></p></li>
+<li><p><strong>Professor-student collaborations.</strong></p></li>
+<li><p><strong>Supervisor-assistant collaborations.</strong></p></li>
+<li><p><strong>Researcher-consultant collaborations.</strong></p></li>
+</ul>
+<p>The number of people required for a given project can have an influence on the types of collaboration that will take place. According to <span class="citation" data-cites="walsh2015">Walsh and Lee (<a href="#ref-walsh2015" role="doc-biblioref">2015</a>)</span>, larger teams tend to lead to more bureaucratic organizational structures, characterized by increased division of labour, specialization and standardization of tasks, hierarchical relationships, and decentralized decision-making.</p>
+<p>Assigning authorship can be difficult when a work is the outcome of &nbsp;many individuals with different statuses, roles, and contributions. Decisions have to be made about 1) who will be an author (not all contributions lead to authorship) and 2) the order of the names, which is usually meant to indicate what share of the credit each one deserves <span class="citation" data-cites="pontille2006">(<a href="#ref-pontille2006" role="doc-biblioref">Pontille 2006</a>)</span>. It can be extremely difficult for an external observer to determine who did what or what share of credit everyone deserves <span class="citation" data-cites="rennie1997">(<a href="#ref-rennie1997" role="doc-biblioref">Rennie, Yank, and Emanuel 1997</a>)</span>.</p>
+</section>
+<section id="naming-authors" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="naming-authors"><span class="header-section-number">7.3.2</span> Naming authors</h3>
+<p>Unlike the concept of author in literature, which is linked with writing, the concept of author in science is not and other forms of contributions can lead to authorship. Moreover, as <span class="citation" data-cites="pontille2006">Pontille (<a href="#ref-pontille2006" role="doc-biblioref">2006</a>)</span> points out, the act of writing is not necessarily sufficient to obtain author status, and it is also possible to be an author without writing. So what kind of contributions do lead to authorship? Contributions involving the division of intellectual labour (the first type of collaboration identified by <span class="citation" data-cites="laudel2002">Laudel (<a href="#ref-laudel2002" role="doc-biblioref">2002</a>)</span>). This link between substantial intellectual contribution and authorship generates little to no debate in the literature. However, whether authorship should be awarded to individuals with technical, routine, or less substantial contributions is not so clear.</p>
+<p><span class="citation" data-cites="hagstrom1964">Hagstrom (<a href="#ref-hagstrom1964" role="doc-biblioref">1964</a>)</span> tackles the question of authorship for technical contributions by looking at the historical context and distinguishing traditional collaboration from modern collaboration. He portrays the traditional technician as having few qualifications and being involved in the search for solutions to scientific problems but performing simple tasks designed and assigned by the scientist in exchange for economic capital. In contrast, the modern technician is a qualified professional performing complex tasks that the researcher employing them may not know how to perform themselves. This professionalization of the technician is nicely illustrated by <span class="citation" data-cites="knorr-cetina1999">Knorr-Cetina (<a href="#ref-knorr-cetina1999" role="doc-biblioref">1999</a>)</span> who tells the story of an established researcher who mastered the theories of his field but was unable to execute the technical tasks their research required. This type of relationship between the scientist and the technician is not generalized and technical contributions do not always lead to authorship today <span class="citation" data-cites="haeussler2015 larivière2016 laudel2002">(<a href="#ref-haeussler2015" role="doc-biblioref">Haeussler and Sauermann 2015</a>; <a href="#ref-larivière2016" role="doc-biblioref">Larivière et al. 2016</a>; <a href="#ref-laudel2002" role="doc-biblioref">Laudel 2002</a>)</span>.</p>
+<p>The type of contribution is not always the only determinant. The same task performed by a paid technician or by another researcher may lead to authorship for the latter but not the former <span class="citation" data-cites="pontille2016 shibayama2012">(<a href="#ref-pontille2016" role="doc-biblioref">Pontille 2016</a>; <a href="#ref-shibayama2012" role="doc-biblioref">Shibayama, Walsh, and Baba 2012</a>)</span>.</p>
+<p>The importance of a discovery can also affect authorship attribution. <span class="citation" data-cites="jabbehdari2017">Jabbehdari and Walsh (<a href="#ref-jabbehdari2017" role="doc-biblioref">2017</a>)</span> found that the individuals who performed technical or less substantial contributions are more often excluded from the byline of highly cited work.</p>
+<p>The relationship between the nature and extent of a contribution and authorship is also determined by implicit disciplinary norms. Some type of contributions that often lead to authorship in a discipline may not (and may even be considered unethical) in another <span class="citation" data-cites="bozeman2016">(<a href="#ref-bozeman2016" role="doc-biblioref">Bozeman and Youtie 2016</a>)</span>. For example, in sociology, writing remains one of the most important contribution and tends to be required to be an author <span class="citation" data-cites="pontille2004">(<a href="#ref-pontille2004" role="doc-biblioref">Pontille 2004</a>)</span>. However, Pontille distinguishes French sociology from American sociology, where authorship norms are more inclusive. This highlights that the disciplinary context is not entirely independent from the local context. In physics, we find the special case of mega-collaborations leading to articles signed by hundreds (or thousands) of authors; a phenomena that <span class="citation" data-cites="cronin2001">Cronin (<a href="#ref-cronin2001" role="doc-biblioref">2001</a>)</span> calls “hyperauthorsip”. In this context, it is the affiliation to the collective and not a specific contribution to the publication, that justifies authorship <span class="citation" data-cites="biagioli2003 birnholtz2006 knorr-cetina1999">(<a href="#ref-biagioli2003" role="doc-biblioref">Biagioli et al. 2003</a>; <a href="#ref-birnholtz2006" role="doc-biblioref">Birnholtz 2006</a>; <a href="#ref-knorr-cetina1999" role="doc-biblioref">Knorr-Cetina 1999</a>)</span>.</p>
+<section id="guest-authors-ghost-authors-and-acknowledgees" class="level4" data-number="7.3.2.1">
+<h4 data-number="7.3.2.1" class="anchored" data-anchor-id="guest-authors-ghost-authors-and-acknowledgees"><span class="header-section-number">7.3.2.1</span> Guest authors, ghost authors, and acknowledgees</h4>
+<p>In some cases, the relationship between an individual’s contribution to a work and the authorship status can be weak or nonexistent. It is frequent for individuals to be named as (guest) authors despite having made very little or no contribution to the work, and for individuals to not appear on the byline despite having offered a significant contribution to the work (ghost authors) <span class="citation" data-cites="bates2004 flanagin1998 sismondo2009 mowatt2002 wislar2011">(<a href="#ref-bates2004" role="doc-biblioref">Bates et al. 2004</a>; <a href="#ref-flanagin1998" role="doc-biblioref">Flanagin et al. 1998</a>; <a href="#ref-sismondo2009" role="doc-biblioref">Sismondo 2009</a>; <a href="#ref-mowatt2002" role="doc-biblioref">Mowatt et al. 2002</a>; <a href="#ref-wislar2011" role="doc-biblioref">Wislar et al. 2011</a>)</span>. Contributors excluded from the byline are sometimes acknowledged in the acknowledgements section of the article to signal their contribution to the work <span class="citation" data-cites="kassirer1991">(<a href="#ref-kassirer1991" role="doc-biblioref">Kassirer and Angell 1991</a>)</span>. <span class="citation" data-cites="paul-hus2017">Paul-Hus et al. (<a href="#ref-paul-hus2017" role="doc-biblioref">2017</a>)</span> found that the disciplinary differences in the number of authors are greatly reduced when we consider combined authors and acknowledgees, which suggests that these differences are not a reflection of the different number of contributors involved, but also of disciplinary differences in authorship practices. Overall, the existence of guest authors, ghost authors, and acknowledgees suggests that the byline can misrepresent the composition and size of research teams.</p>
+</section>
+</section>
+<section id="ordering-authors" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="ordering-authors"><span class="header-section-number">7.3.3</span> Ordering authors</h3>
+<p>Authorship decisions are not only about who will be an author but also in what order the names will be listed, which is usually intended to reflect the importance of individual contributions to the work <span class="citation" data-cites="zuckerman1968">(<a href="#ref-zuckerman1968" role="doc-biblioref">Zuckerman 1968</a>)</span>. In this section, we survey ordering approaches used in science.</p>
+<section id="alphabetical-order" class="level4" data-number="7.3.3.1">
+<h4 data-number="7.3.3.1" class="anchored" data-anchor-id="alphabetical-order"><span class="header-section-number">7.3.3.1</span> Alphabetical order</h4>
+<p>Alphabetical order is sometimes used to distribute credit equally between members of the research team. It is also standard practice in some fields like Mathematics and Economics. This mode of ordering is also often used in hyperauthorship situations where specific individual contributions are difficult to capture and order <span class="citation" data-cites="knorr-cetina1999">(<a href="#ref-knorr-cetina1999" role="doc-biblioref">Knorr-Cetina 1999</a>)</span>. Sometimes the authors will be grouped by institution or country first, and then ordered alphabetically within each group. The use of alphabetical in some cases but not always can generate some ambiguity since the first (or last) authors might be perceived as having made more important contributions than others even if that is not the case. Furthermore, it is possible for alphabetical ordering to occur by chance, sending a signal that authors may have contributed equally despite it not being the case <span class="citation" data-cites="zuckerman1968">(<a href="#ref-zuckerman1968" role="doc-biblioref">Zuckerman 1968</a>)</span>.</p>
+</section>
+<section id="decreasing-order-of-contribution" class="level4" data-number="7.3.3.2">
+<h4 data-number="7.3.3.2" class="anchored" data-anchor-id="decreasing-order-of-contribution"><span class="header-section-number">7.3.3.2</span> Decreasing order of contribution</h4>
+<p>Authors can also be listed based on the importance of their contribution, the first authors having typically contributed the most. This is a dominant mode of name ordering in Social Sciences and Humanities where writing is key <span class="citation" data-cites="pontille2004">(<a href="#ref-pontille2004" role="doc-biblioref">Pontille 2004</a>)</span>. One limitation of this approach is that there is only one author at any position in the list. This issue is sometimes addressed by adding a note in the byline indicating that some authors contributed equally to the work <span class="citation" data-cites="hu2009">(<a href="#ref-hu2009" role="doc-biblioref">Hu 2009</a>)</span>. According to <span class="citation" data-cites="zuckerman1967">Zuckerman (<a href="#ref-zuckerman1967" role="doc-biblioref">1967</a>)</span>, prominent researchers sometimes let their less well-known collaborators take first authorship, even if they may have contributed less.</p>
+</section>
+<section id="from-the-outside-in" class="level4" data-number="7.3.3.3">
+<h4 data-number="7.3.3.3" class="anchored" data-anchor-id="from-the-outside-in"><span class="header-section-number">7.3.3.3</span> From the outside in</h4>
+<p>A variant of the decreasing order of contribution exists predominantly some fields of natural or biomedical sciences where research often occurs in laboratories. The difference is that the two ends of the byline (the first and last author positions) are the most important. The first author tends to be a junior researcher (a PhD student or postdoc) who lead the experiment. The last author is the lab director. Other contributors are listed in decreasing order of contribution between these two poles, those who contributed the least being in the middle of the byline <span class="citation" data-cites="pontille2006">(<a href="#ref-pontille2006" role="doc-biblioref">Pontille 2006</a>)</span>.</p>
+</section>
+<section id="hybrid-partial-alphabetical-order" class="level4" data-number="7.3.3.4">
+<h4 data-number="7.3.3.4" class="anchored" data-anchor-id="hybrid-partial-alphabetical-order"><span class="header-section-number">7.3.3.4</span> Hybrid (partial alphabetical order)</h4>
+<p><span class="citation" data-cites="zuckerman1968">Zuckerman (<a href="#ref-zuckerman1968" role="doc-biblioref">1968</a>)</span> described another type of ordering that I call partial alphabetical order, in which a subset of authors are listed alphabetically to highlight the contribution of the other authors who are not part of the alphabetical list. This phenomenon was studied by <span class="citation" data-cites="mongeon2017">Mongeon et al. (<a href="#ref-mongeon2017" role="doc-biblioref">2017</a>)</span> who showed how alphabetical order is used in biomedical research to distinguish primary authors (at the beginning of the byline), the supervisory authors (at the end of the byline), and the others (in the middle of the byline, in alphabetical order).</p>
+</section>
+</section>
+<section id="categorizing-authors" class="level3" data-number="7.3.4">
+<h3 data-number="7.3.4" class="anchored" data-anchor-id="categorizing-authors"><span class="header-section-number">7.3.4</span> Categorizing authors</h3>
+<p>Some scholars have proposed to divide authors in categories. <span class="citation" data-cites="perneger2017">Perneger et al. (<a href="#ref-perneger2017" role="doc-biblioref">2017</a>)</span> identified three types of authors in biomedical research:</p>
+<ul>
+<li><p><strong>The thinker</strong> who designs the work, acquires funding for it, and revises the article.</p></li>
+<li><p><strong>The soldier</strong> who provides material, administrative or technical support or participates in the data collection.</p></li>
+<li><p><strong>The scribe</strong> who analyzes and interprets the results and drafts the article.</p></li>
+</ul>
+<p>Similarly, <span class="citation" data-cites="baerlocher2007">Baerlocher et al. (<a href="#ref-baerlocher2007" role="doc-biblioref">2007</a>)</span> proposed the following categories:</p>
+<ul>
+<li><p><strong>Primary authors</strong> participate in the planning and execution of the study, and in drafting the article. They are able to explain all the findings and share responsibility for the exactitude of the information reported in the article. They generally appear at the beginning of the byline.</p></li>
+<li><p><strong>Senior/supervisory authors</strong> plan and supervise the study, and substantially revise the draft. Like primary authors, they can explain all the findings in the study and share responsibility for the exactitude of the information reported in the article. They are generally at the end of the byline.</p></li>
+<li><p><strong>Contributing authors</strong> make a substantial contribution to the work but do not meet the criteria or primary and senior/supervisory authorship. They are not necessarily able to explain all of the findings of the study and they are not responsible for the exactitude of the information reported in the article. They generally appear in the middle of the byline.</p></li>
 </ul>
 </section>
-<section id="what-is-research-impact" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="what-is-research-impact"><span class="header-section-number">7.2</span> What is research impact?</h2>
-<p>In the previous chapter, we focused on scholarly publications as a measure of the output or productivity of an individual or group. The research article can then be considered a knowledge unit to which the authors have attached their names. However, for many reasons, not all publications are created equal. Some may be highly original and significant advances to knowledge in a field or across fields (a single publication may even revolutionize fields). In contrast, others may make a more minor contribution. So, while research output may be considered the number of units produced, research impact can be thought of as the difference these units have made and their influence. So, how can we measure that?</p>
-<p>We have seen in Chapter 2 that being cited by peers is the most basic form of recognition that researchers receive within the reward system of science <span class="citation" data-cites="cole1973">(<a href="#ref-cole1973" role="doc-biblioref">Cole and Cole 1973</a>)</span>. Citations have been shown to strongly correlate with prestigious awards and other institutionalized forms of recognition and can thus reflect the amount of scientific capital <span class="citation" data-cites="bourdieu1975">(<a href="#ref-bourdieu1975" role="doc-biblioref">Bourdieu 1975</a>)</span> that one possesses. As <span class="citation" data-cites="merton1968">Merton (<a href="#ref-merton1968" role="doc-biblioref">1968</a>)</span> put it:</p>
-<blockquote class="blockquote">
-<p>“The reference serves both instrumental and symbolic functions in the transmission and enlargement of knowledge. Instrumentally, it tells us of work we may not have known before, some of which may hold further interest for us; symbolically, it registers in the enduring archives the intellectual property of the acknowledged source by providing a pellet of peer recognition of the knowledge claim, accepted or expressly rejected, that was made in that source” (p.&nbsp;622)</p>
-</blockquote>
-<p>Citations thus have gained acceptance as a measure of scientific excellence and as a tool for research evaluation <span class="citation" data-cites="narin1976">(<a href="#ref-narin1976" role="doc-biblioref">Narin 1976</a>)</span>.</p>
+<section id="authorship-guidelines" class="level3" data-number="7.3.5">
+<h3 data-number="7.3.5" class="anchored" data-anchor-id="authorship-guidelines"><span class="header-section-number">7.3.5</span> Authorship guidelines</h3>
+<p>Scholarly societies and journal editors have developed authorship guidelines in response to the lack of standards in authorship practices <span class="citation" data-cites="osborne2009">(<a href="#ref-osborne2009" role="doc-biblioref">Osborne and Holland 2009</a>)</span>, the increased number of authors on articles, and the increase in cases of scientific misconduct <span class="citation" data-cites="pontille2016 steen2010">(<a href="#ref-pontille2016" role="doc-biblioref">Pontille 2016</a>; <a href="#ref-steen2010" role="doc-biblioref">Steen 2010</a>)</span> bringing forth the relationship between authorship and responsibility <span class="citation" data-cites="rennie1994">(<a href="#ref-rennie1994" role="doc-biblioref">Rennie and Flanagin 1994</a>)</span>. Large research teams are most frequent in Natural Sciences, Engineering, and Health Sciences <span class="citation" data-cites="wuchty2007">(<a href="#ref-wuchty2007" role="doc-biblioref">Wuchty, Jones, and Uzzi 2007</a>)</span>, and misconduct is most frequent in the Health Sciences <span class="citation" data-cites="fang2012">(<a href="#ref-fang2012" role="doc-biblioref">Fang, Steen, and Casadevall 2012</a>)</span>. It is thus not surprising that these are research areas where authorship guidelines are frequently found <span class="citation" data-cites="bosnjak2012 wager2007">(<a href="#ref-bosnjak2012" role="doc-biblioref">Bošnjak and Marušić 2012</a>; <a href="#ref-wager2007" role="doc-biblioref">Wager 2007</a>)</span>.</p>
+<p>Journals rarely create their own authorship guidelines. Instead, they refer to the code of ethics of professional associations or publishers’ guidelines, which tend to refer to the recommendations of the International Committee of Medical Journal Editors (ICMJE). The <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">ICMJE recommendations</a> include four criteria that must be met by all authors of a paper:</p>
+<ol type="1">
+<li>Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data for the work;</li>
+<li>Drafting the work or revising it critically for important intellectual content;</li>
+<li>Final approval of the version to be published;</li>
+<li>Agreement to be accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved.</li>
+</ol>
+<p>Even though their adoption is not generalized even in the Medical field <span class="citation" data-cites="bosnjak2012">(<a href="#ref-bosnjak2012" role="doc-biblioref">Bošnjak and Marušić 2012</a>)</span> these recommendation have a wide influence beyond this field. For instance, the Committee on Publication Ethics (COPE), the European Association of Science Editors (EASE), and major publishers like Elsevier, Springer-Nature, and Wiley-Blackwell refer to it.</p>
+<p>Despite the existence of these guidelines, there is no consensus on what constitutes a substantial contribution that should lead to authorship <span class="citation" data-cites="claxton2005">(<a href="#ref-claxton2005" role="doc-biblioref">Claxton 2005</a>)</span>. Even when they do mention the type of tasks that matter for authorship, guidelines remain vague regarding the magnitude of the contribution required, simply stating that it should be substantial. Editors themselves are not convinced of the efficacy of the guidelines for reducing practices like guest and ghost authorship <span class="citation" data-cites="wager2009">(<a href="#ref-wager2009" role="doc-biblioref">Wager 2009</a>)</span>. In sum, while guidelines might be able to help research teams with their authorship decisions, they seem to have a limited effect on these practices, and to be unable to address unethical authorship issues.</p>
 </section>
-<section id="citation-based-impact-measures" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="citation-based-impact-measures"><span class="header-section-number">7.3</span> Citation-based impact measures</h2>
-<section id="citation-count" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="citation-count"><span class="header-section-number">7.3.1</span> Citation count</h3>
-<p>The citation count is the most basic (and perhaps most used) indicator of academic impact. It is obtained by counting the number of times the paper appears in the reference lists of other papers. Its premise is simple: the more a publication is cited, the more it has been influential. While the citation count cannot reveal the nature of this influence, it indicates, to some degree, the <em>amount</em> of that influence.</p>
-<p>Once we obtain the citation count of every article in a set representing a research unit (e.g., a researcher, a journal, an institution), we can compute the total citations for the set. For example, my Google Scholar profile shows the total number of citations of all my publications combined.</p>
+<section id="contribution-statements" class="level3" data-number="7.3.6">
+<h3 data-number="7.3.6" class="anchored" data-anchor-id="contribution-statements"><span class="header-section-number">7.3.6</span> Contribution statements</h3>
+<p><span class="citation" data-cites="rennie1997">Rennie, Yank, and Emanuel (<a href="#ref-rennie1997" role="doc-biblioref">1997</a>)</span> proposed a model that would replace authors with a list of contributors and guarantors. In their model, contributors include everyone who contributed, no matter the nature and extent of their contribution, and guarantors are those contributors who are responsible for the integrity of the work as a whole. In addition, the article should include a description of the work done by each contributor. The model is recommended (but not required) by the ICMJE guidelines and the Council of Science Editors, and it is applied (although partially) by an increasingly large number of journals requiring that the respective contributions of the authors be indicated, typically in a contribution statement.</p>
+<p>However, the informative value of these statements remains limited. Firstly, only the type (and not the extent) of contributions is indicated. According to <span class="citation" data-cites="ilakovac2006">Ilakovac et al. (<a href="#ref-ilakovac2006" role="doc-biblioref">2006</a>)</span>, contribution statements are also imprecise as they rely on the limited memory (and limited motivation) of researchers who are asked to produce them. A third of the respondants to a survey indicated that contribution statements provide are not more informative than the order in which the authors are listed <span class="citation" data-cites="sauermann2017">(<a href="#ref-sauermann2017" role="doc-biblioref">Sauermann and Haeussler 2017</a>)</span>.</p>
 </section>
-<section id="normalized-citation-count" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="normalized-citation-count"><span class="header-section-number">7.3.2</span> Normalized citation count</h3>
-<p>Is 37 a high number of citations for a publication? It depends on several factors, mainly the <strong>research field</strong>, publication date, and document type.</p>
-<p>Different fields or research areas have different epistemic cultures [@knorrcetina1991] and scholarly communication practices that can determine the potential number of citations a publication can receive. This can limit the validity of an assessment based on citation counts alone, especially when this assessment is performed by someone with little knowledge of the field and what might be an excellent or above-average citation count. Field-normalized indicators consider field differences in citation rates by comparing the number of citations a paper has received to the citation counts of other papers in the same field.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Pause and reflect
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In Chapter 5, we discussed the classification of research and research outputs. We showed that many different classification schemes exist and that it can be challenging to determine which field (or fields) a paper belongs to. Consider the implications of that for research evaluation using field-normalized indicators.</p>
-</div>
-</div>
-<p>Time is also important since the potential citation count of an article published in 2022 is obviously much lower than that of an article published in the same field in 2005.</p>
-<p>Editorials, or letters to the editors, tend to receive fewer citations than research articles, which tend to receive fewer citations than review articles. Conference proceedings are also often less cited than journal publications. Therefore, it is generally good practice to consider the document type when normalizing indicators.</p>
-<p>Normalized citation counts are usually calculated by simply dividing the citation count of a publication by the average citation count of all publications of the same type, in the same field, and published in the same year.</p>
+</section>
+<section id="bibliometric-indicators" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="bibliometric-indicators"><span class="header-section-number">7.4</span> Bibliometric indicators</h2>
+<section id="research-output" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="research-output"><span class="header-section-number">7.4.1</span> Research output</h3>
+<p>There are two basic ways of counting the research contributions of an individual researcher or another entity (institution, country, etc.): one that does not take into account collaboration (full counting), and one that does take into account collaboration (fractional counting, harmonic counting, geometric counting, and arithmetic counting.</p>
 <table class="table">
+<caption>Methods of counting publications in bibliometrics</caption>
 <colgroup>
-<col style="width: 7%">
-<col style="width: 5%">
-<col style="width: 17%">
-<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 89%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicator</th>
+<th style="text-align: center;">Share of credit for the author in the <em>i<sup><sub>th</sub></sup></em> position in a byline of <em>N</em> authors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Full counting</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td>Fractional counting</td>
+<td style="text-align: center;"><span class="math display">\[                                                                                                                                                            
+                                                                                                                                                           \dfrac{1}{N}                                         
+                                                                                                                                                                                                        \]</span></td>
+</tr>
+<tr class="odd">
+<td>Harmonic counting</td>
+<td style="text-align: center;"><span class="math display">\[                                                                                                                                                            
+                                                                                                                                       \dfrac{\dfrac{1}{i}}{1+\dfrac{1}{2}+...+\dfrac{1}{N}}                    
+                                                                                                                                                                                                        \]</span></td>
+</tr>
+<tr class="even">
+<td>Geometric counting</td>
+<td style="text-align: center;"><span class="math display">\[                                                                                                                                                            
+                                                                                                                                                      \dfrac{2^{N-i}}{2^N-1}                                    
+                                                                                                                                                                                                        \]</span></td>
+</tr>
+<tr class="odd">
+<td>Arithmetic counting</td>
+<td style="text-align: center;"><span class="math display">\[                                                                                                                                                            
+                                                                                                                                                     \dfrac{N+1-i}{1+2+...+N}                                   
+                                                                                                                                                                                                        \]</span></td>
+</tr>
+</tbody>
+</table>
+<p>A study by <span class="citation" data-cites="hagen2010">Hagen (<a href="#ref-hagen2010" role="doc-biblioref">2010</a>)</span> suggests that harmonic counting best fits empirical data on credit allocation between co-authors in chemistry, medicine and chemistry. However, full and fractional counting remain the most widely used indicators.</p>
+</section>
+<section id="collaboration" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="collaboration"><span class="header-section-number">7.4.2</span> Collaboration</h3>
+<p>Bibliometric indicators can also be used to measure and characterize collaboration at the article level. The table below summarizes commonly used indicators of collaboration.</p>
+<table class="table">
+<caption>Bibliometric indicators of research collaboration</caption>
+<colgroup>
+<col style="width: 21%">
 <col style="width: 9%">
-<col style="width: 33%">
-<col style="width: 18%">
+<col style="width: 68%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Article</th>
-<th>Year</th>
-<th>Field</th>
-<th>Type</th>
-<th>Citations</th>
-<th>Mean for the same field, year and type</th>
-<th>Normalized citations</th>
+<th>Indicator</th>
+<th>Variable type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A</td>
-<td>2017</td>
-<td>Information science</td>
-<td>Article</td>
-<td>84</td>
-<td>72</td>
-<td>1.167</td>
+<td>Collaboration</td>
+<td>Categorical</td>
+<td>There is more than one author on the byline.</td>
 </tr>
 <tr class="even">
-<td>B</td>
-<td>2017</td>
-<td>Information science</td>
-<td>Review</td>
-<td>75</td>
-<td>79</td>
-<td>0.950</td>
+<td>Interinstitutional collaboration</td>
+<td>Categorical</td>
+<td>There is more than one institution on the byline.</td>
 </tr>
 <tr class="odd">
-<td>C</td>
-<td>2017</td>
-<td>Computer Science</td>
-<td>Article</td>
-<td>95</td>
-<td>120</td>
-<td>0.792</td>
+<td>International collaboration</td>
+<td>Categorical</td>
+<td>There is more than one country on the byline.</td>
 </tr>
 <tr class="even">
-<td>D</td>
-<td>2018</td>
-<td>Information Science</td>
-<td>Article</td>
-<td>50</td>
-<td>50</td>
-<td>1.000</td>
+<td>Intersectoral collaboration</td>
+<td>Categorical</td>
+<td>There are institutions from more than one sector (e.g., university, industry, government) on the byline.</td>
 </tr>
 <tr class="odd">
-<td>E</td>
-<td>2019</td>
-<td>Information Science</td>
-<td>Article</td>
-<td>40</td>
-<td>25</td>
-<td>1.600</td>
+<td>Team size</td>
+<td>Numerical</td>
+<td>The number of authors on the byline.</td>
 </tr>
 </tbody>
 </table>
-<section id="challenges-with-normalization" class="level4" data-number="7.3.2.1">
-<h4 data-number="7.3.2.1" class="anchored" data-anchor-id="challenges-with-normalization"><span class="header-section-number">7.3.2.1</span> Challenges with normalization</h4>
-<p>Normalizing indicators is not so easy. It implies that we have an adequate classification of research outputs that does not systematically disadvantage subgroups of publications. For example, classifying information science publications with computer science publications may be problematic because these are different fields with different scholarly communication practices. It also implies that we have consistent metadata on the document type, which is not always the case. Finally, and perhaps most importantly, calculating the denominator in the normalization formula requires access to the citation counts of all articles published in the same year, field, and document type (essentially, the entire database is required to calculate the denominators). This is problematic in two ways: 1) access to the entire database is costly (and thus rare), and 2) the normalized citation scores will depend on the database used (Web of Science, Scopus, Dimensions, OpenAlex, PubMed, etc.).</p>
+<p>Note that collaboration can also be represented as a <strong>co-authorship network</strong>, in which two entities are linked when they appear together on the same publication.</p>
 </section>
 </section>
-<section id="highly-cited-publications-hcp" class="level3" data-number="7.3.3">
-<h3 data-number="7.3.3" class="anchored" data-anchor-id="highly-cited-publications-hcp"><span class="header-section-number">7.3.3</span> Highly cited publications (HCP)</h3>
-<p>Another popular indicator is highly cited publications (HCP). This is a rank-based indicator obtained by ranking a set of publications from the same field and year (again, normalization is essential) and then setting a threshold to distinguish HCPs from the rest. The 1st, 5th and 10th percentiles are often used as thresholds, but these choices are always arbitrary. Using this approach, we get a dichotomous variable (0 or 1) indicating whether each paper in a set belongs to the HCP group. This allows us to calculate the share of publications within the set that are highly cited as a size-independent impact indicator.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Just like the normalized citations, the identification of HCPs should also consider the field, publication year and document type. The process thus suffers from the same challenges as citation normalization.</p>
-</div>
-</div>
-<p>The table below provides an example of what the data could look like. We can see that articles A and B are published in the same year and field, but only one is above the HCP threshold and thus is considered an HCP. We also see that because the HCP threshold is higher in Computer Science, the 95 citations received by article C are not sufficient to make that paper an HCP. We also see that the threshold varies by year, so papers D and E have 50 citations, but only paper E is an HCP.</p>
-<table class="table">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 8%">
-<col style="width: 29%">
-<col style="width: 22%">
-<col style="width: 20%">
-<col style="width: 6%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Article</th>
-<th>Year</th>
-<th>Field</th>
-<th>Citation count</th>
-<th>HCP threshold</th>
-<th>HCP</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A</td>
-<td>2017</td>
-<td>Information science</td>
-<td>84</td>
-<td>80</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>B</td>
-<td>2017</td>
-<td>Information science</td>
-<td>75</td>
-<td>80</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>C</td>
-<td>2017</td>
-<td>Computer Science</td>
-<td>95</td>
-<td>97</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>D</td>
-<td>2018</td>
-<td>Information Science</td>
-<td>50</td>
-<td>67</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>E</td>
-<td>2019</td>
-<td>Information Science</td>
-<td>50</td>
-<td>45</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Once we have determined whether or not each paper meets the HCP threshold, we can calculate the share of HCPs for the set, which in this case would be 40%.</p>
-</section>
-<section id="h-index" class="level3" data-number="7.3.4">
-<h3 data-number="7.3.4" class="anchored" data-anchor-id="h-index"><span class="header-section-number">7.3.4</span> H-index</h3>
-<p>In 2005, a physicist named Jorge Hirsch introduced a composite indicator that combines the output and impact dimensions of research performance into a single number: the h-index.</p>
-<p>The h-index equals the number of publications with citations greater than or equal to h. For instance, a researcher (or another unit) has an h-index of 10 if they published at least ten articles cited at least ten times.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/h-index.jpg" class="img-fluid figure-img" width="379"></p>
-<figcaption class="figure-caption">Visual representation of the calculation of the h-index</figcaption>
-</figure>
-</div>
-<p>As we can see in the conclusion of Hirsch’s paper, he was arguing for the use of his indicator as an <strong>unbiased measure of scientific achievement that can be used to compare researchers competing for resources.</strong></p>
-<blockquote class="blockquote">
-<p>In summary, I have proposed an easily computable index, h, which estimates the importance, significance, and broad impact of a scientist’s cumulative research contributions. I suggest that this index may provide a useful yardstick with which to compare, in an unbiased way, different individuals competing for the same resource when an important evaluation criterion is scientific achievement. <span class="citation" data-cites="hirsch2005">(<a href="#ref-hirsch2005" role="doc-biblioref">Hirsch 2005</a>)</span></p>
-</blockquote>
-<p>The h-Index (along with its many variations) has been widely criticized (this <a href="https://phys.org/news/2020-07-albert-einstein-mediocre-h-index-bogus.html">blog post</a> covers some of those criticisms) for not accounting for the author’s position in the byline and field differences. It also undervalues highly influential work since it is bounded by the number of publications, and it is correlated with academic age and with the much simpler total number of citations. Even <a href="https://www.nature.com/nature-index/news-blog/whats-wrong-with-the-h-index-according-to-its-inventor">Hirsch himself</a> recognized the limits of his indicator and the potential adverse effects of its popularity.</p>
-<p>Ludo Waltman and Nees Jan van Eck <span class="citation" data-cites="waltman2011">Waltman and Eck (<a href="#ref-waltman2011" role="doc-biblioref">2011</a>)</span> argued that the h-index could create inconsistencies between single authors considered individually or as a group. For instance, five authors who co-authored the same five papers each cited five teams will have an h-index of 5 when considered individually or as a research unit. However, five authors who separately published two papers with ten citations each will have individual h-indices of 2 and a collective h-index of 10. Waltman and van Eck <span class="citation" data-cites="waltman2011">Waltman and Eck (<a href="#ref-waltman2011" role="doc-biblioref">2011</a>)</span> argue that the share of HCPs is a better indicator since it doesn’t suffer from this limitation: researchers who perform better individually than others will maintain this advantage once aggregated into a unit.</p>
-</section>
-<section id="the-journal-impact-factor" class="level3" data-number="7.3.5">
-<h3 data-number="7.3.5" class="anchored" data-anchor-id="the-journal-impact-factor"><span class="header-section-number">7.3.5</span> The journal impact factor</h3>
-<p>The Journal Impact Factor is a citation-based indicator designed to evaluate the relative influence of a journal. It is quite simply the average number of citations received during a given year by the articles published in the journal over the two previous years:</p>
-<p><span class="math display">\[                                                                                                       
-                                                                                                     JIF_y = \dfrac{Citations_y}{Publications_{y-1} + Publications_{y-2}}                                 
-                                                                                                                                               \]</span></p>
-<p>So, the 2017 JIF for journal X would be calculated by counting all citations received in 2017 by the articles published in the journal in 2015 and 2016 and dividing this citation count by the number of articles published in the journal in 2015 and 2016. Because citations take longer to accumulate in the social sciences and humanities, a variant of the JIF that uses a five-year citation window rather than a two-year one was eventually introduced.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-One of many
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The term “Journal Impact Factor” is a trademark of Clarivate Analytics (the company that owns the Web of Science). Similar indicators have been proposed, such as the CiteScore, the Source Normalized Impact per Paper (SNIP) and the Scimago Journal Ranking (SJR) used by Elsevier.</p>
-</div>
-</div>
-<p>As we know, accumulating citations takes time, so it is difficult to determine early on whether a piece of research is a “significant contribution” to science. Partly because they are immediately available, the JIF or other journal indicators or rankings are commonly used in the evaluation process. However, Such practices have been widely criticized. Using the journal as a proxy for the importance of a single publication is often considered a <strong>misuse</strong> of these journal indicators (some of these criticisms can be found in <span class="citation" data-cites="larivière2019">Larivière and Sugimoto (<a href="#ref-larivière2019" role="doc-biblioref">2019</a>)</span>).</p>
-</section>
-</section>
-<section id="limits-of-citation-based-indicators" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="limits-of-citation-based-indicators"><span class="header-section-number">7.4</span> Limits of citation-based indicators</h2>
-<section id="diversity-in-citation-practices" class="level3" data-number="7.4.1">
-<h3 data-number="7.4.1" class="anchored" data-anchor-id="diversity-in-citation-practices"><span class="header-section-number">7.4.1</span> Diversity in citation practices</h3>
-<p>An important factor that is not always at the forefront of discussions around citation-based indicators and research evaluation is that a paper doesn’t just get cited by virtue of existing or based on its intrinsic characteristics; it is cited because another researcher referred to it in their own work. We might then ask: Why do researchers cite other works?</p>
-<p>There are two dominant theories of citation behaviour: the <strong>normative</strong> and the <strong>socio-constructivist</strong> theories. The normative view suggests that researchers mainly cite to acknowledge the work of their peers and predecessors and <em>give credit where credit is due</em>. It is the Mertonian view that was mentioned at the beginning of this chapter, which supports the use of citations for evaluative purposes. The socio-constructivist view focuses on citations as a rhetorical device that is not meant to acknowledge but rather to convince. It emphasizes the strategic and biased nature of citation choices. For instance, one might omit to cite sources that don’t align with their findings or arguments or cite work of little relevance by prestigious scholars at the expense of more relevant work by less known scholars.</p>
-<p><span class="citation" data-cites="bornmann2008">Bornmann and Daniel (<a href="#ref-bornmann2008" role="doc-biblioref">2008</a>)</span> reviewed studies that sought to test those two theories empirically. Their review suggests that reasons for citing are mixed and partly support both views, although support for the normative theory is stronger. However, they suggest that this is primarily true at higher levels of aggregation (e.g., researchers with substantial publication records, research units, and institutions).</p>
-<p>This leads us to a second main limit of citation-based impact indicators: their <strong>limited</strong> <strong>reliability</strong> when working with small datasets (e.g., individual papers or researchers). This is partly due to the ambiguities surrounding the concept of impact and what citations are supposed to measure, and by the general concept of statistical power, according to which small sample sizes increase the likelihood of failing to reject a null hypothesis.</p>
-<p>Finally, one of the most critical limits of citation-based indicators is that they fail to account for other forms of impact. Indeed, citations are often seen to measure relatively accurately the <strong>academic impact</strong> of a publication or research unit, that is, the contribution of theoretical or methodological advances to the field. However, the impact of academic research is not limited to the scientific realm. Research can also lead to economic development (economic impact), fuel technological innovation (technological impact), and impact policy, public health, the environment, culture, and society. In the next chapter, we will discuss “Altmetrics” (alternative metrics), a range of bibliometric indicators that seek to measure the impact of a publication outside the scholarly communication system. Could those new metrics succeed in measuring the social impact of research? We shall see.</p>
-</section>
-</section>
-<section id="conclusion" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7.5</span> Conclusion</h2>
-<p>In this chapter, we introduced some of the most commonly used citation-based indicators of research impact and their calculation. While many empirical studies have demonstrated a correlation between citations and the not-always-clearly defined concept they claim to measure, caution remains necessary when using citations for evaluation purposes. Over the years, the research community published several declarations and manifestos emphasizing the challenges of quantitative research evaluation processes and proposing best practices; the <a href="http://www.leidenmanifesto.org/">Leiden Manifesto</a> and the <a href="https://sfdora.org/read/">San Francisco Declaration on Research Assessment (DORA)</a> are good examples.</p>
-</section>
-<section id="references" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="references"><span class="header-section-number">7.6</span> References</h2>
+<section id="references" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="references"><span class="header-section-number">7.5</span> References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-bornmann2008" class="csl-entry" role="listitem">
-Bornmann, Lutz, and Hans-Dieter Daniel. 2008. <span>“What Do Citation Counts Measure? A Review of Studies on Citing Behavior.”</span> <em>Journal of Documentation</em> 64 (1): 45–80. <a href="https://doi.org/10.1108/00220410810844150">https://doi.org/10.1108/00220410810844150</a>.
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-azoulay2015" class="csl-entry" role="listitem">
+Azoulay, Pierre, Jeffrey L Furman, Krieger, and Fiona Murray. 2015. <span>“Retractions.”</span> <em>Review of Economics and Statistics</em> 97 (5): 1118–36. <a href="https://doi.org/10.1162/REST_a_00469">https://doi.org/10.1162/REST_a_00469</a>.
 </div>
-<div id="ref-bourdieu1975" class="csl-entry" role="listitem">
-Bourdieu, Pierre. 1975. <span>“The Specificity of the Scientific Field and the Social Conditions of the Progress of Reason.”</span> <em>Social Science Information</em> 14 (6): 19–47. <a href="https://doi.org/10.1177/053901847501400602">https://doi.org/10.1177/053901847501400602</a>.
+<div id="ref-baerlocher2007" class="csl-entry" role="listitem">
+Baerlocher, Mark Otto, Marshall Newton, Tina Gautam, George Tomlinson, and Allan S Detsky. 2007. <span>“The Meaning of Author Order in Medical Research.”</span> <em>Journal of Investigative Medicine</em> 55 (4): 174–80. <a href="https://doi.org/10.2310/6650.2007.06044">https://doi.org/10.2310/6650.2007.06044</a>.
+</div>
+<div id="ref-bates2004" class="csl-entry" role="listitem">
+Bates, Tamara, Ante Anić, Matko Marušić, and Ana Marušić. 2004. <span>“Authorship Criteria and Disclosure of Contributions.”</span> <em>JAMA</em> 292 (1): 86–88. <a href="https://doi.org/10.1001/jama.292.1.86">https://doi.org/10.1001/jama.292.1.86</a>.
+</div>
+<div id="ref-biagioli2003" class="csl-entry" role="listitem">
+Biagioli, Mario, Judith Crane, Pamela Derish, Mark Gruber, Drummond Rennie, and Richard Horton. 2003. <span>“CSE Task Force on Authorship.”</span> <em>Draft White Paper [Sitio En Internet]. Encontrado En: Http://Www. Councilscienceeditors. Org/Services/Atf<span>_</span>whitepaper. Cfm</em>.
+</div>
+<div id="ref-birnholtz2006" class="csl-entry" role="listitem">
+Birnholtz, Jeremy P. 2006. <span>“What Does It Mean to Be an Author? The Intersection of Credit, Contribution, and Collaboration in Science.”</span> <em>Journal of the American Society for Information Science and Technology</em> 57 (13): 1758–70. <a href="https://doi.org/10.1002/asi.20380">https://doi.org/10.1002/asi.20380</a>.
+</div>
+<div id="ref-bosnjak2012" class="csl-entry" role="listitem">
+Bošnjak, Lana, and Ana Marušić. 2012. <span>“Prescribed Practices of Authorship: Review of Codes of Ethics from Professional Bodies and Journal Guidelines Across Disciplines.”</span> <em>Scientometrics</em> 93 (3): 751–63. <a href="https://doi.org/10.1007/s11192-012-0773-y">https://doi.org/10.1007/s11192-012-0773-y</a>.
+</div>
+<div id="ref-bourdieu1987" class="csl-entry" role="listitem">
+Bourdieu, Pierre. 1987. <em>Choses Dites</em>. Paris: Editions de minuit.
+</div>
+<div id="ref-bozeman2016" class="csl-entry" role="listitem">
+Bozeman, Barry, and Jan Youtie. 2016. <span>“Trouble in Paradise: Problems in Academic Research Co-Authoring.”</span> <em>Science and Engineering Ethics</em> 22 (6): 1717–43. <a href="https://doi.org/10.1007/s11948-015-9722-5">https://doi.org/10.1007/s11948-015-9722-5</a>.
+</div>
+<div id="ref-claxton2005" class="csl-entry" role="listitem">
+Claxton, Larry D. 2005. <span>“Scientific Authorship. Part 1. A Window into Scientific Fraud?”</span> <em>Mutation Research</em> 589 (1): 17–30. <a href="https://doi.org/10.1016/j.mrrev.2004.07.003">https://doi.org/10.1016/j.mrrev.2004.07.003</a>.
 </div>
 <div id="ref-cole1973" class="csl-entry" role="listitem">
 Cole, Jonathan R, and Stephen Cole. 1973. <em>Social Stratification in Science</em>. Chicago, IL: University of Chicago Press.
 </div>
-<div id="ref-hirsch2005" class="csl-entry" role="listitem">
-Hirsch, J E. 2005. <span>“An Index to Quantify an Individual’s Scientific Research Output.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 102 (46): 16569–72. <a href="https://doi.org/10.1073/pnas.0507655102">https://doi.org/10.1073/pnas.0507655102</a>.
+<div id="ref-cronin2001" class="csl-entry" role="listitem">
+Cronin, Blaise. 2001. <span>“Hyperauthorship: A Postmodern Perversion or Evidence of a Structural Shift in Scholarly Communication Practices?”</span> <em>Journal of the American Society for Information Science and Technology</em> 52 (7): 558–69. <a href="https://doi.org/10.1002/asi.1097">https://doi.org/10.1002/asi.1097</a>.
 </div>
-<div id="ref-larivière2019" class="csl-entry" role="listitem">
-Larivière, Vincent, and Cassidy R. Sugimoto. 2019. <span>“The Journal Impact Factor: A Brief History, Critique, and Discussion of Adverse Effects.”</span> In, 3–24. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-02511-3_1">https://doi.org/10.1007/978-3-030-02511-3_1</a>.
+<div id="ref-fang2012" class="csl-entry" role="listitem">
+Fang, FC Ferric C, R Grant Steen, and Arturo Casadevall. 2012. <span>“Misconduct Accounts for the Majority of Retracted Scientific Publications.”</span> <em>Proceedings of the National Academy of Sciences</em> 109 (42): 17028–33. <a href="https://doi.org/10.1073/pnas.1212247109">https://doi.org/10.1073/pnas.1212247109</a>.
 </div>
-<div id="ref-merton1968" class="csl-entry" role="listitem">
-Merton, Robert K. 1968. <em>Social Theory and Social Structure</em>. New York: Free Press.
+<div id="ref-flanagin1998" class="csl-entry" role="listitem">
+Flanagin, Annette, Lisa A Carey, Phil B Fontanarosa, Stephanie G Phillips, Brian P Pace, George D Lundberg, and Drummond Rennie. 1998. <span>“Prevalence of Articles with Honorary Authors and Ghost Authors in Peer-Reviewed Medical Journals.”</span> <em>JAMA</em> 280 (3): 222–24. <a href="https://doi.org/10.1001/jama.280.3.222">https://doi.org/10.1001/jama.280.3.222</a>.
 </div>
-<div id="ref-narin1976" class="csl-entry" role="listitem">
-Narin, Francis. 1976. <em>Evaluative Bibliometrics: The Use of Publication and Citation Analysis in the Evaluation of Scientific Activity</em>. Computer Horizons Washington, D. C.
+<div id="ref-haeussler2015" class="csl-entry" role="listitem">
+Haeussler, C., and H. Sauermann. 2015. <span>“The Anatomy of Teams: Division of Labor in Collaborative Knowledge Production.”</span> <em>Academy of Management Proceedings</em> 2015 (1): 11383–83. <a href="https://doi.org/10.5465/AMBPP.2015.11383abstract">https://doi.org/10.5465/AMBPP.2015.11383abstract</a>.
 </div>
-<div id="ref-waltman2011" class="csl-entry" role="listitem">
-Waltman, Ludo, and Nees Jan van Eck. 2011. <span>“The Inconsistency of the h-Index.”</span> <em>Journal of the American Society for Information Science and Technology</em> 63 (2): 406–15. <a href="https://doi.org/10.1002/asi.21678">https://doi.org/10.1002/asi.21678</a>.
+<div id="ref-hagen2010" class="csl-entry" role="listitem">
+Hagen, Nils T. 2010. <span>“Harmonic Publication and Citation Counting: Sharing Authorship Credit Equitably - Not Equally, Geometrically or Arithmetically.”</span> <em>Scientometrics</em> 84 (3): 785–93. <a href="https://doi.org/10.1007/s11192-009-0129-4">https://doi.org/10.1007/s11192-009-0129-4</a>.
+</div>
+<div id="ref-hagstrom1964" class="csl-entry" role="listitem">
+Hagstrom, Warren O. 1964. <span>“Traditional and Modern Forms of Scientific Teamwork.”</span> <em>Administrative Science Quarterly</em> 9 (3): 241. <a href="https://doi.org/10.2307/2391440">https://doi.org/10.2307/2391440</a>.
+</div>
+<div id="ref-hu2009" class="csl-entry" role="listitem">
+Hu, Xiaojun. 2009. <span>“Loads of Special Authorship Functions: Linear Growth in the Percentage of <span>“</span>Equal First Authors<span>”</span> and Corresponding Authors.”</span> <em>Journal of the American Society for Information Science and Technology</em> 60 (11): 2378–81. <a href="https://doi.org/10.1002/asi.21164">https://doi.org/10.1002/asi.21164</a>.
+</div>
+<div id="ref-ilakovac2006" class="csl-entry" role="listitem">
+Ilakovac, V., K. Fister, M. Marusic, and A. Marusic. 2006. <span>“Reliability of Disclosure Forms of Authors’ Contributions.”</span> <em>Canadian Medical Association Journal</em> 176 (1): 41–46. <a href="https://doi.org/10.1503/cmaj.060687">https://doi.org/10.1503/cmaj.060687</a>.
+</div>
+<div id="ref-jabbehdari2017" class="csl-entry" role="listitem">
+Jabbehdari, Sahra, and John P. Walsh. 2017. <span>“Authorship Norms and Project Structures in Science.”</span> <em>Science, Technology, &amp; Human Values</em>, March, 016224391769719–19. <a href="https://doi.org/10.1177/0162243917697192">https://doi.org/10.1177/0162243917697192</a>.
+</div>
+<div id="ref-kassirer1991" class="csl-entry" role="listitem">
+Kassirer, Jerome P., and Marcia Angell. 1991. <span>“On Authorship and Acknowledgments.”</span> <em>New England Journal of Medicine</em> 325 (21): 1510–12. <a href="https://doi.org/10.1056/NEJM199111213252112">https://doi.org/10.1056/NEJM199111213252112</a>.
+</div>
+<div id="ref-knorr-cetina1999" class="csl-entry" role="listitem">
+Knorr-Cetina, K. 1999. <em>Epistemic Cultures: How the Sciences Make Knowledge</em>. Cambridge, Mass: Harvard University Press.
+</div>
+<div id="ref-larivière2016" class="csl-entry" role="listitem">
+Larivière, Vincent, Nadine Desrochers, Benoît Macaluso, Philippe Mongeon, Adèle Paul-Hus, and Cassidy R. Sugimoto. 2016. <span>“Contributorship and Division of Labor in Knowledge Production.”</span> <em>Social Studies of Science</em> 46 (3): 417435. <a href="https://doi.org/10.1177/0306312716650046">https://doi.org/10.1177/0306312716650046</a>.
+</div>
+<div id="ref-laudel2002" class="csl-entry" role="listitem">
+Laudel, Grit. 2002. <span>“What Do We Measure by Co-Authorships?”</span> <em>Research Evaluation</em> 11 (1): 3–15. <a href="https://doi.org/10.3152/147154402781776961">https://doi.org/10.3152/147154402781776961</a>.
+</div>
+<div id="ref-mongeon2015" class="csl-entry" role="listitem">
+Mongeon, Philippe. 2015. <span>“Costly Collaborations.”</span> <em>JASIST</em> 15 (2): 125–45.
+</div>
+<div id="ref-mongeon2017" class="csl-entry" role="listitem">
+Mongeon, Philippe, Elise Smith, Bruno Joyal, and Vincent Larivière. 2017. <span>“The Rise of the Middle Author: Investigating Collaboration and Division of Labor in Biomedical Research Using Partial Alphabetical Authorship.”</span> Edited by Miguel A. Andrade-Navarro. <em>PLOS ONE</em> 12 (9): e0184601. <a href="https://doi.org/10.1371/journal.pone.0184601">https://doi.org/10.1371/journal.pone.0184601</a>.
+</div>
+<div id="ref-mowatt2002" class="csl-entry" role="listitem">
+Mowatt, Graham, Liz Shirran, Jeremy M Grimshaw, Drummond Rennie, Annette Flanagin, Veronica Yank, Graeme MacLennan, Peter C Gøtzsche, and Lisa A Bero. 2002. <span>“Prevalence of Honorary and Ghost Authorship in Cochrane Reviews.”</span> <em>JAMA</em> 287 (21): 2769–71. <a href="https://doi.org/10.1001/jama.287.21.2769">https://doi.org/10.1001/jama.287.21.2769</a>.
+</div>
+<div id="ref-osborne2009" class="csl-entry" role="listitem">
+Osborne, Jason W., and Abigail Holland. 2009. <span>“What Is Authorship, and What Should It Be? A Survey of Prominent Guidelines for Determining Authorship in Scientific Publications.”</span> <em>Practical Assessment, Research &amp; Evaluation</em> 14 (15). <a href="https://doi.org/10.7275/25PE-BA85">https://doi.org/10.7275/25PE-BA85</a>.
+</div>
+<div id="ref-paul-hus2017" class="csl-entry" role="listitem">
+Paul-Hus, Adèle, Philippe Mongeon, Maxime Sainte-Marie, and Vincent Larivière. 2017. <span>“The Sum of It All: Revealing Collaboration Patterns by Combining Authorship and Acknowledgements.”</span> <em>Journal of Informetrics</em> 11 (1): 8087.
+</div>
+<div id="ref-perneger2017" class="csl-entry" role="listitem">
+Perneger, Thomas V, Antoine Poncet, Marc Carpentier, Thomas Agoritsas, Christophe Combescure, and Angèle Gayet-Ageron. 2017. <span>“Thinker, Soldier, Scribe: Cross-Sectional Study of Researchers’ Roles and Author Order in the Annals of Internal Medicine.”</span> <em>BMJ Open</em> 7 (6): e013898–98. <a href="https://doi.org/10.1136/bmjopen-2016-013898">https://doi.org/10.1136/bmjopen-2016-013898</a>.
+</div>
+<div id="ref-pontille2004" class="csl-entry" role="listitem">
+Pontille, David. 2004. <em>La Signature Scientifique : Une Sociologie Pragmatique de l’attribution</em>. Paris: CNRS.
+</div>
+<div id="ref-pontille2006" class="csl-entry" role="listitem">
+———. 2006. <span>“Qu’est-Ce Qu’un Auteur Scientifique.”</span> <em>Sciences de La Société</em> 67: 77–93.
+</div>
+<div id="ref-pontille2016" class="csl-entry" role="listitem">
+———. 2016. <em>Signer Ensemble: Contribution Et Évaluation En Sciences</em>. Paris: Economica.
+</div>
+<div id="ref-rennie1994" class="csl-entry" role="listitem">
+Rennie, Drummond, and Annette Flanagin. 1994. <span>“Authorship! Authorship! Guests, Ghosts, Grafters, and the Two-Sided Coin.”</span> <em>JAMA</em> 271 (6): 469–69. <a href="https://doi.org/10.1001/jama.1994.03510300075043">https://doi.org/10.1001/jama.1994.03510300075043</a>.
+</div>
+<div id="ref-rennie1997" class="csl-entry" role="listitem">
+Rennie, Drummond, Veronica Yank, and Linda Emanuel. 1997. <span>“When Authorship Fails: A Proposal to Make Contributors Accountable.”</span> <em>JAMA</em> 278 (7): 579–79. <a href="https://doi.org/10.1001/jama.1997.03550070071041">https://doi.org/10.1001/jama.1997.03550070071041</a>.
+</div>
+<div id="ref-sauermann2017" class="csl-entry" role="listitem">
+Sauermann, Henry, and Carolin Haeussler. 2017. <span>“Authorship and Contribution Disclosures.”</span> <em>Science Advances</em> 3 (11): e1700404. <a href="https://doi.org/10.1126/sciadv.1700404">https://doi.org/10.1126/sciadv.1700404</a>.
+</div>
+<div id="ref-shibayama2012" class="csl-entry" role="listitem">
+Shibayama, Sotaro, John P. Walsh, and Yasunori Baba. 2012. <span>“Academic Entrepreneurship and Exchange of Scientific Resources: Material Transfer in Life and Materials Sciences in Japanese Universities.”</span> <em>American Sociological Review</em> 77 (5): 804–30. <a href="https://doi.org/10.1177/0003122412452874">https://doi.org/10.1177/0003122412452874</a>.
+</div>
+<div id="ref-sismondo2009" class="csl-entry" role="listitem">
+Sismondo, Sergio. 2009. <span>“Ghosts in the Machine: Publication Planning in the Medical Sciences.”</span> <em>Social Studies of Science</em> 39 (2): 171–98. <a href="https://doi.org/10.1177/0306312708101047">https://doi.org/10.1177/0306312708101047</a>.
+</div>
+<div id="ref-steen2010" class="csl-entry" role="listitem">
+Steen, R. G. 2010. <span>“Retractions in the Scientific Literature: Is the Incidence of Research Fraud Increasing?”</span> <em>Journal of Medical Ethics</em> 37 (4): 249–53. <a href="https://doi.org/10.1136/jme.2010.040923">https://doi.org/10.1136/jme.2010.040923</a>.
+</div>
+<div id="ref-subramanyam1983" class="csl-entry" role="listitem">
+Subramanyam, Krishnappa. 1983. <span>“Bibliometric Studies of Research Collaboration: A Review.”</span> <em>Journal of Information Science</em> 6 (1): 33–38.
+</div>
+<div id="ref-wager2007" class="csl-entry" role="listitem">
+Wager, Elizabeth. 2007. <span>“Authors, Ghosts, Damned Lies, and Statisticians.”</span> <em>PLoS Medicine</em> 4 (1): e34–34. <a href="https://doi.org/10.1371/journal.pmed.0040034">https://doi.org/10.1371/journal.pmed.0040034</a>.
+</div>
+<div id="ref-wager2009" class="csl-entry" role="listitem">
+———. 2009. <span>“Recognition, Reward and Responsibility: Why the Authorship of Scientific Papers Matters.”</span> <em>Maturitas</em> 62 (2): 109–12. <a href="https://doi.org/10.1016/j.maturitas.2008.12.001">https://doi.org/10.1016/j.maturitas.2008.12.001</a>.
+</div>
+<div id="ref-walsh2015" class="csl-entry" role="listitem">
+Walsh, John P., and You-Na Lee. 2015. <span>“The Bureaucratization of Science.”</span> <em>Research Policy</em> 44 (8): 1584–1600. <a href="https://doi.org/10.1016/j.respol.2015.04.010">https://doi.org/10.1016/j.respol.2015.04.010</a>.
+</div>
+<div id="ref-wislar2011" class="csl-entry" role="listitem">
+Wislar, Joseph S, Annette Flanagin, Phil B Fontanarosa, and Catherine D DeAngelis. 2011. <span>“Honorary and Ghost Authorship in High Impact Biomedical Journals: A Cross Sectional Survey.”</span> <em>BMJ</em> 343 (October): d6128–28. <a href="https://doi.org/10.1136/bmj.d6128">https://doi.org/10.1136/bmj.d6128</a>.
+</div>
+<div id="ref-wuchty2007" class="csl-entry" role="listitem">
+Wuchty, Stefan, BF Benjamin F Jones, and Brian Uzzi. 2007. <span>“The Increasing Dominance of Teams in Production of Knowledge.”</span> <em>Science</em> 316 (5827): 1036–39. <a href="https://doi.org/10.1126/science.1136099">https://doi.org/10.1126/science.1136099</a>.
+</div>
+<div id="ref-zuckerman1967" class="csl-entry" role="listitem">
+Zuckerman, Harriet A. 1967. <span>“The Sociology of the Nobel Prizes.”</span> <em>Scientific American</em>. <a href="http://europepmc.org/abstract/MED/6065922">http://europepmc.org/abstract/MED/6065922</a>.
+</div>
+<div id="ref-zuckerman1968" class="csl-entry" role="listitem">
+———. 1968. <span>“Patterns of Name Ordering Among Authors of Scientific Papers: A Study of Social Symbolism and Its Ambiguity.”</span> <em>American Journal of Sociology</em> 74 (3): 276–91. <a href="https://doi.org/10.2307/2775535">https://doi.org/10.2307/2775535</a>.
 </div>
 </div>
 </section>
@@ -612,10 +736,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -625,8 +766,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -638,7 +788,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -682,6 +955,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -707,6 +981,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -768,17 +1068,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ch6.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Measuring research output</span></span>
+      <a href="./ch6.html" class="pagination-link" aria-label="Visualizing research networks">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch8.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Altmetrics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ch8.html" class="pagination-link" aria-label="Measuring research impact">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Measuring research impact</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
