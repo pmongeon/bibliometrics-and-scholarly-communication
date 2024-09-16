@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -301,7 +301,7 @@ Web of Science is not available at Dalhousie
 </section>
 <section id="international-center-for-the-study-of-research-icsr-lab" class="level3" data-number="4.3.3">
 <h3 data-number="4.3.3" class="anchored" data-anchor-id="international-center-for-the-study-of-research-icsr-lab"><span class="header-section-number">4.3.3</span> International Center for the Study of Research (ICSR) Lab</h3>
-<p>Possibly in an attempt to compete with the Web of Science, and especially with Dimensions (see below), which are offering access to their full database to <strong>research</strong>, Elsevier recently launched the International Center for the Study of Research (ICSR) Lab. The lab allows researchers to submit research proposals and get access to their data infrastructure. (details here: <a href="https://www.elsevier.com/icsr/icsrlab/features" class="uri">https://www.elsevier.com/icsr/icsrlab/features</a>).</p>
+<p>Possibly in an attempt to compete with the Web of Science, and especially with Dimensions (see below), which are offering access to their full database to <strong>research</strong>, Elsevier recently launched the International Center for the Study of Research (ICSR) Lab. The lab allows researchers to submit research proposals and get access to their data infrastructure. (details here: <a href="https://elsevier.international/icsr.html" class="uri">https://elsevier.international/icsr.html</a>).</p>
 </section>
 </section>
 <section id="dimensions" class="level2" data-number="4.4">
@@ -318,22 +318,26 @@ Web of Science is not available at Dalhousie
 <h2 data-number="4.6" class="anchored" data-anchor-id="openalex"><span class="header-section-number">4.6</span> OpenAlex</h2>
 <p><a href="http://openalex.org/">OpenAlex</a> is a new and entirely open platform managed by a non-profit organization called <a href="https://ourresearch.org/">OurResearch</a>. At the core of OpenAlex is the Microsoft Academic Graph (MAG), an open database that Microsoft stopped supporting in 2021, as well as Crossref, but OpenAlex also includes data from a variety of other <a href="https://docs.openalex.org/about-the-data-1">sources</a> in an attempt to provide the most comprehensive, fully open database of scholarly entities and outputs. Here is the OpenAlex database schema:</p>
 <p><img src="images/openalex-schema.png" class="img-fluid"></p>
-<p>OpenAlex does not (yet) have a website that can be used to search and retrieve data. However, it has a free API, and the entire database can also be downloaded for free (don’t do it, it’s huge).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Special access for INFO6850 students
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <a href="https://www.mists-imsts.ca/">Maritime Institute for Science, Technology, and Society (MISTS)</a> provides direct access to the OpenAlex database through its PostgreSQL server. If you would like to make use of this access, <strong>please contact your instructor or TA,</strong> and you will be provided with a username, password, and log in instructions.</p>
-<p>Once you have your connection information, I recommend using <a href="https://dbeaver.io/">DBeaver</a> to connect and query the MISTS database, but any PostgreSQL client will do.</p>
-<p><strong>Please:</strong> be careful when running SQL queries on the server. The MISTS servers do not run large resources, so poorly constructed queries might use up all the resources and slow the server down for everyone. Some of the OpenAlex tables are very large, and if your query uses a non-indexed column, it might take days to execute. As a rule of thumb, if your query has been executing for more than 30 minutes, cancel it and check with your instructor or TA to see if something can be done to make the query execute faster.</p>
-</div>
-</div>
+<p>On top of its web search engine, OpenAlex has a free API, and the entire database can also be downloaded for free (don’t do it, it’s huge).</p>
+<!-- ::: callout-note -->
+<!-- ## Special access for INFO6850 students -->
+<!-- The [Maritime Institute for Science, Technology, and Society -->
+<!-- (MISTS)](https://www.mists-imsts.ca/) provides direct access to the -->
+<!-- OpenAlex database through its PostgreSQL server. If you would like to -->
+<!-- make use of this access, **please contact your instructor or TA,** and -->
+<!-- you will be provided with a username, password, and log in instructions. -->
+<!-- Once you have your connection information, I recommend using -->
+<!-- [DBeaver](https://dbeaver.io/) to connect and query the MISTS database, -->
+<!-- but any PostgreSQL client will do. -->
+<!-- **Please:** be careful when running SQL queries on the server. The MISTS -->
+<!-- servers do not run large resources, so poorly constructed queries might -->
+<!-- use up all the resources and slow the server down for everyone. Some of -->
+<!-- the OpenAlex tables are very large, and if your query uses a non-indexed -->
+<!-- column, it might take days to execute. As a rule of thumb, if your query -->
+<!-- has been executing for more than 30 minutes, cancel it and check with -->
+<!-- your instructor or TA to see if something can be done to make the query -->
+<!-- execute faster. -->
+<!-- ::: -->
 </section>
 <section id="google-scholar" class="level2" data-number="4.7">
 <h2 data-number="4.7" class="anchored" data-anchor-id="google-scholar"><span class="header-section-number">4.7</span> Google Scholar</h2>
@@ -396,7 +400,7 @@ Special access for INFO6850 students
 <section id="what-skills-do-i-need-to-do-this" class="level2" data-number="4.9">
 <h2 data-number="4.9" class="anchored" data-anchor-id="what-skills-do-i-need-to-do-this"><span class="header-section-number">4.9</span> What skills do I need to do this?</h2>
 <p>No, <strong>you do not need to know any programming languages</strong> like SQL, R or Python to do bibliometrics. There are plenty of free tools that can help you, and most data processing and analyses can be done in Excel too. That said, programming skills definitely can help you perform more complex tasks, use a broader range of databases, or just save time with data collection, cleaning, processing and analysis.</p>
-<p>In this course, you are free to choose whatever tool you wish to use. Your instructor and TA will be there to help no matter what choices you make, so don’t be afraid to challenge yourself.</p>
+<p>In this course, you are free to choose whatever tool you wish to use. Your instructor will be there to help no matter what choices you make, so don’t be afraid to challenge yourself.</p>
 </section>
 <section id="further-readings" class="level2" data-number="4.10">
 <h2 data-number="4.10" class="anchored" data-anchor-id="further-readings"><span class="header-section-number">4.10</span> Further readings</h2>
