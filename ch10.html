@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bibliometrics and Scholarly Communication - 10&nbsp; Open research</title>
+<title>Bibliometrics and Scholarly Communication - 10&nbsp; Open Access</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,7 +101,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch10.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open research</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch10.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -189,7 +189,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch10.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -239,7 +239,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open research</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Access</span></h1>
 </div>
 
 
@@ -307,22 +307,21 @@ Suggested readings
 <ul>
 <li><p>The Unpaywall <a href="https://unpaywall.org/products/api">REST API</a></p></li>
 <li><p>The <a href="https://docs.ropensci.org/roadoi/">roadoi R package</a> that makes it easier to query the REST API.</p></li>
-<li><p>The <a href="https://unpaywall.org/products/simple-query-tool">Simple Query Tool</a> that allows you to simply past a list of DOI and get the data by email.</p></li>
-<li><p>If you find the 100,000 DOIs limit for API calls, and the 1,000 DOIs limit for the Simple Query Tool, you can also download the entire Unpaywall <a href="https://unpaywall.org/products/snapshot">database snapshot</a>.</p></li>
-</ul>
-<p>Unpaywall also offers an <a href="https://unpaywall.org/products/extension">extension</a> for your web browser that automatically shows you when an article you are viewing on the Web has an available OA version, which you can access in a click.</p>
-<p>Unpaywall data is also integrated in OpenAlex. used to provide the OA status of articles in <a href="https://docs.openalex.org/about-the-data/work#the-openaccess-object">OpenAlex</a>, which provides the following metadata:</p>
+<li><p>The <a href="https://unpaywall.org/products/simple-query-tool">Simple Query Tool</a> that allows you to simply paste a list of DOI and get the data by email.</p></li>
+<li><p>Unpaywall also offers an <a href="https://unpaywall.org/products/extension">extension</a> for your web browser that automatically shows you when an article you are viewing on the Web has an available OA version, which you can access in a click.</p></li>
+<li><p>Unpaywall data is also integrated into&nbsp;<a href="https://docs.openalex.org/about-the-data/work#the-openaccess-object" title="https://docs.openalex.org/api-entities/works/work-object#open_access"><u>OpenAlex</u></a>and provides the following metadata on the OA status of articles:</p>
 <ul>
-<li><p><strong>is_oa</strong>: TRUE or FALSE</p></li>
-<li><p><strong>oa_status</strong>: One of the following OA statuses:</p>
+<li><strong>is_oa</strong>: TRUE or FALSE</li>
+<li><strong>oa_status</strong>: One of the following OA statuses:
 <ul>
 <li><p><strong>Gold</strong>: Published in an OA journal that is indexed by the DOAJ.</p></li>
 <li><p><strong>Green:</strong> Toll-access on the publisher landing page, but there is a free copy in an <a href="https://en.wikipedia.org/wiki/Open-access_repository">OA repository</a>.</p></li>
 <li><p><strong>Hybrid</strong>: Free under an <a href="https://support.unpaywall.org/support/solutions/articles/44002063718-what-is-an-oa-license-">open license</a> in a toll-access journal.</p></li>
-<li><p><strong>Bronze</strong>: Free to read on the publisher landing page, but without any identifiable license</p></li>
+<li><p><strong>Bronze</strong>: Free to read on the publisher landing page, but without any identifiable license.</p></li>
 <li><p><strong>Closed</strong> All other articles.</p></li>
 </ul></li>
-<li><p><strong>oa_url</strong>: The best Open Access (OA) URL for the work.</p></li>
+<li><strong>oa_url</strong>: The best Open Access (OA) URL for the work.</li>
+</ul></li>
 </ul>
 </section>
 <section id="directory-of-open-access-journals-doaj" class="level3" data-number="10.5.2">
@@ -331,7 +330,7 @@ Suggested readings
 </section>
 <section id="sherpa-romeo" class="level3" data-number="10.5.3">
 <h3 data-number="10.5.3" class="anchored" data-anchor-id="sherpa-romeo"><span class="header-section-number">10.5.3</span> Sherpa Romeo</h3>
-<p><a href="https://v2.sherpa.ac.uk/romeo/">Sherpa Romeo</a> is another useful resource developed by the <a href="https://www.jisc.ac.uk/">Jisc</a>, a non-profit organization in the UK formally called the Joint Information Systems Committee (JISC). It is a directory of journals’ and publishers’ OA policies. It provides useful information on the OA pathways that are permitted by the journals, and the associated fees, embargo period, the version of the manuscript to which it applies, and so on. Again, the data can be accessed through the website’s search engine, or with the Sherpa Romeo <a href="https://v2.sherpa.ac.uk/api/">API</a>.</p>
+<p><a href="https://v2.sherpa.ac.uk/romeo/">Sherpa Romeo</a> is another useful resource developed by the <a href="https://www.jisc.ac.uk/">Jisc</a>, a non-profit organization in the UK formally called the Joint Information Systems Committee (JISC). It is a directory of journals’ and publishers’ OA policies. It provides useful information on the OA pathways that are permitted by the journals, as well as the associated fees, embargo period, the version of the manuscript to which it applies, and so on. Again, the data can be accessed through the website’s search engine, or with the Sherpa Romeo <a href="https://v2.sherpa.ac.uk/api/">API</a>.</p>
 </section>
 </section>
 <section id="references" class="level2" data-number="10.6">
