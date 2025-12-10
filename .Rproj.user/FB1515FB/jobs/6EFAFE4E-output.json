@@ -5,3 +5,5 @@
 [1,"\n"]
 [1,"Watching files for changes\nBrowse at http://localhost:3041/ch1.html\n"]
 [1,"GET: /ch1.html\n"]
+[1,"pandoc \n  to: html\n  output-file: ch1.html\n  standalone: true\n  toc: true\n  number-sections: true\n  title-prefix: Bibliometrics and Scholarly Communication\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  number-offset:\n    - 1\n  variables: {}\n  \nmetadata\n  crossref:\n    chapters: true\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  bibliography:\n    - references.bib\n  theme: cosmo\n  hide-description: true\n  title: \"[1]{.chapter-number}\\_ [Bibliometrics and scholarly communication: An introduction]{.chapter-title}\"\n  \n"]
+[1,"Output created: docs\\ch1.html\n\nWatching files for changes\n"]

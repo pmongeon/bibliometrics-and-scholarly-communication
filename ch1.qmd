@@ -4,12 +4,6 @@
 
 This week is a short introduction to the course and some of the its key concepts.
 
-## Slides
-
-Slides will be posted right before the first class begins.
-
-<!--<iframe width="600" height="400" marginheight="0" marginwidth="0" src="https://pmongeon.github.io//bibliometrics-and-scholarly-communication/slides/introduction.html"></iframe>-->
-
 ## Homework
 
 Your homework is to explore the bibliometrics literature to get a better sense of what the field is about, and then choose an article to review for **assignment #1** (the detailed instructions are on Brightspace).
