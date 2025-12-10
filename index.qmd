@@ -1,0 +1,52 @@
+# Course overview {.unnumbered}
+
+This book is a work-in-progress intended to support the course INFO6850 - Bibliometrics and Scholarly Communication offered at the School of Information Management, Dalhousie University.
+
+The course introduces students to the scholarly communication system and the use of bibliometrics to measure the production, dissemination and use of knowledge. Topics covered will include the reward system of science, peer-review, scholarly publishing and open access, research funding, research evaluation, bibliometric and altmetric data sources and indicators, and networks.
+
+## Learning outcomes
+
+Upon completion of the course you will be able to:
+
+1.  Explain the scholarly communication process.
+2.  Select appropriate data sources to conduct a bibliometric study.
+3.  Calculate and interpret bibliometric indicators.
+4.  Visualize and analyze bibliometric networks.
+5.  Use bibliometrics to support research evaluation processes.
+6.  Explain the advantages and limitations of bibliometrics.
+7.  Understand the social and organizational context of research evaluation
+
+## Schedule
+
+| Week | Section | Topic |
+|:--:|----|----|
+| 1 | Understanding the research system | Bibliometrics and scholarly communication: an introduction |
+| 2 | Understanding the research system | The organization and evaluation of research (ch. 2 and ch. 3) |
+| 3 | Applied bibliometrics | Data sources (ch. 4) |
+| 4 | Applied bibliometrics | Classifying research (ch. 5) |
+| 5 | Applied bibliometrics | Visualizing research (ch. 6) |
+| 6 | Applied bibliometrics | Measuring research output (ch. 7) |
+| 7 | Applied bibliometrics | Measuring research impact (ch. 8) |
+| 8 | Applied bibliometrics | Altmetrics (ch. 9) |
+| 9 | Applied bibliometrics | Open research (ch. 10) |
+| 10 | Critical perspectives | Perverse and unintended effects of bibliometrics (ch. 11) |
+| 11 | Critical perspectives | Fraud, errors and questionable research practices (ch.12) |
+| 12 | Critical perspectives | Equity, diversity, and inclusion in research (ch.13) |
+
+::: callout-important
+Use the course Brightspace to:
+
+\- Access the detailed instruction for the assignments.
+
+\- Submit your assignments.
+:::
+
+## Other information and resources
+
+-   Use APA style for your references in all assignments.
+
+-   Use [Zotero](www.zotero.org) (or another reference manager of your choice) to store your references and to cite them in your work. (not mandatory, but highly recommended).
+
+-   You can use this [Word template](files/assignment-template.dotx) to write your assignments (not mandatory). Whether you use this template or not, use Word styles to format and structure your document.
+
+-   Have fun.

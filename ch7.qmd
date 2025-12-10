@@ -1,0 +1,185 @@
+---
+bibliography: references.bib
+---
+
+# Measuring research output
+
+## Introduction
+
+Measuring the research output of any entity (e.g., an individual, an organization, a country, or a field) requires that 1) such an output exists (e.g. an article), and 2) that the link between the output and the entity be established through authorship. This chapter discusses the role of authorship in science and the practices, norms, and guidelines that influence the naming and ordering of authors.
+
+## The functions of scientific authorship
+
+According to @birnholtz2006, the functions of authorship in science are to assign credit, ownership, and responsibility for discoveries, as well as to enable the existence of a reputation economy.
+
+### Credit
+
+Peer recognition is the main reward obtained by researchers; this symbolic capital then allows them to obtain other rewards with symbolic but also economic value. It is therefore important for researchers to obtain this credit for their contributions and the codes of ethics of disciplinary associations (and, to a lesser extent, the editorial policies of journals) emphasize the importance of giving all contributors the credit due to them. It is thanks to authorship that the system of recognition of science can function, by granting an institutionalized form of credit (awards and positions, for instance) to researchers who have made important contributions to the advancement of knowledge.
+
+### Ownership and responsibility
+
+The link between authorship and ownership applies less to science than to other domains (e.g. the literary domain), because of the Mertonian norm of disinterestedness. According to @biagioli2003, only the original expression of scientific discoveries, generally under textual form, is the property of the authors, which grants them protection against plagiarism. Responsibility, which can be considered the other side of the ownership coin, has more relevance in science. The proper functioning of the scientific reward system relies on its ability to reward those who contribute to the goal and follow the norms, and its ability to punish (or at least not reward) those who act against the goals and norms of the system. Scientific fraud (e.g. fabrication, falsification, or plagiarism) is an example of non-compliance with the standards of science having a negative impact on the career of the researchers involved [@mongeon2015], and even on their institutions and their disciplines [@azoulay2015]. Although they remain relatively rare, the increase in cases of scientific fraud has contributed to the development of authorship guidelines which, as we will see later, emphasize the responsibility of researchers for the validity of the articles' content.
+
+### Reputation economy
+
+Authorship, among other things, provides scientific capital to the researcher. Once known and recognized by the other researchers in the field, this scientific capital is converted into symbolic capital [@bourdieu1987]. Authorship is the basis of the social stratification of scientific fields, and all the layers of the hierarchy of rewards, from the simple citation to the Nobel Prize [@cole1973]. There is no social structure of science without authorship.
+
+## Authorship practices an norms
+
+The byline of an article ultimately depends on two elements:
+
+1.  The nature and extent of the contribution of those involved in the works (who did what?)
+2.  The decisions made about naming and ordering authors (who will be an author, and in what order will the names be listed?)
+
+These questions can be difficult to answer in a context where science is increasingly complex and collaborative [@wuchty2007].
+
+### Collaboration and division of labour
+
+@laudel2002 identified six types of collaboration related to the types of contributions that individuals can make to a given research project:
+
+-   **Collaboration involving a division of intellectual labour.** Collaborators with a shared goal who make substantial intellectual contribution towards that goal. They are to some degree co-leading the research.
+
+-   **Service collaboration.** Researchers who are called upon to produce routine work that require a specific expertise.
+
+-   **Provision of access to research equipment.** The collaborator does not perform any tasks related to the project but provides material, equipment, data, etc. used for the research.
+
+-   **Transmission of know-how**. The non-creative transmission of information stored in memory that is useful for the research.
+
+-   **Mutual stimulation**: The stimulation and engagement through informal interactions that helps researchers develop their ideas.
+
+-   **Trusted assessorship**: Providing feedback on the work.
+
+Not all these forms of collaboration lead to authorship. @laudel2002 found that authorship is usually attributed to collaborators of the first two types only.
+
+@subramanyam1983 proposed four types of collaboration related to the hierarchical status of the involved individuals:
+
+-   **Same-status collaborations.**
+
+-   **Professor-student collaborations.**
+
+-   **Supervisor-assistant collaborations.**
+
+-   **Researcher-consultant collaborations.**
+
+The number of people required for a given project can have an influence on the types of collaboration that will take place. According to @walsh2015, larger teams tend to lead to more bureaucratic organizational structures, characterized by increased division of labour, specialization and standardization of tasks, hierarchical relationships, and decentralized decision-making.
+
+Assigning authorship can be difficult when a work is the outcome of  many individuals with different statuses, roles, and contributions. Decisions have to be made about 1) who will be an author (not all contributions lead to authorship) and 2) the order of the names, which is usually meant to indicate what share of the credit each one deserves [@pontille2006]. It can be extremely difficult for an external observer to determine who did what or what share of credit everyone deserves [@rennie1997].
+
+### Naming authors
+
+Unlike the concept of author in literature, which is linked with writing, the concept of author in science is not and other forms of contributions can lead to authorship. Moreover, as @pontille2006 points out, the act of writing is not necessarily sufficient to obtain author status, and it is also possible to be an author without writing. So what kind of contributions do lead to authorship? Contributions involving the division of intellectual labour (the first type of collaboration identified by @laudel2002). This link between substantial intellectual contribution and authorship generates little to no debate in the literature. However, whether authorship should be awarded to individuals with technical, routine, or less substantial contributions is not so clear.
+
+@hagstrom1964 tackles the question of authorship for technical contributions by looking at the historical context and distinguishing traditional collaboration from modern collaboration. He portrays the traditional technician as having few qualifications and being involved in the search for solutions to scientific problems but performing simple tasks designed and assigned by the scientist in exchange for economic capital. In contrast, the modern technician is a qualified professional performing complex tasks that the researcher employing them may not know how to perform themselves. This professionalization of the technician is nicely illustrated by @knorr-cetina1999 who tells the story of an established researcher who mastered the theories of his field but was unable to execute the technical tasks their research required. This type of relationship between the scientist and the technician is not generalized and technical contributions do not always lead to authorship today [@haeussler2015; @larivière2016; @laudel2002].
+
+The type of contribution is not always the only determinant. The same task performed by a paid technician or by another researcher may lead to authorship for the latter but not the former [@pontille2016; @shibayama2012].
+
+The importance of a discovery can also affect authorship attribution. @jabbehdari2017 found that the individuals who performed technical or less substantial contributions are more often excluded from the byline of highly cited work.
+
+The relationship between the nature and extent of a contribution and authorship is also determined by implicit disciplinary norms. Some type of contributions that often lead to authorship in a discipline may not (and may even be considered unethical) in another [@bozeman2016]. For example, in sociology, writing remains one of the most important contribution and tends to be required to be an author [@pontille2004]. However, Pontille distinguishes French sociology from American sociology, where authorship norms are more inclusive. This highlights that the disciplinary context is not entirely independent from the local context. In physics, we find the special case of mega-collaborations leading to articles signed by hundreds (or thousands) of authors; a phenomena that @cronin2001 calls "hyperauthorsip". In this context, it is the affiliation to the collective and not a specific contribution to the publication, that justifies authorship [@biagioli2003; @birnholtz2006; @knorr-cetina1999].
+
+#### Guest authors, ghost authors, and acknowledgees
+
+In some cases, the relationship between an individual's contribution to a work and the authorship status can be weak or nonexistent. It is frequent for individuals to be named as (guest) authors despite having made very little or no contribution to the work, and for individuals to not appear on the byline despite having offered a significant contribution to the work (ghost authors) [@bates2004; @flanagin1998; @sismondo2009; @mowatt2002; @wislar2011]. Contributors excluded from the byline are sometimes acknowledged in the acknowledgements section of the article to signal their contribution to the work [@kassirer1991]. @paul-hus2017 found that the disciplinary differences in the number of authors are greatly reduced when we consider combined authors and acknowledgees, which suggests that these differences are not a reflection of the different number of contributors involved, but also of disciplinary differences in authorship practices. Overall, the existence of guest authors, ghost authors, and acknowledgees suggests that the byline can misrepresent the composition and size of research teams.
+
+### Ordering authors
+
+Authorship decisions are not only about who will be an author but also in what order the names will be listed, which is usually intended to reflect the importance of individual contributions to the work [@zuckerman1968]. In this section, we survey ordering approaches used in science.
+
+#### Alphabetical order
+
+Alphabetical order is sometimes used to distribute credit equally between members of the research team. It is also standard practice in some fields like Mathematics and Economics. This mode of ordering is also often used in hyperauthorship situations where specific individual contributions are difficult to capture and order [@knorr-cetina1999]. Sometimes the authors will be grouped by institution or country first, and then ordered alphabetically within each group. The use of alphabetical in some cases but not always can generate some ambiguity since the first (or last) authors might be perceived as having made more important contributions than others even if that is not the case. Furthermore, it is possible for alphabetical ordering to occur by chance, sending a signal that authors may have contributed equally despite it not being the case [@zuckerman1968].
+
+#### Decreasing order of contribution
+
+Authors can also be listed based on the importance of their contribution, the first authors having typically contributed the most. This is a dominant mode of name ordering in Social Sciences and Humanities where writing is key [@pontille2004]. One limitation of this approach is that there is only one author at any position in the list. This issue is sometimes addressed by adding a note in the byline indicating that some authors contributed equally to the work [@hu2009]. According to @zuckerman1967, prominent researchers sometimes let their less well-known collaborators take first authorship, even if they may have contributed less.
+
+#### From the outside in
+
+A variant of the decreasing order of contribution exists predominantly some fields of natural or biomedical sciences where research often occurs in laboratories. The difference is that the two ends of the byline (the first and last author positions) are the most important. The first author tends to be a junior researcher (a PhD student or postdoc) who lead the experiment. The last author is the lab director. Other contributors are listed in decreasing order of contribution between these two poles, those who contributed the least being in the middle of the byline [@pontille2006].
+
+#### Hybrid (partial alphabetical order)
+
+@zuckerman1968 described another type of ordering that I call partial alphabetical order, in which a subset of authors are listed alphabetically to highlight the contribution of the other authors who are not part of the alphabetical list. This phenomenon was studied by @mongeon2017 who showed how alphabetical order is used in biomedical research to distinguish primary authors (at the beginning of the byline), the supervisory authors (at the end of the byline), and the others (in the middle of the byline, in alphabetical order).
+
+### Categorizing authors
+
+Some scholars have proposed to divide authors in categories. @perneger2017 identified three types of authors in biomedical research:
+
+-   **The thinker** who designs the work, acquires funding for it, and revises the article.
+
+-   **The soldier** who provides material, administrative or technical support or participates in the data collection.
+
+-   **The scribe** who analyzes and interprets the results and drafts the article.
+
+Similarly, @baerlocher2007 proposed the following categories:
+
+-   **Primary authors** participate in the planning and execution of the study, and in drafting the article. They are able to explain all the findings and share responsibility for the exactitude of the information reported in the article. They generally appear at the beginning of the byline.
+
+-   **Senior/supervisory authors** plan and supervise the study, and substantially revise the draft. Like primary authors, they can explain all the findings in the study and share responsibility for the exactitude of the information reported in the article. They are generally at the end of the byline.
+
+-   **Contributing authors** make a substantial contribution to the work but do not meet the criteria or primary and senior/supervisory authorship. They are not necessarily able to explain all of the findings of the study and they are not responsible for the exactitude of the information reported in the article. They generally appear in the middle of the byline.
+
+### Authorship guidelines
+
+Scholarly societies and journal editors have developed authorship guidelines in response to the lack of standards in authorship practices [@osborne2009], the increased number of authors on articles, and the increase in cases of scientific misconduct [@pontille2016; @steen2010] bringing forth the relationship between authorship and responsibility [@rennie1994]. Large research teams are most frequent in Natural Sciences, Engineering, and Health Sciences [@wuchty2007], and misconduct is most frequent in the Health Sciences [@fang2012]. It is thus not surprising that these are research areas where authorship guidelines are frequently found [@bosnjak2012; @wager2007].
+
+Journals rarely create their own authorship guidelines. Instead, they refer to the code of ethics of professional associations or publishers' guidelines, which tend to refer to the recommendations of the International Committee of Medical Journal Editors (ICMJE). The [ICMJE recommendations](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html) include four criteria that must be met by all authors of a paper:
+
+1.  Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data for the work;
+2.  Drafting the work or revising it critically for important intellectual content;
+3.  Final approval of the version to be published;
+4.  Agreement to be accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved.
+
+Even though their adoption is not generalized even in the Medical field [@bosnjak2012] these recommendation have a wide influence beyond this field. For instance, the Committee on Publication Ethics (COPE), the European Association of Science Editors (EASE), and major publishers like Elsevier, Springer-Nature, and Wiley-Blackwell refer to it.
+
+Despite the existence of these guidelines, there is no consensus on what constitutes a substantial contribution that should lead to authorship [@claxton2005]. Even when they do mention the type of tasks that matter for authorship, guidelines remain vague regarding the magnitude of the contribution required, simply stating that it should be substantial. Editors themselves are not convinced of the efficacy of the guidelines for reducing practices like guest and ghost authorship [@wager2009]. In sum, while guidelines might be able to help research teams with their authorship decisions, they seem to have a limited effect on these practices, and to be unable to address unethical authorship issues.
+
+### Contribution statements
+
+@rennie1997 proposed a model that would replace authors with a list of contributors and guarantors. In their model, contributors include everyone who contributed, no matter the nature and extent of their contribution, and guarantors are those contributors who are responsible for the integrity of the work as a whole. In addition, the article should include a description of the work done by each contributor. The model is recommended (but not required) by the ICMJE guidelines and the Council of Science Editors, and it is applied (although partially) by an increasingly large number of journals requiring that the respective contributions of the authors be indicated, typically in a contribution statement.
+
+However, the informative value of these statements remains limited. Firstly, only the type (and not the extent) of contributions is indicated. According to @ilakovac2006, contribution statements are also imprecise as they rely on the limited memory (and limited motivation) of researchers who are asked to produce them. A third of the respondants to a survey indicated that contribution statements provide are not more informative than the order in which the authors are listed [@sauermann2017].
+
+## Bibliometric indicators
+
+### Research output
+
+There are two basic ways of counting the research contributions of an individual researcher or another entity (institution, country, etc.): one that does not take into account collaboration (full counting), and one that does take into account collaboration (fractional counting, harmonic counting, geometric counting, and arithmetic counting.
+
+| Indicator           |                                                   Share of credit for the author in the *i^~th~^* position in a byline of *N* authors                                                   |
+|---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Full counting       |                                                                                            1                                                                                            |
+| Fractional counting |                           $$                                                                                                                                                            
+                                                                                                                                                           \dfrac{1}{N}                                         
+                                                                                                                                                                                                        $$      |
+| Harmonic counting   |                           $$                                                                                                                                                            
+                                                                                                                                       \dfrac{\dfrac{1}{i}}{1+\dfrac{1}{2}+...+\dfrac{1}{N}}                    
+                                                                                                                                                                                                        $$      |
+| Geometric counting  |                           $$                                                                                                                                                            
+                                                                                                                                                      \dfrac{2^{N-i}}{2^N-1}                                    
+                                                                                                                                                                                                        $$      |
+| Arithmetic counting |                           $$                                                                                                                                                            
+                                                                                                                                                     \dfrac{N+1-i}{1+2+...+N}                                   
+                                                                                                                                                                                                        $$      |
+
+: Methods of counting publications in bibliometrics
+
+A study by @hagen2010 suggests that harmonic counting best fits empirical data on credit allocation between co-authors in chemistry, medicine and chemistry. However, full and fractional counting remain the most widely used indicators.
+
+### Collaboration
+
+Bibliometric indicators can also be used to measure and characterize collaboration at the article level. The table below summarizes commonly used indicators of collaboration.
+
+| Indicator                        | Variable type | Description                                                                                              |
+|----------------------------------|---------------|----------------------------------------------------------------------------------------------------------|
+| Collaboration                    | Categorical   | There is more than one author on the byline.                                                             |
+| Interinstitutional collaboration | Categorical   | There is more than one institution on the byline.                                                        |
+| International collaboration      | Categorical   | There is more than one country on the byline.                                                            |
+| Intersectoral collaboration      | Categorical   | There are institutions from more than one sector (e.g., university, industry, government) on the byline. |
+| Team size                        | Numerical     | The number of authors on the byline.                                                                     |
+
+: Bibliometric indicators of research collaboration
+
+Note that collaboration can also be represented as a **co-authorship network**, in which two entities are linked when they appear together on the same publication.
+
+## References

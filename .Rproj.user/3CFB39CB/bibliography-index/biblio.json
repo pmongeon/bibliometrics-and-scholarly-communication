@@ -1,0 +1,3889 @@
+{
+    "sources": [
+        {
+            "DOI": "10.1093/comjnl/27.2.97",
+            "ISSN": "0010-4620",
+            "URL": "https://doi.org/10.1093/comjnl/27.2.97",
+            "author": [
+                {
+                    "family": "Knuth",
+                    "given": "Donald E."
+                }
+            ],
+            "container-title": "Comput. J.",
+            "id": "knuth84",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1984,
+                        5
+                    ]
+                ]
+            },
+            "page": "97-111",
+            "publisher": "Oxford University Press, Inc.",
+            "publisher-place": "USA",
+            "title": "Literate programming",
+            "type": "article-journal",
+            "volume": "27"
+        },
+        {
+            "DOI": "10.1177/053901847501400602",
+            "URL": "https://doi.org/10.1177/053901847501400602",
+            "author": [
+                {
+                    "family": "Bourdieu",
+                    "given": "Pierre"
+                }
+            ],
+            "container-title": "Social Science Information",
+            "id": "bourdieu1975",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        1975,
+                        12,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Publisher: SAGE Publications Ltd",
+            "page": "19-47",
+            "title": "The specificity of the scientific field and the social conditions of the progress of reason",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bourdieu",
+                    "given": "Pierre"
+                }
+            ],
+            "container-title": "Actes de la recherche en sciences sociales",
+            "id": "bourdieu1980",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1980
+                    ]
+                ]
+            },
+            "page": "2-3",
+            "title": "Le capital social. Notes provisoires",
+            "type": "article-journal",
+            "volume": "31"
+        },
+        {
+            "DOI": "10.3406/arss.1979.2654",
+            "URL": "http://www.persee.fr/web/revues/home/prescript/article/arss_0335-5322_1979_num_30_1_2654",
+            "author": [
+                {
+                    "family": "Bourdieu",
+                    "given": "Pierre"
+                }
+            ],
+            "container-title": "Actes de la recherche en sciences sociales",
+            "id": "bourdieu1979",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1979
+                    ]
+                ]
+            },
+            "page": "3-6",
+            "title": "Les trois états du capital culturel",
+            "type": "article-journal",
+            "volume": "30"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bourdieu",
+                    "given": "Pierre"
+                }
+            ],
+            "id": "bourdieu1987",
+            "issued": {
+                "date-parts": [
+                    [
+                        1987
+                    ]
+                ]
+            },
+            "publisher": "Editions de minuit",
+            "publisher-place": "Paris",
+            "title": "Choses dites",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bourdieu",
+                    "given": "Pierre"
+                }
+            ],
+            "collection-title": "Sciences en questions",
+            "id": "bourdieu1997",
+            "issued": {
+                "date-parts": [
+                    [
+                        1997
+                    ]
+                ]
+            },
+            "language": "fre",
+            "note": "OCLC: 247278933",
+            "publisher": "Institut national de la recherche agronomique",
+            "publisher-place": "Paris",
+            "title": "Les usages sociaux de la science: pour une sociologie clinique du champ scientifique ; une conférence-débat organisée par le groupe Sciences en questions Paris, INRA, 11 mars 1997",
+            "title-short": "Les usages sociaux de la science",
+            "type": "book"
+        },
+        {
+            "DOI": "10.2307/27887912",
+            "URL": "http://www.jstor.org/stable/27887912",
+            "author": [
+                {
+                    "family": "Bourdieu",
+                    "given": "Pierre"
+                }
+            ],
+            "container-title": "L’Année sociologique",
+            "id": "bourdieu1971",
+            "issue": "22",
+            "issued": {
+                "date-parts": [
+                    [
+                        1971
+                    ]
+                ]
+            },
+            "page": "49-126",
+            "title": "Le marché des biens symboliques",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bourdieu",
+                    "given": "Pierre"
+                }
+            ],
+            "id": "bourdieu1989",
+            "issued": {
+                "date-parts": [
+                    [
+                        1989
+                    ]
+                ]
+            },
+            "publisher": "Les Editions de minuit",
+            "title": "La noblesse d’état: Grandes écoles et esprit de corps",
+            "title-short": "La noblesse d’état",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bourdieu",
+                    "given": "Pierre"
+                }
+            ],
+            "editor": [
+                {
+                    "family": "Richardson",
+                    "given": "John G."
+                }
+            ],
+            "id": "bourdieu1986",
+            "issued": {
+                "date-parts": [
+                    [
+                        1986
+                    ]
+                ]
+            },
+            "page": "241-258",
+            "publisher": "Greenwood",
+            "publisher-place": "New York",
+            "title": "The forms of capital",
+            "type": "chapter"
+        },
+        {
+            "URL": "http://books.google.ca/books?hl=fr&lr=&id=HAHCzJfmD5IC&oi=fnd&pg=PR13&dq=zukerman+nobel+prize&ots=5P05DL9tA2&sig=KcXglSng7NvCOudkwv5uCK3eo3I",
+            "author": [
+                {
+                    "family": "Zuckerman",
+                    "given": "Harriet A"
+                }
+            ],
+            "id": "zuckerman1977",
+            "issued": {
+                "date-parts": [
+                    [
+                        1977
+                    ]
+                ]
+            },
+            "title": "Scientific elite: Nobel laureates in the united states",
+            "title-short": "Scientific elite",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.2307/2089193",
+            "URL": "http://www.jstor.org/stable/2089193",
+            "author": [
+                {
+                    "family": "Merton",
+                    "given": "Robert K"
+                }
+            ],
+            "container-title": "American Sociological Review",
+            "id": "merton1957",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        1957,
+                        12
+                    ]
+                ]
+            },
+            "page": "635-635",
+            "title": "Priorities in scientific discovery: A chapter in the sociology of science",
+            "title-short": "Priorities in scientific discovery",
+            "type": "article-journal",
+            "volume": "22"
+        },
+        {
+            "URL": "http://scholar.google.ca/scholar?hl=fr&q=recognition+and+excellence+merton&btnG=&lr=#0",
+            "author": [
+                {
+                    "family": "Merton",
+                    "given": "Robert K"
+                }
+            ],
+            "container-title": "RK Merton, The sociology of science. Theoretical and …",
+            "id": "merton1973",
+            "issued": {
+                "date-parts": [
+                    [
+                        1973
+                    ]
+                ]
+            },
+            "title": "Recognition’and ’excellence’: Instructive ambiguities",
+            "title-short": "Recognition’and ’excellence’",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Cole",
+                    "given": "Jonathan R"
+                },
+                {
+                    "family": "Cole",
+                    "given": "Stephen"
+                }
+            ],
+            "id": "cole1973",
+            "issued": {
+                "date-parts": [
+                    [
+                        1973
+                    ]
+                ]
+            },
+            "publisher": "University of Chicago Press",
+            "publisher-place": "Chicago, IL",
+            "title": "Social stratification in science",
+            "type": "book"
+        },
+        {
+            "DOI": "10.2307/1723414",
+            "URL": "http://www.jstor.org/stable/1723414",
+            "author": [
+                {
+                    "family": "Merton",
+                    "given": "Robert K"
+                }
+            ],
+            "collection-title": "New series",
+            "container-title": "Science",
+            "id": "merton1968",
+            "issue": "3810",
+            "issued": {
+                "date-parts": [
+                    [
+                        1968,
+                        1
+                    ]
+                ]
+            },
+            "page": "56-63",
+            "title": "The matthew effect in science",
+            "type": "article-journal",
+            "volume": "159"
+        },
+        {
+            "DOI": "10.1111/j.1475-682X.1970.tb01010.x",
+            "URL": "http://doi.wiley.com/10.1111/j.1475-682X.1970.tb01010.x",
+            "author": [
+                {
+                    "family": "Zuckerman",
+                    "given": "Harriet A"
+                }
+            ],
+            "container-title": "Sociological Inquiry",
+            "id": "zuckerman1970",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1970,
+                        4
+                    ]
+                ]
+            },
+            "page": "235-257",
+            "title": "Stratification in american science",
+            "type": "article-journal",
+            "volume": "40"
+        },
+        {
+            "URL": "http://www.jstor.org/stable/2091085",
+            "author": [
+                {
+                    "family": "Cole",
+                    "given": "Stephen"
+                },
+                {
+                    "family": "Cole",
+                    "given": "Jonathan R"
+                }
+            ],
+            "container-title": "American sociological review",
+            "id": "cole1967",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1967
+                    ]
+                ]
+            },
+            "page": "377-390",
+            "title": "Scientific output and recognition: A study in the operation of the reward system in science",
+            "title-short": "Scientific output and recognition",
+            "type": "article-journal",
+            "volume": "32"
+        },
+        {
+            "DOI": "10.2307/285482",
+            "URL": "http://www.jstor.org/stable/285482",
+            "author": [
+                {
+                    "family": "Rossiter",
+                    "given": "Margaret W."
+                }
+            ],
+            "container-title": "Social Studies of Science",
+            "id": "rossiter1993",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1993,
+                        5
+                    ]
+                ]
+            },
+            "page": "325-341",
+            "title": "The matthew matilda effect in science",
+            "type": "article-journal",
+            "volume": "23"
+        },
+        {
+            "DOI": "10.1177/0306312711435830",
+            "URL": "http://journals.sagepub.com/doi/10.1177/0306312711435830",
+            "author": [
+                {
+                    "family": "Lincoln",
+                    "given": "Anne E."
+                },
+                {
+                    "family": "Pincus",
+                    "given": "Stephanie"
+                },
+                {
+                    "family": "Koster",
+                    "given": "Janet Bandows"
+                },
+                {
+                    "family": "Leboy",
+                    "given": "Phoebe S."
+                }
+            ],
+            "container-title": "Social Studies of Science",
+            "id": "lincoln2012",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        4
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "307-320",
+            "title": "The Matilda Effect in science: Awards and prizes in the US, 1990s and 2000s",
+            "title-short": "The Matilda Effect in science",
+            "type": "article-journal",
+            "volume": "42"
+        },
+        {
+            "DOI": "10.1073/pnas.1211286109",
+            "URL": "http://www.pnas.org/content/109/41/16474.abstract",
+            "author": [
+                {
+                    "family": "Moss-Racusin",
+                    "given": "Corinne A"
+                },
+                {
+                    "family": "Dovidio",
+                    "given": "John F"
+                },
+                {
+                    "family": "Brescoll",
+                    "given": "Victoria L"
+                },
+                {
+                    "family": "Graham",
+                    "given": "Mark J"
+                },
+                {
+                    "family": "Handelsman",
+                    "given": "Jo"
+                }
+            ],
+            "container-title": "Proceedings of the National Academy of Sciences",
+            "id": "moss-racusin2012",
+            "issue": "41",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        10
+                    ]
+                ]
+            },
+            "page": "16474-16479",
+            "title": "Science faculty’s subtle gender biases favor male students",
+            "type": "article-journal",
+            "volume": "109"
+        },
+        {
+            "DOI": "10.1038/504211a",
+            "URL": "http://www.nature.com/doifinder/10.1038/504211a",
+            "author": [
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                },
+                {
+                    "family": "Ni",
+                    "given": "Chaoqun"
+                },
+                {
+                    "family": "Gingras",
+                    "given": "Yves"
+                },
+                {
+                    "family": "Cronin",
+                    "given": "Blaise"
+                },
+                {
+                    "family": "Sugimoto",
+                    "given": "Cassidy R."
+                }
+            ],
+            "container-title": "Nature",
+            "id": "larivière2013",
+            "issue": "7479",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013,
+                        12
+                    ]
+                ]
+            },
+            "page": "211-213",
+            "title": "Bibliometrics: Global gender disparities in science",
+            "title-short": "Bibliometrics",
+            "type": "article-journal",
+            "volume": "504"
+        },
+        {
+            "author": [
+                {
+                    "family": "Zuckerman",
+                    "given": "Harriet A"
+                }
+            ],
+            "editor": [
+                {
+                    "family": "Mongardini",
+                    "given": "Carlo"
+                },
+                {
+                    "family": "Tabboni",
+                    "given": "Simonetta"
+                }
+            ],
+            "id": "zuckerman1998",
+            "issued": {
+                "date-parts": [
+                    [
+                        1998
+                    ]
+                ]
+            },
+            "page": "139-161",
+            "publisher": "Transaction Publishers",
+            "publisher-place": "New Brunswick, N.J.",
+            "title": "Accumulation of advantage and disadvantage: The theory and its intellectual biography",
+            "title-short": "Accumulation of advantage and disadvantage",
+            "type": "chapter"
+        },
+        {
+            "author": [
+                {
+                    "family": "Merton",
+                    "given": "Robert K"
+                }
+            ],
+            "id": "merton1979",
+            "issued": {
+                "date-parts": [
+                    [
+                        1979
+                    ]
+                ]
+            },
+            "publisher": "Southern Illinois University Press",
+            "publisher-place": "Carbondale, IL",
+            "title": "The sociology of science: An episodic memoir",
+            "title-short": "The sociology of science",
+            "type": "book"
+        },
+        {
+            "DOI": "2027/mdp.39015008014428",
+            "author": [
+                {
+                    "family": "Merton",
+                    "given": "Robert K"
+                }
+            ],
+            "container-title": "Journal of legal and political sociology",
+            "id": "merton1942",
+            "issue": "1-2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1942
+                    ]
+                ]
+            },
+            "page": "115-126",
+            "title": "A note on science and democracy",
+            "type": "article-journal"
+        },
+        {
+            "URL": "http://books.google.ca/books?hl=fr&lr=&id=HAHCzJfmD5IC&oi=fnd&pg=PR13&dq=zukerman+nobel+prize&ots=5P05DL9tA2&sig=KcXglSng7NvCOudkwv5uCK3eo3I",
+            "author": [
+                {
+                    "family": "Zuckerman",
+                    "given": "Harriet A"
+                }
+            ],
+            "id": "zuckerman1977a",
+            "issued": {
+                "date-parts": [
+                    [
+                        1977
+                    ]
+                ]
+            },
+            "title": "Scientific elite: Nobel laureates in the united states",
+            "title-short": "Scientific elite",
+            "type": "article-journal"
+        },
+        {
+            "URL": "http://www.jstor.org/stable/2091085",
+            "author": [
+                {
+                    "family": "Cole",
+                    "given": "Stephen"
+                },
+                {
+                    "family": "Cole",
+                    "given": "Jonathan R"
+                }
+            ],
+            "container-title": "American sociological review",
+            "id": "cole1967a",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1967
+                    ]
+                ]
+            },
+            "page": "377-390",
+            "title": "Scientific output and recognition: A study in the operation of the reward system in science",
+            "title-short": "Scientific output and recognition",
+            "type": "article-journal",
+            "volume": "32"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fjällbrant",
+                    "given": "Nancy"
+                }
+            ],
+            "id": "fjällbrant1997",
+            "issued": {
+                "date-parts": [
+                    [
+                        1997
+                    ]
+                ]
+            },
+            "title": "Scholarly communication - historical development and new possibilities",
+            "type": "paper-conference"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0127502",
+            "URL": "https://doi.org/10.1371%2Fjournal.pone.0127502",
+            "author": [
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                },
+                {
+                    "family": "Haustein",
+                    "given": "Stefanie"
+                },
+                {
+                    "family": "Mongeon",
+                    "given": "Philippe"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "editor": [
+                {
+                    "family": "Glanzel",
+                    "given": "Wolfgang"
+                }
+            ],
+            "id": "larivière2015",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        6
+                    ]
+                ]
+            },
+            "note": "Publisher: Public Library of Science (PLoS)",
+            "page": "e0127502",
+            "title": "The oligopoly of academic publishers in the digital era",
+            "type": "article-journal",
+            "volume": "10"
+        },
+        {
+            "DOI": "10.1002/asi.20380",
+            "URL": "http://doi.wiley.com/10.1002/asi.20380",
+            "author": [
+                {
+                    "family": "Birnholtz",
+                    "given": "Jeremy P"
+                }
+            ],
+            "container-title": "Journal of the American Society for Information Science and Technology",
+            "id": "birnholtz2006",
+            "issue": "13",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006,
+                        11
+                    ]
+                ]
+            },
+            "page": "1758-1770",
+            "title": "What does it mean to be an author? The intersection of credit, contribution, and collaboration in science",
+            "type": "article-journal",
+            "volume": "57"
+        },
+        {
+            "DOI": "10.1016/S0048-7333(96)00917-1",
+            "URL": "http://www.sciencedirect.com/science/article/pii/S0048733396009171",
+            "author": [
+                {
+                    "family": "Katz",
+                    "given": "J.Sylvan"
+                },
+                {
+                    "family": "Martin",
+                    "given": "Ben R"
+                }
+            ],
+            "container-title": "Research Policy",
+            "id": "katz1997",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1997,
+                        3
+                    ]
+                ]
+            },
+            "page": "1-18",
+            "title": "What is research collaboration?",
+            "type": "article-journal",
+            "volume": "26"
+        },
+        {
+            "author": [
+                {
+                    "family": "Pontille",
+                    "given": "David"
+                }
+            ],
+            "container-title": "Sciences de la Société",
+            "id": "pontille2006",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006
+                    ]
+                ]
+            },
+            "page": "77-93",
+            "title": "Qu’est-ce qu’un auteur scientifique",
+            "type": "article-journal",
+            "volume": "67"
+        },
+        {
+            "DOI": "10.3152/147154402781776961",
+            "URL": "https://academic.oup.com/rev/article-lookup/doi/10.3152/147154402781776961",
+            "author": [
+                {
+                    "family": "Laudel",
+                    "given": "Grit"
+                }
+            ],
+            "container-title": "Research Evaluation",
+            "id": "laudel2002",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2002,
+                        4
+                    ]
+                ]
+            },
+            "page": "3-15",
+            "title": "What do we measure by co-authorships?",
+            "type": "article-journal",
+            "volume": "11"
+        },
+        {
+            "author": [
+                {
+                    "family": "Subramanyam",
+                    "given": "Krishnappa"
+                }
+            ],
+            "container-title": "Journal of information Science",
+            "id": "subramanyam1983",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1983
+                    ]
+                ]
+            },
+            "page": "33-38",
+            "title": "Bibliometric studies of research collaboration: A review",
+            "title-short": "Bibliometric studies of research collaboration",
+            "type": "article-journal",
+            "volume": "6"
+        },
+        {
+            "DOI": "10.1016/S0048-7333(99)00031-1",
+            "URL": "http://linkinghub.elsevier.com/retrieve/pii/S0048733399000311",
+            "author": [
+                {
+                    "family": "Melin",
+                    "given": "Göran"
+                }
+            ],
+            "container-title": "Research Policy",
+            "id": "melin2000",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2000,
+                        1
+                    ]
+                ]
+            },
+            "page": "31-40",
+            "title": "Pragmatism and self-organization",
+            "type": "article-journal",
+            "volume": "29"
+        },
+        {
+            "DOI": "10.1016/j.respol.2015.04.010",
+            "URL": "http://linkinghub.elsevier.com/retrieve/pii/S0048733315000700",
+            "author": [
+                {
+                    "family": "Walsh",
+                    "given": "John P."
+                },
+                {
+                    "family": "Lee",
+                    "given": "You-Na"
+                }
+            ],
+            "container-title": "Research Policy",
+            "id": "walsh2015",
+            "issue": "8",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1584-1600",
+            "title": "The bureaucratization of science",
+            "type": "article-journal",
+            "volume": "44"
+        },
+        {
+            "author": [
+                {
+                    "family": "Knorr-Cetina",
+                    "given": "K."
+                }
+            ],
+            "id": "knorr-cetina1999",
+            "issued": {
+                "date-parts": [
+                    [
+                        1999
+                    ]
+                ]
+            },
+            "publisher": "Harvard University Press",
+            "publisher-place": "Cambridge, Mass",
+            "title": "Epistemic cultures: How the sciences make knowledge",
+            "title-short": "Epistemic cultures",
+            "type": "book"
+        },
+        {
+            "DOI": "10.5465/AMBPP.2015.11383abstract",
+            "URL": "http://proceedings.aom.org/cgi/doi/10.5465/AMBPP.2015.11383abstract",
+            "author": [
+                {
+                    "family": "Haeussler",
+                    "given": "C."
+                },
+                {
+                    "family": "Sauermann",
+                    "given": "H."
+                }
+            ],
+            "container-title": "Academy of Management Proceedings",
+            "id": "haeussler2015",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        1,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "11383-11383",
+            "title": "The Anatomy of Teams: Division of Labor in Collaborative Knowledge Production",
+            "title-short": "The Anatomy of Teams",
+            "type": "article-journal",
+            "volume": "2015"
+        },
+        {
+            "DOI": "10.1177/0306312716650046",
+            "URL": "https://doi.org/10.1177%2F0306312716650046",
+            "author": [
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                },
+                {
+                    "family": "Desrochers",
+                    "given": "Nadine"
+                },
+                {
+                    "family": "Macaluso",
+                    "given": "Benoît"
+                },
+                {
+                    "family": "Mongeon",
+                    "given": "Philippe"
+                },
+                {
+                    "family": "Paul-Hus",
+                    "given": "Adèle"
+                },
+                {
+                    "family": "Sugimoto",
+                    "given": "Cassidy R."
+                }
+            ],
+            "container-title": "Social Studies of Science",
+            "id": "larivière2016",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        6
+                    ]
+                ]
+            },
+            "note": "Publisher: SAGE Publications",
+            "page": "417435",
+            "title": "Contributorship and division of labor in knowledge production",
+            "type": "article-journal",
+            "volume": "46"
+        },
+        {
+            "DOI": "10.2307/2391440",
+            "URL": "http://www.jstor.org/stable/2391440?origin=crossref",
+            "author": [
+                {
+                    "family": "Hagstrom",
+                    "given": "Warren O."
+                }
+            ],
+            "container-title": "Administrative Science Quarterly",
+            "id": "hagstrom1964",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1964,
+                        12
+                    ]
+                ]
+            },
+            "page": "241",
+            "title": "Traditional and modern forms of scientific teamwork",
+            "type": "article-journal",
+            "volume": "9"
+        },
+        {
+            "author": [
+                {
+                    "family": "Pontille",
+                    "given": "David"
+                }
+            ],
+            "id": "pontille2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "publisher": "Economica",
+            "publisher-place": "Paris",
+            "title": "Signer ensemble: Contribution et évaluation en sciences",
+            "title-short": "Signer ensemble",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1177/0003122412452874",
+            "URL": "http://journals.sagepub.com/doi/10.1177/0003122412452874",
+            "author": [
+                {
+                    "family": "Shibayama",
+                    "given": "Sotaro"
+                },
+                {
+                    "family": "Walsh",
+                    "given": "John P."
+                },
+                {
+                    "family": "Baba",
+                    "given": "Yasunori"
+                }
+            ],
+            "container-title": "American Sociological Review",
+            "id": "shibayama2012",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "804-830",
+            "title": "Academic Entrepreneurship and Exchange of Scientific Resources: Material Transfer in Life and Materials Sciences in Japanese Universities",
+            "title-short": "Academic Entrepreneurship and Exchange of Scientific Resources",
+            "type": "article-journal",
+            "volume": "77"
+        },
+        {
+            "DOI": "10.1007/s11948-015-9722-5",
+            "URL": "http://link.springer.com/10.1007/s11948-015-9722-5",
+            "author": [
+                {
+                    "family": "Bozeman",
+                    "given": "Barry"
+                },
+                {
+                    "family": "Youtie",
+                    "given": "Jan"
+                }
+            ],
+            "container-title": "Science and Engineering Ethics",
+            "id": "bozeman2016",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        12
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1717-1743",
+            "title": "Trouble in Paradise: Problems in Academic Research Co-authoring",
+            "title-short": "Trouble in Paradise",
+            "type": "article-journal",
+            "volume": "22"
+        },
+        {
+            "author": [
+                {
+                    "family": "Pontille",
+                    "given": "David"
+                }
+            ],
+            "id": "pontille2004",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "publisher": "CNRS",
+            "publisher-place": "Paris",
+            "title": "La signature scientifique : Une sociologie pragmatique de l’attribution",
+            "title-short": "La signature scientifique ",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1002/asi.1097",
+            "author": [
+                {
+                    "family": "Cronin",
+                    "given": "Blaise"
+                }
+            ],
+            "container-title": "Journal of the American Society for Information Science and Technology",
+            "id": "cronin2001",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2001
+                    ]
+                ]
+            },
+            "page": "558-569",
+            "title": "Hyperauthorship: A postmodern perversion or evidence of a structural shift in scholarly communication practices?",
+            "title-short": "Hyperauthorship",
+            "type": "article-journal",
+            "volume": "52"
+        },
+        {
+            "author": [
+                {
+                    "family": "Biagioli",
+                    "given": "Mario"
+                },
+                {
+                    "family": "Crane",
+                    "given": "Judith"
+                },
+                {
+                    "family": "Derish",
+                    "given": "Pamela"
+                },
+                {
+                    "family": "Gruber",
+                    "given": "Mark"
+                },
+                {
+                    "family": "Rennie",
+                    "given": "Drummond"
+                },
+                {
+                    "family": "Horton",
+                    "given": "Richard"
+                }
+            ],
+            "container-title": "Draft White Paper [sitio en Internet]. Encontrado en: http://www. councilscienceeditors. org/services/atf_whitepaper. cfm",
+            "id": "biagioli2003",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003
+                    ]
+                ]
+            },
+            "title": "CSE task force on authorship",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.2307/2775535",
+            "URL": "http://www.jstor.org/stable/2775535",
+            "author": [
+                {
+                    "family": "Zuckerman",
+                    "given": "Harriet A"
+                }
+            ],
+            "container-title": "American Journal of Sociology",
+            "id": "zuckerman1968",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1968,
+                        11
+                    ]
+                ]
+            },
+            "page": "276-291",
+            "title": "Patterns of name ordering among authors of scientific papers: A study of social symbolism and its ambiguity",
+            "title-short": "Patterns of name ordering among authors of scientific papers",
+            "type": "article-journal",
+            "volume": "74"
+        },
+        {
+            "URL": "http://europepmc.org/abstract/MED/6065922",
+            "author": [
+                {
+                    "family": "Zuckerman",
+                    "given": "Harriet A"
+                }
+            ],
+            "container-title": "Scientific American",
+            "id": "zuckerman1967",
+            "issued": {
+                "date-parts": [
+                    [
+                        1967
+                    ]
+                ]
+            },
+            "title": "The sociology of the nobel prizes.",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1002/asi.21164",
+            "URL": "http://doi.wiley.com/10.1002/asi.21164",
+            "author": [
+                {
+                    "family": "Hu",
+                    "given": "Xiaojun"
+                }
+            ],
+            "container-title": "Journal of the American Society for Information Science and Technology",
+            "id": "hu2009",
+            "issue": "11",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009,
+                        11
+                    ]
+                ]
+            },
+            "page": "2378-2381",
+            "title": "Loads of special authorship functions: Linear growth in the percentage of “equal first authors” and corresponding authors",
+            "title-short": "Loads of special authorship functions",
+            "type": "article-journal",
+            "volume": "60"
+        },
+        {
+            "DOI": "10.1136/bmjopen-2016-013898",
+            "URL": "http://bmjopen.bmj.com/lookup/doi/10.1136/bmjopen-2016-013898",
+            "author": [
+                {
+                    "family": "Perneger",
+                    "given": "Thomas V"
+                },
+                {
+                    "family": "Poncet",
+                    "given": "Antoine"
+                },
+                {
+                    "family": "Carpentier",
+                    "given": "Marc"
+                },
+                {
+                    "family": "Agoritsas",
+                    "given": "Thomas"
+                },
+                {
+                    "family": "Combescure",
+                    "given": "Christophe"
+                },
+                {
+                    "family": "Gayet-Ageron",
+                    "given": "Angèle"
+                }
+            ],
+            "container-title": "BMJ Open",
+            "id": "perneger2017",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        6
+                    ]
+                ]
+            },
+            "page": "e013898-e013898",
+            "title": "Thinker, soldier, scribe: Cross-sectional study of researchers’ roles and author order in the annals of internal medicine",
+            "title-short": "Thinker, soldier, scribe",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "DOI": "10.2310/6650.2007.06044",
+            "URL": "http://jim.bmj.com/lookup/doi/10.2310/6650.2007.06044",
+            "author": [
+                {
+                    "family": "Baerlocher",
+                    "given": "Mark Otto"
+                },
+                {
+                    "family": "Newton",
+                    "given": "Marshall"
+                },
+                {
+                    "family": "Gautam",
+                    "given": "Tina"
+                },
+                {
+                    "family": "Tomlinson",
+                    "given": "George"
+                },
+                {
+                    "family": "Detsky",
+                    "given": "Allan S"
+                }
+            ],
+            "container-title": "Journal of Investigative Medicine",
+            "id": "baerlocher2007",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007,
+                        5
+                    ]
+                ]
+            },
+            "page": "174-180",
+            "title": "The meaning of author order in medical research",
+            "type": "article-journal",
+            "volume": "55"
+        },
+        {
+            "URL": "http://opurl.bib.umontreal.ca:9003/sfx_local?url_ver=Z39.88-2004&rft_val_fmt=info:ofi/fmt:kev:mtx:journal&genre=article&sid=ProQ:ProQ:philosophersindex&atitle=Retractions+in+the+Medical+Literature:+How+Many+Patients+Are+Put+at+Risk+by+Flawed+Research?&title=Journal+of+Medical+Ethics:+The+Journal+of+the+Institute+of+Medical+Ethics&issn=03066800&date=2011-11-01&volume=37&issue=11&spage=688&au=Steen,+R+Grant&isbn=&jtitle=Journal+of+Medical+Ethics:+The+Journal+of+the+Institute+of+Medical",
+            "author": [
+                {
+                    "family": "Steen",
+                    "given": "R Grant"
+                }
+            ],
+            "container-title": "Journal of Medical Ethics: The Journal of the Institute of Medical Ethics",
+            "id": "steen2011",
+            "issue": "11",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "688-692",
+            "title": "Retractions in the medical literature: How many patients are put at risk by flawed research?",
+            "title-short": "Retractions in the medical literature",
+            "type": "article-journal",
+            "volume": "37"
+        },
+        {
+            "DOI": "10.7275/25PE-BA85",
+            "URL": "https://scholarworks.umass.edu/pare/vol14/iss1/15/",
+            "author": [
+                {
+                    "family": "Osborne",
+                    "given": "Jason W."
+                },
+                {
+                    "family": "Holland",
+                    "given": "Abigail"
+                }
+            ],
+            "container-title": "Practical Assessment, Research & Evaluation",
+            "id": "osborne2009",
+            "issue": "15",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "note": "Publisher: University of Massachusetts Amherst",
+            "title": "What is authorship, and what should it be? A survey of prominent guidelines for determining authorship in scientific publications",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "DOI": "10.1001/jama.1994.03510300075043",
+            "URL": "http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.1994.03510300075043",
+            "author": [
+                {
+                    "family": "Rennie",
+                    "given": "Drummond"
+                },
+                {
+                    "family": "Flanagin",
+                    "given": "Annette"
+                }
+            ],
+            "container-title": "JAMA",
+            "id": "rennie1994",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        1994,
+                        2
+                    ]
+                ]
+            },
+            "page": "469-469",
+            "title": "Authorship! Authorship! Guests, ghosts, grafters, and the two-sided coin",
+            "type": "article-journal",
+            "volume": "271"
+        },
+        {
+            "DOI": "10.1126/science.1136099",
+            "URL": "http://www.sciencemag.org/cgi/doi/10.1126/science.1136099",
+            "author": [
+                {
+                    "family": "Wuchty",
+                    "given": "Stefan"
+                },
+                {
+                    "family": "Jones",
+                    "given": "BF Benjamin F"
+                },
+                {
+                    "family": "Uzzi",
+                    "given": "Brian"
+                }
+            ],
+            "container-title": "Science",
+            "id": "wuchty2007",
+            "issue": "5827",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007,
+                        5
+                    ]
+                ]
+            },
+            "page": "1036-1039",
+            "title": "The increasing dominance of teams in production of knowledge",
+            "type": "article-journal",
+            "volume": "316"
+        },
+        {
+            "DOI": "10.1073/pnas.1212247109",
+            "URL": "http://www.pnas.org/content/109/42/17028.short",
+            "author": [
+                {
+                    "family": "Fang",
+                    "given": "FC Ferric C"
+                },
+                {
+                    "family": "Steen",
+                    "given": "R Grant"
+                },
+                {
+                    "family": "Casadevall",
+                    "given": "Arturo"
+                }
+            ],
+            "container-title": "Proceedings of the National Academy of Sciences",
+            "id": "fang2012",
+            "issue": "42",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        10
+                    ]
+                ]
+            },
+            "page": "17028-17033",
+            "title": "Misconduct accounts for the majority of retracted scientific publications",
+            "type": "article-journal",
+            "volume": "109"
+        },
+        {
+            "DOI": "10.1007/s11192-012-0773-y",
+            "URL": "http://link.springer.com/10.1007/s11192-012-0773-y",
+            "author": [
+                {
+                    "family": "Bošnjak",
+                    "given": "Lana"
+                },
+                {
+                    "family": "Marušić",
+                    "given": "Ana"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "bosnjak2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        12
+                    ]
+                ]
+            },
+            "page": "751-763",
+            "title": "Prescribed practices of authorship: Review of codes of ethics from professional bodies and journal guidelines across disciplines",
+            "title-short": "Prescribed practices of authorship",
+            "type": "article-journal",
+            "volume": "93"
+        },
+        {
+            "DOI": "10.1371/journal.pmed.0040034",
+            "URL": "http://dx.plos.org/10.1371/journal.pmed.0040034",
+            "author": [
+                {
+                    "family": "Wager",
+                    "given": "Elizabeth"
+                }
+            ],
+            "container-title": "PLoS Medicine",
+            "id": "wager2007",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007,
+                        1
+                    ]
+                ]
+            },
+            "page": "e34-e34",
+            "title": "Authors, ghosts, damned lies, and statisticians",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "DOI": "10.1016/j.mrrev.2004.07.003",
+            "author": [
+                {
+                    "family": "Claxton",
+                    "given": "Larry D."
+                }
+            ],
+            "container-title": "Mutation research",
+            "id": "claxton2005",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2005
+                    ]
+                ]
+            },
+            "page": "17-30",
+            "title": "Scientific authorship. Part 1. A window into scientific fraud?",
+            "type": "article-journal",
+            "volume": "589"
+        },
+        {
+            "DOI": "10.1016/j.maturitas.2008.12.001",
+            "URL": "http://www.sciencedirect.com/science/article/pii/S0378512208003678",
+            "author": [
+                {
+                    "family": "Wager",
+                    "given": "Elizabeth"
+                }
+            ],
+            "container-title": "Maturitas",
+            "id": "wager2009",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009,
+                        2
+                    ]
+                ]
+            },
+            "page": "109-112",
+            "title": "Recognition, reward and responsibility: Why the authorship of scientific papers matters",
+            "title-short": "Recognition, reward and responsibility",
+            "type": "article-journal",
+            "volume": "62"
+        },
+        {
+            "DOI": "10.1001/jama.1997.03550070071041",
+            "URL": "http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.1997.03550070071041",
+            "author": [
+                {
+                    "family": "Rennie",
+                    "given": "Drummond"
+                },
+                {
+                    "family": "Yank",
+                    "given": "Veronica"
+                },
+                {
+                    "family": "Emanuel",
+                    "given": "Linda"
+                }
+            ],
+            "container-title": "JAMA",
+            "id": "rennie1997",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        1997,
+                        8
+                    ]
+                ]
+            },
+            "page": "579-579",
+            "title": "When authorship fails: A proposal to make contributors accountable",
+            "title-short": "When authorship fails",
+            "type": "article-journal",
+            "volume": "278"
+        },
+        {
+            "DOI": "10.1503/cmaj.060687",
+            "URL": "http://www.cmaj.ca/cgi/doi/10.1503/cmaj.060687",
+            "author": [
+                {
+                    "family": "Ilakovac",
+                    "given": "V."
+                },
+                {
+                    "family": "Fister",
+                    "given": "K."
+                },
+                {
+                    "family": "Marusic",
+                    "given": "M."
+                },
+                {
+                    "family": "Marusic",
+                    "given": "A."
+                }
+            ],
+            "container-title": "Canadian Medical Association Journal",
+            "id": "ilakovac2006",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006,
+                        12,
+                        13
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "41-46",
+            "title": "Reliability of disclosure forms of authors’ contributions",
+            "type": "article-journal",
+            "volume": "176"
+        },
+        {
+            "DOI": "10.1126/sciadv.1700404",
+            "URL": "http://advances.sciencemag.org/lookup/doi/10.1126/sciadv.1700404",
+            "author": [
+                {
+                    "family": "Sauermann",
+                    "given": "Henry"
+                },
+                {
+                    "family": "Haeussler",
+                    "given": "Carolin"
+                }
+            ],
+            "container-title": "Science Advances",
+            "id": "sauermann2017",
+            "issue": "11",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        11
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "e1700404",
+            "title": "Authorship and contribution disclosures",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "author": [
+                {
+                    "family": "Mongeon",
+                    "given": "Philippe"
+                }
+            ],
+            "container-title": "JASIST",
+            "id": "mongeon2015",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "page": "125-145",
+            "title": "Costly collaborations",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1162/REST_a_00469",
+            "URL": "http://www.mitpressjournals.org/doi/10.1162/REST_a_00469",
+            "author": [
+                {
+                    "family": "Azoulay",
+                    "given": "Pierre"
+                },
+                {
+                    "family": "Furman",
+                    "given": "Jeffrey L"
+                },
+                {
+                    "family": "Krieger"
+                },
+                {
+                    "family": "Murray",
+                    "given": "Fiona"
+                }
+            ],
+            "container-title": "Review of Economics and Statistics",
+            "id": "azoulay2015",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        12
+                    ]
+                ]
+            },
+            "page": "1118-1136",
+            "title": "Retractions",
+            "type": "article-journal",
+            "volume": "97"
+        },
+        {
+            "URL": "http://www.tandfonline.com/doi/abs/10.1080/15265161.2011.603795",
+            "author": [
+                {
+                    "family": "Resnik",
+                    "given": "DB"
+                },
+                {
+                    "family": "Master",
+                    "given": "Z"
+                }
+            ],
+            "container-title": "The American Journal of Bioethics",
+            "id": "resnik2011",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "title": "Criteria for authorship in bioethics",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Paul-Hus",
+                    "given": "Adèle"
+                },
+                {
+                    "family": "Mongeon",
+                    "given": "Philippe"
+                },
+                {
+                    "family": "Sainte-Marie",
+                    "given": "Maxime"
+                },
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                }
+            ],
+            "container-title": "Journal of Informetrics",
+            "id": "paul-hus2017",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "note": "Publisher: Elsevier",
+            "page": "8087",
+            "title": "The sum of it all: Revealing collaboration patterns by combining authorship and acknowledgements",
+            "title-short": "The sum of it all",
+            "type": "article-journal",
+            "volume": "11"
+        },
+        {
+            "DOI": "10.1056/NEJM199111213252112",
+            "URL": "http://dx.doi.org/10.1056/NEJM199111213252112",
+            "author": [
+                {
+                    "family": "Kassirer",
+                    "given": "Jerome P."
+                },
+                {
+                    "family": "Angell",
+                    "given": "Marcia"
+                }
+            ],
+            "container-title": "New England Journal of Medicine",
+            "id": "kassirer1991",
+            "issue": "21",
+            "issued": {
+                "date-parts": [
+                    [
+                        1991,
+                        11,
+                        21
+                    ]
+                ]
+            },
+            "note": "PMID: 1944431",
+            "page": "1510-1512",
+            "title": "On authorship and acknowledgments",
+            "type": "article-journal",
+            "volume": "325"
+        },
+        {
+            "DOI": "10.1001/jama.292.1.86",
+            "URL": "http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.292.1.86",
+            "author": [
+                {
+                    "family": "Bates",
+                    "given": "Tamara"
+                },
+                {
+                    "family": "Anić",
+                    "given": "Ante"
+                },
+                {
+                    "family": "Marušić",
+                    "given": "Matko"
+                },
+                {
+                    "family": "Marušić",
+                    "given": "Ana"
+                }
+            ],
+            "container-title": "JAMA",
+            "id": "bates2004",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004,
+                        7
+                    ]
+                ]
+            },
+            "page": "86-88",
+            "title": "Authorship criteria and disclosure of contributions",
+            "type": "article-journal",
+            "volume": "292"
+        },
+        {
+            "DOI": "10.1001/jama.280.3.222",
+            "URL": "http://www.ncbi.nlm.nih.gov/pubmed/9676661",
+            "author": [
+                {
+                    "family": "Flanagin",
+                    "given": "Annette"
+                },
+                {
+                    "family": "Carey",
+                    "given": "Lisa A"
+                },
+                {
+                    "family": "Fontanarosa",
+                    "given": "Phil B"
+                },
+                {
+                    "family": "Phillips",
+                    "given": "Stephanie G"
+                },
+                {
+                    "family": "Pace",
+                    "given": "Brian P"
+                },
+                {
+                    "family": "Lundberg",
+                    "given": "George D"
+                },
+                {
+                    "family": "Rennie",
+                    "given": "Drummond"
+                }
+            ],
+            "container-title": "JAMA",
+            "id": "flanagin1998",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1998,
+                        7
+                    ]
+                ]
+            },
+            "page": "222-224",
+            "title": "Prevalence of articles with honorary authors and ghost authors in peer-reviewed medical journals",
+            "type": "article-journal",
+            "volume": "280"
+        },
+        {
+            "DOI": "10.1177/0306312708101047",
+            "URL": "http://sss.sagepub.com/content/39/2/171.short",
+            "author": [
+                {
+                    "family": "Sismondo",
+                    "given": "Sergio"
+                }
+            ],
+            "container-title": "Social Studies of Science",
+            "id": "sismondo2009",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009,
+                        4
+                    ]
+                ]
+            },
+            "page": "171-198",
+            "title": "Ghosts in the machine: Publication planning in the medical sciences",
+            "title-short": "Ghosts in the machine",
+            "type": "article-journal",
+            "volume": "39"
+        },
+        {
+            "DOI": "10.1001/jama.287.21.2769",
+            "author": [
+                {
+                    "family": "Mowatt",
+                    "given": "Graham"
+                },
+                {
+                    "family": "Shirran",
+                    "given": "Liz"
+                },
+                {
+                    "family": "Grimshaw",
+                    "given": "Jeremy M"
+                },
+                {
+                    "family": "Rennie",
+                    "given": "Drummond"
+                },
+                {
+                    "family": "Flanagin",
+                    "given": "Annette"
+                },
+                {
+                    "family": "Yank",
+                    "given": "Veronica"
+                },
+                {
+                    "family": "MacLennan",
+                    "given": "Graeme"
+                },
+                {
+                    "family": "Gøtzsche",
+                    "given": "Peter C"
+                },
+                {
+                    "family": "Bero",
+                    "given": "Lisa A"
+                }
+            ],
+            "container-title": "JAMA",
+            "id": "mowatt2002",
+            "issue": "21",
+            "issued": {
+                "date-parts": [
+                    [
+                        2002
+                    ]
+                ]
+            },
+            "page": "2769-2771",
+            "title": "Prevalence of honorary and ghost authorship in cochrane reviews",
+            "type": "article-journal",
+            "volume": "287"
+        },
+        {
+            "DOI": "10.1136/bmj.d6128",
+            "URL": "http://www.bmj.com/cgi/doi/10.1136/bmj.d6128",
+            "author": [
+                {
+                    "family": "Wislar",
+                    "given": "Joseph S"
+                },
+                {
+                    "family": "Flanagin",
+                    "given": "Annette"
+                },
+                {
+                    "family": "Fontanarosa",
+                    "given": "Phil B"
+                },
+                {
+                    "family": "DeAngelis",
+                    "given": "Catherine D"
+                }
+            ],
+            "container-title": "BMJ",
+            "id": "wislar2011",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011,
+                        10
+                    ]
+                ]
+            },
+            "page": "d6128-d6128",
+            "title": "Honorary and ghost authorship in high impact biomedical journals: A cross sectional survey",
+            "title-short": "Honorary and ghost authorship in high impact biomedical journals",
+            "type": "article-journal",
+            "volume": "343"
+        },
+        {
+            "URL": "http://dx.doi.org/10.1371/journal.pone.0004021",
+            "author": [
+                {
+                    "family": "Hagen",
+                    "given": "Nils T"
+                }
+            ],
+            "container-title": "PLoS ONE",
+            "id": "hagen2008",
+            "issue": "12",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008,
+                        12
+                    ]
+                ]
+            },
+            "page": "e4021-e4021",
+            "title": "Harmonic allocation of authorship credit: Source-level correction of bibliometric bias assures accurate publication and citation analysis",
+            "title-short": "Harmonic allocation of authorship credit",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "DOI": "10.1007/s11192-009-0129-4",
+            "URL": "http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2909428&tool=pmcentrez&rendertype=abstract",
+            "author": [
+                {
+                    "family": "Hagen",
+                    "given": "Nils T"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "hagen2010",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010,
+                        9
+                    ]
+                ]
+            },
+            "page": "785-793",
+            "title": "Harmonic publication and citation counting: Sharing authorship credit equitably - not equally, geometrically or arithmetically.",
+            "title-short": "Harmonic publication and citation counting",
+            "type": "article-journal",
+            "volume": "84"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0184601",
+            "URL": "https://doi.org/10.1371%2Fjournal.pone.0184601",
+            "author": [
+                {
+                    "family": "Mongeon",
+                    "given": "Philippe"
+                },
+                {
+                    "family": "Smith",
+                    "given": "Elise"
+                },
+                {
+                    "family": "Joyal",
+                    "given": "Bruno"
+                },
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "editor": [
+                {
+                    "family": "Andrade-Navarro",
+                    "given": "Miguel A."
+                }
+            ],
+            "id": "mongeon2017",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        9
+                    ]
+                ]
+            },
+            "note": "Publisher: Public Library of Science (PLoS)",
+            "page": "e0184601",
+            "title": "The rise of the middle author: Investigating collaboration and division of labor in biomedical research using partial alphabetical authorship",
+            "title-short": "The rise of the middle author",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "DOI": "10.1136/jme.2010.040923",
+            "URL": "http://dx.doi.org/10.1136/jme.2010.040923",
+            "author": [
+                {
+                    "family": "Steen",
+                    "given": "R. G."
+                }
+            ],
+            "container-title": "Journal of Medical Ethics",
+            "id": "steen2010",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010,
+                        12,
+                        24
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "249-253",
+            "title": "Retractions in the scientific literature: is the incidence of research fraud increasing?",
+            "title-short": "Retractions in the scientific literature",
+            "type": "article-journal",
+            "volume": "37"
+        },
+        {
+            "author": [
+                {
+                    "family": "Archambault",
+                    "given": "Eric"
+                },
+                {
+                    "family": "Beauchesne",
+                    "given": "Olivier H"
+                },
+                {
+                    "family": "Caruso",
+                    "given": "Julie"
+                }
+            ],
+            "id": "archambault2011",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "66-77",
+            "publisher": "Noyons, B., Ngulube, P., & Leta, J. (Eds.)",
+            "publisher-place": "Leiden, Netherlands",
+            "title": "Towards a multilingual, comprehensive and open scientific journal ontology",
+            "type": "paper-conference"
+        },
+        {
+            "URL": "http://dx.doi.org/10.1101/062109",
+            "author": [
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                },
+                {
+                    "family": "Kiermer",
+                    "given": "Véronique"
+                },
+                {
+                    "family": "MacCallum",
+                    "given": "Catriona J."
+                },
+                {
+                    "family": "McNutt",
+                    "given": "Marcia"
+                },
+                {
+                    "family": "Patterson",
+                    "given": "Mark"
+                },
+                {
+                    "family": "Pulverer",
+                    "given": "Bernd"
+                },
+                {
+                    "family": "Swaminathan",
+                    "given": "Sowmya"
+                },
+                {
+                    "family": "Taylor",
+                    "given": "Stuart"
+                },
+                {
+                    "family": "Curry",
+                    "given": "Stephen"
+                }
+            ],
+            "id": "larivière2016a",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        7,
+                        5
+                    ]
+                ]
+            },
+            "title": "A simple proposal for the publication of journal citation distributions",
+            "type": ""
+        },
+        {
+            "DOI": "10.1177/0162243917697192",
+            "URL": "http://journals.sagepub.com/doi/10.1177/0162243917697192",
+            "author": [
+                {
+                    "family": "Jabbehdari",
+                    "given": "Sahra"
+                },
+                {
+                    "family": "Walsh",
+                    "given": "John P."
+                }
+            ],
+            "container-title": "Science, Technology, & Human Values",
+            "id": "jabbehdari2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        3
+                    ]
+                ]
+            },
+            "page": "016224391769719-016224391769719",
+            "title": "Authorship norms and project structures in science",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1073/pnas.0507655102",
+            "URL": "http://www.pnas.org/content/102/46/16569.abstract",
+            "author": [
+                {
+                    "family": "Hirsch",
+                    "given": "J E"
+                }
+            ],
+            "container-title": "Proceedings of the National Academy of Sciences of the United States of America",
+            "id": "hirsch2005",
+            "issue": "46",
+            "issued": {
+                "date-parts": [
+                    [
+                        2005
+                    ]
+                ]
+            },
+            "page": "16569-16572",
+            "title": "An index to quantify an individual’s scientific research output",
+            "type": "article-journal",
+            "volume": "102"
+        },
+        {
+            "DOI": "10.1007/978-3-030-02511-3_1",
+            "URL": "http://dx.doi.org/10.1007/978-3-030-02511-3_1",
+            "author": [
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                },
+                {
+                    "family": "Sugimoto",
+                    "given": "Cassidy R."
+                }
+            ],
+            "id": "larivière2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "3-24",
+            "publisher": "Springer International Publishing",
+            "title": "The journal impact factor: A brief history, critique, and discussion of adverse effects",
+            "title-short": "The journal impact factor",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.1002/asi.21678",
+            "URL": "http://dx.doi.org/10.1002/asi.21678",
+            "author": [
+                {
+                    "family": "Waltman",
+                    "given": "Ludo"
+                },
+                {
+                    "dropping-particle": "van",
+                    "family": "Eck",
+                    "given": "Nees Jan"
+                }
+            ],
+            "container-title": "Journal of the American Society for Information Science and Technology",
+            "id": "waltman2011",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011,
+                        10,
+                        31
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "406-415",
+            "title": "The inconsistency of the h-index",
+            "type": "article-journal",
+            "volume": "63"
+        },
+        {
+            "author": [
+                {
+                    "family": "Narin",
+                    "given": "Francis"
+                }
+            ],
+            "id": "narin1976",
+            "issued": {
+                "date-parts": [
+                    [
+                        1976
+                    ]
+                ]
+            },
+            "publisher": "Computer Horizons Washington, D. C",
+            "title": "Evaluative bibliometrics: The use of publication and citation analysis in the evaluation of scientific activity",
+            "title-short": "Evaluative bibliometrics",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1108/00220410810844150",
+            "URL": "http://dx.doi.org/10.1108/00220410810844150",
+            "author": [
+                {
+                    "family": "Bornmann",
+                    "given": "Lutz"
+                },
+                {
+                    "family": "Daniel",
+                    "given": "Hans-Dieter"
+                }
+            ],
+            "container-title": "Journal of Documentation",
+            "id": "bornmann2008",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008,
+                        1,
+                        18
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "45-80",
+            "title": "What do citation counts measure? A review of studies on citing behavior",
+            "type": "article-journal",
+            "volume": "64"
+        },
+        {
+            "DOI": "10.1215/00182702-23-1-105",
+            "URL": "http://hope.dukejournals.org/cgi/doi/10.1215/00182702-23-1-105",
+            "author": [
+                {
+                    "family": "Knorr Cetina",
+                    "given": "Karin"
+                }
+            ],
+            "container-title": "History of Political Economy",
+            "id": "knorrcetina1991",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1991,
+                        3
+                    ]
+                ]
+            },
+            "page": "105-122",
+            "title": "Epistemic cultures: Forms of reason in science",
+            "title-short": "Epistemic cultures",
+            "type": "article-journal",
+            "volume": "23"
+        },
+        {
+            "author": [
+                {
+                    "family": "Steneck",
+                    "given": "Nicholas"
+                }
+            ],
+            "container-title": "Science and Engineering Ethics",
+            "id": "steneck2006",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006
+                    ]
+                ]
+            },
+            "page": "53-74",
+            "title": "Fostering integrity in research: Definitions, current knowledge, and future directions",
+            "title-short": "Fostering integrity in research",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "author": [
+                {
+                    "family": "Judson",
+                    "given": "Horace Freeland."
+                }
+            ],
+            "id": "judson2004",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "Harcourt",
+            "publisher-place": "Orlando",
+            "title": "The great betrayal : Fraud in science",
+            "title-short": "The great betrayal ",
+            "type": "book"
+        },
+        {
+            "URL": "http://search.ebscohost.com/login.aspx?direct=true&db=rzh&AN=1991125246&site=ehost-live",
+            "author": [
+                {
+                    "family": "Chop",
+                    "given": "R. M."
+                },
+                {
+                    "family": "Silva",
+                    "given": "M. C."
+                }
+            ],
+            "container-title": "Journal of Professional Nursing",
+            "id": "chop1991",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1991
+                    ]
+                ]
+            },
+            "page": "166-171",
+            "title": "Scientific fraud: Definitions, policies, and implications for nursing research",
+            "title-short": "Scientific fraud",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "author": [
+                {
+                    "family": "Reich",
+                    "given": "Eugenie Samuel."
+                }
+            ],
+            "id": "reich2009",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "Palgrave Macmillan",
+            "publisher-place": "New York",
+            "title": "Plastic fantastic : How the biggest fraud in physics shook the scientific world",
+            "title-short": "Plastic fantastic ",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Babbage",
+                    "given": "Charles"
+                }
+            ],
+            "id": "babbage1830",
+            "issued": {
+                "date-parts": [
+                    [
+                        1830
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher-place": "London",
+            "title": "Reflections on the decline of science in england, and some of its causes.",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Larivée",
+                    "given": "Serge"
+                },
+                {
+                    "family": "Baruffaldi",
+                    "given": "Maria G."
+                }
+            ],
+            "id": "larivée1993",
+            "issued": {
+                "date-parts": [
+                    [
+                        1993
+                    ]
+                ]
+            },
+            "language": "fr-FR",
+            "publisher": "Méridien",
+            "publisher-place": "Laval, Québec",
+            "title": "La science au-dessus de tout soupçon : enquête sur les fraudes scientifiques",
+            "title-short": "La science au-dessus de tout soupçon ",
+            "type": "book"
+        },
+        {
+            "DOI": "10.2307/1735787",
+            "URL": "http://www.jstor.org/stable/1735787",
+            "author": [
+                {
+                    "family": "Westfall",
+                    "given": "Richard S"
+                }
+            ],
+            "collection-title": "New series",
+            "container-title": "Science",
+            "id": "westfall1973",
+            "issue": "4075",
+            "issued": {
+                "date-parts": [
+                    [
+                        1973,
+                        2
+                    ]
+                ]
+            },
+            "title": "Newton and the fudge factor",
+            "type": "article-journal",
+            "volume": "179"
+        },
+        {
+            "author": [
+                {
+                    "family": "Broad",
+                    "given": "William J."
+                }
+            ],
+            "container-title": "New York Times",
+            "id": "broad1983",
+            "issued": {
+                "date-parts": [
+                    [
+                        1983
+                    ]
+                ]
+            },
+            "title": "Notorious darsee case shakes assumptions about science",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Kochen",
+                    "given": "Manfred"
+                }
+            ],
+            "container-title": "Journal of Documentation",
+            "id": "kochen1987",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1987
+                    ]
+                ]
+            },
+            "page": "54-64",
+            "title": "How well do we acknowledge intellectual debts?",
+            "type": "article-journal",
+            "volume": "43"
+        },
+        {
+            "author": [
+                {
+                    "family": "Broad",
+                    "given": "William J"
+                }
+            ],
+            "container-title": "Science",
+            "id": "broad2012",
+            "issue": "4491",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "page": "137-141",
+            "title": "Fraud and the structure of science",
+            "type": "article-journal",
+            "volume": "212"
+        },
+        {
+            "author": [
+                {
+                    "family": "Weinstein",
+                    "given": "Deena"
+                }
+            ],
+            "container-title": "Connecticut Medicine",
+            "id": "weinstein1981",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        1981
+                    ]
+                ]
+            },
+            "page": "655-658",
+            "title": "Scientific fraud and scientific ethics",
+            "type": "article-journal",
+            "volume": "45"
+        },
+        {
+            "author": [
+                {
+                    "family": "Grieneisen",
+                    "given": "Michael L"
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Minghua"
+                }
+            ],
+            "container-title": "PLoS ONE",
+            "id": "grieneisen2012",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        10
+                    ]
+                ]
+            },
+            "page": "e44118-e44118",
+            "title": "A comprehensive survey of retracted articles from the scholarly literature",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0005738",
+            "URL": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0005738",
+            "author": [
+                {
+                    "family": "Fanelli",
+                    "given": "Daniele"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "id": "fanelli2009",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009,
+                        5,
+                        29
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Publisher: Public Library of Science",
+            "page": "e5738",
+            "title": "How Many Scientists Fabricate and Falsify Research? A Systematic Review and Meta-Analysis of Survey Data",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "DOI": "10.1126/science.184.4137.644",
+            "URL": "http://www.sciencemag.org/content/184/4137/644.short",
+            "author": [
+                {
+                    "family": "Culliton",
+                    "given": "Barbara J"
+                }
+            ],
+            "container-title": "Science",
+            "id": "culliton1974",
+            "issue": "4137",
+            "issued": {
+                "date-parts": [
+                    [
+                        1974,
+                        5
+                    ]
+                ]
+            },
+            "page": "644-650",
+            "title": "The sloan-kettering affair: A story without a hero",
+            "title-short": "The sloan-kettering affair",
+            "type": "article-journal",
+            "volume": "184"
+        },
+        {
+            "DOI": "10.1126/science.314.5807.1853",
+            "URL": "http://www.sciencemag.org/content/314/5807/1853.short",
+            "author": [
+                {
+                    "family": "Couzin",
+                    "given": "Jennifer"
+                }
+            ],
+            "container-title": "Science",
+            "id": "couzin2006",
+            "issue": "5807",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006,
+                        12
+                    ]
+                ]
+            },
+            "page": "1853-1853",
+            "title": "Scientific fraud",
+            "type": "article-journal",
+            "volume": "314"
+        },
+        {
+            "author": [
+                {
+                    "family": "Karcz",
+                    "given": "Marcin"
+                },
+                {
+                    "family": "Papadakos",
+                    "given": "Peter J"
+                }
+            ],
+            "container-title": "Canadian Journal of Respiratory Therapy",
+            "id": "karcz2011",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "18-27",
+            "title": "The consequences of fraud and deceit in medical research",
+            "type": "article-journal",
+            "volume": "47"
+        },
+        {
+            "DOI": "10.1007/s11948-010-9228-0",
+            "author": [
+                {
+                    "family": "Tilden",
+                    "given": "Samuel J"
+                }
+            ],
+            "container-title": "Science and Engineering Ethics",
+            "id": "tilden2010",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010,
+                        12
+                    ]
+                ]
+            },
+            "page": "737-741",
+            "title": "Incarceration, restitution, and lifetime debarment: Legal consequences of scientific misconduct in the eric poehlman case: Commentary on scientific forensics: How the office of research integrity can assist institutional investigations of research miscond",
+            "title-short": "Incarceration, restitution, and lifetime debarment",
+            "type": "article-journal",
+            "volume": "16"
+        },
+        {
+            "author": [
+                {
+                    "family": "Chubin",
+                    "given": "Daryl E."
+                }
+            ],
+            "container-title": "Minerva",
+            "id": "chubin1985",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1985
+                    ]
+                ]
+            },
+            "page": "175-202",
+            "title": "Miconduct in research : An issue of science policy and practice",
+            "title-short": "Miconduct in research ",
+            "type": "article-journal",
+            "volume": "23"
+        },
+        {
+            "DOI": "10.1007/BF03160957",
+            "URL": "http://dx.doi.org/10.1007/BF03160957",
+            "author": [
+                {
+                    "family": "Bird",
+                    "given": "Steven B."
+                },
+                {
+                    "family": "Sivilotti",
+                    "given": "Marco L. A."
+                }
+            ],
+            "container-title": "Journal of Medical Toxicology",
+            "id": "bird2008",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "69-70",
+            "title": "Self-plagiarism, recycling fraud, and the intent to mislead",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bird",
+                    "given": "Stephanie J."
+                }
+            ],
+            "container-title": "Science and Engineering Ethics",
+            "id": "bird2002",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2002
+                    ]
+                ]
+            },
+            "page": "543-544",
+            "title": "Self-plagiarism and dual and redundant publications: What is the problem? Commentary on ’seven ways to plagiarize: Handling real allegations of research misconduct’",
+            "title-short": "Self-plagiarism and dual and redundant publications",
+            "type": "article-journal",
+            "volume": "8"
+        },
+        {
+            "author": [
+                {
+                    "family": "US Public Health Service"
+                }
+            ],
+            "container-title": "Federal register",
+            "id": "uspublichealthservice1989",
+            "issue": "151",
+            "issued": {
+                "date-parts": [
+                    [
+                        1989,
+                        8,
+                        8
+                    ]
+                ]
+            },
+            "language": "eng",
+            "note": "Place: United States PMID: 11651184",
+            "page": "32446-32451",
+            "title": "Responsibilities of awardee and applicant institutions for dealing with and reporting possible misconduct in science; final rule.",
+            "type": "article-journal",
+            "volume": "54"
+        },
+        {
+            "DOI": "10.1038/d41586-019-03759-y",
+            "URL": "http://www.nature.com/articles/d41586-019-03759-y",
+            "author": [
+                {
+                    "family": "Grudniewicz",
+                    "given": "Agnes"
+                },
+                {
+                    "family": "Moher",
+                    "given": "David"
+                },
+                {
+                    "family": "Cobey",
+                    "given": "Kelly D."
+                },
+                {
+                    "family": "Bryson",
+                    "given": "Gregory L."
+                },
+                {
+                    "family": "Cukier",
+                    "given": "Samantha"
+                },
+                {
+                    "family": "Allen",
+                    "given": "Kristiann"
+                },
+                {
+                    "family": "Ardern",
+                    "given": "Clare"
+                },
+                {
+                    "family": "Balcom",
+                    "given": "Lesley"
+                },
+                {
+                    "family": "Barros",
+                    "given": "Tiago"
+                },
+                {
+                    "family": "Berger",
+                    "given": "Monica"
+                },
+                {
+                    "family": "Ciro",
+                    "given": "Jairo Buitrago"
+                },
+                {
+                    "family": "Cugusi",
+                    "given": "Lucia"
+                },
+                {
+                    "family": "Donaldson",
+                    "given": "Michael R."
+                },
+                {
+                    "family": "Egger",
+                    "given": "Matthias"
+                },
+                {
+                    "family": "Graham",
+                    "given": "Ian D."
+                },
+                {
+                    "family": "Hodgkinson",
+                    "given": "Matt"
+                },
+                {
+                    "family": "Khan",
+                    "given": "Karim M."
+                },
+                {
+                    "family": "Mabizela",
+                    "given": "Mahlubi"
+                },
+                {
+                    "family": "Manca",
+                    "given": "Andrea"
+                },
+                {
+                    "family": "Milzow",
+                    "given": "Katrin"
+                },
+                {
+                    "family": "Mouton",
+                    "given": "Johann"
+                },
+                {
+                    "family": "Muchenje",
+                    "given": "Marvelous"
+                },
+                {
+                    "family": "Olijhoek",
+                    "given": "Tom"
+                },
+                {
+                    "family": "Ommaya",
+                    "given": "Alexander"
+                },
+                {
+                    "family": "Patwardhan",
+                    "given": "Bhushan"
+                },
+                {
+                    "family": "Poff",
+                    "given": "Deborah"
+                },
+                {
+                    "family": "Proulx",
+                    "given": "Laurie"
+                },
+                {
+                    "family": "Rodger",
+                    "given": "Marc"
+                },
+                {
+                    "family": "Severin",
+                    "given": "Anna"
+                },
+                {
+                    "family": "Strinzel",
+                    "given": "Michaela"
+                },
+                {
+                    "family": "Sylos-Labini",
+                    "given": "Mauro"
+                },
+                {
+                    "family": "Tamblyn",
+                    "given": "Robyn"
+                },
+                {
+                    "dropping-particle": "van",
+                    "family": "Niekerk",
+                    "given": "Marthie"
+                },
+                {
+                    "family": "Wicherts",
+                    "given": "Jelte M."
+                },
+                {
+                    "family": "Lalu",
+                    "given": "Manoj M."
+                }
+            ],
+            "container-title": "Nature",
+            "id": "grudniewicz2019",
+            "issue": "7786",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        12
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Bandiera_abtest: a Cg_type: Comment Number: 7786 Publisher: Nature Publishing Group Subject_term: Research management, Publishing",
+            "page": "210-212",
+            "title": "Predatory journals: no definition, no defence",
+            "title-short": "Predatory journals",
+            "type": "article-journal",
+            "volume": "576"
+        },
+        {
+            "URL": "https://blogs.lse.ac.uk/impactofsocialsciences/2020/05/13/there-is-no-black-and-white-definition-of-predatory-publishing/",
+            "author": [
+                {
+                    "family": "Siler",
+                    "given": "Kyle"
+                }
+            ],
+            "id": "siler2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        5,
+                        13
+                    ]
+                ]
+            },
+            "language": "{\"}en-us{\"}",
+            "title": "There is no black and white definition of predatory publishing",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Merton",
+                    "given": "Robert K"
+                }
+            ],
+            "id": "merton1968",
+            "issued": {
+                "date-parts": [
+                    [
+                        1968
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "Free Press",
+            "publisher-place": "New York",
+            "title": "Social theory and social structure",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1038/d41586-022-00793-1",
+            "URL": "https://www.nature.com/articles/d41586-022-00793-1",
+            "author": [
+                {
+                    "family": "Kwon",
+                    "given": "Diana"
+                }
+            ],
+            "container-title": "Nature",
+            "id": "kwon2022",
+            "issue": "7902",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        3,
+                        24
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "568-571",
+            "title": "The rise of citational justice: how scholars are making references fairer",
+            "title-short": "The rise of citational justice",
+            "type": "article-journal",
+            "volume": "603"
+        },
+        {
+            "DOI": "10.1093/acprof:oso/9780198237907.001.0001",
+            "URL": "https://academic.oup.com/book/32817",
+            "author": [
+                {
+                    "family": "Fricker",
+                    "given": "Miranda"
+                }
+            ],
+            "id": "fricker2007",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007,
+                        6,
+                        1
+                    ]
+                ]
+            },
+            "note": "DOI: 10.1093/acprof:oso/9780198237907.001.0001 DOI: 10.1093/acprof:oso/9780198237907.001.0001",
+            "publisher": "Oxford University Press",
+            "title": "Epistemic injustice",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1002/pra2.242",
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/pra2.242",
+            "author": [
+                {
+                    "family": "Patin",
+                    "given": "Beth"
+                },
+                {
+                    "family": "Sebastian",
+                    "given": "Melinda"
+                },
+                {
+                    "family": "Yeon",
+                    "given": "Jieun"
+                },
+                {
+                    "family": "Bertolini",
+                    "given": "Danielle"
+                }
+            ],
+            "container-title": "Proceedings of the Association for Information Science and Technology",
+            "id": "patin2020",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "title": "Toward epistemic justice: An approach for conceptualizing epistemicide in the information professions",
+            "title-short": "Toward epistemic justice",
+            "type": "article-journal",
+            "volume": "57"
+        },
+        {
+            "URL": "https://feministkilljoys.com/2013/09/11/making-feminist-points/",
+            "author": [
+                {
+                    "family": "Ahmed",
+                    "given": "Sara"
+                }
+            ],
+            "id": "ahmed2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013,
+                        9,
+                        11
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "title": "Making feminist points",
+            "type": ""
+        },
+        {
+            "DOI": "10.1145/3411763.3450389",
+            "URL": "https://dl.acm.org/doi/10.1145/3411763.3450389",
+            "author": [
+                {
+                    "family": "Kumar",
+                    "given": "Neha"
+                },
+                {
+                    "family": "Karusala",
+                    "given": "Naveena"
+                }
+            ],
+            "id": "kumar2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        5,
+                        8
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1-9",
+            "publisher": "ACM",
+            "publisher-place": "Yokohama Japan",
+            "title": "CHI ’21: CHI Conference on Human Factors in Computing Systems",
+            "title-short": "CHI ’21",
+            "type": "paper-conference"
+        },
+        {
+            "DOI": "10.1177/1474885107077318",
+            "URL": "https://doi.org/10.1177/1474885107077318",
+            "author": [
+                {
+                    "family": "Forst",
+                    "given": "Rainer"
+                }
+            ],
+            "container-title": "European Journal of Political Theory",
+            "id": "forst2007",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007,
+                        7,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Publisher: SAGE Publications",
+            "page": "291-304",
+            "title": "First Things First: Redistribution, Recognition and Justification",
+            "title-short": "First Things First",
+            "type": "article-journal",
+            "volume": "6"
+        },
+        {
+            "DOI": "10.1145/3411764.3445488",
+            "URL": "https://dl.acm.org/doi/10.1145/3411764.3445488",
+            "author": [
+                {
+                    "family": "Linxen",
+                    "given": "Sebastian"
+                },
+                {
+                    "family": "Sturm",
+                    "given": "Christian"
+                },
+                {
+                    "family": "Brühlmann",
+                    "given": "Florian"
+                },
+                {
+                    "family": "Cassau",
+                    "given": "Vincent"
+                },
+                {
+                    "family": "Opwis",
+                    "given": "Klaus"
+                },
+                {
+                    "family": "Reinecke",
+                    "given": "Katharina"
+                }
+            ],
+            "id": "linxen2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        5,
+                        6
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1-14",
+            "publisher": "ACM",
+            "publisher-place": "Yokohama Japan",
+            "title": "CHI ’21: CHI Conference on Human Factors in Computing Systems",
+            "title-short": "CHI ’21",
+            "type": "paper-conference"
+        },
+        {
+            "DOI": "10.18357/kula.135",
+            "URL": "https://kula.uvic.ca/index.php/kula/article/view/135",
+            "author": [
+                {
+                    "family": "MacLeod",
+                    "given": "Lorisia"
+                }
+            ],
+            "container-title": "KULA: Knowledge Creation, Dissemination, and Preservation Studies",
+            "id": "macleod2021",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        6,
+                        23
+                    ]
+                ]
+            },
+            "title": "More than personal communication: Templates for citing indigenous elders and knowledge keepers",
+            "title-short": "More than personal communication",
+            "type": "article-journal",
+            "volume": "5"
+        },
+        {
+            "DOI": "10.1080/0966369X.2017.1339022",
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/0966369X.2017.1339022",
+            "author": [
+                {
+                    "family": "Mott",
+                    "given": "Carrie"
+                },
+                {
+                    "family": "Cockayne",
+                    "given": "Daniel"
+                }
+            ],
+            "container-title": "Gender, Place & Culture",
+            "id": "mott2017",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        7,
+                        3
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "954-973",
+            "title": "Citation matters: mobilizing the politics of citation toward a practice of ‘conscientious engagement’",
+            "title-short": "Citation matters",
+            "type": "article-journal",
+            "volume": "24"
+        },
+        {
+            "DOI": "10.1080/08989621.2022.2111257",
+            "URL": "https://doi.org/10.1080/08989621.2022.2111257",
+            "author": [
+                {
+                    "family": "Ray",
+                    "given": "Keisha S."
+                },
+                {
+                    "family": "Zurn",
+                    "given": "Perry"
+                },
+                {
+                    "family": "Dworkin",
+                    "given": "Jordan D."
+                },
+                {
+                    "family": "Bassett",
+                    "given": "Dani S."
+                },
+                {
+                    "family": "Resnik",
+                    "given": "David B."
+                }
+            ],
+            "container-title": "Accountability in Research",
+            "id": "ray2022",
+            "issue": "0",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        8,
+                        7
+                    ]
+                ]
+            },
+            "note": "Publisher: Taylor & Francis _eprint: https://doi.org/10.1080/08989621.2022.2111257 PMID: 35938378",
+            "page": "1-15",
+            "title": "Citation bias, diversity, and ethics",
+            "type": "article-journal",
+            "volume": "0"
+        },
+        {
+            "DOI": "10.1162/qss_a_00218",
+            "URL": "https://direct.mit.edu/qss/article/doi/10.1162/qss_a_00218/113322/Gender-gap-among-highly-cited-researchers-2014",
+            "author": [
+                {
+                    "family": "Meho",
+                    "given": "Lokman I."
+                }
+            ],
+            "container-title": "Quantitative Science Studies",
+            "id": "meho2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        11,
+                        25
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1-21",
+            "title": "Gender gap among highly cited researchers, 20142021",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.48550/ARXIV.2207.13665",
+            "URL": "https://arxiv.org/abs/2207.13665",
+            "author": [
+                {
+                    "family": "Traag",
+                    "given": "V. A."
+                },
+                {
+                    "family": "Waltman",
+                    "given": "L."
+                }
+            ],
+            "id": "traag2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Causal foundations of bias, disparity and fairness",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://hdl.handle.net/1887/65291",
+            "author": [
+                {
+                    "family": "Ghiasi",
+                    "given": "G."
+                },
+                {
+                    "family": "Mongeon",
+                    "given": "P."
+                },
+                {
+                    "family": "Sugimoto",
+                    "given": "C."
+                },
+                {
+                    "family": "Larivière",
+                    "given": "V."
+                }
+            ],
+            "id": "ghiasi2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        9,
+                        11
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1519-1525",
+            "publisher": "Centre for Science; Technology Studies (CWTS)",
+            "title": "Gender homophily in citations",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.5281/ZENODO.6956977",
+            "URL": "https://zenodo.org/record/6956977",
+            "author": [
+                {
+                    "family": "Mongeon",
+                    "given": "Philippe"
+                },
+                {
+                    "family": "Paul-Hus",
+                    "given": "Adèle"
+                },
+                {
+                    "family": "Henkel",
+                    "given": "Maria"
+                },
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                }
+            ],
+            "id": "mongeon2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "language": "en",
+            "title": "On the impact of geo-contextualized and local research in the global North and South",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1002/asi.22784",
+            "author": [
+                {
+                    "family": "Lee",
+                    "given": "Carole J."
+                },
+                {
+                    "family": "Sugimoto",
+                    "given": "Cassidy R."
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Guo"
+                },
+                {
+                    "family": "Cronin",
+                    "given": "Blaise"
+                }
+            ],
+            "container-title": "Journal of the American Society for Information Science and Technology",
+            "id": "lee2013",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013,
+                        1
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "note": "WOS:000323384600002",
+            "page": "2-17",
+            "title": "Bias in peer review",
+            "type": "article-journal",
+            "volume": "64"
+        },
+        {
+            "author": [
+                {
+                    "family": "Chakrabarty",
+                    "given": "Dipesh"
+                }
+            ],
+            "collection-title": "Princeton studies in culture / power / history",
+            "id": "chakrabarty2007",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "language": "eng",
+            "publisher": "Princeton university press",
+            "publisher-place": "Princeton (N.J.)",
+            "title": "Provincializing Europe: postcolonial thought and historical difference",
+            "title-short": "Provincializing Europe",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1186/s12992-017-0304-y",
+            "URL": "http://dx.doi.org/10.1186/s12992-017-0304-y",
+            "author": [
+                {
+                    "family": "Harris",
+                    "given": "Matthew"
+                },
+                {
+                    "family": "Macinko",
+                    "given": "James"
+                },
+                {
+                    "family": "Jimenez",
+                    "given": "Geronimo"
+                },
+                {
+                    "family": "Mullachery",
+                    "given": "Pricila"
+                }
+            ],
+            "container-title": "Globalization and Health",
+            "id": "harris2017",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        11,
+                        6
+                    ]
+                ]
+            },
+            "language": "en",
+            "title": "Measuring the bias against low-income country research: an Implicit Association Test",
+            "title-short": "Measuring the bias against low-income country research",
+            "type": "article-journal",
+            "volume": "13"
+        },
+        {
+            "DOI": "10.1007/s11192-015-1765-5",
+            "URL": "http://dx.doi.org/10.1007/s11192-015-1765-5",
+            "author": [
+                {
+                    "family": "Mongeon",
+                    "given": "Philippe"
+                },
+                {
+                    "family": "Paul-Hus",
+                    "given": "Adèle"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "mongeon2015a",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        10,
+                        19
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "213-228",
+            "title": "The journal coverage of Web of Science and Scopus: a comparative analysis",
+            "title-short": "The journal coverage of Web of Science and Scopus",
+            "type": "article-journal",
+            "volume": "106"
+        },
+        {
+            "DOI": "10.1007/s11192-016-2118-8",
+            "URL": "http://dx.doi.org/10.1007/s11192-016-2118-8",
+            "author": [
+                {
+                    "family": "Mas-Bleda",
+                    "given": "Amalia"
+                },
+                {
+                    "family": "Thelwall",
+                    "given": "Mike"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "mas-bleda2016",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        9,
+                        9
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "2007-2030",
+            "title": "Can alternative indicators overcome language biases in citation counts? A comparison of Spanish and UK research",
+            "type": "article-journal",
+            "volume": "109"
+        },
+        {
+            "DOI": "10.1111/j.1365-2648.2008.04816.x",
+            "URL": "http://dx.doi.org/10.1111/j.1365-2648.2008.04816.x",
+            "author": [
+                {
+                    "family": "Baggs",
+                    "given": "Judith Gedney"
+                },
+                {
+                    "family": "Broome",
+                    "given": "Marion E."
+                },
+                {
+                    "family": "Dougherty",
+                    "given": "Molly C."
+                },
+                {
+                    "family": "Freda",
+                    "given": "Margaret C."
+                },
+                {
+                    "family": "Kearney",
+                    "given": "Margaret H."
+                }
+            ],
+            "container-title": "Journal of Advanced Nursing",
+            "id": "baggs2008",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "131-138",
+            "title": "Blinding in peer review: the preferences of reviewers for nursing journals",
+            "title-short": "Blinding in peer review",
+            "type": "article-journal",
+            "volume": "64"
+        },
+        {
+            "DOI": "10.17226/26294",
+            "URL": "http://dx.doi.org/10.17226/26294",
+            "author": [],
+            "editor": [
+                {
+                    "family": "Scherer",
+                    "given": "Layne"
+                }
+            ],
+            "id": "addressi2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        8,
+                        27
+                    ]
+                ]
+            },
+            "publisher": "National Academies Press",
+            "title": "Addressing diversity, equity, inclusion, and anti-racism in 21st century STEMM organizations",
+            "type": "book"
+        },
+        {
+            "URL": "http://www.jstor.org/stable/20024652",
+            "author": [
+                {
+                    "family": "Winner",
+                    "given": "Langdon"
+                }
+            ],
+            "container-title": "Daedalus",
+            "id": "winner1980",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1980
+                    ]
+                ]
+            },
+            "note": "Publisher: The MIT Press",
+            "page": "121-136",
+            "title": "Do artifacts have politics?",
+            "type": "article-journal",
+            "volume": "109"
+        },
+        {
+            "DOI": "10.2307/2089193",
+            "URL": "http://www.jstor.org/stable/2089193",
+            "author": [
+                {
+                    "family": "Merton",
+                    "given": "Robert K"
+                }
+            ],
+            "container-title": "American Sociological Review",
+            "id": "merton1957a",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        1957,
+                        12
+                    ]
+                ]
+            },
+            "page": "635-635",
+            "title": "Priorities in scientific discovery: A chapter in the sociology of science",
+            "title-short": "Priorities in scientific discovery",
+            "type": "article-journal",
+            "volume": "22"
+        }
+    ],
+    "project_biblios": [
+        "references.bib"
+    ]
+}

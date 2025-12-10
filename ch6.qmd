@@ -1,0 +1,41 @@
+# Visualizing research networks
+
+Coming soon...
+
+<!-- ## Introduction -->
+
+<!-- This chapter introduces network visualization as a tool for bibliometrics research and evaluation. -->
+
+<!-- -   Introduction to networks and their terminology -->
+
+<!-- -   Typical networks for bibliometrics research and evaluation -->
+
+<!-- -   Introduction to network visualization softwares -->
+
+<!-- ## Terminology -->
+
+<!-- **Networks** can be defined as a set of elements (or entities) that have a relationship to one another. Networks can be represented by matrices, lists of nodes and edges, or graphs. In Figure 1, the same network containing elements A, B, C, D, and E (the nodes) with links (edges) between some of them, represented in a matrix, a list of nodes and a list of edges, and displayed in a graph. Because in this case the links between the -->
+
+<!-- ![Figure 1. Example of a binary network represented by a matrix, a list of nodes and a list of edges, and a graph.](images/networks_1.jpg){#figure1 fig-align="center"} -->
+
+<!-- ## Typical networks in bibliometrics research and evaluation -->
+
+<!-- **Unit of analysis (nodes)** -->
+
+<!-- The unit of analysis, or the **nodes** of the networks, represent the entities: the things that are connected to one another in the network. In Figure 1 and Figure 2, the nodes were labelled A, B, C, D, and E. What could these letters represent in a bibliometric network? Essentially, the nodes can represent scholarly works (i.e., every node represents a single work) or any entity that can be identified in the bibliographic record of the works (e.g., authors, departments, institutions, countries, journals, research areas, keywords, funding organization, grant number, etc.) or that extracted from elements of the bibliographic records (e.g., words or terms extracted from the titles and/or abstracts). -->
+
+<!-- The networks we typically encounter in the bibliometrics literature and research assessments usually fall into two broad categories: **Co-occurrence networks** and **citation-based networks**. We discuss these two categories of networks with examples below. -->
+
+<!-- ### Co-occurrence networks -->
+
+<!-- #### Co-authorship networks -->
+
+<!-- #### Term co-occurrence networks -->
+
+<!-- ### Citation-based networks -->
+
+<!-- ### Direct citation -->
+
+<!-- ### Bibliographic coupling -->
+
+<!-- ### Co-citations -->

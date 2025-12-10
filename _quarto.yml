@@ -1,0 +1,34 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Bibliometrics and Scholarly Communication"
+  author: "Philippe Mongeon"
+  date: "2022-08-28"
+  chapters:
+    - index.qmd
+    - ch1.qmd
+    - ch2.qmd
+    - ch3.qmd
+    - ch4.qmd
+    - ch5.qmd
+    - ch6.qmd
+    - ch7.qmd
+    - ch8.qmd
+    - ch9.qmd
+    - ch10.qmd
+    - ch11.qmd
+    - ch12.qmd
+    - ch13.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

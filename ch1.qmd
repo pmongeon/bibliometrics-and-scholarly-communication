@@ -1,0 +1,17 @@
+# Bibliometrics and scholarly communication: An introduction
+
+## Learning objectives
+
+This week is a short introduction to the course and some of the its key concepts.
+
+## Slides
+
+Slides will be posted right before the first class begins.
+
+<!--<iframe width="600" height="400" marginheight="0" marginwidth="0" src="https://pmongeon.github.io//bibliometrics-and-scholarly-communication/slides/introduction.html"></iframe>-->
+
+## Homework
+
+Your homework is to explore the bibliometrics literature to get a better sense of what the field is about, and then choose an article to review for **assignment #1** (the detailed instructions are on Brightspace).
+
+[Quantitative Science Studies](https://direct.mit.edu/qss), the official journal of the International Society for Scientometrics and Informetrics (ISSI) may be a good place to start for this task, and it is an open access journal so you will be able to access the articles by using the link provided here. There are other sources mentioned in the assignment description on Brightspace (eg. [Scientometrics](https://www.springer.com/journal/11192), [Journal of Informetrics](https://www.sciencedirect.com/journal/journal-of-informetrics)). You can browse the title and abstracts of the papers in these journals but you might need to go through the Dalhousie library websites to access to the full text of the articles.

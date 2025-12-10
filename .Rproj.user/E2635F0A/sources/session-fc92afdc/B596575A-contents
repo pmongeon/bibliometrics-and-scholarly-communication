@@ -1,0 +1,131 @@
+#**********************************************
+# Project: Marine Conservation
+# Title: altmetrics
+#
+# Description: 
+#   This code collects the Altmetrics for a set of publications..
+#
+# Input: 
+#   - a dataframe of works
+#
+# Output:
+#   - projectdb_marine_conservation.works_altmetrics
+#**********************************************
+
+library(tidyverse)
+library(rAltmetric)
+library(RPostgres)
+
+works<-read_csv("data/works_final.csv")
+
+dois<-works$doi
+dois<-dois[!is.na(dois)]
+dois<-str_remove_all(dois, "https://doi.org/")
+dois<-unique(dois)
+
+i=1
+altmetric_data<-tibble()
+while (i <= length(dois)) {
+  tryCatch(
+    {
+    api_result <- rAltmetric::altmetrics(doi = dois[i], apikey = "317a6a03fa4e85d152783dcdbb180959")
+    data<-altmetric_data(api_result)  
+    data<-data %>% 
+      select(any_of(c("doi", 
+                      "altmetric_id",
+                      "cited_by_msm_count",
+                      "cited_by_posts_count",
+                      "cited_by_tweeters_count",
+                      "cited_by_accounts_count",
+                      "cited_by_feeds_count",
+                      "cited_by_rh_count",
+                      "cited_by_patents_count",
+                      "cited_by_fbwalls_count",
+                      "cited_by_policies_count",
+                      "cited_by_gplus_count",
+                      "cited_by_rdts_count",
+                      "cited_by_wikipedia_count",
+                      "cited_by_peer_review_sites_count",
+                      "cited_by_videos_count",
+                      "cited_by_weibo_count",
+                      "cited_by_pinners_count",
+                      "cited_by_qna_count",
+                      "score",
+                      "added_on",
+                      "published_on",
+                      "readers.citeulike",
+                      "readers.mendeley",
+                      "readers.connotea",
+                      "readers_count",
+                      "history.1y",
+                      "history.6m",
+                      "history.3m",
+                      "history.1m",
+                      "history.1w",
+                      "history.6d",
+                      "history.5d",
+                      "history.4d",
+                      "history.3d",
+                      "history.2d",
+                      "history.1d",
+                      "history.at",
+                      "context.all.count",                      
+                      "context.all.mean",                          
+                      "context.all.rank",                          
+                      "context.all.pct" ,                          
+                      "context.all.higher_than"  ,                 
+                      "context.journal.count",                     
+                      "context.journal.mean" ,                     
+                      "context.journal.rank",                      
+                      "context.journal.pct",                       
+                      "context.journal.higher_than" ,              
+                      "context.similar_age_3m.count" ,             
+                      "context.similar_age_3m.mean",               
+                      "context.similar_age_3m.rank",               
+                      "context.similar_age_3m.pct",                
+                      "context.similar_age_3m.higher_than"  ,      
+                      "context.similar_age_journal_3m.count" ,     
+                      "context.similar_age_journal_3m.mean"    ,   
+                      "context.similar_age_journal_3m.rank"     ,  
+                      "context.similar_age_journal_3m.pct"       , 
+                      "context.similar_age_journal_3m.higher_than"
+                      ))) %>% 
+      mutate(date_collected = Sys.Date())
+    altmetric_data<-bind_rows(altmetric_data, data)
+    },
+    error=function(e) {
+    }  
+  )
+  if(i%%500 == 0) {
+    n<-nrow(altmetric_data)
+    if(n==0) {
+      print(str_c("rate limit reached? restart at ",i-500))
+      break
+      }
+    saveRDS(altmetric_data, str_c("data/works_altmetrics_",i,".rds"))
+    altmetric_data<-tibble()
+    print(str_c("saved ",n," of 500 entries and reset the tibbles"))
+    
+  }
+  i=i+1
+}
+# Save remaining altmetric data
+saveRDS(altmetric_data, str_c("data/works_altmetrics_",i,".rds"))
+
+# combine files
+files <- list.files(recursive = T)[str_detect(list.files(recursive = T), "works_altmetrics_")]
+works_altmetrics<-tibble()
+for(file in files) {
+  works_altmetrics <- bind_rows(works_altmetrics,
+                              readRDS(file)) %>% 
+    unique()
+  print(file)
+}
+
+saveRDS(works_altmetrics, "data/works_altmetrics.rds")
+
+# Delete files
+file.remove(files)
+
+# Clear environment
+rm(list=ls())

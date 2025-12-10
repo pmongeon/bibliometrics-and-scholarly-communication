@@ -1,0 +1,82 @@
+---
+bibliography: references.bib
+---
+
+# Open Access
+
+## Introduction
+
+This chapter introduces the concept of Open Access (OA) as well as data sources that can be used to search for OA literature or get data on the OA status of research publications. The content of the chapter will be complemented by an in-class presentation on scholarly publishing and open access.
+
+## What is Open Access?
+
+According to the [Budapest Open Access Initiative (BOAI)](https://www.budapestopenaccessinitiative.org/read/) declaration, Open Access (OA) can be defined as follows:
+
+> The "free availability \[of research outputs\] on the public internet, permitting any users to read, download, copy, distribute, print, search, or link to the full texts of these articles, crawl them for indexing, pass them as data to software, or use them for any other lawful purpose, without financial, legal, or technical barriers other than those inseparable from gaining access to the internet itself".
+
+## Types of OA
+
+Open Access comes in many shapes and forms. In general, we differentiate between five types of OA:
+
+-   **Gold**: Articles are free to read on the journal website, under a creative commons or similar license. Article Processing Charges (APCs) are paid by the author or another organization (library, university, government) through some agreement. This is a free-to-read, pay-to-publish type of OA.
+
+-   **Hybrid**: Articles published in a non-OA journal, but for which APCs have been paid to make the article OA. This is a widely criticized form of OA since access to the article has already been paid for by the journal subscribers. This means that the publisher gets paid twice for the same article (double dipping). The issue is exacerbated by the high APCs (typically multiple thousands of US dollars) that publishers charge for Hybrid OA.
+
+-   **Diamond/Platinum:** Articles are free to read on the journal website, under a creative commons or similar license, but no APCs are paid by authors. This is a free-to-read, free-to-publish type of OA.
+
+-   **Bronze**: Articles that are free to read online but without a creative commons or similar licence.
+
+All that the above types of OA have in common is that they make the published version of the articles free to read directly on the journal's website. This is the main distinctive characteristic of the last type of OA.
+
+-   **Green** -- refers to self-archiving generally of the pre- or post-print of articles in repositories. A pre-print is the version of the article before it has been reviewed, and a post-print is the version that was accepted by the journal for publication, but without the journal's formatting. The version that is formatted and appears on the publisher's website is called the publisher's version.
+
+::: callout-note
+## Suggested readings
+
+The following preprint (green OA!) provides insights on global costs of OA by estimating the amount of APCs paid to large commercial publishers.
+
+Butler, Leigh-Ann, Matthias, Lisa, Simard, Marc-André, Mongeon, Philippe, & Haustein, Stefanie. (2022). The Oligopoly's Shift to Open Access. How For-Profit Publishers Benefit from Article Processing Charges (Version v1). Zenodo. <https://doi.org/10.5281/zenodo.7057144>
+:::
+
+## Predatory publishing
+
+The pay-to-publish (gold) OA as a business model has led to the proliferation of predatory publishers and journals, that have been defined as "entities that prioritize self-interest at the expense of scholarship and are characterized by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and/or the use of aggressive and indiscriminate solicitation practices." [@grudniewicz2019]. While the definition may seem clear enough, dividing publishers in two categories (predatory or not predatory) can be challenging and it may be better to think of publishers and journals as exhibiting degrees of predatoriness [@siler2020].
+
+## Data sources for OA
+
+### Unpaywall
+
+[Unpaywall](https://unpaywall.org/) is a database of OA publications which you can access in multiple ways to obtain the OA status as well as every OA location of documents that have a DOI:
+
+-   The Unpaywall [REST API](https://unpaywall.org/products/api)
+
+-   The [roadoi R package](https://docs.ropensci.org/roadoi/) that makes it easier to query the REST API.
+
+-   The [Simple Query Tool](https://unpaywall.org/products/simple-query-tool) that allows you to simply paste a list of DOI and get the data by email.
+
+-   Unpaywall also offers an [extension](https://unpaywall.org/products/extension) for your web browser that automatically shows you when an article you are viewing on the Web has an available OA version, which you can access in a click.
+
+-   Unpaywall data is also integrated into [[OpenAlex]{.underline}](https://docs.openalex.org/about-the-data/work#the-openaccess-object "https://docs.openalex.org/api-entities/works/work-object#open_access")and provides the following metadata on the OA status of articles:
+
+    -   **is_oa**: TRUE or FALSE
+    -   **oa_status**: One of the following OA statuses:
+        -   **Gold**: Published in an OA journal that is indexed by the DOAJ.
+
+        -   **Green:** Toll-access on the publisher landing page, but there is a free copy in an [OA repository](https://en.wikipedia.org/wiki/Open-access_repository).
+
+        -   **Hybrid**: Free under an [open license](https://support.unpaywall.org/support/solutions/articles/44002063718-what-is-an-oa-license-) in a toll-access journal.
+
+        -   **Bronze**: Free to read on the publisher landing page, but without any identifiable license.
+
+        -   **Closed** All other articles.
+    -   **oa_url**: The best Open Access (OA) URL for the work.
+
+### Directory of Open Access Journals (DOAJ)
+
+The [Directory of Open Access journals (DOAJ)](https://doaj.org/) is a database of OA journals that meet certain [inclusion criteria](https://doaj.org/apply/guide/#basic-criteria-for-inclusion) as well as the papers published in those journals. Data from the DOAJ can be accessed through the website's search engine, by using the [API](https://doaj.org/api/docs), or by downloading the [public data dump](https://doaj.org/docs/public-data-dump/).
+
+### Sherpa Romeo
+
+[Sherpa Romeo](https://v2.sherpa.ac.uk/romeo/) is another useful resource developed by the [Jisc](https://www.jisc.ac.uk/), a non-profit organization in the UK formally called the Joint Information Systems Committee (JISC). It is a directory of journals' and publishers' OA policies. It provides useful information on the OA pathways that are permitted by the journals, as well as the associated fees, embargo period, the version of the manuscript to which it applies, and so on. Again, the data can be accessed through the website's search engine, or with the Sherpa Romeo [API](https://v2.sherpa.ac.uk/api/).
+
+## References
