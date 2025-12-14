@@ -4,7 +4,10 @@
     "href": "index.html",
     "title": "Bibliometrics and Scholarly Communication",
     "section": "",
-    "text": "Course overview\nThis book is a work-in-progress intended to support the course INFO6550 - Bibliometrics and Scholarly Communication offered in the Master of Information at the Faculty of Management, Dalhousie University.\nThe course introduces students to the scholarly communication system and the use of bibliometrics to measure the production, dissemination and use of knowledge. Topics covered will include the reward system of science, peer review, scholarly publishing and open access, research funding, research evaluation, bibliometric and altmetric data sources and indicators, and networks."
+    "text": "Course overview\nThis book is a work-in-progress intended to support the course INFO6550 - Bibliometrics and Scholarly Communication offered in the Master of Information (MI) program at Dalhousie University.\nThe course introduces students to the scholarly communication system and the use of bibliometrics to measure the production, dissemination and use of knowledge. Topics covered will include the reward system of science, peer-review, scholarly publishing and open access, research funding, research evaluation, bibliometric and altmetric data sources and indicators, and networks.",
+    "crumbs": [
+      "Course overview"
+    ]
   },
   {
     "objectID": "ch2.html",
@@ -643,14 +646,20 @@
     "href": "index.html#learning-outcomes",
     "title": "Bibliometrics and Scholarly Communication",
     "section": "Learning outcomes",
-    "text": "Learning outcomes\nUpon completion of the course, you will be able to:\n\nExplain the scholarly communication process.\nSelect appropriate data sources to conduct a bibliometric study.\nCalculate and interpret bibliometric indicators.\nVisualize and analyze bibliometric networks.\nUse bibliometrics to support research evaluation processes.\nExplain the advantages and limitations of bibliometrics.\nUnderstand the social and organizational context of research evaluation"
+    "text": "Learning outcomes\nUpon completion of the course you will be able to:\n\nExplain the scholarly communication process.\nSelect appropriate data sources to conduct a bibliometric study.\nCalculate and interpret bibliometric indicators.\nVisualize and analyze bibliometric networks.\nUse bibliometrics to support research evaluation processes.\nExplain the advantages and limitations of bibliometrics.\nUnderstand the social and organizational context of research evaluation",
+    "crumbs": [
+      "Course overview"
+    ]
   },
   {
     "objectID": "index.html#schedule",
     "href": "index.html#schedule",
     "title": "Bibliometrics and Scholarly Communication",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\nWeek\nSection\nTopic\n\n\n\n\n1\nUnderstanding the research system\nIntroduction: bibliometrics and scholarly communications\n\n\n2\nUnderstanding the research system\nJournals, peer-review, and the organization and evaluation of research\n\n\n3\nUnderstanding the research system\nFunction, social structure, norms, and the research reward system\n\n\n4\nAnalyzing and evaluating research\nBibliometric data sources\n\n\n5\nAnalyzing and evaluating research\nDelineating fields, disciplines, and topics\n\n\n6\nAnalyzing and evaluating research\nMeasuring research outputs (authorship)\n\n\n7\nAnalyzing and evaluating research\nMeasuring research impact (citations)\n\n\n8\nAnalyzing and evaluating research\nMeasuring media and policy attention to research (altmetrics)\n\n\n9\nAnalyzing and evaluating research\nVisualizing research networks\n\n\n10\nImproving the research system\nOpen Research\n\n\n11\nImproving the research system\nBias, errors, fraud, misconduct, and questionable research practices\n\n\n12\nImproving the research system\nEquity, diversity, and inclusion in research"
+    "text": "Schedule\n\n\n\n\n\n\n\n\nWeek\nSection\nTopic\n\n\n\n\n1\nUnderstanding the research system\nBibliometrics and scholarly communication: an introduction\n\n\n2\nUnderstanding the research system\nThe organization and evaluation of research (ch. 2 and ch. 3)\n\n\n3\nApplied bibliometrics\nData sources (ch. 4)\n\n\n4\nApplied bibliometrics\nClassifying research (ch. 5)\n\n\n5\nApplied bibliometrics\nVisualizing research (ch. 6)\n\n\n6\nApplied bibliometrics\nMeasuring research output (ch. 7)\n\n\n7\nApplied bibliometrics\nMeasuring research impact (ch. 8)\n\n\n8\nApplied bibliometrics\nAltmetrics (ch. 9)\n\n\n9\nApplied bibliometrics\nOpen research (ch. 10)\n\n\n10\nCritical perspectives\nPerverse and unintended effects of bibliometrics (ch. 11)\n\n\n11\nCritical perspectives\nFraud, errors and questionable research practices (ch.12)\n\n\n12\nCritical perspectives\nEquity, diversity, and inclusion in research (ch.13)\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nUse the course Brightspace to:\n- Access detailed instructions for all assignments.\n- Submit your assignments.",
+    "crumbs": [
+      "Course overview"
+    ]
   },
   {
     "objectID": "index.html#assignments",
@@ -664,7 +673,10 @@
     "href": "index.html#other-information-and-resources",
     "title": "Bibliometrics and Scholarly Communication",
     "section": "Other information and resources",
-    "text": "Other information and resources\n\nUse APA style for your references in all assignments.\nUse Zotero (or another reference manager of your choice) to store your references and to cite them in your work. (not mandatory, but highly recommended).\nYou can use this Word template to write your assignments (not mandatory). Whether you use this template or not, use Word styles to format and structure your document.\nHave fun."
+    "text": "Other information and resources\n\nUse APA style for your references in all assignments.\nUse Zotero (or another reference manager of your choice) to store your references and to cite them in your work. (not mandatory, but highly recommended).\nYou can use this Word template to write your assignments (not mandatory). Whether you use this template or not, use Word styles to format and structure your document.\nHave fun.",
+    "crumbs": [
+      "Course overview"
+    ]
   },
   {
     "objectID": "ch2.html#learning-objective",

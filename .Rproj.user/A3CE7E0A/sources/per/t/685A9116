@@ -3,7 +3,7 @@
     "path": "~/GitHub/bibliometrics-and-scholarly-communication/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "2907206004",
+    "hash": "1179345183",
     "contents": "",
     "dirty": false,
     "created": 1765752503389.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "38,39",
-        "scrollLine": "33"
+        "cursorPosition": "2,126",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1765752621,
+    "lastKnownWriteTime": 1765753556,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1765752621663,
+    "last_content_update": 1765753556977,
     "read_only": false,
     "read_only_alternatives": []
 }
