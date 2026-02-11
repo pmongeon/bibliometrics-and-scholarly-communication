@@ -16,22 +16,6 @@ Upon completion of the course you will be able to:
 6.  Explain the advantages and limitations of bibliometrics.
 7.  Understand the social and organizational context of research evaluation
 
-## Schedule
-
-| Week | Section | Topic |
-|:--:|----|----|
-| 1 | Understanding the research system | Bibliometrics and scholarly communication: an introduction |
-| 2 | Understanding the research system | The organization and evaluation of research (ch. 2 and ch. 3) |
-| 3 | Applied bibliometrics | Data sources (ch. 4) |
-| 4 | Applied bibliometrics | Classifying research (ch. 5) |
-| 5 | Applied bibliometrics | Visualizing research (ch. 6) |
-| 6 | Applied bibliometrics | Measuring research output (ch. 7) |
-| 7 | Applied bibliometrics | Measuring research impact (ch. 8) |
-| 8 | Applied bibliometrics | Altmetrics (ch. 9) |
-| 9 | Applied bibliometrics | Open research (ch. 10) |
-| 10 | Critical perspectives | Perverse and unintended effects of bibliometrics (ch. 11) |
-| 11 | Critical perspectives | Fraud, errors and questionable research practices (ch.12) |
-| 12 | Critical perspectives | Equity, diversity, and inclusion in research (ch.13) |
 
 ::: callout-important
 Use the course Brightspace to:
