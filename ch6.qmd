@@ -1,41 +1,102 @@
 # Visualizing research networks
 
-Coming soon...
+## Introduction
 
-<!-- ## Introduction -->
+This chapter will provide foundations useful for critically creating and interpreting research networks. It also combines practical elements, including software, tools, and resources, so you can build your own network!
 
-<!-- This chapter introduces network visualization as a tool for bibliometrics research and evaluation. -->
+## Terminology
 
-<!-- -   Introduction to networks and their terminology -->
+**Networks** can be defined as a set of elements (or entities) that have a relationship to one another. They can provide big-picture analyses of scientific communication by visualizing relationships between sets of research items (e.g., journal articles, journals, books) (Ninkov et al., 2024). Networks help us understand knowledge flows, collaboration patterns, and topical developments and trends in or across fields. Network analysis, or “science mapping”, is approximately 60 years old.The term “Scientography” (think cartography) is also used, but is not as common (Garfield, 1994).
 
-<!-- -   Typical networks for bibliometrics research and evaluation -->
+::: callout-tip
+## Fun fact
 
-<!-- -   Introduction to network visualization softwares -->
+one of the first visualization studies in Scientometrics was produced manually in the 1960s by Garfield (1964), who created a [historical map](https://garfield.library.upenn.edu/papers/finaloverlay.pdf) of DNA research.  Garfield used Isaac Asimov’s book The Genetic Code as a model. Asimov, a professor of biochemistry (better known as the proliﬁc science ﬁction writer), identified 40 key scientiﬁc events in the development of DNA science from the time of Gregor Mendel until the 1961 Nobel work of Marshall Nirenberg at the National Institutes of Health (NIH). They used about 60 published papers mentioned by Asimov to create a mini citation index from \~1000 references they cited (Garfield, 1964).
+:::
 
-<!-- ## Terminology -->
+Derek De Solla Price (1965) made leaps in this area through his work on networks of scientific papers, and the later development of mathematical techniques (Noyons et al., 1999; Noyons & Van Raan, 1998) led to bibliometric mapping (Börner et al., 2003).
 
-<!-- **Networks** can be defined as a set of elements (or entities) that have a relationship to one another. Networks can be represented by matrices, lists of nodes and edges, or graphs. In Figure 1, the same network containing elements A, B, C, D, and E (the nodes) with links (edges) between some of them, represented in a matrix, a list of nodes and a list of edges, and displayed in a graph. Because in this case the links between the -->
+Networks can be represented by matrices, lists of nodes and edges, or graphs. In Figure 1, the same network containing elements A, B, C, D, and E (the nodes) with links (edges) between some of them, represented in a matrix, a list of nodes and a list of edges, and displayed in a graph.
 
-<!-- ![Figure 1. Example of a binary network represented by a matrix, a list of nodes and a list of edges, and a graph.](images/networks_1.jpg){#figure1 fig-align="center"} -->
+![Figure 1. Example of a binary network represented by a matrix, a list of nodes and a list of edges, and a graph.](images/networks_1.jpg){#figure1 fig-align="center"}
 
-<!-- ## Typical networks in bibliometrics research and evaluation -->
+## Components of a network
 
-<!-- **Unit of analysis (nodes)** -->
+### Nodes
 
-<!-- The unit of analysis, or the **nodes** of the networks, represent the entities: the things that are connected to one another in the network. In Figure 1 and Figure 2, the nodes were labelled A, B, C, D, and E. What could these letters represent in a bibliometric network? Essentially, the nodes can represent scholarly works (i.e., every node represents a single work) or any entity that can be identified in the bibliographic record of the works (e.g., authors, departments, institutions, countries, journals, research areas, keywords, funding organization, grant number, etc.) or that extracted from elements of the bibliographic records (e.g., words or terms extracted from the titles and/or abstracts). -->
+The **nodes** of the networks, represent the entities: the things that are connected to one another in the network. In Figure 1 and Figure 2, the nodes were labelled A, B, C, D, and E. What could these letters represent in a bibliometric network? Essentially, the nodes can represent scholarly works (i.e., every node represents a single work) or any entity that can be identified in the bibliographic record of the works (e.g., authors, departments, institutions, countries, journals, research areas, keywords, funding organization, grant number, etc.) or that extracted from elements of the bibliographic records (e.g., words or terms extracted from the titles and/or abstracts).
 
-<!-- The networks we typically encounter in the bibliometrics literature and research assessments usually fall into two broad categories: **Co-occurrence networks** and **citation-based networks**. We discuss these two categories of networks with examples below. -->
+The networks we typically encounter in the bibliometrics literature and research assessments usually fall into two broad categories: **Co-occurrence networks** and **citation-based networks**. We discuss these two categories of networks with examples below.
 
-<!-- ### Co-occurrence networks -->
+### Co-occurrence networks
 
-<!-- #### Co-authorship networks -->
+#### Co-authorship networks
 
-<!-- #### Term co-occurrence networks -->
+#### Term co-occurrence networks
 
-<!-- ### Citation-based networks -->
+### Citation-based networks
 
-<!-- ### Direct citation -->
+#### Direct citation
 
-<!-- ### Bibliographic coupling -->
+#### Bibliographic coupling
 
-<!-- ### Co-citations -->
+#### Co-citations
+
+## Creating a network
+
+## Drawing insights from a network
+
+Some things to look for when interpreting research networks, depending on your network type.
+
+-   **Influential actors or hubs**: These will be highly connected to authors, journals, or institutions.
+-   Collaboration patterns can help you characterize a local, national, or international network of research.
+-   Co-citation or keyword networks may reveal emerging or declining research topics/themes.
+-   **Structural and systemic insights**: Consider how your network might reveal inequities, silos, or power dynamics in knowledge production.
+
+## Software and tools
+
+### VOSviewer
+
+[VOSviewer](https://www.vosviewer.com/) was developed by Nees Jan van Eck and Ludo Waltman of CTWS Leiden. It is a software tool for constructing and visualizing bibliometric networks (journals, researchers, or individual publications), constructed based on citation, bibliographic coupling, co-citation, or co-authorship relations. VOSviewer also offers text mining functionality that can be used to construct and visualize co-occurrence networks of important terms extracted from a body of scientific literature. This is the primary software we use in this course, and it can be downloaded from the website linked above. 
+
+Data sources supported by VOSviewer include OpenAlex, Crossref, Dimensions, Scopus, Web of Science, PubMed, Wikidata, and more. VOSviewer allows you to query some of these sources (OpenAlex, Europe PMC, SemanticScholar, Wikidata, Crossref, and OpenCitation) directly through an API. To use other sources, you will need to download the data and import it into VOSviewer. 
+
+::: callout-tip
+## Fun fact
+
+Fun fact: The VOS is VOSviewer stands for “visualization of similarities”. This is because the distance between entities in a network (e.g., researchers, publications) is defined by their strength.
+:::
+
+### Gephi
+
+[Gephi](https://gephi.org/) was originally developed by students at the University of Technology of Compiegne in France. Now, the Gephi team gathers every year to maintain its codebase, meet users, and discuss and design new features. Gephi was built for exploratory data analysis, to help analysts explore networks, test hypotheses, and discover meaningful patterns in relational data. 
+
+### Sci2 Tool
+
+The [Science of Science (Sci2) Tool](https://sci2.cns.iu.edu/user/index.php) is a modular toolset specifically designed for the study of science. It supports the temporal, geospatial, topical, and network analysis and visualization of scholarly datasets at the micro (individual), meso (local), and macro (global) levels.
+
+### NetworkX
+
+[NetworkX](https://pypi.org/project/networkx/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+
+### igraph
+
+[R/igraph](https://r.igraph.org/) is an R package of the igraph network analysis library. 
+
+### **Citespace**
+
+[CiteSpace](https://citespace.podia.com/) is a visual analytics tool for analyzing trends and patterns in the scholarly literature of a field of research.
+
+::: callout-tip
+## Science or Art?
+
+Note that aesthetics can impact interpretability of networks. Consider attributes like colour, size of nodes and labels, and edge thickness for clarity. Creating a network is both a science **and** an art!
+
+Graphics editors like [Inkscape](https://inkscape.org/release/inkscape-1.4.2/windows/64-bit/msi/dl/) (free and open source) can help you with editing networks. Take it away, van Gogh!
+:::
+
+## Future directions
+
+What is the future of research networks? Well, scholars are integrating altmetric data more and more to capture the growing data on social media interactions, as well as data on open science, such as preprints, to offer a more holistic view of science. 
+
+While networks offer static snapshots of the research ecosystem, dynamic and interactive visualizations can help with exploring the temporal evolution of relationships, dynamics, and fields through time-scaled networks. [Multidimensional](https://www.digital-science.com/blog/2023/09/a-multi-dimensional-approach-to-assessing-the-impact-of-the-uns-sustainable-development-goals-sdgs/) maps are also being produced as combinations of different relationships (authorship, citations, topics) into single visualizations.  
