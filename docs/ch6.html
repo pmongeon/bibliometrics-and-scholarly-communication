@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bibliometrics and Scholarly Communication - 6&nbsp; Visualizing research networks</title>
+<title>6&nbsp; Visualizing research networks – Bibliometrics and Scholarly Communication</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -32,15 +52,17 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <link href="./ch7.html" rel="next">
 <link href="./ch5.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-70a47bd5681a7291082a5b9f83d58762.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,19 +94,19 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizing research networks</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -94,7 +116,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Bibliometrics and Scholarly Communication</a> 
     </div>
@@ -196,7 +220,39 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">6.1</span> Introduction</a></li>
+  <li><a href="#what-is-a-network" id="toc-what-is-a-network" class="nav-link" data-scroll-target="#what-is-a-network"><span class="header-section-number">6.2</span> What is a network?</a></li>
+  <li><a href="#components-of-a-network" id="toc-components-of-a-network" class="nav-link" data-scroll-target="#components-of-a-network"><span class="header-section-number">6.3</span> Components of a network</a>
+  <ul class="collapse">
+  <li><a href="#nodes" id="toc-nodes" class="nav-link" data-scroll-target="#nodes"><span class="header-section-number">6.3.1</span> Nodes</a></li>
+  <li><a href="#edges" id="toc-edges" class="nav-link" data-scroll-target="#edges"><span class="header-section-number">6.3.2</span> Edges</a></li>
+  </ul></li>
+  <li><a href="#bibliometric-networks" id="toc-bibliometric-networks" class="nav-link" data-scroll-target="#bibliometric-networks"><span class="header-section-number">6.4</span> Bibliometric networks</a>
+  <ul class="collapse">
+  <li><a href="#co-authorship-networks" id="toc-co-authorship-networks" class="nav-link" data-scroll-target="#co-authorship-networks"><span class="header-section-number">6.4.1</span> Co-authorship networks</a></li>
+  <li><a href="#keyword-or-term-co-occurrence-networks" id="toc-keyword-or-term-co-occurrence-networks" class="nav-link" data-scroll-target="#keyword-or-term-co-occurrence-networks"><span class="header-section-number">6.4.2</span> Keyword or term co-occurrence networks</a></li>
+  <li><a href="#bibliographic-coupling" id="toc-bibliographic-coupling" class="nav-link" data-scroll-target="#bibliographic-coupling"><span class="header-section-number">6.4.3</span> Bibliographic coupling</a></li>
+  <li><a href="#co-citations" id="toc-co-citations" class="nav-link" data-scroll-target="#co-citations"><span class="header-section-number">6.4.4</span> Co-citations</a></li>
+  <li><a href="#direct-citations" id="toc-direct-citations" class="nav-link" data-scroll-target="#direct-citations"><span class="header-section-number">6.4.5</span> Direct citations</a></li>
+  </ul></li>
+  <li><a href="#drawing-insights-from-a-network" id="toc-drawing-insights-from-a-network" class="nav-link" data-scroll-target="#drawing-insights-from-a-network"><span class="header-section-number">6.5</span> Drawing insights from a network</a></li>
+  <li><a href="#software-and-tools" id="toc-software-and-tools" class="nav-link" data-scroll-target="#software-and-tools"><span class="header-section-number">6.6</span> Software and tools</a>
+  <ul class="collapse">
+  <li><a href="#vosviewer" id="toc-vosviewer" class="nav-link" data-scroll-target="#vosviewer"><span class="header-section-number">6.6.1</span> VOSviewer</a></li>
+  <li><a href="#gephi" id="toc-gephi" class="nav-link" data-scroll-target="#gephi"><span class="header-section-number">6.6.2</span> Gephi</a></li>
+  <li><a href="#sci2-tool" id="toc-sci2-tool" class="nav-link" data-scroll-target="#sci2-tool"><span class="header-section-number">6.6.3</span> Sci2 Tool</a></li>
+  <li><a href="#networkx" id="toc-networkx" class="nav-link" data-scroll-target="#networkx"><span class="header-section-number">6.6.4</span> NetworkX</a></li>
+  <li><a href="#igraph" id="toc-igraph" class="nav-link" data-scroll-target="#igraph"><span class="header-section-number">6.6.5</span> igraph</a></li>
+  <li><a href="#citespace" id="toc-citespace" class="nav-link" data-scroll-target="#citespace"><span class="header-section-number">6.6.6</span> <strong>Citespace</strong></a></li>
+  </ul></li>
+  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions"><span class="header-section-number">6.7</span> Future directions</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.8</span> References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -220,68 +276,257 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Coming soon…</p>
-<!-- ## Introduction -->
-<!-- This chapter introduces network visualization as a tool for bibliometrics research and evaluation. -->
-<!-- -   Introduction to networks and their terminology -->
-<!-- -   Typical networks for bibliometrics research and evaluation -->
-<!-- -   Introduction to network visualization softwares -->
-<!-- ## Terminology -->
-<!-- **Networks** can be defined as a set of elements (or entities) that have a relationship to one another. Networks can be represented by matrices, lists of nodes and edges, or graphs. In Figure 1, the same network containing elements A, B, C, D, and E (the nodes) with links (edges) between some of them, represented in a matrix, a list of nodes and a list of edges, and displayed in a graph. Because in this case the links between the -->
-<!-- ![Figure 1. Example of a binary network represented by a matrix, a list of nodes and a list of edges, and a graph.](images/networks_1.jpg){#figure1 fig-align="center"} -->
-<!-- ## Typical networks in bibliometrics research and evaluation -->
-<!-- **Unit of analysis (nodes)** -->
-<!-- The unit of analysis, or the **nodes** of the networks, represent the entities: the things that are connected to one another in the network. In Figure 1 and Figure 2, the nodes were labelled A, B, C, D, and E. What could these letters represent in a bibliometric network? Essentially, the nodes can represent scholarly works (i.e., every node represents a single work) or any entity that can be identified in the bibliographic record of the works (e.g., authors, departments, institutions, countries, journals, research areas, keywords, funding organization, grant number, etc.) or that extracted from elements of the bibliographic records (e.g., words or terms extracted from the titles and/or abstracts). -->
-<!-- The networks we typically encounter in the bibliometrics literature and research assessments usually fall into two broad categories: **Co-occurrence networks** and **citation-based networks**. We discuss these two categories of networks with examples below. -->
-<!-- ### Co-occurrence networks -->
-<!-- #### Co-authorship networks -->
-<!-- #### Term co-occurrence networks -->
-<!-- ### Citation-based networks -->
-<!-- ### Direct citation -->
-<!-- ### Bibliographic coupling -->
-<!-- ### Co-citations -->
+<p><em>With guest author: Madelaine Hare</em></p>
+<section id="introduction" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">6.1</span> Introduction</h2>
+<p>This chapter will provide foundations useful for critically creating and interpreting research networks. It also combines practical elements, including software, tools, and resources, so you can build your own network!</p>
+</section>
+<section id="what-is-a-network" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="what-is-a-network"><span class="header-section-number">6.2</span> What is a network?</h2>
+<p><strong>Networks</strong> can be defined as a set of elements (or entities) that have a relationship to one another. They can provide big-picture analyses of scientific communication by visualizing relationships between sets of research items (e.g., journal articles, journals, books) (Ninkov et al., 2024). Networks help us understand knowledge flows, collaboration patterns, and topical developments and trends in or across fields. Network analysis, or “science mapping”, is approximately 60 years old. The term “Scientography” (think cartography) is also used, but is not as common (Garfield, 1994).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Fun fact
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One of the first visualization studies in&nbsp;Scientometrics&nbsp;was produced&nbsp;manually&nbsp;in the 1960s by Garfield (1964), who created a&nbsp;<a href="https://garfield.library.upenn.edu/papers/finaloverlay.pdf">historical map</a>&nbsp;of DNA research.&nbsp;&nbsp;Garfield used&nbsp;Isaac Asimov’s book&nbsp;The&nbsp;Genetic&nbsp;Code&nbsp;as a model. Asimov, a professor&nbsp;of&nbsp;biochemistry&nbsp;(better known as the proliﬁc&nbsp;science&nbsp;ﬁction writer),&nbsp;identified&nbsp;40&nbsp;key scientiﬁc events&nbsp;in&nbsp;the&nbsp;development of DNA science from the time&nbsp;of&nbsp;Gregor&nbsp;Mendel until the 1961 Nobel work of&nbsp;Marshall&nbsp;Nirenberg&nbsp;at&nbsp;the National Institutes of Health (NIH).&nbsp;They&nbsp;used about 60 published&nbsp;papers&nbsp;mentioned&nbsp;by Asimov to create a mini citation&nbsp;index&nbsp;from&nbsp;~1000 references they cited&nbsp;(Garfield,&nbsp;1964).</p>
+</div>
+</div>
+<p>Derek&nbsp;De&nbsp;Solla&nbsp;Price&nbsp;(1965) made&nbsp;leaps in this area through his work on networks of scientific papers,&nbsp;and the&nbsp;later&nbsp;development of&nbsp;mathematical techniques&nbsp;(Noyons&nbsp;et al.,&nbsp;1999; Noyons &amp; Van Raan, 1998)&nbsp;led to bibliometric mapping&nbsp;(Börner et al., 2003).</p>
+</section>
+<section id="components-of-a-network" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="components-of-a-network"><span class="header-section-number">6.3</span> Components of a network</h2>
+<p>Networks can be represented by matrices, lists of nodes and edges, or graphs. In Figure 1, the same network containing elements A, B, C, D, and E (the nodes) with links (edges) between some of them, is represented in a matrix, a list of nodes and a list of edges, and displayed in a graph.</p>
+<div id="figure1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/networks_1.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 1. Example of a binary network represented by a matrix, a list of nodes and a list of edges, and a graph.</figcaption>
+</figure>
+</div>
+<p>Networks can be <strong>directed</strong> (there is a direction in the relationship from one node to another) or <strong>undirected</strong> (no direction in the relationship). The relationships can also have a strength (represented by a numerical value in the example below). The weight of the relationship is often represented by the thickness of the link between the nodes, and the direction (if there is one) with an arrow. Here is a directed and undirected version of the same network, with weighted edges.</p>
+<p><img src="images/clipboard-3666585184.png" class="img-fluid" width="511"></p>
+<section id="nodes" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="nodes"><span class="header-section-number">6.3.1</span> Nodes</h3>
+<p>The <strong>nodes</strong> of the network represent the entities: the things that are connected to one another in the network. In Figure 1 and Figure 2, the nodes were labelled A, B, C, D, and E. What could these letters represent in a bibliometric network? Essentially, the nodes can represent scholarly works (i.e., every node represents a single work) or any entity that can be identified in the bibliographic record of the works (e.g., authors, departments, institutions, countries, journals, research areas, keywords, funding organization, grant number, etc.) or that extracted from elements of the bibliographic records (e.g., words or terms extracted from the titles and/or abstracts).</p>
+<p>A nodes file contains information about the nodes, which can be helpful for either colouring or sizing the nodes in the network visualization. The nodes file will typically contain two columns (the id of the node and the label), but you can include as many additional columns as you wish.&nbsp;</p>
+<ul>
+<li><strong>id</strong>: This is the unique identifier of the node. The <strong>source</strong> and <strong>target</strong> column of your edge files (see below) should contain the ids of the entities.</li>
+<li><strong>label</strong>: This is the label of the node, which can be visualized in the network. &nbsp;</li>
+<li><strong>Any categorical variable(s)</strong>: can be used to assign a colour to the nodes or their labels. &nbsp;</li>
+<li><strong>Any numerical variable(s)</strong>: can be used to assign a size or a colour to the nodes or their labels.&nbsp;</li>
+</ul>
+<section id="typical-nodes-in-bibliometric-networks" class="level4" data-number="6.3.1.1">
+<h4 data-number="6.3.1.1" class="anchored" data-anchor-id="typical-nodes-in-bibliometric-networks"><span class="header-section-number">6.3.1.1</span> Typical nodes in bibliometric networks:</h4>
+<ul>
+<li>Articles</li>
+<li>Authors</li>
+<li>Departments</li>
+<li>Institutions</li>
+<li>Countries</li>
+<li>Journals</li>
+<li>Research areas (topic, specialty, discipline, etc.)</li>
+<li>Terms (keywords, words from the title or the abstract.</li>
+<li>Funding organizations</li>
+<li>Etc.</li>
+</ul>
+</section>
+</section>
+<section id="edges" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="edges"><span class="header-section-number">6.3.2</span> Edges</h3>
+<p>The edges of the network (the lines connecting the nodes to one another)</p>
+<p>While this may vary depending on the software that you will use for visualizing your network. You will minimally require an edge file (a.k.a. network file), which is basically a spreadsheet containing the relationships between the nodes. This file should contain the following columns:&nbsp;</p>
+<ul>
+<li><strong>Source</strong> (required): id of the node &nbsp;</li>
+<li><strong>Target</strong> (required): id of the second node&nbsp;</li>
+<li><strong>Weight</strong> (optional): numerical value representing the strength of the relationship&nbsp;</li>
+<li><strong>Type</strong> (optional): directed or undirected</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Important note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Creating an edge file yourself can be tricky, especially if you are using Excel. Luckily, it is not always necessary since software like VOSviewer, a popular tool for visualization bibliometric networks, will do it for you if you are using data exported from databases like Scopus, Web of Science, Dimensions, or OpenAlex.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="bibliometric-networks" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="bibliometric-networks"><span class="header-section-number">6.4</span> Bibliometric networks</h2>
+<p>Most networks that we typically encounter in the bibliometrics literature and research assessments fall are <strong>co-occurrence networks</strong>. They are <strong>undirected</strong> networks (i.e., there is no direction to the relationship). In this type of network, there is a relationship between two entities when they are co-occurring in the same research output (typically a research article). Below are a few examples.</p>
+<section id="co-authorship-networks" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="co-authorship-networks"><span class="header-section-number">6.4.1</span> Co-authorship networks</h3>
+<p>A co-authorship network is typically used to analyze scientific collaboration patterns among authors, institutions, or countries (multiple researchers/institutions/countries authoring a paper together). Here, as an example, is my co-authorship network as of 2023.</p>
+<p><img src="images/clipboard-2727408510.png" class="img-fluid"></p>
+<p>Another example: Silva, F.S.V., Schulz, P.A. &amp; Noyons, E.C.M. Co-authorship networks and research&nbsp;impact&nbsp;in large research facilities: benchmarking internal reports and bibliometric databases. Scientometrics 118, 93–108 (2019).&nbsp;<a href="https://doi.org/10.1007/s11192-018-2967-4" class="uri">https://doi.org/10.1007/s11192-018-2967-4</a>&nbsp;&nbsp;</p>
+</section>
+<section id="keyword-or-term-co-occurrence-networks" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="keyword-or-term-co-occurrence-networks"><span class="header-section-number">6.4.2</span> Keyword or term co-occurrence networks</h3>
+<p>Another important type of co-occurrence network involves keywords or terms that appear together in the same document. Keyword co-occurrence involves keywords (e.g., author keywords, index terms) appearing in the same work, while term co-occurrence uses text mining to extract terms from the text data (titles or abstracts). Here, as an example, is the keyword co-occurence network based on my publications up to 2023.</p>
+<p><img src="images/clipboard-3944983623.png" class="img-fluid"></p>
+<p>And here is a network of funders who co–funded research in food research in Denmark, The Netherlands, and Norway <span class="citation" data-cites="aagaard2020">(<a href="#ref-aagaard2020" role="doc-biblioref">Aagaard et al. 2020</a>)</span>.</p>
+<p><img src="images/clipboard-451930435.png" class="img-fluid"></p>
+<p>Another example: Narong, D. K., &amp; Hallinger, P. (2023). A Keyword Co-Occurrence Analysis of Research on Service Learning: Conceptual Foci and Emerging Research Trends. Education Sciences, 13(4), 339. <a href="https://doi.org/10.3390/educsci13040339" class="uri">https://doi.org/10.3390/educsci13040339</a>&nbsp;</p>
+</section>
+<section id="bibliographic-coupling" class="level3" data-number="6.4.3">
+<h3 data-number="6.4.3" class="anchored" data-anchor-id="bibliographic-coupling"><span class="header-section-number">6.4.3</span> Bibliographic coupling</h3>
+<p>In a bibliographic coupling network, there is an undirected relationship between paper A and paper B if they both cite paper C. The strength of the relationship between A and B is determined by the number of references that they have in common.</p>
+</section>
+<section id="co-citations" class="level3" data-number="6.4.4">
+<h3 data-number="6.4.4" class="anchored" data-anchor-id="co-citations"><span class="header-section-number">6.4.4</span> Co-citations</h3>
+<p>In a co-citation network, there is an undirected relationship between paper A and paper B if they are both cited by paper C. The strength of the relationship between A and B is determined by the number of papers that cite both A and B together.</p>
+<p>Phan Tan, L. (2022). Bibliometrics of social entrepreneurship research:&nbsp;Cocitation&nbsp;and bibliographic coupling analyses.&nbsp;Cogent Business &amp; Management,&nbsp;9(1).&nbsp;<a href="https://doi.org/10.1080/23311975.2022.2124594" class="uri">https://doi.org/10.1080/23311975.2022.2124594</a>&nbsp;&nbsp;</p>
+</section>
+<section id="direct-citations" class="level3" data-number="6.4.5">
+<h3 data-number="6.4.5" class="anchored" data-anchor-id="direct-citations"><span class="header-section-number">6.4.5</span> Direct citations</h3>
+<p>Direct citation networks are the main type of <strong>directed</strong> network in bibliometrics. In these networks, the edges represent a reference made to one node by another (a citation received by a node from another). For example, if paper A cites paper B, the network will contain an arrow pointing from A to B.</p>
+</section>
+</section>
+<section id="drawing-insights-from-a-network" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="drawing-insights-from-a-network"><span class="header-section-number">6.5</span> Drawing insights from a network</h2>
+<p>Some things to look for when interpreting research networks, depending on your network type.</p>
+<ul>
+<li><strong>Influential actors or hubs</strong>: These will be highly connected to authors, journals, or institutions.</li>
+<li>Collaboration patterns can help you characterize a local, national, or international network of research.</li>
+<li>Co-citation or keyword networks may reveal emerging or declining research topics/themes.</li>
+<li><strong>Structural and systemic insights</strong>: Consider how your network might reveal inequities, silos, or power dynamics in knowledge production.</li>
+</ul>
+</section>
+<section id="software-and-tools" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="software-and-tools"><span class="header-section-number">6.6</span> Software and tools</h2>
+<section id="vosviewer" class="level3" data-number="6.6.1">
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="vosviewer"><span class="header-section-number">6.6.1</span> VOSviewer</h3>
+<p><a href="https://www.vosviewer.com/">VOSviewer</a> was developed by Nees Jan van Eck and Ludo Waltman of CTWS Leiden. It is a software tool for constructing and visualizing bibliometric networks (journals, researchers, or individual publications), constructed based on citation, bibliographic coupling, co-citation, or co-authorship relations. VOSviewer also offers text mining functionality that can be used to construct and visualize co-occurrence networks of important terms extracted from a body of scientific literature. This is the primary software we use in this course, and it can be downloaded from the website linked above.&nbsp;</p>
+<p>Data sources supported by VOSviewer include OpenAlex, Crossref, Dimensions, Scopus, Web of Science, PubMed, Wikidata, and more. VOSviewer allows you to query some of these sources (OpenAlex, Europe PMC, SemanticScholar, Wikidata, Crossref, and OpenCitation) directly through an API. To use other sources, you will need to download the data and import it into VOSviewer.&nbsp;</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Fun fact
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Fun fact: The VOS is VOSviewer stands for “visualization of similarities”. This is because the distance between entities in a network (e.g., researchers, publications) is defined by their strength.</p>
+</div>
+</div>
+</section>
+<section id="gephi" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="gephi"><span class="header-section-number">6.6.2</span> Gephi</h3>
+<p><a href="https://gephi.org/">Gephi</a> was originally developed by students at the University of Technology of Compiegne in France. Now, the Gephi team gathers every year to maintain its codebase, meet users, and discuss and design new features. Gephi was built for exploratory data analysis, to help analysts explore networks, test hypotheses, and discover meaningful patterns in relational data.&nbsp;</p>
+</section>
+<section id="sci2-tool" class="level3" data-number="6.6.3">
+<h3 data-number="6.6.3" class="anchored" data-anchor-id="sci2-tool"><span class="header-section-number">6.6.3</span> Sci2 Tool</h3>
+<p>The <a href="https://sci2.cns.iu.edu/user/index.php">Science of Science (Sci2) Tool</a> is a modular toolset specifically designed for the study of science. It supports the temporal, geospatial, topical, and network analysis and visualization of scholarly datasets at the micro (individual), meso (local), and macro (global) levels.</p>
+</section>
+<section id="networkx" class="level3" data-number="6.6.4">
+<h3 data-number="6.6.4" class="anchored" data-anchor-id="networkx"><span class="header-section-number">6.6.4</span> NetworkX</h3>
+<p><a href="https://pypi.org/project/networkx/">NetworkX</a> is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.</p>
+</section>
+<section id="igraph" class="level3" data-number="6.6.5">
+<h3 data-number="6.6.5" class="anchored" data-anchor-id="igraph"><span class="header-section-number">6.6.5</span> igraph</h3>
+<p><a href="https://r.igraph.org/">R/igraph</a> is an R package of the igraph network analysis library.&nbsp;</p>
+</section>
+<section id="citespace" class="level3" data-number="6.6.6">
+<h3 data-number="6.6.6" class="anchored" data-anchor-id="citespace"><span class="header-section-number">6.6.6</span> <strong>Citespace</strong></h3>
+<p><a href="https://citespace.podia.com/">CiteSpace</a> is a visual analytics tool for analyzing trends and patterns in the scholarly literature of a field of research.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Science or Art?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that aesthetics can impact interpretability of networks. Consider attributes like colour, size of nodes and labels, and edge thickness for clarity. Creating a network is both a science <strong>and</strong> an art!</p>
+<p>Graphics editors like <a href="https://inkscape.org/release/inkscape-1.4.2/windows/64-bit/msi/dl/">Inkscape</a> (free and open source) can help you with editing networks. Take it away, van Gogh!</p>
+</div>
+</div>
+</section>
+</section>
+<section id="future-directions" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="future-directions"><span class="header-section-number">6.7</span> Future directions</h2>
+<p>What is the future of research networks? Well, scholars are integrating altmetric data more and more to capture the growing data on social media interactions, as well as data on open science, such as preprints, to offer a more holistic view of science.&nbsp;</p>
+<p>While networks offer static snapshots of the research ecosystem, dynamic and interactive visualizations can help with exploring the temporal evolution of relationships, dynamics, and fields through time-scaled networks. <a href="https://www.digital-science.com/blog/2023/09/a-multi-dimensional-approach-to-assessing-the-impact-of-the-uns-sustainable-development-goals-sdgs/">Multidimensional</a> maps are also being produced as combinations of different relationships (authorship, citations, topics) into single visualizations.</p>
+</section>
+<section id="references" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="references"><span class="header-section-number">6.8</span> References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-aagaard2020" class="csl-entry" role="listitem">
+Aagaard, Kaare, Philippe Mongeon, Irene Ramos-Vielba, and Duncan Andrew Thomas. 2020. <span>“Getting to the Bottom of Research Funding: Acknowledging the Complexity of Funding Dynamics,”</span> July. <a href="https://doi.org/10.31235/osf.io/tg6vn">https://doi.org/10.31235/osf.io/tg6vn</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
@@ -289,184 +534,184 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
       return codeEl.innerText;
     }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -474,185 +719,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./ch5.html" class="pagination-link" aria-label="Classifying research">
